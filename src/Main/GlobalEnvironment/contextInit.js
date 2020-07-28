@@ -17,7 +17,7 @@ let themeChanger = (draft, action) => {
                 color1: "#08979C",
                 color2: "#fff",
                 color3: "#00474f",
-                color4: "#fadb14",
+                color4: "#f9d000",
                 type: "light"
             }
             sessionStorage.setItem("colors", JSON.stringify(draft))
@@ -34,7 +34,7 @@ let initialState = JSON.parse(sessionStorage.getItem("colors")) || {
         color1: "#08979C",
         color2: "#fff",
         color3: "#00474f",
-        color4: "#fadb14",
+        color4: "#f9d000",
         type: "light",
     }
 }

@@ -17,9 +17,7 @@ const NavBar = () => {
                    background:${colorsState.colors.color1};
                }
                .ant-layout-header{
-                border-bottom:4px solid #fff;
                 border-bottom-color:${colorsState.colors.color1};
-                height:65px;
                }
                .ant-menu-item{
                 color:${colorsState.colors.color2} ;
@@ -29,20 +27,36 @@ const NavBar = () => {
                     border-bottom: 2px solid #fff;
                     border-bottom-color:${colorsState.colors.color4};
                 }
-
+                .contact-class {
+                    color:${colorsState.colors.color2};
+                    border-bottom-color: ${colorsState.colors.color1};
+                  }
+                  .contact-class:hover {
+                    color:${colorsState.colors.color4};
+                    border-bottom-color: ${colorsState.colors.color4};
+                  }
+                  .logo1 ,.logo{
+                    color:${colorsState.colors.color2} ;
+                  }
+                  .register-button-class{
+                    background-color:${colorsState.colors.color4} ;
+                    color:#000 ;
+                  }
                `
                     }
                 </style>
-                <Header>
-                    <div className="logo" />
-                    <div className="logo1">
+                <Header className="header-class">
+                    <h2 className="logo" >
+                        Socio-Linkage
+                        </h2>
+                    <div className="logo1 navigation-menu-class">
                         <HamBurgerNav />
                     </div>
                     <div className="logo1">
-                        <button>Register</button>
+                        <button className="register-button-class">Register</button>
                     </div>
-                    <div className="logo1">
-                        <p className="contact-class">+923333466728</p>
+                    <div className="logo1 contact-class-parent">
+                        <p className="contact-class">Call Us +923333466728</p>
                     </div>
                 </Header>
             </>

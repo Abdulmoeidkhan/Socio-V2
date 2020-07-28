@@ -1,13 +1,74 @@
 .logo {
-    width: 120px;
-    height: 31px;
-    background: rgba(255, 255, 255, 0.2);
-    margin: 16px 24px 16px 0;
-    float: left;
-  }
-  .logo1 {
-    float: right;
-  }
-.contact-class{
-    text-decoration: underline;
+  /* width: 120px; */
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin-bottom: 0;
+}
+
+.logo1 {
+  float: right;
+  height: 155px;
+  margin: 0 auto;
+  width: 90px;
+  vertical-align: baseline;
+}
+
+.contact-class-parent {
+  width: 280px;
+}
+
+.contact-class {
+  margin: auto;
+  text-align: center;
+  width: 220px;
+  margin-top: 40px;
+  border-bottom-color: none;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  transition: all .5s ease;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.register-button-class{
+  margin-top: 60px;
+  border: none;
+  border-radius: 16px;
+  height: 30px;
+  line-height: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.contact-class:hover {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+}
+
+.header-class, .ant-layout-header {
+  height: 155px !important;
+  border-bottom: 4px solid #fff;
+}
+.navigation-menu-class .ant-btn{
+  background-color: transparent;
+  width:80px ;
+  height:60px ;
+  outline: none;
+  border: none;
+  margin:0 auto
+}
+.navigation-menu-class .ant-btn:hover,.navigation-menu-class .ant-btn:focus,.navigation-menu-class .ant-btn:active{
+  background-color: transparent;
+}
+
+.navigation-menu-class{
+  padding:45px 20px
+}
+.navigation-menu-class .ant-btn .anticon-menu-fold svg{
+  font-size:30px ;
 }

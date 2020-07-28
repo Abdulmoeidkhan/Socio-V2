@@ -71,7 +71,7 @@ const HamBurgerNav = (props) => {
   })
   return (
     <>
-      <Button onClick={showDrawer} icon={<MenuFoldOutlined />}>
+      <Button onClick={showDrawer} style={{backgroundColor:"none"}} icon={<MenuFoldOutlined style={{color:"#fff"}} />}>
       </Button>
       <Drawer
         title={
