@@ -10,6 +10,8 @@ export const ThemeContextChanger = createContext(null);
 
 
 
+
+
 let themeChanger = (draft, action) => {
     switch (action.type) {
         case "theme1":
@@ -18,6 +20,7 @@ let themeChanger = (draft, action) => {
                 color2: "#fff",
                 color3: "#00474f",
                 color4: "#f9d000",
+                color5:"#0F2027",
                 type: "light"
             }
             sessionStorage.setItem("colors", JSON.stringify(draft))
@@ -35,6 +38,7 @@ let initialState = JSON.parse(sessionStorage.getItem("colors")) || {
         color2: "#fff",
         color3: "#00474f",
         color4: "#f9d000",
+        color5:"#0F2027",
         type: "light",
     }
 }

@@ -1,10 +1,11 @@
 import React from 'react';
-import { ThemeContext } from "../GlobalEnvironment/contextInit"
+import { ThemeContext } from "../../GlobalEnvironment/contextInit"
 import { Layout } from 'antd';
 
 
-const {Content} =Layout
-const AboutUs = (props) => {
+const { Content, } = Layout;
+
+const Blogs = (props) => {
     return (
         <ThemeContext.Consumer>
             {colorsState =>
@@ -16,4 +17,4 @@ const AboutUs = (props) => {
     )
 }
 
-export default AboutUs
+export default Blogs

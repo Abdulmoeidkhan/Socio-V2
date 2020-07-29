@@ -15,12 +15,18 @@ const NavBar = () => {
                         `
                .ant-layout-header,.ant-menu{
                    background:${colorsState.colors.color1};
+                   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+                   background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
                }
                .ant-layout-header{
                 border-bottom-color:${colorsState.colors.color1};
                }
-               .ant-menu-item{
+               .header-class>h2{
                 color:${colorsState.colors.color2} ;
+                cursor:pointer;
+               }
+               .ant-menu-item,.navigation-menu-class .ant-btn{
+                color:${colorsState.colors.color2};
                 }
                 .ant-menu-horizontal > .ant-menu-item-selected,.ant-menu-horizontal > .ant-menu-item:hover{
                     color:${colorsState.colors.color4};
@@ -29,11 +35,14 @@ const NavBar = () => {
                 }
                 .contact-class {
                     color:${colorsState.colors.color2};
-                    border-bottom-color: ${colorsState.colors.color1};
+                    border-bottom-color: ${colorsState.colors.color2};
                   }
                   .contact-class:hover {
                     color:${colorsState.colors.color4};
                     border-bottom-color: ${colorsState.colors.color4};
+                  }
+                  .logo:hover,.navigation-menu-class .ant-btn:hover,.navigation-menu-class .ant-btn:focus,.navigation-menu-class .ant-btn:active {
+                    color:${colorsState.colors.color4};
                   }
                   .logo1 ,.logo{
                     color:${colorsState.colors.color2} ;

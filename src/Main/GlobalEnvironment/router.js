@@ -1,10 +1,10 @@
 import React from 'react';
 // import AboutUs from "./Components/about"
-import Home from "../Pages/Home.js"
-import AboutUs from "../Pages/About.js"
-import Services from "../Pages/Services.js"
-import Blogs from "../Pages/Blogs.js"
-import ContactUs from "../Pages/Contact"
+import Home from "../Pages/Home/Home.js";
+import AboutUs from "../Pages/About/About.js";
+import Services from "../Pages/Services/Services.js";
+import Blogs from "../Pages/Blogs/Blogs.js";
+import ContactUs from "../Pages/Contact/Contact.js";
 import {
     BrowserRouter as Router,
     Switch,

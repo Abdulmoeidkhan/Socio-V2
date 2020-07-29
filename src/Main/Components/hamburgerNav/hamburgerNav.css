@@ -77,7 +77,14 @@
     color:#fff;
     width:160px;
     margin:0 auto;
+    transition: all .5s ease;
 }
 .cursorClass{
     cursor: pointer ;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+.ant-drawer-content-wrapper{
+    width:320px !important;
 }

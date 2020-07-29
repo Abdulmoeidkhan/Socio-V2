@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1500px) and (min-width: 690px) {
+@media only screen and (max-width: 1600px) and (min-width: 790px) {
   body .App {
     width:90%;
     margin: 0 auto;
@@ -13,4 +13,6 @@
   font-family: Nunito Sans;
   font-size: 16px;
   line-height: 16px;
+  overflow-x: hidden;
+  transition: all .5s ease;
 }
