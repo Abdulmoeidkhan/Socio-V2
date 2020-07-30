@@ -99,10 +99,9 @@
         display: grid;
         grid-template-rows: repeat(2, 1fr);
     }
-    .equal-columns-grid{
+    .content-para{
         width: 100%;
-        padding-left: 5px;
-        padding-right: 5px;
+        margin: 0 auto !important;
     }
 }
 

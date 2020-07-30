@@ -1,5 +1,5 @@
 .logo-img{
-  width: 150px;
+  width: 14vw;
 }
 .logo {
   /* width: 120px; */
@@ -21,9 +21,6 @@
   transition: all .5s ease;
 }
 
-.logo1 button{
-  cursor: pointer;
-}
 .contact-class-parent {
   width: 280px;
 }

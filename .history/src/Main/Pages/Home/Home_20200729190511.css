@@ -99,11 +99,6 @@
         display: grid;
         grid-template-rows: repeat(2, 1fr);
     }
-    .equal-columns-grid{
-        width: 100%;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
 }
 
 @media only screen and (min-width: 280px)and (max-width: 1000px) {

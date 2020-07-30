@@ -2,11 +2,15 @@ import React from "react";
 import HamBurgerNav from "../hamburgerNav/hamburgerNav"
 import { Layout, Menu } from 'antd';
 import { ThemeContext } from "../../GlobalEnvironment/contextInit";
+import { useHistory } from "react-router-dom";
 import "./Nav-Menu.css"
 
 const { Header } = Layout;
 
 const NavBar = () => {
+    
+    let history = useHistory()
+
     return (<ThemeContext.Consumer>
         {colorsState =>
             <>
@@ -55,8 +59,8 @@ const NavBar = () => {
                     }
                 </style>
                 <Header className="header-class">
-                    <h2 className="logo" >
-                        Socio-Linkage
+                    <h2 className="logo" onClick={()=> history.push("/")}>
+                        <img className="logo-img" src={require("../../Assets/SL Logo Without Text.png")}/>
                         </h2>
                     <div className="logo1 navigation-menu-class">
                         <HamBurgerNav />

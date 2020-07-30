@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1600px) and (min-width: 790px) {
   body .App {
-    width:90%;
+    width: 90%;
     margin: 0 auto;
   }
 }
@@ -15,4 +15,18 @@
   line-height: 16px;
   overflow-x: hidden;
   transition: all .5s ease;
+}
+
+body::-webkit-scrollbar-track, .ant-menu-inline::-webkit-scrollbar-track, .ant-menu-inline-collapsed::-webkit-scrollbar-track,.ant-table-body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar, .ant-menu-inline::-webkit-scrollbar,.ant-menu-inline-collapsed::-webkit-scrollbar,.ant-table-body::-webkit-scrollbar-scrollbar{
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb, .ant-menu-inline::-webkit-scrollbar-thumb, .scrollClass::-webkit-scrollbar-thumb,.ant-menu-inline-collapsed::-webkit-scrollbar-thumb,.ant-table-body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
 }

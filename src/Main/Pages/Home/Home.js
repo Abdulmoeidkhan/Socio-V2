@@ -2,7 +2,8 @@ import React from 'react';
 import { Layout } from 'antd';
 import { ThemeContext } from "../../GlobalEnvironment/contextInit";
 import NavBar from "../../Components/Nav-Menu/Nav-Menu";
-import Banner from "../../Components/Banner/Banner.js"
+import Banner from "../../Components/Banner/Banner.js";
+import MyFooter from "../../Components/Footer/Footer"
 import { Card } from 'antd';
 import "./Home.css"
 
@@ -146,6 +147,7 @@ const Home = (props) => {
                                 <section>k</section>
                             </div>
                         </Content>
+                        <MyFooter/>
                     </Layout>
                 </>}
             </ThemeContext.Consumer>
