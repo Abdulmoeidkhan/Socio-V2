@@ -3,7 +3,7 @@ import { ThemeContext } from "../../GlobalEnvironment/contextInit"
 import { Layout } from 'antd';
 
 
-const { Content } = Layout;
+// const { Content } = Layout;
 
 const Services = (props) => {
     return (

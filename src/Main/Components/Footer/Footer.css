@@ -235,7 +235,7 @@
 @media screen and (max-width: 770px) and (min-width: 1px){
     .row{
         display: grid;
-        grid-template-rows:1fr 1fr 1fr;
+        grid-template-rows:2fr 1fr 1fr;
     }
     .row1{
         display: grid;

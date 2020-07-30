@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeContext } from "../../GlobalEnvironment/contextInit"
 import { Layout } from 'antd';
 
-const { Content, } = Layout;
+// const { Content, } = Layout;
 
 const ContactUs = (props) => {
     return (

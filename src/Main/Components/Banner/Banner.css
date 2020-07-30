@@ -1,39 +1,65 @@
-.banner-img{
-    height:70vh;
-    background-Image:url('../../Assets/BannerPicture.png');
+.banner-img {
+    height: 70vh;
+    background-Image: url('../../Assets/BannerPicture.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
-.banner-content{
+
+
+.banner-content {
     line-height: 16px;
     text-align: center;
-    width: 100%;    
-    margin:auto;
+    width: 100%;
+    margin: auto;
     padding-top: 10%;
 }
-.banner-super{
+
+.banner-super {
     font-family: Nunito Sans;
     font-size: 3vw;
     font-weight: 600;
     letter-spacing: 1px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
 }
-.banner-main{
+
+.banner-main {
     font-family: Nunito Sans;
     margin-top: 5%;
     font-size: 10vw;
     font-weight: bolder;
     letter-spacing: 4px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
 }
-.super-below{
+
+.super-below {
     font-family: Nunito Sans;
     margin-top: 10px;
     font-size: 3vw;
     font-weight: bolder;
     letter-spacing: 4px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
 }
 
 @media only screen and (min-width: 280px)and (max-width: 700px) {
-    .banner-super{
+    .banner-super {
         margin-top: 20%;
     }
 }

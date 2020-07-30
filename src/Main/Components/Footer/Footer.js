@@ -19,7 +19,7 @@ function MyFooter(props) {
             <div className="col-sm-12 col-md-6 division-class">
 
               <h2 onClick={() => history.push("/")}>
-                <img className="logo-img-footer" src={require("../../Assets/SL Logo Without Text.png")} />
+                <img className="logo-img-footer" src={require("../../Assets/SL Logo Without Text.png")} alt={require("../../Assets/SL Logo Without Text.png")}/>
               </h2>
               <h2 className="footer-main">Sociolinkage</h2>
 

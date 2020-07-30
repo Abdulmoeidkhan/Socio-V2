@@ -1,10 +1,9 @@
 import React from 'react';
-import { Layout } from 'antd';
+import { Layout, Card, Carousel, Avatar } from 'antd';
 import { ThemeContext } from "../../GlobalEnvironment/contextInit";
 import NavBar from "../../Components/Nav-Menu/Nav-Menu";
 import Banner from "../../Components/Banner/Banner.js";
 import MyFooter from "../../Components/Footer/Footer"
-import { Card } from 'antd';
 import "./Home.css"
 
 const { Content } = Layout;
@@ -36,7 +35,7 @@ const Home = (props) => {
                             <div className="section-parent">
                                 <section className="equal-columns-grid equal-columns-grid-1">
                                     <div>
-                                        <img src={"https://picsum.photos/300/300"} />
+                                        <img src={"https://picsum.photos/300/300"} alt={"https://picsum.photos/300/300"} />
                                     </div>
                                     <div className="content-content-1">
                                         <div className="spacing-class" />
@@ -53,12 +52,12 @@ const Home = (props) => {
                                         <p className="content-para"> Socio-Linkage accepts data from its client as input, analyses the type and extent of a client’s problem and then links the user to the relevant organization post-evaluation. The process occurs ensuring the client’s confidentiality fully as no data is shared with external sources without the client’s consent.</p>
                                     </div>
                                     <div>
-                                        <img src={"https://picsum.photos/300/300"} />
+                                        <img src={"https://picsum.photos/300/300"} alt={"https://picsum.photos/300/300"} />
                                     </div>
                                 </section>
                                 <section className="equal-columns-grid equal-columns-grid-3">
                                     <div>
-                                        <img src={"https://picsum.photos/300/300"} />
+                                        <img src={"https://picsum.photos/300/300"} alt={"https://picsum.photos/300/300"} />
                                     </div>
                                     <div className="content-content-3">
                                         <div className="spacing-class" />
@@ -68,7 +67,7 @@ const Home = (props) => {
                                     </div>
                                 </section>
                                 <section className="one-columns-grid">
-                                    <div>
+                                    <div className="card-background-class">
                                         <div className="center-class">
                                             <div className="spacing-class" />
                                             <p className="content-super">WHAT WE</p>
@@ -129,7 +128,7 @@ const Home = (props) => {
                                                 <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">The Graphic Guru</h2>
                                                     <p>
-                                                    Let our Graphic Guru guide you through our site and our services! The Graphic Guru solves your problems like joy ride
+                                                        Let our Graphic Guru guide you through our site and our services! The Graphic Guru solves your problems like joy ride
                                                     </p>
                                                 </Card>
                                                 <Card bordered={true} className="first-page-card-class">
@@ -142,12 +141,115 @@ const Home = (props) => {
                                         </div>
                                     </div>
                                 </section>
-                                <section>i</section>
-                                <section>j</section>
-                                <section>k</section>
+                                <section className="one-columns-grid">
+                                    <div className="picture-background-class">
+                                        <div className="center-class">
+                                            <div className="spacing-class" />
+                                            <p className="content-super">Our</p>
+                                            <h2 className="content-head">FIELD VISITS</h2>
+                                        </div>
+                                        <div className="three-column-seperation">
+                                            <Card bordered={true} className="first-page-card-class">
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745290/Cover%20Photos/Untitled-3_nkzaap.jpg" alt="activity snap"/>
+                                            </Card>
+                                            <Card bordered={true} className="first-page-card-class">
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745290/Cover%20Photos/Untitled-5_su4wkx.jpg" alt="activity snap"/>
+                                            </Card>
+                                            <Card bordered={true} className="first-page-card-class">
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745293/Cover%20Photos/Untitled-7_pecrtb.jpg" alt="activity snap"/>
+                                            </Card>
+
+                                        </div>
+                                        <div className="three-column-seperation">
+                                            <Card bordered={true} className="first-page-card-class">
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745290/Cover%20Photos/Untitled-4_kselx4.jpg" alt="activity snap"/>
+                                            </Card>
+                                            <Card bordered={true} className="first-page-card-class">
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745290/Cover%20Photos/Untitled-6_ix7pvi.jpg" alt="activity snap"/>
+                                            </Card>
+                                            <Card bordered={true} className="first-page-card-class">
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745290/Cover%20Photos/Untitled-3_nkzaap.jpg" alt="activity snap"/>
+                                            </Card>
+                                        </div>
+                                        <div className="three-column-seperation">
+                                            <Card bordered={true} className="first-page-card-class">
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745290/Cover%20Photos/Untitled-4_kselx4.jpg" alt="activity snap"/>
+                                            </Card>
+                                            <Card bordered={true} className="first-page-card-class">
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745296/Cover%20Photos/Untitled-8_aij9qx.jpg" alt="activity snap"/>
+                                            </Card>
+                                            <Card bordered={true} className="first-page-card-class">
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745295/Cover%20Photos/Untitled-1_remeuh.jpg" alt="activity snap"/>
+                                            </Card>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
+                            <section className="testimonial-sec">
+                                <div className="comments-background-class">
+                                    <div className="center-class">
+                                        <div className="spacing-class" />
+                                        <p className="content-super">Clients</p>
+                                        <h2 className="content-head">Testimonials</h2>
+                                    </div>
+                                    <div className="comment-class">
+                                        <Carousel
+                                            autoplay
+                                        >
+                                            <blockquote>
+
+                                                <Avatar
+                                                    src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+                                                    alt="Han Solo"
+                                                />
+                                                <p className="comment-class-para">
+                                                    "We supply a series of design principles, practical patterns and high quality design
+                                                    resources (Sketch and Axure), to help people create their product prototypes beautifully
+                                                    and efficiently."
+                                                        </p>
+                                            </blockquote>
+                                            <blockquote>
+
+                                                <Avatar
+                                                    src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+                                                    alt="Han Solo"
+                                                />
+                                                <p className="comment-class-para">
+                                                    "We supply a series of design principles, practical patterns and high quality design
+                                                    resources (Sketch and Axure), to help people create their product prototypes beautifully
+                                                    and efficiently."
+                                                        </p>
+                                            </blockquote>
+                                            <blockquote>
+
+                                                <Avatar
+                                                    src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+                                                    alt="Han Solo"
+                                                />
+                                                <p className="comment-class-para">
+                                                    "We supply a series of design principles, practical patterns and high quality design
+                                                    resources (Sketch and Axure), to help people create their product prototypes beautifully
+                                                    and efficiently."
+                                                        </p>
+                                            </blockquote>
+                                            <blockquote>
+
+                                                <Avatar
+                                                    src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+                                                    alt="Han Solo"
+                                                />
+                                                <p className="comment-class-para">
+                                                    "We supply a series of design principles, practical patterns and high quality design
+                                                    resources (Sketch and Axure), to help people create their product prototypes beautifully
+                                                    and efficiently."
+                                                        </p>
+                                            </blockquote>
+                                        </Carousel>
+                                    </div>
+                                </div>
+                            </section>
                         </Content>
-                        <MyFooter/>
+                        <MyFooter />
                     </Layout>
                 </>}
             </ThemeContext.Consumer>

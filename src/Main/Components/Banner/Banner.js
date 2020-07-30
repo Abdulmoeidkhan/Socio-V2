@@ -23,9 +23,9 @@ const Banner = (props) => {
                     </style>
                     <div className="banner-img" >
                         <div className="banner-content">
-                            <p className="banner-super">MARKET YOUR</p>
-                            <h2 className="banner-main">BUSSINESS</h2>
-                            <p className="super-below"> WITH OUR UNIQUE STRATEGIES</p>
+                            <p className="banner-super">CONNECT TO AN</p>
+                            <h2 className="banner-main">ORGANISTAION</h2>
+                            <p className="super-below"> WITH OUR EXPERTS</p>
                         </div>
                     </div>
                 </>
