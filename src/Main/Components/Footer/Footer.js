@@ -16,14 +16,7 @@ function MyFooter(props) {
       >
         <div className="container-footer">
           <div className="row">
-            <div className="col-sm-12 col-md-6 division-class">
-
-              <h2 onClick={() => history.push("/")}>
-                <img className="logo-img-footer" src={require("../../Assets/SL Logo Without Text.png")} alt={require("../../Assets/SL Logo Without Text.png")}/>
-              </h2>
-              <h2 className="footer-main">Sociolinkage</h2>
-
-            </div>
+            
 
             <div className="col-xs-6 col-md-3 division-class">
             <div className="spacing-class" />
@@ -37,6 +30,14 @@ function MyFooter(props) {
                 <li><a onClick={() => history.push("/blogs")}>Blogs</a></li>
                 <li><a onClick={() => history.push("/contact")}>Contact Us</a></li>
               </ul>
+            </div>
+
+            <div className="col-sm-12 col-md-6 division-class">
+
+              <h2 onClick={() => history.push("/")}>
+                <img className="logo-img-footer" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png"/>
+              </h2>
+
             </div>
 
             <div className="col-xs-6 col-md-3 division-class">

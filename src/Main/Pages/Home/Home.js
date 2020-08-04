@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Card, Carousel, Avatar } from 'antd';
+import { Layout, Card, Carousel, Avatar} from 'antd';
 import { ThemeContext } from "../../GlobalEnvironment/contextInit";
 import NavBar from "../../Components/Nav-Menu/Nav-Menu";
 import Banner from "../../Components/Banner/Banner.js";
@@ -7,6 +7,7 @@ import MyFooter from "../../Components/Footer/Footer"
 import "./Home.css"
 
 const { Content } = Layout;
+const { Meta } = Card;
 
 const Home = (props) => {
     return (
@@ -52,12 +53,12 @@ const Home = (props) => {
                                         <p className="content-para"> Socio-Linkage accepts data from its client as input, analyses the type and extent of a client’s problem and then links the user to the relevant organization post-evaluation. The process occurs ensuring the client’s confidentiality fully as no data is shared with external sources without the client’s consent.</p>
                                     </div>
                                     <div>
-                                        <img src={"https://picsum.photos/300/300"} alt={"https://picsum.photos/300/300"} />
+                                        <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Connect_a_Client_m7lfsb.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Connect_a_Client_m7lfsb.png"} />
                                     </div>
                                 </section>
                                 <section className="equal-columns-grid equal-columns-grid-3">
                                     <div>
-                                        <img src={"https://picsum.photos/300/300"} alt={"https://picsum.photos/300/300"} />
+                                        <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596468603/Landing%20Page/Making_Social_Services_Easy_nc4qwa.jpg"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596468603/Landing%20Page/Making_Social_Services_Easy_nc4qwa.jpg"} />
                                     </div>
                                     <div className="content-content-3">
                                         <div className="spacing-class" />
@@ -76,30 +77,35 @@ const Home = (props) => {
                                         <div className="card-container-class">
                                             <div className="five-column-seperation">
                                                 <Card bordered={true} className="first-page-card-class">
+                                                    <Meta avatar={<Avatar src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468526/Flashcards/Comparison_ddjpg5.jpg" />}/>
                                                     <h2 className="content-sub-head">Comparison</h2>
                                                     <p>
                                                         Don’t know which organization to approach? Our all in one comparison platform is all you need to evaluate different organizations through our Comparison Feature, to make your organization selection easier.
                                                 </p>
                                                 </Card>
                                                 <Card bordered={true} className="first-page-card-class">
+                                                    <Meta avatar={<Avatar src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468526/Flashcards/Comparison_ddjpg5.jpg" />}/>
                                                     <h2 className="content-sub-head">News and Events</h2>
                                                     <p>
                                                         Want to know what’s going on around the world? And what international day is just around the corner? Socio-Linkage provides the latest News of social trends, and a calendar where you can look up International Days and celebrate them with your loved ones!
                                                 </p>
                                                 </Card>
                                                 <Card bordered={true} className="first-page-card-class">
+                                                    <Meta avatar={<Avatar src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468526/Flashcards/Comparison_ddjpg5.jpg" />}/>
                                                     <h2 className="content-sub-head">Consultation and Evaluation</h2>
                                                     <p>
                                                         Need help from experts? Our expert panel allows our clients to connect with experts from Social sciences for consultation, Evaluation and Advice through our live sessions in full confidentiality at your location.
                                                 </p>
                                                 </Card>
                                                 <Card bordered={true} className="first-page-card-class">
+                                                    <Meta avatar={<Avatar src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468526/Flashcards/Comparison_ddjpg5.jpg" />}/>
                                                     <h2 className="content-sub-head">Articles and Blogs</h2>
                                                     <p>
                                                         Need to know what’s new around the world? Access our updated Articles and Blogs on a series of topics, to make sure you are one step ahead of the world!
                                                 </p>
                                                 </Card>
                                                 <Card bordered={true} className="first-page-card-class">
+                                                    <Meta avatar={<Avatar src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468526/Flashcards/Comparison_ddjpg5.jpg" />}/>
                                                     <h2 className="content-sub-head">Referrals and Links</h2>
                                                     <p>
                                                         Not sure who to contact? Sit back, relax and let our experts connect you to the best individuals and organizations, because at Socio-Linkage your problem is OUR problem.
@@ -108,30 +114,35 @@ const Home = (props) => {
                                             </div>
                                             <div className="five-column-seperation">
                                                 <Card bordered={true} className="first-page-card-class">
+                                                    <Meta avatar={<Avatar src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468526/Flashcards/Comparison_ddjpg5.jpg" />}/>
                                                     <h2 className="content-sub-head">Educating about Social Work</h2>
                                                     <p>
                                                         Don’t know what Social Work is? Socio-linkage aims to bust the misconceptions that prevail about Social Work in Pakistan and the differences between voluntary and professional Social Work.
                                                 </p>
                                                 </Card>
                                                 <Card bordered={true} className="first-page-card-class">
+                                                    <Meta avatar={<Avatar src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468526/Flashcards/Comparison_ddjpg5.jpg" />}/>
                                                     <h2 className="content-sub-head">PWA</h2>
                                                     <p>
                                                         Socio-linkage is the first PWA (Progressive Web App) platform for Social Services as it allows the users to use Socio-Linkage on multiple platforms that use standard compliant browser.
                                                 </p>
                                                 </Card>
                                                 <Card bordered={true} className="first-page-card-class">
+                                                    <Meta avatar={<Avatar src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468526/Flashcards/Comparison_ddjpg5.jpg" />}/>
                                                     <h2 className="content-sub-head">SMM</h2>
                                                     <p>
                                                         From connecting our clients to organizations, to representing and marketing your organizations on different various social media platforms with wide audiences our SMM (Social Media Marketing) Team is determined to raise your organization to the next level!
                                                 </p>
                                                 </Card>
                                                 <Card bordered={true} className="first-page-card-class">
+                                                    <Meta avatar={<Avatar src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468526/Flashcards/Comparison_ddjpg5.jpg" />}/>
                                                     <h2 className="content-sub-head">The Graphic Guru</h2>
                                                     <p>
                                                         Let our Graphic Guru guide you through our site and our services! The Graphic Guru solves your problems like joy ride
                                                     </p>
                                                 </Card>
                                                 <Card bordered={true} className="first-page-card-class">
+                                                    <Meta avatar={<Avatar src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468526/Flashcards/Comparison_ddjpg5.jpg" />}/>
                                                     <h2 className="content-sub-head">Coming Soon</h2>
                                                     <p>
                                                         It's comming Soon
@@ -150,36 +161,36 @@ const Home = (props) => {
                                         </div>
                                         <div className="three-column-seperation">
                                             <Card bordered={true} className="first-page-card-class">
-                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745290/Cover%20Photos/Untitled-3_nkzaap.jpg" alt="activity snap"/>
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468438/Highlights/Untitled-1_ae5ulq.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468438/Highlights/Untitled-1_ae5ulq.jpg"/>
                                             </Card>
                                             <Card bordered={true} className="first-page-card-class">
-                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745290/Cover%20Photos/Untitled-5_su4wkx.jpg" alt="activity snap"/>
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468438/Highlights/Untitled-2_nlffv4.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468438/Highlights/Untitled-2_nlffv4.jpg"/>
                                             </Card>
                                             <Card bordered={true} className="first-page-card-class">
-                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745293/Cover%20Photos/Untitled-7_pecrtb.jpg" alt="activity snap"/>
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468439/Highlights/Untitled-4_vfnfrm.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468439/Highlights/Untitled-4_vfnfrm.jpg"/>
                                             </Card>
 
                                         </div>
                                         <div className="three-column-seperation">
                                             <Card bordered={true} className="first-page-card-class">
-                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745290/Cover%20Photos/Untitled-4_kselx4.jpg" alt="activity snap"/>
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468439/Highlights/Untitled-5_hq5vrw.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468439/Highlights/Untitled-5_hq5vrw.jpg"/>
                                             </Card>
                                             <Card bordered={true} className="first-page-card-class">
-                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745290/Cover%20Photos/Untitled-6_ix7pvi.jpg" alt="activity snap"/>
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468439/Highlights/Untitled-3_ze7tmi.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468439/Highlights/Untitled-3_ze7tmi.jpg"/>
                                             </Card>
                                             <Card bordered={true} className="first-page-card-class">
-                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745290/Cover%20Photos/Untitled-3_nkzaap.jpg" alt="activity snap"/>
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468440/Highlights/Untitled-6_wc4qvs.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468440/Highlights/Untitled-6_wc4qvs.jpg"/>
                                             </Card>
                                         </div>
                                         <div className="three-column-seperation">
                                             <Card bordered={true} className="first-page-card-class">
-                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745290/Cover%20Photos/Untitled-4_kselx4.jpg" alt="activity snap"/>
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468441/Highlights/Untitled-9_wraq2d.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468441/Highlights/Untitled-9_wraq2d.jpg"/>
                                             </Card>
                                             <Card bordered={true} className="first-page-card-class">
-                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745296/Cover%20Photos/Untitled-8_aij9qx.jpg" alt="activity snap"/>
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468441/Highlights/Untitled-7_wdt3jh.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468441/Highlights/Untitled-7_wdt3jh.jpg"/>
                                             </Card>
                                             <Card bordered={true} className="first-page-card-class">
-                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1594745295/Cover%20Photos/Untitled-1_remeuh.jpg" alt="activity snap"/>
+                                                <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468441/Highlights/Untitled-8_silvwt.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468441/Highlights/Untitled-8_silvwt.jpg"/>
                                             </Card>
                                         </div>
                                     </div>

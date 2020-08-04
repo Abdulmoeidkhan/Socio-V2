@@ -1,13 +1,13 @@
 .site-footer {
     background-color: #00474f;
     padding: 45px 0 20px;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 24px;
     color: #fff;
 }
 .logo-img-footer{
     margin: 0 auto;
-    width: 200px;
+    width: 350px;
 }
 .site-footer {
     background-color: #00474f;
@@ -251,14 +251,11 @@
         text-align: center;
     }
     .logo-img-footer{
-        margin-top: 0px !important;
         width: 80vw !important;
+        margin: 0 auto;
     }
     .footer-main{
         margin-top: 0px;
-    }
-    .logo-img-footer{
-        margin: 0 auto;
     }
 }
 .linkClass{
