@@ -18,15 +18,26 @@
         grid-template-columns: repeat(2, 1fr);
         padding: 10px 20px;
     }
-    .anime-class-img{
-        width:42vw;
-        height: 40vh;
+    .anime-class-img {
+        width: 42vw;
+        height: 47vh;
     }
 }
 
 .section-parent {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 3fr 3fr;
+    grid-template-rows: .5fr .5fr .5fr 2fr 2fr;
+}
+
+.equal-columns-grid-2 {
+    height: 80vh;
+    background-Image: url("../../Assets/Wave.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:120px ;
+}
+.equal-columns-grid-2 .content-content-2,.equal-columns-grid-2 .content-content-2 h2{
+    color:#fff ;
 }
 
 .card-container-class {
@@ -72,7 +83,7 @@
 .center-class {
     width: 100%;
     margin: 0 auto;
-    height: 30vh;
+    height: 40vh;
     text-align: center;
     background: rgb(242, 242, 242, 0.4)
 }
@@ -133,16 +144,18 @@
     grid-template-rows: 1fr;
 }
 
-.slick-dots-bottom li button{
-    background-color:#00474f !important;
-    color:#00474f  !important;
+.slick-dots-bottom li button {
+    background-color: #00474f !important;
+    color: #00474f !important;
     height: 1vh !important;
 }
-.comment-class{
+
+.comment-class {
     width: 100%;
     margin: 0 auto;
 }
-.comment-class-para{
+
+.comment-class-para {
     margin: auto;
     text-align: center;
     line-height: 30px;
@@ -151,8 +164,14 @@
     font-weight: bolder;
     letter-spacing: 2px;
 }
-.testimonial-sec .center-class{
+
+.testimonial-sec .center-class {
     height: 25vh;
+}
+.center-class .content-para{
+    margin: 0 auto !important;
+    width: 80% !important;
+    padding-right: 0px;
 }
 
 .five-column-seperation .ant-card-meta-avatar>.ant-avatar-circle {
@@ -160,21 +179,23 @@
     height: 70px;
 }
 
-.card-background-class{
+.card-background-class {
     height: 80%;
     width: 100%;
     background-Image: url('../../Assets/Card-background.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
-.picture-background-class{
+
+.picture-background-class {
     height: 80%;
     width: 100%;
     background-Image: url('../../Assets/Pictures-background.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
-.comments-background-class{
+
+.comments-background-class {
     width: 100%;
     background-Image: url('../../Assets/Comments-background.png');
     background-repeat: no-repeat;
@@ -198,9 +219,22 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 4fr 8fr;
     }
+    /* .equal-columns-grid-2 {
+        height: 80vh;
+        background-Image: url("../../Assets/Wave.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    } */
 }
 
-@media only screen and (min-width: 280px)and (max-width: 1000px) {
+@media only screen and (max-width: 480px) {
+    .equal-columns-grid-2 {
+        height: 65vh;
+        padding-top: 5em;
+    }
+}
+
+@media only screen and (min-width: 270px)and (max-width: 1000px) {
     .equal-columns-grid {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
@@ -210,7 +244,6 @@
         padding-left: 5px;
         padding-right: 5px;
     }
-    
     .five-column-seperation {
         display: grid;
         grid-template-rows: repeat(5, 1fr);
@@ -224,11 +257,11 @@
         display: grid;
         grid-template-rows: repeat(3, 1fr);
     }
-    .comment-class-para{
+    .comment-class-para {
         font-size: 4vw;
     }
-    .anime-class-img{
-        width:90vw;
+    .anime-class-img {
+        width: 90vw;
         height: 40vh;
         margin: 0 auto;
     }
