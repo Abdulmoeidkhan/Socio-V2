@@ -1,0 +1,31 @@
+@media only screen and (min-width: 481px) {
+    .card-section-parent {
+        display: grid;
+        grid-template-rows: .5fr .5fr;
+    }
+}
+@media only screen and (max-width: 401px) {
+    .card-section-parent {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+.card-three-column-seperation{
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+}
+.card-three-column-seperation,.ant-card{
+    margin: 60px auto;
+    width: 90%;
+}
+
+.ant-table-filter-dropdown .ant-dropdown-menu-without-submenu {
+    height: 300px;
+    width: 350px;
+}
+@media only screen and (min-width: 300px)and (max-width: 700px) {
+    .ant-table-filter-dropdown .ant-dropdown-menu-without-submenu {
+        height: 300px;
+        width: 200px;
+    }   
+}

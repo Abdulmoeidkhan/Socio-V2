@@ -25,10 +25,10 @@ function MyFooter(props) {
               <ul className="footer-links"
               >
                 <li><a onClick={() => history.push("/")}>Home</a></li>
-                <li><a onClick={() => history.push("/about")}>About Us</a></li>
-                <li><a onClick={() => history.push("/services")}>Our Services</a></li>
-                <li><a onClick={() => history.push("/blogs")}>Blogs</a></li>
-                <li><a onClick={() => history.push("/contact")}>Contact Us</a></li>
+                <li><a onClick={() => history.push("/About")}>About Us</a></li>
+                <li><a onClick={() => history.push("/Services")}>Our Services</a></li>
+                <li><a onClick={() => history.push("/Blogs")}>Blogs</a></li>
+                <li><a onClick={() => history.push("/Contact")}>Contact Us</a></li>
               </ul>
             </div>
 
@@ -80,8 +80,8 @@ function MyFooter(props) {
               <p className="copyright-text">&copy; 2020 All Rights Reserved by
             <a> Socio-Linkage</a>
                 <br />
-                <a className="linkClass" onClick={() => history.push("/T&C")}>Terms & Conditions</a> &nbsp;&nbsp;
-                <a className="linkClass" onClick={() => history.push("/PrivacyPolicy")}>Privacy Policy</a>
+                <a className="linkClass" onClick={() => history.push("/TAndc")}>Terms & Conditions</a> &nbsp;&nbsp;
+                <a className="linkClass" onClick={() => history.push("/PrivacyPolicies")}>Privacy Policy</a>
               </p>
             </div>
             <div className="col-md-4 col-sm-6 col-xs-12">
