@@ -8,3 +8,8 @@
         width: 200px;
     }   
 }
+
+/* .ant-table-content{
+    overflow-y: scroll !important;
+    max-height: 640px !important;
+} */

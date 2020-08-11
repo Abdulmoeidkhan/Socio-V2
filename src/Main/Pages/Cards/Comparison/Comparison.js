@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { Layout, Card } from 'antd';
 import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
@@ -15,6 +15,9 @@ const { Content } = Layout;
 
 const Comparison = (props) => {
     let history = useHistory()
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <>
             <ThemeContext.Consumer>
@@ -38,14 +41,14 @@ const Comparison = (props) => {
                         <Content className="content-container-class">
                             <div className="spacing-class" />
                             <div className="card-section-parent">
-                                <section className="equal-columns-grid equal-columns-grid-1">
+                                <section className="card-equal-columns-grid-1">
                                     <div className="content-content-1">
                                         <div className="spacing-class" />
                                         <p className="content-super">WHAT WE OFFER :</p>
                                         <h2 className="content-head">COMPARISON </h2>
                                         <p className="content-para"> Confused which organization can solve your problem the fastest? Don’t worry let Socio-Linkage take charge, we compare organizations for you, tap into our evaluation template and choose the best for your problems, YOURSELF!</p>
                                     </div>
-                                    <div>
+                                    <div className="card-content-content-2">
                                         <img src={"https://picsum.photos/300/300"} alt={"https://picsum.photos/300/300"} />
                                     </div>
                                 </section>
@@ -76,7 +79,7 @@ const Comparison = (props) => {
                                     </div>
                                 </section>
                             </div>
-                            <MyTable/>
+                            <MyTable/> 
                         </Content>
                         <MyFooter />
                     </Layout>

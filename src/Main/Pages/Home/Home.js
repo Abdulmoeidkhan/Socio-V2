@@ -40,7 +40,7 @@ const Home = (props) => {
                             <div className="section-parent">
                                 <section className="equal-columns-grid equal-columns-grid-1">
                                     <div>
-                                        <img src={"https://picsum.photos/300/300"} alt={"https://picsum.photos/300/300"} />
+                                        <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1597073836/Landing%20Page/About_Us_llsbyr.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1597073836/Landing%20Page/About_Us_llsbyr.png"} />
                                     </div>
                                     <div className="content-content-1">
                                         <div className="spacing-class" />

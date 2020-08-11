@@ -1,0 +1,32 @@
+.site-card-wrapper{
+    background-color: transparent;
+    margin:0 auto 10px auto;
+    
+}
+.specialaboutDiv {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 2px;
+}
+@media screen and (max-width: 770px) and (min-width: 1px){
+    .specialaboutDiv {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2,1fr);
+    }
+    .cardImage, .cardImgClass{
+        max-width: 290px;
+    }
+}
+.widthClass{
+    width:100%;
+}
+.cardImgClass{
+    width:36vw;
+}
+.cardImage{
+    height: 200px;
+    /* margin-top: 50px; */
+    margin: 50px 55px;
+}
