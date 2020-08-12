@@ -91,6 +91,7 @@ function MyFooter(props) {
                 <li><a className="whatsapp" href="https://wa.me/923333466728" target="_blank"><i className="fa fa-whatsapp"></i></a></li>
                 <li><a className="linkedin" href="https://www.linkedin.com/in/socio-linkage-5720bb1b0/" target="_blank"><i className="fa fa-linkedin"></i></a></li>
                 <li><a className="instagram" href="https://www.instagram.com/sociolinkage/" target="_blank"><i className="fa fa-instagram"></i></a></li>
+                <li><a className="youtube" href="https://www.youtube.com/channel/UCYJ_C5vcn24jKeO7ZJ0K8xw?view_as=subscriber" target="_blank"><i className="fa fa-youtube"></i></a></li>
               </ul>
             </div>
           </div>

@@ -18,7 +18,7 @@
         grid-template-columns: repeat(2, 1fr);
         padding: 10px 20px;
     }
-    .anime-class-img {
+    .anime-class-img,.anime-class-img-spec {
         width: 42vw;
         height: 47vh;
     }
@@ -125,6 +125,7 @@
 
 .card-img-class {
     width: 100%;
+    border-radius: 16px !important;
 }
 
 .three-column-seperation .ant-card .ant-card-body {
@@ -179,13 +180,7 @@
     height: 70px;
 }
 
-.card-background-class {
-    height: 80%;
-    width: 90vw;
-    background-Image: url('../../Assets/Card-background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 .picture-background-class {
     height: 80%;
@@ -212,6 +207,13 @@
         display: grid;
         grid-template-rows: .4fr .4fr .4fr 2fr 2fr;
     }
+    .card-background-class {
+        height: 80%;
+        width: 99vw;
+        background-Image: url('../../Assets/Card-background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 @media only screen and (min-width: 401px)and (max-width: 1000px) {
@@ -221,7 +223,19 @@
     }
     .equal-columns-grid-2 {
         height: 65vh;
-        padding-top: 10em;
+        padding-top: 9em;
+    }
+    .card-background-class {
+        height: 80%;
+        width: 90vw;
+        background-Image: url('../../Assets/Card-background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .anime-class-img-spec{
+        width: 90vw;
+        height: 60vh;
+        margin: 0 auto;
     }
 }
 
@@ -229,6 +243,11 @@
     .equal-columns-grid-2,.equal-columns-grid-3,.equal-columns-grid-1 {
         height: 65vh;
         padding-top: 5em;
+    }
+    .anime-class-img-spec{
+        width: 90vw;
+        height: 60vh;
+        margin: 0 auto;
     }
 }
 
@@ -259,8 +278,10 @@
         font-size: 4vw;
     }
     .anime-class-img {
-        width: 99vw;
+        width: 90vw;
         height: 35vh;
         margin: 0 auto;
     }
+
+    
 }

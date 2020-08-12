@@ -1,0 +1,23 @@
+.card-referrals-equal-columns-grid-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+}
+
+
+@media only screen and (min-width: 481px) {
+    .card-two-column-seperation{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .card-two-column-seperation{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        margin: 0 auto;
+    }
+}

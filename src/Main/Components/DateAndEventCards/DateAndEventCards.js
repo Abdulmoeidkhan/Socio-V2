@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useRef } from 'react';
 import { Card, DatePicker, Skeleton } from 'antd';
 import 'antd/dist/antd.css';
 import "./DateAndEventCards.css"
@@ -19,6 +19,9 @@ const DateAndEventCards = () => {
     const [imgLink, setimgLink] = useState()
     const [content, setContent] = useState()
 
+    
+
+
     let j = false
 
     const dateChanged = (a, b) => {
@@ -31,7 +34,6 @@ const DateAndEventCards = () => {
             }
         }
     }
-
     useEffect(() => {
         if (!j) {
             j = true
@@ -42,12 +44,17 @@ const DateAndEventCards = () => {
                 }
             }
         }
-    })
+        return ()=> null
+    },[])
 
     useEffect(() => {
         firebase.getContent().then(val => {
             setContent(val)
-        })
+        }).catch(function (error) {
+            console.log(error.message); 
+        }
+        )
+        return ()=>null
     }, [])
 
     return (
@@ -61,9 +68,9 @@ const DateAndEventCards = () => {
                         {content.news}
                     </Card>
                     <Card title="Events" bordered={true}>
-                    <DatePicker size="large" bordered={false} showToday={true} defaultValue={moment()} className="widthClass" onChange={(a, b) => { dateChanged(a, b) }} />
+                        <DatePicker size="large" bordered={false} showToday={true} defaultValue={moment()} className="widthClass" onChange={(a, b) => { dateChanged(a, b) }} />
                         <div style={{ minWidth: "300px" }}>
-                            {imgLink ? <img className="cardImgClass" src={imgLink} /> : <img className="cardImgClass" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1595017293/ezgif.com-video-to-gif_hbdqah.gif"}/>}
+                            {imgLink ? <img className="cardImgClass" src={imgLink} /> : <img className="cardImgClass" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1595017293/ezgif.com-video-to-gif_hbdqah.gif"} />}
                         </div>
                     </Card>
                 </div>
