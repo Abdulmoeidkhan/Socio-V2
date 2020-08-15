@@ -52,3 +52,7 @@
     grid-template-columns: 1fr;
     margin: 0 auto;
 }
+.card-equal-columns-grid-1 .content-content-1{
+    margin: 0 auto;
+    width: 85vw;
+}

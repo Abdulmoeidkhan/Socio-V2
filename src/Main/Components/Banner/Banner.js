@@ -24,7 +24,7 @@ const Banner = (props) => {
                     <div className="banner-img" >
                         <div className="banner-content">
                             <p className="banner-super">CONNECT TO AN</p>
-                            <h2 className="banner-main">ORGANISTAION</h2>
+                            <h2 className="banner-main">ORGANIZATION</h2>
                             <p className="super-below"> WITH OUR EXPERTS</p>
                             <ul className="social-icons">
                             <li><a href="https://www.facebook.com/socio.linkage.3" target="_blank" className="facebook"><i className="fa fa-facebook"></i></a></li>

@@ -57,7 +57,7 @@ const Home = (props) => {
                                         <p className="content-para"> Socio-Linkage accepts data from its client as input, analyses the type and extent of a client’s problem and then links the user to the relevant organization post-evaluation. The process occurs ensuring the client’s confidentiality fully as no data is shared with external sources without the client’s consent.</p>
                                     </div>
                                     <div>
-                                        <img className="anime-class-img-spec" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Connect_a_Client_m7lfsb.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Connect_a_Client_m7lfsb.png"} />
+                                        <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1597416141/Landing%20Page/Connect_a_Client_1_m83gnr.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1597416141/Landing%20Page/Connect_a_Client_1_m83gnr.png"} />
                                     </div>
                                 </section>
                                 <section className="equal-columns-grid equal-columns-grid-3">

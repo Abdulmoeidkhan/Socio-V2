@@ -22,6 +22,12 @@
         width: 42vw;
         height: 47vh;
     }
+    .card-background-class {
+        height: 80%;
+        width: 90vw;
+        background-Image: url('../../Assets/Card-background.png');
+        background-repeat: no-repeat;
+    }
 }
 
 .section-parent {
@@ -119,7 +125,7 @@
     margin: 0 auto;
 }
 
-.three-column-seperation .first-page-card-class:hover {
+.first-page-card-class:hover {
     transform: scale(1.1);
 }
 
@@ -185,14 +191,15 @@
 .picture-background-class {
     height: 80%;
     width: 100%;
-    background-Image: url('../../Assets/Pictures-background.png');
+    background-Image: url('https://res.cloudinary.com/tanzeelah/image/upload/v1597417927/Landing%20Page/Untitled-2_pdlp7e.png');
+    background-Image: url('https://res.cloudinary.com/tanzeelah/image/upload/v1597414281/Landing%20Page/What_we_offer_background_yagihw.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .comments-background-class {
     width: 100%;
-    background-Image: url('../../Assets/Comments-background.png');
+    background-Image: url('https://res.cloudinary.com/tanzeelah/image/upload/v1597418339/Landing%20Page/Untitled-5_gvf3rg.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -219,7 +226,7 @@
 @media only screen and (min-width: 401px)and (max-width: 1000px) {
     .section-parent {
         display: grid;
-        grid-template-rows: .5fr .5fr .5fr 2fr 2fr;
+        grid-template-rows: .2fr .3fr .2fr 2fr 2fr;
     }
     .equal-columns-grid-2 {
         height: 65vh;
@@ -237,6 +244,11 @@
         height: 60vh;
         margin: 0 auto;
     }
+    .anime-class-img {
+        width: 80vw;
+        height: 40vh;
+        margin-left: 4vw;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -245,8 +257,13 @@
         padding-top: 5em;
     }
     .anime-class-img-spec{
-        width: 90vw;
+        width: 99vw;
         height: 60vh;
+        margin: 0 auto;
+    }
+    .anime-class-img {
+        width: 99vw;
+        height: 35vh;
         margin: 0 auto;
     }
 }
@@ -277,11 +294,4 @@
     .comment-class-para {
         font-size: 4vw;
     }
-    .anime-class-img {
-        width: 90vw;
-        height: 35vh;
-        margin: 0 auto;
-    }
-
-    
 }

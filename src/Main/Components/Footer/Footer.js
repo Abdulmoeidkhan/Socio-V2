@@ -16,10 +16,17 @@ function MyFooter(props) {
       >
         <div className="container-footer">
           <div className="row">
-            
 
+
+            <div className="col-sm-12 col-md-6 division-class">
+
+              <h2 onClick={() => history.push("/")}>
+                <img className="logo-img-footer" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" />
+              </h2>
+
+            </div>
             <div className="col-xs-6 col-md-3 division-class">
-            <div className="spacing-class" />
+              <div className="spacing-class" />
               <h6
               >Quick Links</h6>
               <ul className="footer-links"
@@ -32,16 +39,10 @@ function MyFooter(props) {
               </ul>
             </div>
 
-            <div className="col-sm-12 col-md-6 division-class">
 
-              <h2 onClick={() => history.push("/")}>
-                <img className="logo-img-footer" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png"/>
-              </h2>
-
-            </div>
 
             <div className="col-xs-6 col-md-3 division-class">
-            <div className="spacing-class" />  
+              <div className="spacing-class" />
               <h6
               >GET IN TOUCH</h6>
               <ul className="footer-links"
