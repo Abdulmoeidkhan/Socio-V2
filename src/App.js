@@ -87,6 +87,8 @@ function App() {
       <div className="shutter-comp-class">
         <MainComponent />
       </div>
+      <div className="arrowUpKey" onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) }}><i className="fa fa-x fa-arrow-up" style={{ color: "#fff" }} aria-hidden="true"></i></div>
+      <div className="arrowDownKey" onClick={() => { window.scrollTo({ top: 15000, left: 0, behavior: "smooth" }) }}><i className="fa fa-x fa-arrow-down" style={{ color: "#fff" }} aria-hidden="true"></i></div>
     </div>
   )
 }

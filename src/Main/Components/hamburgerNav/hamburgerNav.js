@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Drawer, Button, Collapse, Modal } from 'antd';
+import React from 'react';
+import { Drawer, Button, Collapse } from 'antd';
 import "./hamburgerNav.css"
 import { MenuFoldOutlined } from '@ant-design/icons';
 import { useHistory } from "react-router-dom";
 import { ThemeContext } from "../../GlobalEnvironment/contextInit";
-// import { SignUp } from "../content/signUp/signUp.js"
 import firebase from "../../GlobalEnvironment/firebaseConfig"
 
 
@@ -12,64 +11,8 @@ import firebase from "../../GlobalEnvironment/firebaseConfig"
 const { Panel } = Collapse;
 
 const HamBurgerNav = (props) => {
-  const [visible, setVisible] = useState(false);
-  const [visibleModal, setvisibleModal] = useState(false)
-  const [currentUsersData, setcurrentUsersData] = useState(false)
-
-  const showDrawer = () => {
-    setVisible(true);
-  };
-  const showModal = () => {
-    setvisibleModal(true)
-  }
-
-  const onClose = () => {
-    setVisible(false);
-    setvisibleModal(false)
-  };
-  const handleCancel = () => {
-    setvisibleModal(false)
-  };
-  async function signIn(values) {
-    await firebase.signUp(values.username, values.email, values.password).then(() => {
-      alert("You have signed Up successfully ")
-    })
-      .catch(function (error) {
-        alert(error.message);
-      })
-    onClose()
-    props.setIsSignIn(true)
-  }
-  async function logIn(values) {
-    await firebase.login(values.email, values.password).then(() => {
-      alert("You have sign In successfully ")
-    })
-      .catch(function (error) {
-        alert(error.message);
-      })
-    onClose()
-    props.setIsSignIn(true)
-  }
-  async function logOut() {
-    onClose()
-    await firebase.logout().then(() => {
-      alert("You have sign Out successfully ")
-    })
-      .catch(function (error) {
-        alert(error.message);
-      })
-    props.setIsSignIn(false)
-    props.setIsAdminSignIn(false)
-  }
+  
   let history = useHistory()
-  useEffect(() => {
-    if (firebase.currentUsers()) {
-      setcurrentUsersData(true)
-    }
-    else if (firebase.currentUsers() === null && currentUsersData) {
-      setcurrentUsersData(false)
-    }
-  })
   return (
     <ThemeContext.Consumer>
       {colorsState => <>
@@ -94,20 +37,20 @@ const HamBurgerNav = (props) => {
           `
           }
         </style>
-        <Button onClick={showDrawer} style={{ backgroundColor: "none" }} icon={<MenuFoldOutlined />}>
+        <Button onClick={props.showDrawer} style={{ backgroundColor: "none" }} icon={<MenuFoldOutlined />}>
         </Button>
         <Drawer
           title={
             <div>
-
-              <h2 className="siderHeading">Socio-Linkage</h2>
+              {
+                !firebase.currentUsersData ? <h2 className="siderHeading">Socio-Linkage</h2> : <h2 className="siderHeading">Hello {firebase.currentUsers().displayName} !</h2>
+              }
             </div>
           }
           placement="right"
           closable={true}
-          onClose={onClose}
-          visible={visible}
-          className={props.mode}
+          onClose={props.onClose}
+          visible={props.visible}
         >
           {/* <div className="cursorClass"><Collapse accordion className="headerPanelClassForSideNav">
             <Panel style={{ border: "none" }} header={
@@ -134,7 +77,7 @@ const HamBurgerNav = (props) => {
             </Panel>
           </Collapse>
           </div> */}
-          <div className="cursorClass">
+          {/* <div className="cursorClass">
             <p onClick={() => {
               onClose()
               history.push("/aboutUs")
@@ -149,34 +92,9 @@ const HamBurgerNav = (props) => {
             }}>
               Comparison
           </p>
-          </div>
-          {/* <div className="cursorClass">
-            {!currentUsersData ?
-              <>
-                <Button type="primary" onClick={showModal}>
-                  Register With Us
-        </Button>
-                <Modal
-                  title="Sign Up/In"
-                  visible={visibleModal}
-                  onCancel={handleCancel}
-                  footer={null}
-                >
-                   <SignUp signIn={signIn} logIn={logIn} /> 
-                </Modal>
-              </>
-              : <div>
-                <Button type="primary" onClick={() => {
-                  onClose()
-                  history.push("/ApplicationForm")
-                }
-                }>Submit an Application</Button>
-                <br />
-                <br />
-                <Button type="primary" onClick={logOut}>Log Out</Button>
-              </div>
-            }
           </div> */}
+          <div className="cursorClass">
+          </div>
         </Drawer>
       </>
       }

@@ -1,0 +1,46 @@
+.ant-modal-close-x .anticon-close {
+    color: #01989d;
+    transition: all .5s ease;
+}
+
+a.ant-typography, .ant-checkbox-checked .ant-checkbox-inner {
+    color: #01989d !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner, .ant-btn-primary {
+    background-color: #01989d !important;
+    border-color: #01989d !important;
+}
+
+.ant-modal-content, .ant-modal-header, .signUpForm .ant-form-item:nth-child(1), .signUpForm .ant-form-item:nth-child(2), .signUpForm .ant-form-item:nth-child(3), .signUpForm .ant-form-item:nth-child(6) div:hover, .logInForm .ant-form-item:nth-child(1), .logInForm .ant-form-item:nth-child(2), .logInForm .ant-form-item:nth-child(5) div:hover {
+    border-radius: 16px !important;
+    border-color: transparent;
+    -webkit-box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+    transition: all .5s ease;
+}
+
+.signUpForm .ant-form-item:nth-child(1), .signUpForm .ant-form-item:nth-child(2), .signUpForm .ant-form-item:nth-child(3), .logInForm .ant-form-item:nth-child(1), .logInForm .ant-form-item:nth-child(2) {
+    transition: all .5s ease;
+    margin-bottom: 20px;
+}
+
+.signUpForm .ant-form-item:nth-child(6) div, .logInForm .ant-form-item:nth-child(5) div, .logInForm .ant-form-item:nth-child(5), .signUpForm .ant-form-item:nth-child(6) {
+    transition: all .5s ease;
+    border-radius: 16px !important;
+}
+
+.ant-form-item-control-input-content input, .ant-input-password {
+    outline: none !important;
+    border-radius: 16px !important;
+    border-color: transparent !important;
+}
+
+.ant-input:hover, .ant-input:focus, .ant-input-focused, .ant-input-affix-wrapper:hover, .ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused {
+    border-color: #01989d !important;
+}
+
+.ant-form-item .ant-col-16, .ant-form-item-control-input-content .ant-btn-primary, .ant-checkbox-wrapper {
+    margin: 0 auto;
+    width: 100%;
+}

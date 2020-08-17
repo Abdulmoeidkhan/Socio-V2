@@ -75,9 +75,10 @@
 }
 .siderHeading{
     color:#fff;
-    width:160px;
+    width:100%;
     margin:0 auto;
     transition: all .5s ease;
+    text-transform: uppercase; 
 }
 .cursorClass{
     cursor: pointer ;

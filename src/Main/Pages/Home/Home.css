@@ -30,10 +30,6 @@
     }
 }
 
-.section-parent {
-    display: grid;
-    grid-template-rows: .5fr .5fr .5fr 2fr 2fr;
-}
 
 .equal-columns-grid-2 {
     height: 80vh;
@@ -91,7 +87,7 @@
     margin: 0 auto;
     height: 40vh;
     text-align: center;
-    background: rgb(242, 242, 242, 0.4)
+    background: rgb(242, 242, 242, 0.6)
 }
 
 .first-page-card-class {
@@ -173,7 +169,7 @@
 }
 
 .testimonial-sec .center-class {
-    height: 25vh;
+    height: 30vh;
 }
 .center-class .content-para{
     margin: 0 auto !important;
@@ -226,7 +222,7 @@
 @media only screen and (min-width: 401px)and (max-width: 1000px) {
     .section-parent {
         display: grid;
-        grid-template-rows: .2fr .3fr .2fr 2fr 2fr;
+        grid-template-rows: .2fr .4fr .2fr 2fr 2fr;
     }
     .equal-columns-grid-2 {
         height: 65vh;
@@ -245,7 +241,7 @@
         margin: 0 auto;
     }
     .anime-class-img {
-        width: 80vw;
+        width: 85vw;
         height: 40vh;
         margin-left: 4vw;
     }

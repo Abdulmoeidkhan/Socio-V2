@@ -1,14 +1,93 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import HamBurgerNav from "../hamburgerNav/hamburgerNav"
-import { Layout } from 'antd';
+import { Layout,Modal } from 'antd';
 import { ThemeContext } from "../../GlobalEnvironment/contextInit";
 import { useHistory } from "react-router-dom";
+import firebase from "../../GlobalEnvironment/firebaseConfig";
+import SignUp from "../SignUp/SignUp.js"
 import "./Nav-Menu.css"
 
 const { Header } = Layout;
 
 const NavBar = () => {
-    
+    const [isSignIn, setIsSignIn] = useState(false)
+    const [isAdminSignIn, setIsAdminSignIn] = useState(false)
+    const [visible, setVisible] = useState(false);
+    const [visibleModal, setvisibleModal] = useState(false)
+    const [currentUsersData, setcurrentUsersData] = useState(false)
+
+
+    const showDrawer = () => {
+        setVisible(true);
+    };
+
+    const showModal = () => {
+        setvisibleModal(true)
+    }
+
+    const onClose = () => {
+        setVisible(false);
+        setvisibleModal(false)
+    };
+
+    const handleCancel = () => {
+        setvisibleModal(false)
+    };
+    async function signIn(values) {
+        await firebase.signUp(values.username, values.email, values.password).then(() => {
+            alert("You have signed Up successfully ")
+        })
+            .catch(function (error) {
+                alert(error.message);
+            })
+        onClose()
+        setIsSignIn(true)
+    }
+    async function logIn(values) {
+        await firebase.login(values.email, values.password).then(() => {
+            alert("You have sign In successfully ")
+        })
+            .catch(function (error) {
+                alert(error.message);
+            })
+        onClose()
+        setIsSignIn(true)
+    }
+    async function logOut() {
+        onClose()
+        await firebase.logout().then(() => {
+            alert("You have sign Out successfully ")
+        })
+            .catch(function (error) {
+                alert(error.message);
+            })
+        setIsSignIn(false)
+        setIsAdminSignIn(false)
+    }
+
+
+
+
+
+
+    useEffect(() => {
+        console.log(isSignIn)
+        if (!isSignIn) {
+            if (firebase.currentUsers()) { setIsSignIn(true) }
+        }
+        if (!isAdminSignIn) {
+            firebase.currenAdminUser().then(response => {
+                setIsAdminSignIn(response.flag)
+            })
+        }
+        if (firebase.currentUsers()) {
+            setcurrentUsersData(true)
+        }
+        else if (firebase.currentUsers() === null && currentUsersData) {
+            setcurrentUsersData(false)
+        }
+    })
+
     let history = useHistory()
 
     return (<ThemeContext.Consumer>
@@ -59,15 +138,34 @@ const NavBar = () => {
                     }
                 </style>
                 <Header className="header-class">
-                    <h2 className="logo" onClick={()=> history.push("/")}>
-                        <img className="logo-img" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png"/>
-                        </h2>
+                    <h2 className="logo" onClick={() => history.push("/")}>
+                        <img className="logo-img" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" />
+                    </h2>
                     <div className="logo1 navigation-menu-class">
-                        <HamBurgerNav />
+                        <HamBurgerNav setIsSignIn={setIsSignIn} setIsAdminSignIn={setIsAdminSignIn} visible={visible} currentUsersData={currentUsersData} onClose={onClose} showDrawer={showDrawer}/>
                     </div>
-                    <div className="logo1">
-                        <button className="register-button-class">Register</button>
-                    </div>
+                    {!currentUsersData ?
+                        <div className="logo1">
+                                <button className="register-button-class" onClick={showModal}>
+                                    Register
+                                </button>
+                            <Modal
+                                title="Sign Up/In"
+                                visible={visibleModal}
+                                onCancel={handleCancel}
+                                footer={null}
+                            >
+                                <SignUp signIn={setIsSignIn} logIn={logIn} />
+                            </Modal>
+                        </div>
+                        : <div>
+                            <div className="logo1">
+                                    <button className="register-button-class"  onClick={logOut}>
+                                        Log Out
+                                    </button>
+                            </div>
+                        </div>
+                    }
                     <div className="logo1 contact-class-parent">
                         <p className="contact-class">Call Us +923333466728</p>
                     </div>
