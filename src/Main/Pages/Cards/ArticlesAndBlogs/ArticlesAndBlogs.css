@@ -12,7 +12,7 @@
     }
 }
 
-.card-three-column-seperation, .ant-card {
+.card-three-column-seperation,.card-three-column-seperation .ant-card {
     margin: 60px auto;
     width: 90%;
 }

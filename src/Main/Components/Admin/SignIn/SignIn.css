@@ -1,0 +1,11 @@
+.admin-signin #basic{
+    height: 100vh;
+}
+.admin-signin{
+    display: grid;
+    grid-row: 1fr;
+    margin: 25%;
+}
+.admin-signin .content-head{
+    margin: 25px auto;
+}

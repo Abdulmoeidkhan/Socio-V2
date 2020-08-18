@@ -116,6 +116,7 @@ class Firebase {
     currentUsers() {
         return this.auth.currentUser
     }
+    
     async login(email, password) {
         await this.auth.signInWithEmailAndPassword(email, password)
         return this.auth.currentUser
@@ -134,20 +135,13 @@ class Firebase {
         )
         return this.auth.currentUser
     }
+
     isInitialized() {
         return new Promise(resolve => {
             this.auth.onAuthStateChanged(resolve)
         })
     }
-    async getDateData() {
-        let dataToBeReturn
-        let myData = this.db.ref("events").once("value", snap => {
-            dataToBeReturn = snap.val()
-        }
-        )
-        await myData
-        return (dataToBeReturn)
-    }
+
     async formSubmit(object) {
         let data = this.db.ref("/").child("users").child(this.auth.currentUser.uid).child("form").set(object)
         await data

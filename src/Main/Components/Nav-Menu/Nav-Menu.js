@@ -11,7 +11,6 @@ const { Header } = Layout;
 
 const NavBar = () => {
     const [isSignIn, setIsSignIn] = useState(false)
-    const [isAdminSignIn, setIsAdminSignIn] = useState(false)
     const [visible, setVisible] = useState(false);
     const [visibleModal, setvisibleModal] = useState(false)
     const [currentUsersData, setcurrentUsersData] = useState(false)
@@ -62,7 +61,6 @@ const NavBar = () => {
                 alert(error.message);
             })
         setIsSignIn(false)
-        setIsAdminSignIn(false)
     }
 
 
@@ -74,11 +72,6 @@ const NavBar = () => {
         console.log(isSignIn)
         if (!isSignIn) {
             if (firebase.currentUsers()) { setIsSignIn(true) }
-        }
-        if (!isAdminSignIn) {
-            firebase.currenAdminUser().then(response => {
-                setIsAdminSignIn(response.flag)
-            })
         }
         if (firebase.currentUsers()) {
             setcurrentUsersData(true)
@@ -142,7 +135,7 @@ const NavBar = () => {
                         <img className="logo-img" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" />
                     </h2>
                     <div className="logo1 navigation-menu-class">
-                        <HamBurgerNav setIsSignIn={setIsSignIn} setIsAdminSignIn={setIsAdminSignIn} visible={visible} currentUsersData={currentUsersData} onClose={onClose} showDrawer={showDrawer}/>
+                        <HamBurgerNav setIsSignIn={setIsSignIn} visible={visible} currentUsersData={currentUsersData} onClose={onClose} showDrawer={showDrawer}/>
                     </div>
                     {!currentUsersData ?
                         <div className="logo1">

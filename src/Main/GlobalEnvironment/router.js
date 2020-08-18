@@ -6,15 +6,17 @@ import Blogs from "../Pages/Blogs/Blogs.js";
 import ContactUs from "../Pages/Contact/Contact.js";
 import TandC from "../Pages/TandC/TandC.js";
 import PrivacyPolicies from "../Pages/PrivacyPolicies/PrivacyPolicies.js";
-import Comparison from "../Pages/Cards/Comparison/Comparison.js"
-import NewsAndEvents from "../Pages/Cards/NewsAndEvents/NewsAndEvents.js"
-import ConsultationAndEvaluation from "../Pages/Cards/ConsultationAndEvaluation/ConsultationAndEvaluation.js"
-import ArticlesAndBlogs from "../Pages/Cards/ArticlesAndBlogs/ArticlesAndBlogs.js"
-import ReferralsAndLinks from "../Pages/Cards/ReferralsAndLinks/ReferralsAndLinks.js"
-import EducatingAboutSocialWork from "../Pages/Cards/EducatingAboutSocialWork/EducatingAboutSocialWork.js"
-import PWAAndChromeLessBrowsing from "../Pages/Cards/PWAAndChromeLessBrowsing/PWAAndChromeLessBrowsing.js"
-import SMM from "../Pages/Cards/SMM/SMM.js"
-import TheGraphicGuru from "../Pages/Cards/TheGraphicGuru/TheGraphicGuru.js"
+import Comparison from "../Pages/Cards/Comparison/Comparison.js";
+import NewsAndEvents from "../Pages/Cards/NewsAndEvents/NewsAndEvents.js";
+import ConsultationAndEvaluation from "../Pages/Cards/ConsultationAndEvaluation/ConsultationAndEvaluation.js";
+import ArticlesAndBlogs from "../Pages/Cards/ArticlesAndBlogs/ArticlesAndBlogs.js";
+import ReferralsAndLinks from "../Pages/Cards/ReferralsAndLinks/ReferralsAndLinks.js";
+import EducatingAboutSocialWork from "../Pages/Cards/EducatingAboutSocialWork/EducatingAboutSocialWork.js";
+import PWAAndChromeLessBrowsing from "../Pages/Cards/PWAAndChromeLessBrowsing/PWAAndChromeLessBrowsing.js";
+import SMM from "../Pages/Cards/SMM/SMM.js";
+import TheGraphicGuru from "../Pages/Cards/TheGraphicGuru/TheGraphicGuru.js";
+import AdminSignIn from "../Components/Admin/SignIn/SignIn";
+import AdminDashBoard from "../Components/Admin/DashBoard/DashBoard"
 import {
     BrowserRouter as Router,
     Switch,
@@ -44,6 +46,8 @@ function Routes(props) {
                 <Route path={`/PWAAndChromeLessBrowsing`} component={props=><PWAAndChromeLessBrowsing {...props}/>} />
                 <Route path={`/SMM`} component={props=><SMM {...props}/>} />
                 <Route path={`/TheGraphicGuru`} component={props=><TheGraphicGuru {...props}/>} />
+                <Route path={`/Admin/SignIn`} component={props=><AdminSignIn {...props}/>} />
+                <Route path={`/Admin/DashBoard`} component={props=><AdminDashBoard {...props}/>} />
             </Switch>
         </Router>
     );
