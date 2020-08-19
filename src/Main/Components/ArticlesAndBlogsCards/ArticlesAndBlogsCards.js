@@ -29,8 +29,8 @@ const ArticlesAndBlogsCards = () => {
                     <Card title="Articles" bordered={true}>
                         {content.article}
                     </Card>
-                    <Card title="Organizational News" bordered={true}>
-                        {content.news}
+                    <Card title="Blogs" bordered={true}>
+                        {content.blogs}
                     </Card>
                     
                 </div>

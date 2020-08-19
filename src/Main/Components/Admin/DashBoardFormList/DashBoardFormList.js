@@ -22,7 +22,8 @@ const Data = (props) => {
                 {`Email:${props.item.value.email}`}
             </Card>
             <Collapse isOpened={isChanged} key={props.i + 1}>
-                {props.item.value.form ?
+                {
+                props.item.value.form ?
                 <>
                     <Descriptions bordered className="adminDashApplicationForm" key={props.i}>
                         <Descriptions.Item label="Name" span={3} key={props.i + 2}>{props.item.value.name}</Descriptions.Item>
@@ -36,7 +37,8 @@ const Data = (props) => {
                     </Descriptions> 
                     <br/>
                     </>:
-                    <Empty key={props.i + 10} />}
+                    <Empty key={props.i + 10} />
+                    }
             </Collapse>
         </div>
     )

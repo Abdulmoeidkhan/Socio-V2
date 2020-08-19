@@ -77,7 +77,7 @@
 .content-para {
     font-size: 18px;
     text-align: justify;
-    padding-right: 4vw;
+    padding-right: 6vw;
     line-height: 25px;
     font-weight: 600;
 }
@@ -219,10 +219,37 @@
     }
 }
 
-@media only screen and (min-width: 401px)and (max-width: 1000px) {
+@media only screen and (min-width: 401px)and (max-width: 700px) {
     .section-parent {
         display: grid;
         grid-template-rows: .2fr .4fr .2fr 2fr 2fr;
+    }
+    .equal-columns-grid-2 {
+        height: 65vh;
+        padding-top: 9em;
+    }
+    .card-background-class {
+        height: 80%;
+        width: 100vw;
+        background-Image: url('../../Assets/Card-background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .anime-class-img-spec{
+        width: 90vw;
+        height: 60vh;
+        margin: 0 auto;
+    }
+    .anime-class-img {
+        width: 85vw;
+        height: 40vh;
+        margin-left: 4vw;
+    }
+}
+@media only screen and (min-width: 701px)and (max-width: 1000px) {
+    .section-parent {
+        display: grid;
+        grid-template-rows: .2fr .4fr .2fr 1.5fr 1.8fr;
     }
     .equal-columns-grid-2 {
         height: 65vh;

@@ -27,6 +27,14 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr)
     }
+    .news-card-content-content-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .card-equal-columns-grid-1{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
 }
 
 @media only screen and (min-width: 200px)and (max-width: 700px) {
@@ -38,15 +46,13 @@
         display: grid;
         grid-template-rows: repeat(3, 1fr)
     }
+    .news-card-content-content-2{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
 }
-.card-equal-columns-grid-1{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-.news-card-content-content-2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
+
 .cards-page-img-center{
     margin: 0 auto;
 }

@@ -1,13 +1,40 @@
 .site-card-wrapper{
     background-color: transparent;
-    margin:0 auto 10px auto;
-    
+    width: 87vw;
+    -webkit-box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+    transition: all .5s ease;
 }
-.specialaboutDiv {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-columns: repeat(2,1fr);
-    padding-left: 2px;
+
+
+@media screen and (min-width:771px){
+    .widthClass{
+        width:100%;
+    }
+    .cardImgClass{
+        width:36vw;
+    }
+    .cardImage{
+        height: 200px;
+        /* margin-top: 50px; */
+        margin: 50px 55px;
+    }
+    .specialaboutDiv {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .specialaboutDiv .ant-card-bordered,.specialaboutDiv,.site-card-wrapper{
+        margin:10px ;
+        border-radius: 16px !important;
+        border-color: transparent;
+        -webkit-box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+        box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+        transition: all .5s ease;
+    }
+    
+
 }
 @media screen and (max-width: 770px) and (min-width: 1px){
     .specialaboutDiv {
@@ -16,17 +43,15 @@
         grid-template-rows: repeat(2,1fr);
     }
     .cardImage, .cardImgClass{
-        max-width: 290px;
+        width: 70vw;
     }
-}
-.widthClass{
-    width:100%;
-}
-.cardImgClass{
-    width:36vw;
-}
-.cardImage{
-    height: 200px;
-    /* margin-top: 50px; */
-    margin: 50px 55px;
+    .specialaboutDiv .ant-card-bordered,.specialaboutDiv,.site-card-wrapper{
+        margin:10px auto ;
+        border-radius: 16px !important;
+        border-color: transparent;
+        -webkit-box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+        box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+        transition: all .5s ease;
+        width: 95%;
+    }
 }
