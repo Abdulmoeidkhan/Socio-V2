@@ -16,7 +16,8 @@ import PWAAndChromeLessBrowsing from "../Pages/Cards/PWAAndChromeLessBrowsing/PW
 import SMM from "../Pages/Cards/SMM/SMM.js";
 import TheGraphicGuru from "../Pages/Cards/TheGraphicGuru/TheGraphicGuru.js";
 import AdminSignIn from "../Components/Admin/SignIn/SignIn";
-import AdminDashBoard from "../Components/Admin/DashBoard/DashBoard"
+import AdminDashBoard from "../Components/Admin/DashBoard/DashBoard";
+import Territories from "../Pages/Territories/Territories"
 import {
     BrowserRouter as Router,
     Switch,
@@ -48,6 +49,7 @@ function Routes(props) {
                 <Route path={`/TheGraphicGuru`} component={props=><TheGraphicGuru {...props}/>} />
                 <Route path={`/Admin/SignIn`} component={props=><AdminSignIn {...props}/>} />
                 <Route path={`/Admin/DashBoard`} component={props=><AdminDashBoard {...props}/>} />
+                <Route path={`/Territories`} component={props=><Territories {...props}/>} />
             </Switch>
         </Router>
     );

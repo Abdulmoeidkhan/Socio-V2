@@ -11,7 +11,7 @@ import firebase from "../../GlobalEnvironment/firebaseConfig"
 const { Panel } = Collapse;
 
 const HamBurgerNav = (props) => {
-  
+
   let history = useHistory()
   return (
     <ThemeContext.Consumer>
@@ -77,23 +77,37 @@ const HamBurgerNav = (props) => {
             </Panel>
           </Collapse>
           </div> */}
-          {/* <div className="cursorClass">
+          <div className="cursorClass">
             <p onClick={() => {
-              onClose()
-              history.push("/aboutUs")
+              props.onClose()
+              history.push("/")
             }}>
-              About Us
+              Home
           </p>
           </div>
           <div className="cursorClass">
             <p onClick={() => {
-              onClose()
-              history.push("/Comparison")
+              props.onClose()
+              history.push("/AboutSocioLinkage")
             }}>
-              Comparison
+              About Socio-Linkage
           </p>
-          </div> */}
+          </div>
           <div className="cursorClass">
+            <p onClick={() => {
+              props.onClose()
+              history.push("/AreaOfWorking")
+            }}>
+              Area of working
+          </p>
+          </div>
+          <div className="cursorClass">
+            <p onClick={() => {
+              props.onClose()
+              history.push("/Territories")
+            }}>
+              Territories
+          </p>
           </div>
         </Drawer>
       </>
