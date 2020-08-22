@@ -1,6 +1,7 @@
 .banner-img {
     height: 100vh;
-    background-Image: url('https://res.cloudinary.com/tanzeelah/image/upload/v1596535716/Landing%20Page/BG_ek5fxh.jpg');
+    background-Image: url('https://res.cloudinary.com/tanzeelah/image/upload/v1597076636/Landing%20Page/Background_Without_Text_wdblz5.jpg');
+    background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
 }

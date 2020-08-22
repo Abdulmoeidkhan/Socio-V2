@@ -123,6 +123,7 @@
 
 .first-page-card-class:hover {
     transform: scale(1.1);
+    z-index: 1;
 }
 
 .card-img-class {

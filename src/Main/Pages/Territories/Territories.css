@@ -1,3 +1,7 @@
+.content-container-class{
+    scroll-behavior: smooth;
+}
+
 .terr-section-parent .equal-columns-grid, .terr-section-parent .equal-columns-grid .content-content-1,.terr-section-parent .ant-descriptions-bordered,.detail-territory {
     border-radius: 16px !important;
     border-color: transparent;
@@ -52,11 +56,12 @@
     transition: all 1s ease;
     transform: scale(1);
 }
-#link-class{
+.link-class{
     text-decoration: none;
     display: grid;
-    color:#000
+    color:#000; 
 }
+
 .detail-territory .pakistanBoldPara {
     line-height: 25px;
     padding-right: 20px

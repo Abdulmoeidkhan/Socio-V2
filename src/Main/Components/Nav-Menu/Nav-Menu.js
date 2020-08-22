@@ -160,7 +160,7 @@ const NavBar = () => {
                         </div>
                     }
                     <div className="logo1 contact-class-parent">
-                        <p className="contact-class">Call Us +923333466728</p>
+                        <a className="contact-class" title="+923333466728" href="tel:+923333466728" target="_blank">Call Us +923333466728</a>
                     </div>
                 </Header>
             </>

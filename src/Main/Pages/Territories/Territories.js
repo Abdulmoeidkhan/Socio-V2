@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { Layout, Descriptions, Table } from 'antd';
 import { ThemeContext } from "../../GlobalEnvironment/contextInit";
 import NavBar from "../../Components/Nav-Menu/Nav-Menu";
@@ -7,6 +7,8 @@ import {
     useHistory
 } from "react-router-dom";
 import "./Territories.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 
@@ -282,6 +284,10 @@ const columns3 = [
 
 const Territories = (props) => {
     let history = useHistory()
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    })
     return (
         <>
             <ThemeContext.Consumer>
@@ -303,11 +309,11 @@ const Territories = (props) => {
                         </style>
                         <NavBar />
                         <Content className="content-container-class">
-                            <div className="spacing-class" />
+                            {/* <div className="spacing-class" /> */}
                             <div className="terr-section-parent">
                                 <section className="equal-columns-grid">
                                     <div>
-                                        <a href="#pakistan" id="link-class">
+                                        <a href="#pakistan" className="link-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="1000">
                                             <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Pakistan_Maps_oklowt.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Pakistan_Maps_oklowt.png"} />
                                         </a>
                                     </div>
@@ -326,14 +332,14 @@ const Territories = (props) => {
                                         <p className="content-para"> Sindh, also spelled Sind, province of southeastern Pakistan. It is bordered by the provinces of Balochistān on the west and north, Punjab on the northeast, the Indian states of Rajasthan and Gujarat to the east, and the Arabian Sea to the south. Sindh is essentially part of the Indus River delta and has derived its name from that river, which is known in Pakistan as the Sindhu. The province of Sindh was established in 1970. The provincial capital, Karāchi, is situated on the southwestern coast. Area 54,407 square miles (140,914 square km). Pop. (2006 est.) 35,864,000.</p>
                                     </div>
                                     <div>
-                                        <a href="#sindh" id="link-class">
+                                        <a href="#sindh" className="link-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="500">
                                             <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538802/Territories/Sindh_tj4hij.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538802/Territories/Sindh_tj4hij.png"} />
                                         </a>
                                     </div>
                                 </section>
                                 <section className="equal-columns-grid">
                                     <div>
-                                        <a href="#punjab" id="link-class">
+                                        <a href="#punjab" className="link-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="500">
                                             <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Punjab_uhrvc5.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Punjab_uhrvc5.png"} />
                                         </a>
                                     </div>
@@ -352,14 +358,14 @@ const Territories = (props) => {
                                         <p className="content-para"> Balochistan, also spelled Balūchistān, westernmost province of Pakistan. It is bordered by Iran (west), by Afghanistan (northwest), by Khyber Pakhtunkhwa and Punjab provinces (northeast and east), by Sindh province (southeast), and by the Arabian Sea (south).</p>
                                     </div>
                                     <div>
-                                        <a href="#balochistan" id="link-class">
+                                        <a href="#balochistan" className="link-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="500">
                                             <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Balochistan_rysd9s.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Balochistan_rysd9s.png"} />
                                         </a>
                                     </div>
                                 </section>
                                 <section className="equal-columns-grid">
                                     <div>
-                                        <a href="#kpk" id="link-class">
+                                        <a href="#kpk" className="link-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="500">
                                             <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Khyber_Pakhtunkwa_y0xn03.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Khyber_Pakhtunkwa_y0xn03.png"} />
                                         </a>
                                     </div>
@@ -378,14 +384,14 @@ const Territories = (props) => {
                                         <p className="content-para"> Gilgit, town in Gilgit-Baltistan, part of the Pakistani-administered sector of the Kashmir region, in the northern Indian subcontinent. It is situated in the Karakoram Range in a narrow valley on the Gilgit River at its confluence with the Hunza River and about 20 miles (32 km) upstream from its confluence with the Indus River. The town was once a Buddhist centre; now, as in earlier days, it serves as a frontier station for local tribal areas. Its economy is mainly agricultural, with wheat, corn (maize), and barley as the main crops. Tourism, notably trekking and mountaineering in the Karakorams, is growing in importance. The main route from Gilgit through the mountains to Mansehra in Khyber Pakhtunkhwa province is the Karakoram Highway (completed in 1978); the town has a small airport. Gilgit is the only town of any size in the region. Pop. (1998 prelim.) 8,200.</p>
                                     </div>
                                     <div>
-                                        <a href="#gilgit" id="link-class">
+                                        <a href="#gilgit" className="link-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="500">
                                             <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Gilgit_Balistan_e326mw.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Gilgit_Balistan_e326mw.png"} />
                                         </a>
                                     </div>
                                 </section>
                                 <section className="equal-columns-grid">
                                     <div>
-                                        <a href="#kashmir" id="link-class">
+                                        <a href="#kashmir" className="link-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="500">
                                             <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Azad_Kashmir_s3orvd.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Azad_Kashmir_s3orvd.png"} />
                                         </a>
                                     </div>

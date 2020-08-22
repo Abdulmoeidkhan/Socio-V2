@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.5.3",
+    "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.5.0",
     "firebase": "^7.15.1",
     "firebase-tools": "^8.6.0",

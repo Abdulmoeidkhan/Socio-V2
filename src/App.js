@@ -11,14 +11,14 @@ function App() {
   useEffect(() => {
     firebase.isInitialized().then(val => {
       setTimeout(function () {
+        window.scrollTo(0, 0)
         setfirebaseInitializes(true)
       }, 3000)
-      console.log(firebaseInitializes)
     })
   })
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [firebaseInitializes])
+  // useEffect(() => {
+    
+  // }, [firebaseInitializes])
 
   return (
     <div className="App">
@@ -31,7 +31,6 @@ function App() {
             .shutter-Img-Class {
               width: 100%;
               height: 90vh;
-              padding-top: 15vh;
               transition: all 1s ease;
               transform: scale(0);
               position:fixed;
@@ -41,7 +40,6 @@ function App() {
             .shutter-Img-Class {
               width: 90%;
               height: 90vh;
-              padding-top: 15vh;
               transition: all 1s ease;
               transform: scale(0);
               position:fixed;
@@ -60,7 +58,6 @@ function App() {
             .shutter-Img-Class {
               width: 100%;
               height: 90vh;
-              padding-top: 15vh;
               transition: all 1s ease;
               transform: scale(1);
               position:fixed;
@@ -70,7 +67,6 @@ function App() {
             .shutter-Img-Class {
               width: 90%;
               height: 90vh;
-              padding-top: 15vh;
               transition: all 1s ease;
               transform: scale(1);
               position:fixed;

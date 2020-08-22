@@ -43,7 +43,7 @@ const HamBurgerNav = (props) => {
           title={
             <div>
               {
-                !firebase.currentUsersData ? <h2 className="siderHeading">Socio-Linkage</h2> : <h2 className="siderHeading">Hello {firebase.currentUsers().displayName} !</h2>
+                !firebase.currentUsers() ? <h2 className="siderHeading">Socio-Linkage</h2> : <h2 className="siderHeading">Hello {firebase.currentUsers().displayName} !</h2>
               }
             </div>
           }
