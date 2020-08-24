@@ -60,19 +60,19 @@ const ArticlesAndBlogs = (props) => {
                                     <div className="card-background-class">
                                         <div className="card-card-container-class">
                                             <div className="card-three-column-seperation">
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/Comparison")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">WELL-INFORMED MAN , IS A WISE MAN</h2>
                                                     <p>
                                                     It’s good to know what’s going on around the world but not so sure where to get all the info? View our articles and give them a read right now!
                                                 </p>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/NewsAndEvents")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Access our Blog</h2>
                                                     <p>
                                                     Make sure to view our Blog section where our writers bring you the best of things!
                                                 </p>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/ConsultationAndEvaluation")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Love to write? </h2>
                                                     <p>
                                                     Think u can write something everyone loves to read? Join our bloggers team today contact us now

@@ -59,13 +59,13 @@ const PWAAndChromeLessBrowsing = (props) => {
                                     <div className="card-background-class">
                                         <div className="card-card-container-class">
                                             <div className="card-two-column-seperation">
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/ConsultationAndEvaluation")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Access without Browser </h2>
                                                     <p>
                                                     View Socio-linkage without a browser anywhere anytime through our plug in!
                                                 </p>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/Comparison")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Dual-view option</h2>
                                                     <p>
                                                     Dual-view option

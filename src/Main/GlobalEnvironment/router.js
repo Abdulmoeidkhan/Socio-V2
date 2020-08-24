@@ -17,7 +17,14 @@ import SMM from "../Pages/Cards/SMM/SMM.js";
 import TheGraphicGuru from "../Pages/Cards/TheGraphicGuru/TheGraphicGuru.js";
 import AdminSignIn from "../Components/Admin/SignIn/SignIn";
 import AdminDashBoard from "../Components/Admin/DashBoard/DashBoard";
-import Territories from "../Pages/Territories/Territories"
+import Territories from "../Pages/Territories/Territories";
+import Pakistan from "../Pages/Territories/Pakistan/Pakistan";
+import Sindh from "../Pages/Territories/Sindh/Sindh";
+import Punjab from "../Pages/Territories/Punjab/Punjab";
+import Balochistan from "../Pages/Territories/Balochistan/Balochistan";
+import KPK from "../Pages/Territories/KPK/KPK";
+import Gilgit from "../Pages/Territories/Gilgit/Gilgit";
+import Kashmir from "../Pages/Territories/Kashmir/Kashmir";
 import {
     BrowserRouter as Router,
     Switch,
@@ -49,11 +56,19 @@ function Routes(props) {
                 <Route path={`/TheGraphicGuru`} component={props=><TheGraphicGuru {...props}/>} />
                 <Route path={`/Admin/SignIn`} component={props=><AdminSignIn {...props}/>} />
                 <Route path={`/Admin/DashBoard`} component={props=><AdminDashBoard {...props}/>} />
-                <Route path={`/Territories`} component={props=><Territories {...props}/>} />
+                <Route path={`/Territories`} component={props=><Territories {...props}/>} exact/>
+                <Route path={`/Territories/Pakistan`} component={props=><Pakistan {...props}/>} />
+                <Route path={`/Territories/Sindh`} component={props=><Sindh {...props}/>} />
+                <Route path={`/Territories/Punjab`} component={props=><Punjab {...props}/>} />
+                <Route path={`/Territories/Balochistan`} component={props=><Balochistan {...props}/>} />
+                <Route path={`/Territories/KPK`} component={props=><KPK {...props}/>} />
+                <Route path={`/Territories/Gilgit`} component={props=><Gilgit {...props}/>} />
+                <Route path={`/Territories/Kashmir`} component={props=><Kashmir {...props}/>} />
             </Switch>
         </Router>
     );
 }
 
 export default Routes;
+
 

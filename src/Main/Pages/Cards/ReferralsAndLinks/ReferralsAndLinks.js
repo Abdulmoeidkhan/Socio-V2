@@ -51,13 +51,13 @@ const ReferralsAndLinks = (props) => {
                                     <div className="card-background-class">
                                         <div className="card-card-container-class">
                                             <div className="card-two-column-seperation">
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/Comparison")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Reach out to someone</h2>
                                                     <p>
                                                     Some problems need all hands-on deck, Socio-Linkage ensures your bridging to the right person! Contact us 
                                                 </p>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/ConsultationAndEvaluation")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Let’s Work together </h2>
                                                     <p>
                                                     Think you know someone who’d like to be a part of the Socio-Linkage Family? Connect to our social media and spread the word!

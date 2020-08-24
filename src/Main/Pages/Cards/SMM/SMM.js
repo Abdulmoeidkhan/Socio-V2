@@ -51,19 +51,19 @@ const SMM = (props) => {
                                     <div className="card-background-class">
                                         <div className="card-card-container-class">
                                             <div className="card-three-column-seperation">
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/Comparison")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Get the word out</h2>
                                                     <p>
                                                     Let Socio-Linkage feature your product on its Social Media Platforms and let yourself be known! 
                                                 </p>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/ConsultationAndEvaluation")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Connect to a wider world </h2>
                                                     <p>
                                                     Advertise on our site and let your name be known to people!
                                                 </p>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/ConsultationAndEvaluation")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Feature us and get discounts </h2>
                                                     <p>
                                                     Feature us and get discounts

@@ -59,19 +59,19 @@ const ConsultationAndEvaluation = (props) => {
                                     <div className="card-background-class">
                                         <div className="card-card-container-class">
                                             <div className="card-three-column-seperation">
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/Comparison")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Reach out</h2>
                                                     <p>
                                                     Contact our experts’ panel and get timely responses and address your problems in a safe and professional setting.
                                                 </p>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/NewsAndEvents")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Consult before carrying</h2>
                                                     <p>
                                                     We all need a bit of help in life every now and then, contact our experts right now and take advice to take life head on.
                                                 </p>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/ConsultationAndEvaluation")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Online Counselling session</h2>
                                                     <p>
                                                     Be a part of Counselling sessions with our experts to see the world with a clearer lens, the end of all your problems, a few clicks away.

@@ -15,10 +15,7 @@ function App() {
         setfirebaseInitializes(true)
       }, 3000)
     })
-  })
-  // useEffect(() => {
-    
-  // }, [firebaseInitializes])
+  },[])
 
   return (
     <div className="App">

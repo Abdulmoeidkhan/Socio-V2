@@ -60,19 +60,19 @@ const NewsAndEvents = (props) => {
                                     <div className="card-background-class">
                                         <div className="card-card-container-class">
                                             <div className="card-three-column-seperation">
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/Comparison")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Connect to the world</h2>
                                                     <p>
                                                         Join Socio-Linkage and stay connected to the world around you
                                                 </p>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/NewsAndEvents")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Learn what’s happening around you</h2>
                                                     <p>
                                                         let our news section give you your daily dose of information
                                                 </p>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/ConsultationAndEvaluation")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Celebrate with the World</h2>
                                                     <p>
                                                         look up the International Days coming your way and stay one step ahead of everyone!

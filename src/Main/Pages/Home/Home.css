@@ -67,11 +67,12 @@
 }
 
 .content-head {
-    font-family: Nunito Sans;
+    /* font-family: Nunito Sans; */
     margin-top: 5%;
     font-size: 4vw;
     font-weight: bolder;
     letter-spacing: 2px;
+    line-height: 45px;
 }
 
 .content-para {
@@ -186,7 +187,7 @@
 
 
 .picture-background-class {
-    height: 80%;
+    height: 100%;
     width: 100%;
     background-Image: url('https://res.cloudinary.com/tanzeelah/image/upload/v1597417927/Landing%20Page/Untitled-2_pdlp7e.png');
     background-Image: url('https://res.cloudinary.com/tanzeelah/image/upload/v1597414281/Landing%20Page/What_we_offer_background_yagihw.png');

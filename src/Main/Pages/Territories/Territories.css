@@ -13,45 +13,11 @@
     padding-left: 10px;
 }
 
-.pakistanPageImgClass {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    width: 85vw;
-    max-width: 1200px;
-    margin-bottom: 30px;
+
+.terr-section-parent {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-
-.pakistanPageHeading {
-    width: 85vw;
-    text-align: center;
-    margin: 10px;
-    font-weight: bolder;
-    text-decoration: underline;
-    font-size: 32px;
-    padding-top: 20px;
-    line-height: 35px;
-}
-
-.pakistanTableClass {
-    margin: 15px;
-}
-
-.pakistanBoldPara {
-    width: 85vw;
-    font-weight: 900;
-    text-align: left;
-    margin: 10px;
-    line-height: 20px;
-}
-
-
-.pageParagraphClass {
-    margin: 20px;
-    width: 90vw;
-}
-
-
-
 .terr-section-parent .anime-class-img:hover {
     transition: all 1s ease;
     transform: scale(1);
@@ -66,8 +32,10 @@
     line-height: 25px;
     padding-right: 20px
 }
+
 .detail-territory{
     width: 86vw;
+    padding-bottom:10px ;
 }
 .terr-second-heading-class{
     margin:20px;
@@ -77,10 +45,7 @@
     font-size: 3vw;
 }
 @media only screen and (min-width: 1001px) {
-    .terr-section-parent {
-        display: grid;
-        grid-template-rows: .6fr .6fr .6fr .6fr .6fr .6fr .6fr 8fr 2.5fr 2.5fr 1.5fr 2.5fr 2fr 2.5fr;
-    }
+
     .terr-section-parent .anime-class-img {
         width: 42vw;
         height: 90Vh;
@@ -107,10 +72,6 @@
 }
 
 @media only screen and (min-width: 701px)and (max-width: 1000px) {
-    .terr-section-parent {
-        display: grid;
-        grid-template-rows: .6fr .6fr .6fr .6fr .6fr .6fr .6fr 6fr 2.5fr 2fr 1fr 2fr 2fr 2.3fr;
-    }
     .terr-section-parent .anime-class-img {
         width: 82vw;
         height: 100vh;
@@ -139,10 +100,6 @@
 
 
 @media only screen and (min-width: 401px)and (max-width: 700px) {
-    .terr-section-parent {
-        display: grid;
-        grid-template-rows: .3fr .3fr .3fr .3fr .3fr .3fr .3fr 2.6fr 1.3fr 1fr .5fr 1fr 1fr 1.2fr;
-    }
     .terr-section-parent .anime-class-img {
         width: 85vw;
         height: 80vh;
@@ -167,10 +124,6 @@
 }
 
 @media only screen and (min-width: 280px)and (max-width: 400px) {
-    .terr-section-parent {
-        display: grid;
-        grid-template-rows: .2fr .2fr .2fr .2fr .2fr .2fr .2fr 2.5fr 1.3fr .9fr .4fr .9fr .9fr 1fr;
-    }
     .terr-section-parent .anime-class-img {
         width: 88vw;
         height: 60vh;
@@ -191,8 +144,5 @@
     .detail-territory .pakistanBoldPara {
         font-size: 16px;
         padding-right: 20px
-      }
-      .pakistanPageHeading{
-          margin-left: 0px;
       }
 }

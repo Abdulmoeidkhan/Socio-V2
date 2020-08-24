@@ -56,19 +56,19 @@ const Comparison = (props) => {
                                     <div className="card-background-class">
                                         <div className="card-card-container-class">
                                             <div className="card-three-column-seperation">
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/Comparison")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Filter</h2>
                                                     <p>
                                                         Too many organizations to view? Don’t sweat it! Use our comparison feature to view templates of organizations that you need.
                                                 </p>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/NewsAndEvents")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Single-page view</h2>
                                                     <p>
                                                         Compare organizations on a single page without making it complex!
                                                 </p>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/ConsultationAndEvaluation")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Cross-organizational reviews</h2>
                                                     <p>
                                                         The selection of organization depends on your needs because here individuality matters!

@@ -54,19 +54,19 @@ const TheGraphicGuru = (props) => {
                                     <div className="card-background-class">
                                         <div className="card-card-container-class">
                                             <div className="card-three-column-seperation">
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/Comparison")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Graphic Support</h2>
                                                     <p>
                                                     Let the Guru explain things in an entertaining way because it’s important to have fun!
                                                 </p>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/ConsultationAndEvaluation")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Digital world of Guru </h2>
                                                     <p>
                                                     View our Graphic do his thing on our Social Media and see his Digital World come to life!
                                                 </p>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/ConsultationAndEvaluation")}>
+                                                <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head"> Create Content for us </h2>
                                                     <p>
                                                     If you think you’ve got what it takes to take the Graphic Guru to the next level, join our team at Contact Us because the more, the merrier!
