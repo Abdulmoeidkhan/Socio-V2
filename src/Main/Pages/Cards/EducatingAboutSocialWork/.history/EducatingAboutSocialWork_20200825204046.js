@@ -101,19 +101,19 @@ const EducatingAboutSocialWork = (props) => {
                                                         <li>social research.</li>
                                                     </ul>
                                                     <div className="card-three-column-seperation" data-aos-duration="1500" data-aos="zoom-down" data-aos-delay="700">
-                                                        <Card bordered={true} className="first-page-card-class" data-aos-duration="1500" data-aos="fade-right" data-aos-delay="800">
+                                                        <Card bordered={true} className="first-page-card-class">
                                                             <h2 className="content-sub-head">Social Action</h2>
                                                             <div>
                                                                 Social Action has been used to signify a wide range of primarily voluntary initiative to bring out change in social systems, processes and even structure.
                                                             </div>
                                                         </Card>
-                                                        <Card bordered={true} className="first-page-card-class" data-aos-duration="1500" data-aos="fade-up" data-aos-delay="800">
+                                                        <Card bordered={true} className="first-page-card-class">
                                                             <h2 className="content-sub-head">Social Welfare Administration</h2>
                                                             <div>
                                                                 Social welfare administration is a process by which we apply professional competence to achieve certain goals. It is called a process of transforming social policy into social action. It involves the administration of government and Nongovernment agencies.
                                                             </div>
                                                         </Card>
-                                                        <Card bordered={true} className="first-page-card-class" data-aos-duration="1500" data-aos="fade-left" data-aos-delay="800">
+                                                        <Card bordered={true} className="first-page-card-class" >
                                                             <h2 className="content-sub-head">Social Research </h2>
                                                             <div>
                                                                 Social Work Research is the application of research methods to the production of knowledge that Social Workers need to solve problems they confront in the practice of Social Work.
@@ -135,49 +135,49 @@ const EducatingAboutSocialWork = (props) => {
                                 <section className="card-referrals-equal-columns-grid-1">
                                         <div className="card-card-container-class">
                                             <div className="card-one-column-seperation" data-aos-duration="1500" data-aos="zoom-down" data-aos-delay="700">
-                                                <Card bordered={true} className="first-page-edu-card-class" data-aos-duration="1500" data-aos="fade-right" data-aos-delay="800">
+                                                <Card bordered={true} className="first-page-edu-card-class">
                                                     <h2 className="content-sub-head">Child, Family, and School Social Worker Jobs </h2>
                                                     <div>
                                                         A child, family, or school social worker assists children and youth, along with their parents and guardians. School social worker duties may include offering support in instances where abuse has taken place, or where mental illness, physical illness, or trauma is affecting a child’s wellbeing. They may also help parents access resources so they can better care for their children or find placement for children whose needs are not being met.
                                                 </div>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-edu-card-class" data-aos-duration="1500" data-aos="fade-right" data-aos-delay="850">
+                                                <Card bordered={true} className="first-page-edu-card-class">
                                                     <h2 className="content-sub-head">Kinds of Social Work</h2>
                                                     <div>
                                                         Let us tell you people a secret… there’s a huge difference between voluntary and involuntary social work, to read more about it visit our page NOW!
                                                 </div>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-edu-card-class" data-aos-duration="1500" data-aos="fade-right" data-aos-delay="900">
+                                                <Card bordered={true} className="first-page-edu-card-class" >
                                                     <h2 className="content-sub-head">Medical Social Worker Jobs</h2>
                                                     <div>
                                                         Medical and health care social workers provide social support within the medical and healthcare fields. They offer services to patients and their loved ones to help alleviate the social, financial, and relational hardships that may arise when someone falls ill. Their responsibilities may also include providing services that promote health, disease prevention, and addressing socioeconomic barriers to healthcare access. Medical social workers may work in hospitals, nursing homes, and assisted care facilities.
                                                 </div>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-edu-card-class" data-aos-duration="1500" data-aos="fade-right" data-aos-delay="950">
+                                                <Card bordered={true} className="first-page-edu-card-class" >
                                                     <h2 className="content-sub-head">Mental Health & Substance Abuse Social Worker Jobs </h2>
                                                     <div>
                                                         Mental health and substance abuse social workers are trained to help people experiencing problems with their mental health and addiction. Common modalities that they use to offer support include individual therapy,group therapy, and crisis intervention. The settings in which they may work includecommunity mental health facilities, crisis relief, and rehabilitation services.
                                                 </div>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-edu-card-class" data-aos-duration="1500" data-aos="fade-right" data-aos-delay="1000">
+                                                <Card bordered={true} className="first-page-edu-card-class" >
                                                     <h2 className="content-sub-head">Military Social Worker Jobs </h2>
                                                     <div>
                                                         Military social workers offer targeted services for men, women, and families within the armed forces. The tasks and responsibilities of a military social worker include providing support during deployment and helping families cope with frequent moves or an absent loved one. Military social workers also assist with the reintegration of members of the military into their family and civilian life following their return from duty.
                                                 </div>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-edu-card-class" data-aos-duration="1500" data-aos="fade-right" data-aos-delay="1050">
+                                                <Card bordered={true} className="first-page-edu-card-class" >
                                                     <h2 className="content-sub-head">Community Social Worker Jobs </h2>
                                                     <div>
                                                     Community social workers often work simultaneously at micro, mezzo, and macro levels within the community. Depending on their specific job, their tasks may include conducting needs assessments and referrals with individuals, working with community organizations, or even planning and administering large-scale programs. Their efforts are critical to helping communities’ function effectively. Community social workers are sometimes employed at a state or local government level, and other times are contracted by non-profits or grassroots organizations.
                                                 </div>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-edu-card-class" data-aos-duration="1500" data-aos="fade-right" data-aos-delay="1100">
+                                                <Card bordered={true} className="first-page-edu-card-class" >
                                                     <h2 className="content-sub-head">Social Work Administrator Jobs </h2>
                                                     <div>
                                                     If working in the field one-on-one isn’t for you, you might consider a career in social work administration or research instead. Social work administrators help with the managerial, administrative, and business arm of social work. Their tasks may include writing grants and reports, overseeing accounts, managing tax, researching and assessing communities in need, and creating bodies for the delivery of services. This area of social work is inherently macro in nature. Social work administrators are also often responsible for managing staff and delegating tasks.
                                                 </div>
                                                 </Card>
-                                                <Card bordered={true} className="first-page-edu-card-class" data-aos-duration="1500" data-aos="fade-right" data-aos-delay="1150">
+                                                <Card bordered={true} className="first-page-edu-card-class" >
                                                     <h2 className="content-sub-head">Master’s in Social Work Job Opportunities </h2>
                                                     <div>
                                                     The benefits of an MSW, or master of social work, are plentiful. The MSW demonstrates additional knowledge and skills, and thus provides the ability to secure a wider variety of careers in the social work field. Jobs that require an MSW include clinical social work. Most healthcare, mental health, and substance abuse social worker roles may also require an MSW.
