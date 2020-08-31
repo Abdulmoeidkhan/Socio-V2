@@ -42,7 +42,7 @@ const Gilgit = (props) => {
                                         </Link>
                                     </Breadcrumb.Item>
                                     <Breadcrumb.Item>
-                                        <Link to={`/Gilgit`}>
+                                        <Link to={`/Territories/Gilgit`}>
                                             Gilgit
                                         </Link>
                                     </Breadcrumb.Item>

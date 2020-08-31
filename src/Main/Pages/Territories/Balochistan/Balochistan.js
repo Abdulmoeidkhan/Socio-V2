@@ -42,7 +42,7 @@ const Balochistan = (props) => {
                                         </Link>
                                     </Breadcrumb.Item>
                                     <Breadcrumb.Item>
-                                        <Link to={`/Balochistan`}>
+                                        <Link to={`/Territories/Balochistan`}>
                                             Balochistan
                                         </Link>
                                     </Breadcrumb.Item>

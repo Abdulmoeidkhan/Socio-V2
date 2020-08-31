@@ -42,7 +42,7 @@ const KPK = (props) => {
                                         </Link>
                                     </Breadcrumb.Item>
                                     <Breadcrumb.Item>
-                                        <Link to={`/KPK`}>
+                                        <Link to={`/Territories/KPK`}>
                                             KPK
                                         </Link>
                                     </Breadcrumb.Item>

@@ -22,6 +22,10 @@
   -ms-user-select: none;
   user-select: none;
 }
+.shutter-comp-class{
+  -w-webkit-box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+}
 
 body::-webkit-scrollbar-track, .ant-menu-inline::-webkit-scrollbar-track, .ant-menu-inline-collapsed::-webkit-scrollbar-track, .ant-table-body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);

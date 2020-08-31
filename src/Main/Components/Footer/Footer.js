@@ -81,7 +81,7 @@ function MyFooter(props) {
               <p className="copyright-text">&copy; 2020 All Rights Reserved by
             <a> Socio-Linkage</a>
                 <br />
-                <a className="linkClass" onClick={() => history.push("/TAndc")}>Terms & Conditions</a> &nbsp;&nbsp;
+                <a className="linkClass" onClick={() => history.push("/TAndC")}>Terms & Conditions</a> &nbsp;&nbsp;
                 <a className="linkClass" onClick={() => history.push("/PrivacyPolicies")}>Privacy Policy</a>
               </p>
             </div>

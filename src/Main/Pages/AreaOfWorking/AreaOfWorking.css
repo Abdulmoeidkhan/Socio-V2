@@ -1,0 +1,18 @@
+.aof-two-column-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px auto;
+}
+.aof-two-column-grid .first-page-card-class{
+    width: 90%;
+}
+.area-of-working-class .first-page-card-class {
+    cursor: pointer;
+    transform:scale(1) !important;
+    transition: all 1s ease;
+    margin: 30px auto;
+}
+.area-of-working-class .first-page-card-class:hover{
+    transform:scale(1.2) !important;
+    transition: all 1s ease;
+}
