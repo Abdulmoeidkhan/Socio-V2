@@ -64,6 +64,7 @@ function Routes(props) {
                 <Route path={`/Territories/KPK`} component={props=><KPK {...props}/>} />
                 <Route path={`/Territories/Gilgit`} component={props=><Gilgit {...props}/>} />
                 <Route path={`/Territories/Kashmir`} component={props=><Kashmir {...props}/>} />
+                <Route path={`/AboutSocioLinkage`} component={props=><AboutUs {...props}/>} />
             </Switch>
         </Router>
     );

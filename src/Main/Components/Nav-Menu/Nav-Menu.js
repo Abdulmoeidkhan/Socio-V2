@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import HamBurgerNav from "../hamburgerNav/hamburgerNav"
-import { Layout,Modal } from 'antd';
+import { Layout, Modal, message } from 'antd';
 import { ThemeContext } from "../../GlobalEnvironment/contextInit";
 import { useHistory } from "react-router-dom";
 import firebase from "../../GlobalEnvironment/firebaseConfig";
@@ -9,7 +9,7 @@ import "./Nav-Menu.css"
 
 const { Header } = Layout;
 
-const NavBar = () => {
+const NavBar = (props) => {
     const [isSignIn, setIsSignIn] = useState(false)
     const [visible, setVisible] = useState(false);
     const [visibleModal, setvisibleModal] = useState(false)
@@ -32,40 +32,29 @@ const NavBar = () => {
     const handleCancel = () => {
         setvisibleModal(false)
     };
-    async function signIn(values) {
-        await firebase.signUp(values.username, values.email, values.password).then(() => {
-            alert("You have signed Up successfully ")
-        })
-            .catch(function (error) {
-                alert(error.message);
-            })
-        onClose()
-        setIsSignIn(true)
-    }
     async function logIn(values) {
         await firebase.login(values.email, values.password).then(() => {
-            alert("You have sign In successfully ")
+            message.success('You have sign In successfully');
+            props.setUserSignIn(firebase.currentUsers())
+            onClose()
         })
             .catch(function (error) {
-                alert(error.message);
+                message.error(error.message);
             })
-        onClose()
         setIsSignIn(true)
+
     }
     async function logOut() {
         onClose()
         await firebase.logout().then(() => {
-            alert("You have sign Out successfully ")
+            message.warning("You have sign Out successfully ")
+            props.setUserSignIn()
         })
             .catch(function (error) {
-                alert(error.message);
+                message.error(error.message);
             })
         setIsSignIn(false)
     }
-
-
-
-
 
 
     useEffect(() => {
@@ -135,12 +124,12 @@ const NavBar = () => {
                         <img className="logo-img" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" />
                     </h2>
                     <div className="logo1 navigation-menu-class">
-                        <HamBurgerNav setIsSignIn={setIsSignIn} visible={visible} currentUsersData={currentUsersData} onClose={onClose} showDrawer={showDrawer}/>
+                        <HamBurgerNav setIsSignIn={setIsSignIn} visible={visible} currentUsersData={currentUsersData} onClose={onClose} showDrawer={showDrawer} />
                     </div>
                     {!currentUsersData ?
                         <div className="logo1">
-                                <button className="register-button-class" onClick={showModal}>
-                                    Register
+                            <button className="register-button-class" onClick={showModal}>
+                                Register
                                 </button>
                             <Modal
                                 title="Sign Up/In"
@@ -153,8 +142,8 @@ const NavBar = () => {
                         </div>
                         : <div>
                             <div className="logo1">
-                                    <button className="register-button-class"  onClick={logOut}>
-                                        Log Out
+                                <button className="register-button-class" onClick={logOut}>
+                                    Log Out
                                     </button>
                             </div>
                         </div>

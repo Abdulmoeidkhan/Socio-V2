@@ -1,0 +1,125 @@
+.about-section-parent .equal-columns-grid,.about-section-parent .equal-columns-grid .content-content-1,.about-section-parent .equal-columns-grid .content-content-2{
+    border-radius: 16px !important;
+    border-color: transparent;
+    -webkit-box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+    transition: all .5s ease;
+    margin: 15px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+
+
+@media only screen and (min-width: 1001px) {
+    .about-anime-class-img {
+        width: 42vw;
+        height: 60vh;
+    }
+    .about-anime-class-img-sub {
+        width: 42vw;
+        height: 60vh;
+        margin-top: 20vh;
+    }
+    .about-section-parent{
+        display: grid;
+        grid-template-rows: 1fr 1fr .5fr 6fr;
+    }
+}
+
+@media only screen and (min-width: 701px)and (max-width: 1000px) {
+    .about-anime-class-img {
+        width: 75vw;
+        height: 80vh;
+        margin-left: 6vw;
+    }
+    .about-anime-class-img-sub {
+        width: 75vw;
+        height: 80vh;
+        margin-left: 6vw;
+        margin-top: 20vh;
+    }
+    .about-section-parent .equal-columns-grid{
+        width: 95%;
+    }
+    .about-section-parent{
+        display: grid;
+        grid-template-rows: 1fr 1fr .5fr 6fr;
+    }
+}
+
+@media only screen and (min-width: 1px)and (max-width: 700px) {
+    .about-anime-class-img {
+        width: 70vw;
+        height: 55vh;
+        margin-left: 10vw;
+    }
+    .about-anime-class-img-sub {
+        width: 70vw;
+        height: 55vh;
+        margin-left: 10vw;
+        /* margin-top: 20vh; */
+    }
+    .about-section-parent .equal-columns-grid{
+        width: 95%;
+    }
+    .about-section-parent{
+        display: grid;
+        grid-template-rows: 1fr 1fr .5fr 6fr;
+    }
+    .about-section-parent .equal-columns-grid-1{
+        height: 140vh;
+    }
+    .about-section-parent .ant-tabs-centered .equal-columns-grid-1:nth-child(1){
+        height: 180vh;
+    }
+    .about-section-parent .ant-tabs-centered .equal-columns-grid-1:nth-child(2){
+        height: 340vh;
+    }
+    .about-section-parent .ant-tabs-centered .equal-columns-grid-1:nth-child(3){
+        height: 230vh;
+    }
+    .about-section-parent .ant-tabs-centered .equal-columns-grid-1:nth-child(4){
+        height: 150vh;
+    }
+}
+
+/* @media only screen and (max-width: 400px) {
+    .about-anime-class-img {
+        width: 100vw;
+        height: 40vh;
+        margin-left: 2vw;
+    }
+    .about-anime-class-img-sub {
+        width: 100vw;
+        height: 40vh;
+        margin-left: 8vw;
+        margin-top: 20vh; 
+    }
+     .about-section-parent .equal-columns-grid{
+        width: 85%;
+        height: 40vh;
+    } 
+} */
+
+.team-tabs .ant-tabs-tab-active:nth-child(2) div,.team-tabs .ant-tabs-tab:nth-child(2):hover{
+    color: #FFC72C;
+    outline-color:#FFC72C ;
+    font-weight: 500;
+}
+.team-tabs .ant-tabs-tab-active:nth-child(3) div,.team-tabs .ant-tabs-tab:nth-child(3):hover{
+    color: #25D366;
+    outline-color:#25D366 ;
+    font-weight: 500;
+}
+.team-tabs .ant-tabs-tab-active:nth-child(4) div,.team-tabs .ant-tabs-tab:nth-child(4):hover{
+    color: #FF0000;
+    outline-color:#FF0000 ;
+    font-weight: 500;
+}
+.team-tabs .ant-tabs-tab-active:nth-child(5) div,.team-tabs .ant-tabs-tab:nth-child(5):hover{
+    color: #009999;
+    outline-color:#009999 ;
+    font-weight: 500;
+}
+
