@@ -65,7 +65,7 @@ const Children = (props) => {
                                         of society tomorrow. Investments done for children today will be reaped in the future.
                                         </p>
                                     <h2 className="terr-second-heading-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="100"> Following organizations are working for the welfare of children in Karachi:</h2>
-                                    <p className="pakistanBoldPara" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
+                                    <div className="pakistanBoldPara" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
                                         <ul>
                                             <li>Aahung.</li>
                                             <li>Azad Foundation.</li>
@@ -74,7 +74,7 @@ const Children = (props) => {
                                             <li>Make a Wish.</li>
                                             <li>SOS Village.</li>
                                         </ul>
-                                    </p>
+                                    </div>
                                 </section>
                             </div>
                         </Content>

@@ -61,13 +61,14 @@ function Routes(props) {
                 <Route path={`/Admin/SignIn`} component={props=><AdminSignIn {...props}/>} exact />
                 <Route path={`/Admin/DashBoard`} component={props=><AdminDashBoard {...props}/>} exact />
                 <Route path={`/Territories`} component={props=><Territories {...props}/>} exact/>
-                <Route path={`/Territories/Pakistan`} component={props=><Pakistan {...props}/>} exact />
-                <Route path={`/Territories/Sindh`} component={props=><Sindh {...props}/>} exact />
-                <Route path={`/Territories/Punjab`} component={props=><Punjab {...props}/>} exact />
-                <Route path={`/Territories/Balochistan`} component={props=><Balochistan {...props}/>} exact />
-                <Route path={`/Territories/KPK`} component={props=><KPK {...props}/>} exact />
-                <Route path={`/Territories/Gilgit`} component={props=><Gilgit {...props}/>} exact />
-                <Route path={`/Territories/Kashmir`} component={props=><Kashmir {...props}/>} exact />
+                <Route path={`/Territories/Pakistan`} component={props=><Pakistan {...props}/>} />
+                <Route path={`/Territories/Sindh`} component={props=><Sindh {...props}/>} />
+                <Route path={`/Territories/Punjab`} component={props=><Punjab {...props}/>} />
+                <Route path={`/Territories/Balochistan`} component={props=><Balochistan {...props}/>} />
+                <Route path={`/Territories/KPK`} component={props=><KPK {...props}/>} />
+                <Route path={`/Territories/Gilgit`} component={props=><Gilgit {...props}/>} />
+                <Route path={`/Territories/Kashmir`} component={props=><Kashmir {...props}/>} />
+                <Route path={`/AboutSocioLinkage`} component={props=><AboutUs {...props}/>} />
             </Switch>
         </Router>
     );
