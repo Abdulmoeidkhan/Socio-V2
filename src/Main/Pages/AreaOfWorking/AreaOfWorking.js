@@ -27,7 +27,7 @@ const AreaOfWorking = (props) => {
                                     <Card bordered={true} className="first-page-card-class" >
                                         <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476857/Area%20Of%20Working/Version%202/General_Health_nmmcpl.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476857/Area%20Of%20Working/Version%202/General_Health_nmmcpl.jpg" />
                                     </Card>
-                                    <Card bordered={true} className="first-page-card-class" >
+                                    <Card bordered={true} className="first-page-card-class" onClick={()=> history.push("/AreaOfWorking/Education")}>
                                         <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476855/Area%20Of%20Working/Version%202/Education_izti5z.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476855/Area%20Of%20Working/Version%202/Education_izti5z.jpg" />
                                     </Card>
                                 </div>
@@ -35,10 +35,10 @@ const AreaOfWorking = (props) => {
                                     <Card bordered={true} className="first-page-card-class" >
                                         <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476857/Area%20Of%20Working/Version%202/Mental_Health_xy6upa.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476857/Area%20Of%20Working/Version%202/Mental_Health_xy6upa.jpg" />
                                     </Card>
-                                    <Card bordered={true} className="first-page-card-class" >
+                                    <Card bordered={true} className="first-page-card-class" onClick={()=> history.push("/AreaOfWorking/Community")}>
                                         <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476855/Area%20Of%20Working/Version%202/Community_wiuaof.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476855/Area%20Of%20Working/Version%202/Community_wiuaof.jpg"/>
                                     </Card>
-                                    <Card bordered={true} className="first-page-card-class" >
+                                    <Card bordered={true} className="first-page-card-class" onClick={()=> history.push("/AreaOfWorking/Drug-Rehabilitation")}>
                                         <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476856/Area%20Of%20Working/Version%202/Drug_Rehabilitation_pxmre5.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476856/Area%20Of%20Working/Version%202/Drug_Rehabilitation_pxmre5.jpg" />
                                     </Card>
                                 </div>

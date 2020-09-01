@@ -47,7 +47,7 @@ const TheGraphicGuru = (props) => {
                                         <p className="content-para"> Let us introduce you to our Graphic Guru, He’s the face of Socio-Linkage and your guide through our processes, sit back and let the Guru govern your problems!</p>
                                     </div>
                                     <div className="card-content-content-2">
-                                        <img src={"https://picsum.photos/300/300"} alt={"https://picsum.photos/300/300"} />
+                                        <img src={"https://lorempixel.com/300/300"} alt={"https://lorempixel.com/300/300"} />
                                     </div>
                                 </section>
                                 <section className="one-columns-grid">

@@ -52,7 +52,7 @@ const ConsultationAndEvaluation = (props) => {
                                         </p>
                                     </div>
                                     <div className="card-content-content-2">
-                                        <img src={"https://picsum.photos/300/300"} alt={"https://picsum.photos/300/300"} />
+                                        <img src={"https://lorempixel.com/300/300"} alt={"https://lorempixel.com/300/300"} />
                                     </div>
                                 </section>
                                 <section className="one-columns-grid">

@@ -49,7 +49,7 @@ const Comparison = (props) => {
                                         <p className="content-para"> Confused which organization can solve your problem the fastest? Don’t worry let Socio-Linkage take charge, we compare organizations for you, tap into our evaluation template and choose the best for your problems, YOURSELF!</p>
                                     </div>
                                     <div className="card-content-content-2">
-                                        <img src={"https://picsum.photos/300/300"} alt={"https://picsum.photos/300/300"} />
+                                        <img src={"https://lorempixel.com/300/300"} alt={"https://lorempixel.com/300/300"} />
                                     </div>
                                 </section>
                                 <section className="one-columns-grid">

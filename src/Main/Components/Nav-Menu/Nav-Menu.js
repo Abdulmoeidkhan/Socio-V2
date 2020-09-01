@@ -58,7 +58,6 @@ const NavBar = (props) => {
 
 
     useEffect(() => {
-        console.log(isSignIn)
         if (!isSignIn) {
             if (firebase.currentUsers()) { setIsSignIn(true) }
         }

@@ -49,10 +49,10 @@ const NewsAndEvents = (props) => {
                                     </div>
                                     <div className="news-card-content-content-2">
                                         <div className="cards-page-img-center">
-                                            <img src={"https://picsum.photos/300/300"} alt={"https://picsum.photos/300/300"} />
+                                            <img src={"https://lorempixel.com/300/300"} alt={"https://lorempixel.com/300/300"} />
                                         </div>
                                         <div className="cards-page-img-center">
-                                            <img src={"https://picsum.photos/300/300"} alt={"https://picsum.photos/300/300"} />
+                                            <img src={"https://lorempixel.com/300/300"} alt={"https://lorempixel.com/300/300"} />
                                         </div>
                                     </div>
                                 </section>

@@ -3,8 +3,10 @@ import { Layout, Breadcrumb } from 'antd';
 import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
+import "./Children.css"
 import {
-    Link
+    Link,
+    useHistory
 } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -16,6 +18,7 @@ const { Content } = Layout;
 
 
 const Children = (props) => {
+    let history=useHistory()
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -67,12 +70,12 @@ const Children = (props) => {
                                     <h2 className="terr-second-heading-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="100"> Following organizations are working for the welfare of children in Karachi:</h2>
                                     <div className="pakistanBoldPara" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
                                         <ul>
-                                            <li>Aahung.</li>
-                                            <li>Azad Foundation.</li>
-                                            <li>Edhi.</li>
-                                            <li>Konpal Child Abuse Prevention.</li>
-                                            <li>Make a Wish.</li>
-                                            <li>SOS Village.</li>
+                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={()=> history.push("/AreaOfWorking/Children/AAHUNG-FOUNDATION")}><div>Aahung Foundation.</div></li>
+                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={()=> history.push("/AreaOfWorking/Children/AZAD-FOUNDATION")}><div>Azad Foundation.</div></li>
+                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={()=> history.push("/AreaOfWorking/Children/EDHI-FOUNDATION")}><div>Edhi Foundation.</div></li>
+                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="450" onClick={()=> history.push("/AreaOfWorking/Children/KONPAL-CHILD-ABUSE-PREVENTION-SOCIETY")}><div>Konpal Child Abuse Prevention.</div></li>
+                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="550" onClick={()=> history.push("/AreaOfWorking/Children/MAKE-A-WISH")}><div>Make a Wish.</div></li>
+                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="650" onClick={()=> history.push("/AreaOfWorking/Children/SOS-VILLAGE")}><div>SOS Village.</div></li>
                                         </ul>
                                     </div>
                                 </section>
