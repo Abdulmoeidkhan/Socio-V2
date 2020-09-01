@@ -74,7 +74,7 @@ const Education = (props) => {
                                             <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="450" onClick={() => history.push("/AreaOfWorking/Education/RA’ANA-LIAQUAT-PUBLIC-SCHOOL")}><div>Ra’ana Liaquat Public School.</div></li>
                                             <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="550" onClick={() => history.push("/AreaOfWorking/Education/THE-CITIZENS-FOUNDATION")}><div>The Citizens Foundation.</div></li>
                                             <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="650" onClick={() => history.push("/AreaOfWorking/Education/YOUTH-EXPRESS-PAKISTAN")}><div>Youth Express Pakistan.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="750" onClick={() => history.push("/AreaOfWorking/Education/AreaOfWorking/Education/ZINDAGI-TRUST")}><div>Zindagi Trust.</div></li>
+                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="750" onClick={() => history.push("/AreaOfWorking/Education/ZINDAGI-TRUST")}><div>Zindagi Trust.</div></li>
                                         </ul>
                                     </div>
                                 </section>

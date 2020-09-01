@@ -28,7 +28,7 @@ const NGOsPage = (props) => {
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
-                            <div className="marginClass">
+                            <div className="margin-class">
                                 <Breadcrumb style={{ margin: '16px 0px' }}>
                                     <Breadcrumb.Item>
                                         <Link to="/">
