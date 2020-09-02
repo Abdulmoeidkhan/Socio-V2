@@ -30,6 +30,13 @@ import Children from "../Pages/CardsAreaOfWorking/Children/Children";
 import Community from "../Pages/CardsAreaOfWorking/Community/Community";
 import DrugRehabilitation from "../Pages/CardsAreaOfWorking/DrugRehabilitation/DrugRehabilitation";
 import Education from "../Pages/CardsAreaOfWorking/Education/Education";
+import GeneralHealth from "../Pages/CardsAreaOfWorking/GeneralHealth/GeneralHealth";
+import MentalHealth from "../Pages/CardsAreaOfWorking/MentalHealth/MentalHealth";
+import SpecialNeeds from "../Pages/CardsAreaOfWorking/SpecialNeeds/SpecialNeeds";
+import SeniorCitizens from "../Pages/CardsAreaOfWorking/SeniorCitizens/SeniorCitizens";
+import Vocation from "../Pages/CardsAreaOfWorking/Vocation/Vocation";
+import Women from "../Pages/CardsAreaOfWorking/Women/Women";
+import Others from "../Pages/CardsAreaOfWorking/Others/Others";
 import { NGOsRoute } from "./contentRawData";
 import NGOsPage from "../Pages/NGOsPages/NGOsPages";
 import {
@@ -75,11 +82,18 @@ function Routes(props) {
                 <Route path={`/Territories/Kashmir`} component={props => <Kashmir {...props} />} key="27" />
                 <Route path={`/AboutSocioLinkage`} component={props => <AboutUs {...props} />} key="28" />
                 <Route path={`/AreaOfWorking/Community`} component={props => <Community {...props} />} key="29" exact/>
-                <Route path={`/AreaOfWorking/Drug-Rehabilitation`} component={props => <DrugRehabilitation {...props} />} key="29" exact/>
-                <Route path={`/AreaOfWorking/Education`} component={props => <Education {...props} />} key="29" exact/>
+                <Route path={`/AreaOfWorking/Drug-Rehabilitation`} component={props => <DrugRehabilitation {...props} />} key="31" exact/>
+                <Route path={`/AreaOfWorking/Education`} component={props => <Education {...props} />} key="31" exact/>
+                <Route path={`/AreaOfWorking/General-Health`} component={props => <GeneralHealth {...props} />} key="32" exact/>
+                <Route path={`/AreaOfWorking/Mental-Health`} component={props => <MentalHealth {...props} />} key="33" exact/>
+                <Route path={`/AreaOfWorking/Special-Needs`} component={props => <SpecialNeeds {...props} />} key="34" exact/>
+                <Route path={`/AreaOfWorking/Senior-Citizens`} component={props => <SeniorCitizens {...props} />} key="35" exact/>
+                <Route path={`/AreaOfWorking/Vocation`} component={props => <Vocation {...props} />} key="36" exact/>
+                <Route path={`/AreaOfWorking/Women`} component={props => <Women {...props} />} key="37" exact/>
+                <Route path={`/AreaOfWorking/Others`} component={props => <Others {...props} />} key="38" exact/>
                 {
                     NGOsRoute.map((item, i) =>
-                        <Route key={i + 31} path={`/${item.link}`} exact >
+                        <Route key={i + 38} path={`/${item.link}`} exact >
                             <NGOsPage item={item} />
                         </Route>
                         )

@@ -2,7 +2,9 @@
     text-decoration: none;
     color:#fff;
 }
-.download-class-parent{
-    width:20vw;
+.download-class-parent,.or-heading{
+    width:25vw;
     margin:10px auto;
+    display: block;
+    text-align: center;
 }

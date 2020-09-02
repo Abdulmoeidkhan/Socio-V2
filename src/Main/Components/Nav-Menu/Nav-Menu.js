@@ -34,7 +34,7 @@ const NavBar = (props) => {
     };
     async function logIn(values) {
         await firebase.login(values.email, values.password).then(() => {
-            message.success('You have sign In successfully');
+            message.success(`You Have Sign In Successfully As ${firebase.currentUsers().displayName}`);
             props.setUserSignIn&&props.setUserSignIn(firebase.currentUsers())
             onClose()
         })
@@ -47,7 +47,7 @@ const NavBar = (props) => {
     async function logOut() {
         onClose()
         await firebase.logout().then(() => {
-            message.warning("You have sign Out successfully ")
+            message.warning("You Have Sign Out Successfully")
             props.setUserSignIn&&props.setUserSignIn()
         })
             .catch(function (error) {

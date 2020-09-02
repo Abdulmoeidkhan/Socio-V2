@@ -35,8 +35,11 @@ a.ant-typography, .ant-checkbox-checked .ant-checkbox-inner {
     border-radius: 16px !important;
     border-color: transparent !important;
 }
+.ant-select-selector{
+    border-color: transparent !important;
+}
 
-.ant-input:hover, .ant-input:focus, .ant-input-focused, .ant-input-affix-wrapper:hover, .ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused {
+.ant-input:hover, .ant-input:focus, .ant-input-focused, .ant-input-affix-wrapper:hover, .ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused,.ant-picker:hover, .ant-picker-focused,.ant-select-selector:hover {
     border-color: #01989d !important;
 }
 

@@ -24,7 +24,7 @@ const AreaOfWorking = (props) => {
                                     <h2 className="content-head">Area Of Working</h2>
                                 </div>
                                 <div className="aof-two-column-grid">
-                                    <Card bordered={true} className="first-page-card-class" >
+                                    <Card bordered={true} className="first-page-card-class" onClick={()=> history.push("/AreaOfWorking/General-Health")}>
                                         <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476857/Area%20Of%20Working/Version%202/General_Health_nmmcpl.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476857/Area%20Of%20Working/Version%202/General_Health_nmmcpl.jpg" />
                                     </Card>
                                     <Card bordered={true} className="first-page-card-class" onClick={()=> history.push("/AreaOfWorking/Education")}>
@@ -32,7 +32,7 @@ const AreaOfWorking = (props) => {
                                     </Card>
                                 </div>
                                 <div className="three-column-seperation">
-                                    <Card bordered={true} className="first-page-card-class" >
+                                    <Card bordered={true} className="first-page-card-class" onClick={()=> history.push("/AreaOfWorking/Mental-Health")}>
                                         <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476857/Area%20Of%20Working/Version%202/Mental_Health_xy6upa.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476857/Area%20Of%20Working/Version%202/Mental_Health_xy6upa.jpg" />
                                     </Card>
                                     <Card bordered={true} className="first-page-card-class" onClick={()=> history.push("/AreaOfWorking/Community")}>
@@ -43,24 +43,24 @@ const AreaOfWorking = (props) => {
                                     </Card>
                                 </div>
                                 <div className="three-column-seperation">
-                                    <Card bordered={true} className="first-page-card-class" >
+                                    <Card bordered={true} className="first-page-card-class" onClick={()=> history.push("/AreaOfWorking/Vocation")}>
                                         <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476859/Area%20Of%20Working/Version%202/Vocation_yflqrc.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476859/Area%20Of%20Working/Version%202/Vocation_yflqrc.jpg" />
                                     </Card>
-                                    <Card bordered={true} className="first-page-card-class" >
+                                    <Card bordered={true} className="first-page-card-class" onClick={()=> history.push("/AreaOfWorking/Women")}>
                                         <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476859/Area%20Of%20Working/Version%202/Women_wsqvvk.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476859/Area%20Of%20Working/Version%202/Women_wsqvvk.jpg" />
                                     </Card>
-                                    <Card bordered={true} className="first-page-card-class" >
+                                    <Card bordered={true} className="first-page-card-class" onClick={()=> history.push("/AreaOfWorking/Special-Needs")}>
                                         <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476858/Area%20Of%20Working/Version%202/Special_Needs_wufhau.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476858/Area%20Of%20Working/Version%202/Special_Needs_wufhau.jpg" />
                                     </Card>
                                 </div>
                                 <div className="three-column-seperation">
-                                    <Card bordered={true} className="first-page-card-class" >
+                                    <Card bordered={true} className="first-page-card-class" onClick={()=> history.push("/AreaOfWorking/Senior-Citizens")}>
                                         <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476858/Area%20Of%20Working/Version%202/Senior_Citizens_smunoe.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476858/Area%20Of%20Working/Version%202/Senior_Citizens_smunoe.jpg" />
                                     </Card>
                                     <Card bordered={true} className="first-page-card-class" onClick={()=> history.push("/AreaOfWorking/Children")}>
                                         <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476856/Area%20Of%20Working/Version%202/Children_ucspml.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476856/Area%20Of%20Working/Version%202/Children_ucspml.jpg" />
                                     </Card>
-                                    <Card bordered={true} className="first-page-card-class" >
+                                    <Card bordered={true} className="first-page-card-class" onClick={()=> history.push("/AreaOfWorking/Others")}>
                                         <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476859/Area%20Of%20Working/Version%202/Others_lmhfep.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476859/Area%20Of%20Working/Version%202/Others_lmhfep.jpg" />
                                     </Card>
                                 </div>

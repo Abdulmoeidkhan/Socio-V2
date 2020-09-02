@@ -1,8 +1,8 @@
-import React, { useEffect,useState } from 'react';
-import { Layout, Card,Button } from 'antd';
+import React, { useEffect, useState } from 'react';
+import { Layout, Card, Button } from 'antd';
 import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
-// import Application from "../../../Components/Application/Application";
+import Application from "../../../Components/Application/Application";
 import MyFooter from "../../../Components/Footer/Footer";
 import firebase from "../../../GlobalEnvironment/firebaseConfig"
 import "./ConsultationAndEvaluation.css"
@@ -12,12 +12,12 @@ const { Content } = Layout;
 
 
 const ConsultationAndEvaluation = (props) => {
-    let [userSignIn,setUserSignIn ]=useState(firebase.currentUsers())
+    let [userSignIn, setUserSignIn] = useState(firebase.currentUsers())
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
-    useEffect(()=>{
-    },[userSignIn])
+    useEffect(() => {
+    }, [userSignIn])
     return (
         <>
             <ThemeContext.Consumer>
@@ -82,11 +82,17 @@ const ConsultationAndEvaluation = (props) => {
                                     </div>
                                 </section>
                                 <section className="one-columns-grid">
-                                    {userSignIn?<Button type="primary" className="download-class-parent">
-                                        <a className="download-class" href={require("../../../Assets/Form.doc")}>
-                                            Download Form
+                                    {userSignIn ? <div className="application-forms-class">
+                                        <Button type="primary" className="download-class-parent">
+                                            <a className="download-class" href={require("../../../Assets/Form.doc")}>
+                                                Download Form
                                         </a>
-                                    </Button>:null}
+                                        </Button>
+                                        <h4 className="content-head or-heading">
+                                            OR
+                                        </h4>
+                                        <Application/>
+                                    </div> : null}
                                 </section>
                             </div>
                             {/* <Application/> */}

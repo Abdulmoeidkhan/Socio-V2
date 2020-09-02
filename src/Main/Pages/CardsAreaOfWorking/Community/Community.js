@@ -77,8 +77,8 @@ const Community = (props) => {
                                             <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="650" onClick={() => history.push("/AreaOfWorking/Community/LYARIANZ-YOUTH-DEVELOPMENT-PROGRAM")}><div>Lyarianz Youth Development Program.</div></li>
                                             <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="750" onClick={() => history.push("/AreaOfWorking/Community/ROBIN-HOOD-ARMY")}><div>Robin Hood Army.</div></li>
                                             <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="850" onClick={() => history.push("/AreaOfWorking/Community/SAYLANI-WELFARE-TRUST")}><div>Saylani Welfare Trust.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="850" onClick={() => history.push("/AreaOfWorking/Community/SHAHID-AFRIDI-FOUNDATIO")}><div>Shahid Afridi Foundation.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="850" onClick={() => history.push("/AreaOfWorking/Community/SOFIA-KHANA-GHAR")}><div>Sofia Khana Ghar.</div></li>
+                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="950" onClick={() => history.push("/AreaOfWorking/Community/SHAHID-AFRIDI-FOUNDATIO")}><div>Shahid Afridi Foundation.</div></li>
+                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="1050" onClick={() => history.push("/AreaOfWorking/Community/SOFIA-KHANA-GHAR")}><div>Sofia Khana Ghar.</div></li>
                                         </ul>
                                     </div>
                                 </section>

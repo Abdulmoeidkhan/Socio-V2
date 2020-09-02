@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button, Checkbox,message } from 'antd';
 import firebase from "../../../GlobalEnvironment/firebaseConfig";
 import { useHistory } from "react-router-dom";
 import "./SignIn.css"
@@ -35,7 +35,7 @@ const AdminSignIn = () => {
 
     async function adminLogin(values) {
         await firebase.adminLogin(values.email, values.password).then(() => {
-            alert("You have sign In successfully ")
+            message.success('You Have Sign In Successfully As Admin');
         })
             .catch(function (error) {
                 alert(error.message);

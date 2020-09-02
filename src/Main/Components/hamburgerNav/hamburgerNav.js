@@ -109,6 +109,22 @@ const HamBurgerNav = (props) => {
               Territories
           </p>
           </div>
+          <div className="cursorClass">
+            <p onClick={() => {
+              props.onClose()
+              history.push("/Territories")
+            }}>
+              Pricing & Plans
+          </p>
+          </div>
+          <div className="cursorClass">
+            <p onClick={() => {
+              props.onClose()
+              history.push("/Territories")
+            }}>
+              FAQ's
+          </p>
+          </div>
         </Drawer>
       </>
       }
