@@ -112,7 +112,7 @@ const HamBurgerNav = (props) => {
           <div className="cursorClass">
             <p onClick={() => {
               props.onClose()
-              history.push("/Territories")
+              history.push("/PricingPlans")
             }}>
               Pricing & Plans
           </p>
@@ -120,7 +120,7 @@ const HamBurgerNav = (props) => {
           <div className="cursorClass">
             <p onClick={() => {
               props.onClose()
-              history.push("/Territories")
+              history.push("/FAQ")
             }}>
               FAQ's
           </p>

@@ -4,6 +4,8 @@ import AboutUs from "../Pages/About/About.js";
 import Services from "../Pages/Services/Services.js";
 import Blogs from "../Pages/Blogs/Blogs.js";
 import ContactUs from "../Pages/Contact/Contact.js";
+import FAQ from "../Pages/FAQ/FAQ";
+import PricingPlans from "../Pages/PricingPlans/PricingPlans";
 import TandC from "../Pages/TandC/TandC.js";
 import PrivacyPolicies from "../Pages/PrivacyPolicies/PrivacyPolicies.js";
 import Comparison from "../Pages/Cards/Comparison/Comparison.js";
@@ -91,9 +93,11 @@ function Routes(props) {
                 <Route path={`/AreaOfWorking/Vocation`} component={props => <Vocation {...props} />} key="36" exact/>
                 <Route path={`/AreaOfWorking/Women`} component={props => <Women {...props} />} key="37" exact/>
                 <Route path={`/AreaOfWorking/Others`} component={props => <Others {...props} />} key="38" exact/>
+                <Route path={`/FAQ`} component={props => <FAQ {...props} />} key="39" exact/>
+                <Route path={`/PricingPlans`} component={props => <PricingPlans {...props} />} key="40" exact/>
                 {
                     NGOsRoute.map((item, i) =>
-                        <Route key={i + 38} path={`/${item.link}`} exact >
+                        <Route key={i + 40} path={`/${item.link}`} exact >
                             <NGOsPage item={item} />
                         </Route>
                         )

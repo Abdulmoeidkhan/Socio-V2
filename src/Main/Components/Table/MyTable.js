@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Layout } from 'antd';
+import { Table} from 'antd';
 import './MyTable.css'
 import { detailedData } from "../../GlobalEnvironment/contentRawData"
 

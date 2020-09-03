@@ -1,0 +1,38 @@
+.fetch-button {
+    width: 35vw;
+    margin: 0 auto;
+    display: block;
+}
+
+.admin-faq-class {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.admin-card-class {
+    margin: 15px auto;
+    border-radius: 30px;
+    box-shadow: 2px 2px 4px grey;
+    transition: all 1s ease;
+    transform: scale(1);
+}
+
+.admin-card-class:hover {
+    transition: all 1s ease;
+    transform: scale(1.1);
+}
+
+.bold-class {
+    font-size: 20px;
+    text-decoration: underline;
+}
+.semi-bold-class{
+    font-size: 18px;
+}
+
+.delete-button {
+    display: block;
+    text-align: center;
+    width: 20vw;
+    float: right;
+}

@@ -30,7 +30,7 @@ const AdminSignIn = () => {
 
 
     const onFinishFailed = errorInfo => {
-        console.log('Failed:', errorInfo);
+        message.warning('Failed:', errorInfo);
     };
 
     async function adminLogin(values) {

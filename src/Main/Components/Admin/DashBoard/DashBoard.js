@@ -4,6 +4,7 @@ import { AdminDashBoardFormList } from "../DashBoardFormList/DashBoardFormList.j
 import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
 import firebase from "../../../GlobalEnvironment/firebaseConfig";
 import { AdminContent } from "../Content/Content";
+import  FAQContent  from "../FAQContent/FAQContent";
 import { useHistory } from "react-router-dom";
 import MyFooter from "../../Footer/Footer"
 import "./DashBoard.css";
@@ -18,7 +19,6 @@ const AdminDashBoard = () => {
         function () {
             firebase.currenAdminUser().then((resp) => {
                 setIsAdminSignIn(resp.flag)
-                console.log(resp)
             })
         }, [])
 
@@ -104,6 +104,9 @@ const AdminDashBoard = () => {
                                     </TabPane>
                                     <TabPane tab="Content" key="2">
                                         <AdminContent />
+                                    </TabPane>
+                                    <TabPane tab="FAQ" key="3">
+                                        <FAQContent />
                                     </TabPane>
                                 </Tabs>
                                 <MyFooter />

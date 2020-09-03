@@ -61,6 +61,35 @@ class Firebase {
         await myData
         return status
     }
+
+    async setFAQ(faq) {
+        let status
+        let myData = this.db.ref("/").child("faq").push(faq, function (error) {
+            if (error) {
+                status = "Data could not be saved." + error;
+            } else {
+                status = "Data saved successfully.";
+            }
+        })
+        await myData
+        return status
+    }
+    async getFAQ() {
+        let dataToBeReturn
+        let myData = this.db.ref("/").child("faq").once("value", snap => {
+            dataToBeReturn = snap.val()
+        }
+        )
+        await myData
+        return dataToBeReturn
+    }
+    async delFAQ(key) {
+        let myAct = this.db.ref("/").child("faq").child(key).remove()
+        await myAct
+        return("Question has been deleted")
+    }
+
+
     async adminLogin(email, password) {
         let response = {}
         let userType
