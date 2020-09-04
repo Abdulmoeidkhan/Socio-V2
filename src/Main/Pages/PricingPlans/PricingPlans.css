@@ -1,0 +1,12 @@
+.faq-class .ant-table-cell:hover{
+    font-size: 16px;
+    transition: all .5s ease;
+    height: 20vh;
+    cursor: pointer;
+}
+.faq-class .ant-table-cell{
+    font-size: 14px;
+    transition: all .5s ease;
+    height: 20vh;
+    cursor: pointer;
+}

@@ -1,7 +1,10 @@
 import React, { useState, createRef } from 'react';
-import { Form, message, Input, Button, Card,Popconfirm } from 'antd';
+import { Form, message, Input, Button, Card, Popconfirm, Select } from 'antd';
 import firebase from "../../../GlobalEnvironment/firebaseConfig"
 import "./FAQContent.css"
+
+
+const { Option } = Select;
 
 const FAQContent = () => {
 
@@ -24,6 +27,19 @@ const FAQContent = () => {
     async function fetchFaq() {
         firebase.getFAQ().then(async (val) => {
             let arr = [];
+            let dataObj = {
+                GeneralHealth: [],
+                Education: [],
+                MentalHealth: [],
+                Community: [],
+                DrugRehabiliation: [],
+                Vocation: [],
+                Women: [],
+                SpecialNeeds: [],
+                SeniorCitizen: [],
+                Children: [],
+                Others: [],
+            };
             const keyName = Object.keys(val);
             const keyValues = Object.values(val);
             let func = () => {
@@ -34,6 +50,42 @@ const FAQContent = () => {
                     };
                     arr.push(obj)
                 })
+                arr.map((val, i) => {
+                    if (val.values.FAQCategory === "General Health") {
+                        dataObj.GeneralHealth = [...val]
+                    }
+                    else if (val.values.FAQCategory === "Education") {
+                        dataObj.Education = [...val]
+                    }
+                    else if (val.values.FAQCategory === "Mental Health") {
+                        dataObj.MentalHealth = [...val]
+                    }
+                    else if (val.values.FAQCategory === "Community") {
+                        dataObj.Community = [...val]
+                    }
+                    else if (val.values.FAQCategory === "Drug Rehabiliation") {
+                        dataObj.DrugRehabiliation = [...val]
+                    }
+                    else if (val.values.FAQCategory === "Vocation") {
+                        dataObj.Vocation = [...val]
+                    }
+                    else if (val.values.FAQCategory === "Women") {
+                        dataObj.Women = [...val]
+                    }
+                    else if (val.values.FAQCategory === "Special Needs") {
+                        dataObj.SpecialNeeds = [...val]
+                    }
+                    else if (val.values.FAQCategory === "Senior Citizen") {
+                        dataObj.SeniorCitizen = [...val]
+                    }
+                    else if (val.values.FAQCategory === "Children") {
+                        dataObj.Children.push(val)
+                    }
+                    else if (val.values.FAQCategory === "Others") {
+                        dataObj.Others = [...val]
+                    }
+
+                })
             }
             await func()
             setFaqData(arr)
@@ -42,21 +94,21 @@ const FAQContent = () => {
 
     }
 
-    function confirm(e,dataToBeDelete) {
-        firebase.delFAQ(dataToBeDelete.name)
-        .then((val)=>{
-            message.error(val)
-            fetchFaq()
-        })
-        .catch(function (error) {
-            message.info(error.message)
-        })
-        
-      }
-      
-      function cancel(e) {
+    function confirm(e, dataToBeDelete) {
+        firebase.delFAQ(dataToBeDelete)
+            .then((val) => {
+                message.error(val)
+                fetchFaq()
+            })
+            .catch(function (error) {
+                message.info(error.message)
+            })
+
+    }
+
+    function cancel(e) {
         message.success('Ignored');
-      }
+    }
 
     const layout = {
         labelCol: { span: 8 },
@@ -97,6 +149,33 @@ const FAQContent = () => {
                 >
                     <Input />
                 </Form.Item>
+                <Form.Item
+                    label="FAQ Category"
+                    name="FAQCategory"
+                    rules={[{ required: true, message: 'Please input your Category!' }]}
+                >
+                    <Select
+                        showSearch
+                        style={{ width: 200 }}
+                        placeholder="Select Category"
+                        optionFilterProp="children"
+                        filterOption={(input, option) =>
+                            option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                        }
+                    >
+                        <Option value="General Health">General Health</Option>
+                        <Option value="Education">Education</Option>
+                        <Option value="Mental Health">Mental Health</Option>
+                        <Option value="Community">Community</Option>
+                        <Option value="Drug Rehabiliation">Drug Rehabiliation</Option>
+                        <Option value="Vocation">Vocation</Option>
+                        <Option value="Women">Women</Option>
+                        <Option value="Special Needs">Special Needs</Option>
+                        <Option value="Senior Citizen">Senior Citizen</Option>
+                        <Option value="Children">Children</Option>
+                        <Option value="Others">Others</Option>
+                    </Select>
+                </Form.Item>
                 <Form.Item {...tailLayout}>
                     <Button type="primary" htmlType="submit" >
                         Submit
@@ -109,7 +188,7 @@ const FAQContent = () => {
             <div className="admin-faq-class">
                 {
                     faqData && faqData.map((data, i) =>
-                        <Card key={i} className="admin-card-class" 
+                        <Card key={i} className="admin-card-class"
                         >
                             <b className="bold-class">{data.values.FAQues}</b>
                             <br />
@@ -117,7 +196,7 @@ const FAQContent = () => {
                             <br />
                             <Popconfirm
                                 title="Are you sure delete this task?"
-                                onConfirm={(e)=>confirm(e,data)}
+                                onConfirm={(e) => confirm(e, data)}
                                 onCancel={cancel}
                                 okText="Yes"
                                 cancelText="No"

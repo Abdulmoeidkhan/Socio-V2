@@ -3,6 +3,7 @@ import { Layout, Table } from 'antd';
 import { ThemeContext } from "../../GlobalEnvironment/contextInit";
 import NavBar from "../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../Components/Footer/Footer";
+import "./PricingPlans.css"
 
 
 const { Content } = Layout;
@@ -68,8 +69,8 @@ const columns = [
         title: 'Plans',
         dataIndex: 'Plans',
         key: 'Plans',
-        width: "150px",
-        minWidth: "150px",
+        width: "175px",
+        minWidth: "175px",
         fixed: 'left',
         filters: filterData,
         onFilter: (value, record) => record.Plans.indexOf(value) === 0
@@ -78,43 +79,43 @@ const columns = [
         title: 'Cost',
         dataIndex: 'Cost',
         key: 'Cost',
-        width: "150px",
-        minWidth: "150px",
+        width: "175px",
+        minWidth: "175px",
     },
     {
         title: 'RegistrationFees',
         dataIndex: 'RegistrationFees',
         key: 'RegistrationFees',
-        width: "150px",
-        minWidth: "150px",
+        width: "175px",
+        minWidth: "175px",
     },
     {
         title: 'Session',
         dataIndex: 'Session',
         key: 'Session',
-        width: "150px",
-        minWidth: "150px",
+        width: "175px",
+        minWidth: "175px",
     },
     {
         title: 'Timing',
         dataIndex: 'Timing',
         key: 'Timing',
-        width: "150px",
-        minWidth: "150px",
+        width: "175px",
+        minWidth: "175px",
     },
     {
         title: 'Method',
         dataIndex: 'Method',
         key: 'Method',
-        width: "150px",
-        minWidth: "150px",
+        width: "175px",
+        minWidth: "175px",
     },
     {
         title: 'Followup',
         dataIndex: 'Followup',
         key: 'Followup',
-        width: "150px",
-        minWidth: "150px",
+        width: "175px",
+        minWidth: "175px",
     }
 ];
 const PricingPlans = (props) => {
@@ -128,7 +129,7 @@ const PricingPlans = (props) => {
                                 visibility: visible !important;
                             }
                             .ant-table-thead tr th{
-                                 width:150px !important;
+                                 width:175px !important;
                             }
                         `
                     }</style>
@@ -145,7 +146,7 @@ const PricingPlans = (props) => {
                                             dataSource={data}
                                             bordered
                                             size="middle"
-                                            scroll={{ x: "20%", y: 640 }}
+                                            scroll={{ x: "20%", y: 680 }}
                                         />
                                     </div>
                                 </div>

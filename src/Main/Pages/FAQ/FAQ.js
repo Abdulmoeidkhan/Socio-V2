@@ -1,40 +1,108 @@
 import React, { useEffect, useState } from 'react';
-import { Layout, Card } from 'antd';
+import { Layout, Collapse, Skeleton, message } from 'antd';
 import { ThemeContext } from "../../GlobalEnvironment/contextInit";
 import NavBar from "../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../Components/Footer/Footer";
-import firebase from "../../GlobalEnvironment/firebaseConfig"
+import firebase from "../../GlobalEnvironment/firebaseConfig";
 import "./FAQ.css"
 
 
 const { Content } = Layout;
+const { Panel } = Collapse;
 
 const FAQ = (props) => {
     let [faqData, setFaqData] = useState("")
-
+    let myArr = [
+        "Children",
+        "GeneralHealth",
+        "Education",
+        "MentalHealth",
+        "Community",
+        "DrugRehabiliation",
+        "Vocation",
+        "Women",
+        "SpecialNeeds",
+        "SeniorCitizen",
+        "Others",
+    ]
 
     async function fetchFaq() {
-        firebase.getFAQ().then(async (val) => {
-            let arr = [];
-            const keyName = Object.keys(val);
-            const keyValues = Object.values(val);
-            let func = () => {
-                keyName.map((val, i) => {
-                    let obj = {
-                        name: val,
-                        values: keyValues[i]
-                    };
-                    arr.push(obj)
-                })
+        try {
+            firebase.getFAQ().then(async (val) => {
+                let arr = [];
+                let dataObj = {
+                    Children: [],
+                    GeneralHealth: [],
+                    Education: [],
+                    MentalHealth: [],
+                    Community: [],
+                    DrugRehabiliation: [],
+                    Vocation: [],
+                    Women: [],
+                    SpecialNeeds: [],
+                    SeniorCitizen: [],
+                    Others: [],
+                };
+                const keyName = Object.keys(val);
+                const keyValues = Object.values(val);
+                let func = () => {
+                    keyName.map((val, i) => {
+                        let obj = {
+                            name: val,
+                            values: keyValues[i]
+                        };
+                        arr.push(obj)
+                    })
+                    arr.map((val, i) => {
+                        if (val.values.FAQCategory === "Children") {
+                            dataObj.Children.push(val)
+                        }
+                        else if (val.values.FAQCategory === "General Health") {
+                            dataObj.GeneralHealth = [...val]
+                        }
+                        else if (val.values.FAQCategory === "Education") {
+                            dataObj.Education = [...val]
+                        }
+                        else if (val.values.FAQCategory === "Mental Health") {
+                            dataObj.MentalHealth = [...val]
+                        }
+                        else if (val.values.FAQCategory === "Community") {
+                            dataObj.Community = [...val]
+                        }
+                        else if (val.values.FAQCategory === "Drug Rehabiliation") {
+                            dataObj.DrugRehabiliation = [...val]
+                        }
+                        else if (val.values.FAQCategory === "Vocation") {
+                            dataObj.Vocation = [...val]
+                        }
+                        else if (val.values.FAQCategory === "Women") {
+                            dataObj.Women = [...val]
+                        }
+                        else if (val.values.FAQCategory === "Special Needs") {
+                            dataObj.SpecialNeeds = [...val]
+                        }
+                        else if (val.values.FAQCategory === "Senior Citizen") {
+                            dataObj.SeniorCitizen = [...val]
+                        }
+                        else if (val.values.FAQCategory === "Others") {
+                            dataObj.Others = [...val]
+                        }
+
+                    })
+                }
+                await func()
+                setFaqData(dataObj)
             }
-            await func()
-            setFaqData(arr)
+            )
         }
-        )
+        catch (e) {
+            message.error(e)
+        }
 
     }
     useEffect(() => {
         fetchFaq()
+        return () => null
     }, [])
     return (
         <>
@@ -46,18 +114,32 @@ const FAQ = (props) => {
                             <section className="one-columns-grid">
                                 <div className="faq-class">
                                     <div className="spacing-class" />
-                                    <h2 className="content-head content-head-faq">Frequently Asked Questions (FAQs)</h2>
+                                    <h2 className="content-head content-head-faq">Frequently Asked Questions (FAQ's)</h2>
                                     <div className="faq-class">
-                                    {
-                                        faqData && faqData.map((data, i) =>
-                                            <Card key={i} className="admin-card-class">
-                                                <b className="bold-class">{data.values.FAQues}</b>
-                                                <br />
-                                                <span className="semi-bold-class">{data.values.FAQAnswer}</span>
-                                                <br />
-                                            </Card>
-                                        )
-                                    }
+                                        {faqData ?
+                                            <Collapse defaultActiveKey={['1']}>
+                                                {faqData && myArr.map((data, i) =>
+                                                    faqData[data].length > 0 && <Panel header={data} key={i + 1}>
+                                                        <Collapse defaultActiveKey={['i1']}>
+                                                            {
+                                                                faqData[data].map((data2, i) =>
+                                                                    <Panel header={data2.values.FAQues} key={`i${i + 1}`}>
+                                                                        <p>{data2.values.FAQAnswer}</p>
+                                                                    </Panel>
+                                                                )
+                                                            }
+                                                        </Collapse>
+                                                    </Panel>
+                                                )
+                                                }
+                                            </Collapse>
+                                            :
+                                            <>
+                                                <Skeleton active paragraph={{ rows: 4 }} />
+                                                <Skeleton active paragraph={{ rows: 4 }} />
+                                                <Skeleton active paragraph={{ rows: 4 }} />
+                                                <Skeleton active paragraph={{ rows: 4 }} />
+                                            </>}
                                     </div>
                                 </div>
                             </section>

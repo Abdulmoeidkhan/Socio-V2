@@ -83,8 +83,8 @@ class Firebase {
         await myData
         return dataToBeReturn
     }
-    async delFAQ(key) {
-        let myAct = this.db.ref("/").child("faq").child(key).remove()
+    async delFAQ(node) {
+        let myAct = this.db.ref("/").child("faq").child(node.name).remove()
         await myAct
         return("Question has been deleted")
     }
