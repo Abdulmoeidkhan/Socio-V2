@@ -12,7 +12,7 @@ a.ant-typography, .ant-checkbox-checked .ant-checkbox-inner {
     border-color: #01989d !important;
 }
 
-.ant-modal-content, .ant-modal-header, .signUpForm .ant-form-item:nth-child(1), .signUpForm .ant-form-item:nth-child(2), .signUpForm .ant-form-item:nth-child(3), .signUpForm .ant-form-item:nth-child(6) div:hover, .logInForm .ant-form-item:nth-child(1), .logInForm .ant-form-item:nth-child(2), .logInForm .ant-form-item:nth-child(5) div:hover {
+.ant-modal-content, .ant-modal-header, .signUpForm .ant-form-item:nth-child(1), .signUpForm .ant-form-item:nth-child(2), .signUpForm .ant-form-item:nth-child(3), .signUpForm .ant-form-item:nth-child(6) div:hover, .logInForm .ant-form-item:nth-child(1), .logInForm .ant-form-item:nth-child(2), .logInForm .ant-form-item:nth-child(5) div:hover,.passResetForm .ant-form-item:nth-child(1) {
     border-radius: 16px !important;
     border-color: transparent;
     -webkit-box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);

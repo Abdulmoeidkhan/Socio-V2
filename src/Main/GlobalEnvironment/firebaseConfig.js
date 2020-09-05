@@ -150,6 +150,11 @@ class Firebase {
         await this.auth.signInWithEmailAndPassword(email, password)
         return this.auth.currentUser
     }
+    async passReseting(email) {
+        let tempMessage
+        await this.auth.sendPasswordResetEmail(email).then(()=>tempMessage="Your password reset has been sent to your provided email")
+        return tempMessage
+    }
     async logout() {
         let returnLog = this.auth.signOut().then(() => this.currentUsers())
         await returnLog
@@ -162,6 +167,7 @@ class Firebase {
         }).then(
             this.db.ref("/").child("users").child(this.auth.currentUser.uid).set({ name: userName, email: email, id: this.auth.currentUser.uid })
         )
+        await this.auth.signInWithEmailAndPassword(email, password)
         return this.auth.currentUser
     }
 
@@ -173,6 +179,16 @@ class Firebase {
 
     async formSubmit(object) {
         let data = this.db.ref("/").child("users").child(this.auth.currentUser.uid).child("form").set(object)
+        await data
+        return ("Form is Submitted Successfully")
+    }
+    async form2Submit(object) {
+        let data = this.db.ref("/").child("users").child(this.auth.currentUser.uid).child("form2").set(object)
+        await data
+        return ("Form is Submitted Successfully")
+    }
+    async form3Submit(object) {
+        let data = this.db.ref("/").child("users").child(this.auth.currentUser.uid).child("form3").set(object)
         await data
         return ("Form is Submitted Successfully")
     }

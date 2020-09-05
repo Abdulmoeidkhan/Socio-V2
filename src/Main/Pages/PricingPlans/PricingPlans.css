@@ -10,3 +10,23 @@
     height: 20vh;
     cursor: pointer;
 }
+.ant-table-tbody > tr.ant-table-row:nth-child(2):hover > td{
+    background:#445a71 !important;
+    color:#fff;
+  }
+  .ant-table-tbody > tr.ant-table-row:nth-child(3):hover > td{
+    background:#FFD700 !important;
+    color:#000;
+  }
+  .ant-table-tbody > tr.ant-table-row:nth-child(4):hover > td{
+    background:#D3D3D3 !important;
+    color:#000;
+  }
+  .ant-table-tbody > tr.ant-table-row:nth-child(5):hover > td{
+    background:#428bca !important;
+    color:#fff;
+  }
+  .ant-table-tbody > tr.ant-table-row:nth-child(6):hover > td{
+    background:#64d336  !important;
+    color:#fff;
+  }

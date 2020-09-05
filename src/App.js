@@ -46,6 +46,7 @@ function App() {
             transition: all 1s ease;
             transform: scale(1);
           }
+
           `}
           </style>
           :

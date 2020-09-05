@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Form, Input, Button, Checkbox, Typography } from 'antd';
+import { Form, Input, Button, Checkbox, Typography, message } from 'antd';
 import "./SignUp.css"
 
 
@@ -20,12 +20,13 @@ const tailLayout = {
 
 const SignUp = (props) => {
     const [signUp, setSignUp] = useState(true)
-
+    const [passReset, setPassReset] = useState(false)
+    const [processing,setProcessing]=useState(false)
     const onFinishFailed = errorInfo => {
-        console.log('Failed:', errorInfo);
+        message.error(errorInfo);
     };
     return (<>
-        {signUp == true ?
+        {signUp == true &&
             <Form
                 {...layout}
                 name="basic"
@@ -64,18 +65,56 @@ const SignUp = (props) => {
                     </Link>
                 </Form.Item>
                 <Form.Item {...tailLayout}>
-                    <Button type="primary" htmlType="submit">
+                    <Button type="primary" htmlType="submit" disabled={processing?true:false}>
                         Submit
                 </Button>
                 </Form.Item>
-            </Form> :
+            </Form>}
+        {signUp == false && passReset==false && <Form
+            {...layout}
+            name="basic"
+            initialValues={{ remember: true }}
+            onFinish={props.logIn}
+            onFinishFailed={onFinishFailed}
+            className="logInForm"
+        >
+            <Form.Item
+                label="Email"
+                name="email"
+                rules={[{ required: true, message: 'Please input your Email !' }]}
+            >
+                <Input />
+            </Form.Item>
+            <Form.Item
+                label="Password"
+                name="password"
+                rules={[{ required: true, message: 'Please input your password!' }]}
+            >
+                <Input.Password />
+            </Form.Item>
+            <Form.Item>
+                <Link href="#" onClick={() => setPassReset(!passReset)} className="cursorClass">
+                    {!passReset ? `Forget Password ??` : `Remember ??`}
+                </Link>
+                <br/>
+                <Link href="#" onClick={() => setSignUp(!signUp)} className="cursorClass">
+                    {!signUp ? `Not Yet Registered With Us ???` : `Already Registered With Us ???`}
+                </Link>
+            </Form.Item>
+            <Form.Item {...tailLayout}>
+                <Button type="primary" htmlType="submit"  Disabled={processing?true:false}>
+                    Submit
+                </Button>
+            </Form.Item>
+        </Form>}
+        {passReset == true &&
             <Form
                 {...layout}
                 name="basic"
                 initialValues={{ remember: true }}
-                onFinish={props.logIn}
+                onFinish={props.passReseting}
                 onFinishFailed={onFinishFailed}
-                className="logInForm"
+                className="passResetForm"
             >
                 <Form.Item
                     label="Email"
@@ -84,23 +123,13 @@ const SignUp = (props) => {
                 >
                     <Input />
                 </Form.Item>
-                <Form.Item
-                    label="Password"
-                    name="password"
-                    rules={[{ required: true, message: 'Please input your password!' }]}
-                >
-                    <Input.Password />
-                </Form.Item>
-                <Form.Item {...tailLayout} name="remember" valuePropName="checked">
-                    <Checkbox>Remember me</Checkbox>
-                </Form.Item>
                 <Form.Item>
-                    <Link href="#" onClick={() => setSignUp(!signUp)} className="cursorClass">
-                        {!signUp ? `Not Yet Registered With Us ???` : `Already Registered With Us ???`}
+                    <Link href="#" onClick={() => setPassReset(!passReset)} className="cursorClass">
+                        {!passReset ? `Forget Password ??` : `Remember ??`}
                     </Link>
                 </Form.Item>
                 <Form.Item {...tailLayout}>
-                    <Button type="primary" htmlType="submit" >
+                    <Button type="primary" htmlType="submit"  Disabled={processing?true:false}>
                         Submit
                 </Button>
                 </Form.Item>

@@ -44,6 +44,18 @@ const NavBar = (props) => {
         setIsSignIn(true)
 
     }
+    async function signIn(values) {
+        await firebase.signUp(values.username,values.email, values.password).then(() => {
+            message.success(`You Have Sign Up Successfully As ${firebase.currentUsers().displayName}`);
+            props.setUserSignIn&&props.setUserSignIn(firebase.currentUsers())
+            onClose()
+        })
+            .catch(function (error) {
+                message.error(error.message);
+            })
+        setIsSignIn(true)
+
+    }
     async function logOut() {
         onClose()
         await firebase.logout().then(() => {
@@ -56,6 +68,15 @@ const NavBar = (props) => {
         setIsSignIn(false)
     }
 
+    async function passReseting(values) {
+        await firebase.passReseting(values.email).then((tempMess) => {
+            message.success(tempMess);
+            onClose()
+        })
+            .catch(function (error) {
+                message.error(error.message);
+            })
+    }
 
     useEffect(() => {
         if (!isSignIn) {
@@ -136,7 +157,7 @@ const NavBar = (props) => {
                                 onCancel={handleCancel}
                                 footer={null}
                             >
-                                <SignUp signIn={setIsSignIn} logIn={logIn} />
+                                <SignUp signIn={signIn} logIn={logIn} passReseting={passReseting}/>
                             </Modal>
                         </div>
                         : <div>
