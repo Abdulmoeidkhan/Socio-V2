@@ -21,7 +21,7 @@ const tailLayout = {
 const SignUp = (props) => {
     const [signUp, setSignUp] = useState(true)
     const [passReset, setPassReset] = useState(false)
-    const [processing,setProcessing]=useState(false)
+    const [processing, setProcessing] = useState(false)
     const onFinishFailed = errorInfo => {
         message.error(errorInfo);
     };
@@ -31,7 +31,12 @@ const SignUp = (props) => {
                 {...layout}
                 name="basic"
                 initialValues={{ remember: true }}
-                onFinish={props.signIn}
+                onFinish={
+                    (e) => {
+                        setProcessing(false)
+                        props.signIn(e)
+                    }
+                }
                 onFinishFailed={onFinishFailed}
                 className="signUpForm"
             >
@@ -65,16 +70,21 @@ const SignUp = (props) => {
                     </Link>
                 </Form.Item>
                 <Form.Item {...tailLayout}>
-                    <Button type="primary" htmlType="submit" disabled={processing?true:false}>
+                    <Button type="primary" htmlType="submit" disabled={processing ? true : false}>
                         Submit
                 </Button>
                 </Form.Item>
             </Form>}
-        {signUp == false && passReset==false && <Form
+        {signUp == false && passReset == false && <Form
             {...layout}
             name="basic"
             initialValues={{ remember: true }}
-            onFinish={props.logIn}
+            onFinish={
+                (e) => {
+                    setProcessing(false)
+                    props.logIn(e)
+                }
+            }
             onFinishFailed={onFinishFailed}
             className="logInForm"
         >
@@ -96,13 +106,13 @@ const SignUp = (props) => {
                 <Link href="#" onClick={() => setPassReset(!passReset)} className="cursorClass">
                     {!passReset ? `Forget Password ??` : `Remember ??`}
                 </Link>
-                <br/>
+                <br />
                 <Link href="#" onClick={() => setSignUp(!signUp)} className="cursorClass">
                     {!signUp ? `Not Yet Registered With Us ???` : `Already Registered With Us ???`}
                 </Link>
             </Form.Item>
             <Form.Item {...tailLayout}>
-                <Button type="primary" htmlType="submit"  Disabled={processing?true:false}>
+                <Button type="primary" htmlType="submit" Disabled={processing ? true : false}>
                     Submit
                 </Button>
             </Form.Item>
@@ -112,7 +122,12 @@ const SignUp = (props) => {
                 {...layout}
                 name="basic"
                 initialValues={{ remember: true }}
-                onFinish={props.passReseting}
+                onFinish={
+                    (e) => {
+                        setProcessing(false)
+                        props.passReseting(e)
+                    }
+                }
                 onFinishFailed={onFinishFailed}
                 className="passResetForm"
             >
@@ -129,7 +144,7 @@ const SignUp = (props) => {
                     </Link>
                 </Form.Item>
                 <Form.Item {...tailLayout}>
-                    <Button type="primary" htmlType="submit"  Disabled={processing?true:false}>
+                    <Button type="primary" htmlType="submit" Disabled={processing ? true : false}>
                         Submit
                 </Button>
                 </Form.Item>
