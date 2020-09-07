@@ -1,8 +1,4 @@
-.aof-two-column-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 10px auto;
-}
+
 .aof-two-column-grid .first-page-card-class{
     width: 90%;
 }
@@ -16,3 +12,17 @@
     transform:scale(1.2) !important;
     transition: all 1s ease;
 }
+@media only screen and (min-width: 791px){
+    .aof-two-column-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px auto;
+    }
+  }
+@media only screen and (max-width: 790px){
+    .aof-two-column-grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        margin: 10px auto;
+    }
+  }

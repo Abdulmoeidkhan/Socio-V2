@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import HamBurgerNav from "../hamburgerNav/hamburgerNav"
-import { Layout, Modal, message } from 'antd';
+import { Layout, Modal, notification } from 'antd';
 import { ThemeContext } from "../../GlobalEnvironment/contextInit";
 import { useHistory } from "react-router-dom";
 import firebase from "../../GlobalEnvironment/firebaseConfig";
@@ -8,6 +8,45 @@ import SignUp from "../SignUp/SignUp.js"
 import "./Nav-Menu.css"
 
 const { Header } = Layout;
+
+const SignInNotify = (placement,user) => {
+    notification.open({
+      message: 'Sign In Successfully ',
+      description:
+        `You have Sign In Successfully As ${user}`,
+      icon: <img src="https://res.cloudinary.com/tanzeelah/image/upload/v1599409729/The%20Graphic%20Guru/Success_ph4dht.gif" style={{ width: "100px",marginTop: "-15px",marginLeft: "-60px"}}/>,
+    placement,
+    });
+  };
+  const SignUpNotify = (placement,user) => {
+    notification.open({
+      message: 'Sign Up Successfully ',
+      description:
+        `You have Sign Up Successfully As ${user}`,
+      icon: <img src="https://res.cloudinary.com/tanzeelah/image/upload/v1599409729/The%20Graphic%20Guru/Success_ph4dht.gif" style={{ width: "100px",marginTop: "-15px",marginLeft: "-60px"}}/>,
+    placement,
+    });
+  };
+
+  const successNotify = (placement,message) => {
+    notification.open({
+      message: 'Imporatant Notification',
+      description:
+        `${message}`,
+      icon: <img src="https://res.cloudinary.com/tanzeelah/image/upload/v1599409729/The%20Graphic%20Guru/Error_yjedjk.gif" style={{ width: "100px",marginTop: "-15px",marginLeft: "-60px"}}/>,
+    placement,
+    });
+  };
+
+  const errorNotify = (placement,message) => {
+    notification.open({
+      message: 'Imporatant Notification',
+      description:
+        `${message}`,
+      icon: <img src="https://res.cloudinary.com/tanzeelah/image/upload/v1599409729/The%20Graphic%20Guru/Error_yjedjk.gif" style={{ width: "100px",marginTop: "-15px",marginLeft: "-60px"}}/>,
+    placement,
+    });
+  };
 
 const NavBar = (props) => {
     const [isSignIn, setIsSignIn] = useState(false)
@@ -34,24 +73,24 @@ const NavBar = (props) => {
     };
     async function logIn(values) {
         await firebase.login(values.email, values.password).then(() => {
-            message.success(`You Have Sign In Successfully As ${firebase.currentUsers().displayName}`);
+            SignInNotify('topLeft',firebase.currentUsers().displayName)
             props.setUserSignIn&&props.setUserSignIn(firebase.currentUsers())
             onClose()
         })
             .catch(function (error) {
-                message.error(error.message);
+                errorNotify('topLeft',`Error ${error.message}`);
             })
         setIsSignIn(true)
 
     }
     async function signIn(values) {
         await firebase.signUp(values.username,values.email, values.password).then(() => {
-            message.success(`You Have Sign Up Successfully As ${firebase.currentUsers().displayName}`);
+            SignUpNotify('topLeft',firebase.currentUsers().displayName)
             props.setUserSignIn&&props.setUserSignIn(firebase.currentUsers())
             onClose()
         })
             .catch(function (error) {
-                message.error(error.message);
+                errorNotify('topLeft',`Error ${error.message}`);
             })
         setIsSignIn(true)
 
@@ -59,22 +98,22 @@ const NavBar = (props) => {
     async function logOut() {
         onClose()
         await firebase.logout().then(() => {
-            message.warning("You Have Sign Out Successfully")
+            errorNotify('topLeft',`You Have Sign Out Successfully`);
             props.setUserSignIn&&props.setUserSignIn()
         })
             .catch(function (error) {
-                message.error(error.message);
+                errorNotify('topLeft',`Error ${error.message}`);
             })
         setIsSignIn(false)
     }
 
     async function passReseting(values) {
         await firebase.passReseting(values.email).then((tempMess) => {
-            message.success(tempMess);
+            successNotify('topLeft',`Error ${tempMess}`);;
             onClose()
         })
             .catch(function (error) {
-                message.error(error.message);
+                errorNotify('topLeft',`Error ${error.message}`);
             })
     }
 
@@ -144,7 +183,7 @@ const NavBar = (props) => {
                         <img className="logo-img" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" />
                     </h2>
                     <div className="logo1 navigation-menu-class">
-                        <HamBurgerNav setIsSignIn={setIsSignIn} visible={visible} currentUsersData={currentUsersData} onClose={onClose} showDrawer={showDrawer} />
+                        <HamBurgerNav setIsSignIn={setIsSignIn} visible={visible} currentUsersData={currentUsersData} onClose={onClose} showDrawer={showDrawer} showModal={showModal} handleCancel={handleCancel}/>
                     </div>
                     {!currentUsersData ?
                         <div className="logo1">

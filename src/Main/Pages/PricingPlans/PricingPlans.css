@@ -1,32 +1,38 @@
-.faq-class .ant-table-cell:hover{
-    font-size: 16px;
-    transition: all .5s ease;
-    height: 20vh;
-    cursor: pointer;
+.faq-class .ant-table-cell:hover {
+  font-size: 16px;
+  transition: all .5s ease;
+  height: 20vh;
+  cursor: pointer;
 }
-.faq-class .ant-table-cell{
-    font-size: 14px;
-    transition: all .5s ease;
-    height: 20vh;
-    cursor: pointer;
+
+.faq-class .ant-table-cell {
+  font-size: 14px;
+  transition: all .5s ease;
+  height: 20vh;
+  cursor: pointer;
 }
-.ant-table-tbody > tr.ant-table-row:nth-child(2):hover > td{
-    background:#445a71 !important;
-    color:#fff;
-  }
-  .ant-table-tbody > tr.ant-table-row:nth-child(3):hover > td{
-    background:#FFD700 !important;
-    color:#000;
-  }
-  .ant-table-tbody > tr.ant-table-row:nth-child(4):hover > td{
-    background:#D3D3D3 !important;
-    color:#000;
-  }
-  .ant-table-tbody > tr.ant-table-row:nth-child(5):hover > td{
-    background:#428bca !important;
-    color:#fff;
-  }
-  .ant-table-tbody > tr.ant-table-row:nth-child(6):hover > td{
-    background:#64d336  !important;
-    color:#fff;
-  }
+
+.faq-class .ant-table-tbody>tr.ant-table-row:nth-child(2):hover>td {
+  background: #445a71 !important;
+  color: #fff;
+}
+
+.faq-class .ant-table-tbody>tr.ant-table-row:nth-child(3):hover>td {
+  background: #FFD700 !important;
+  color: #000;
+}
+
+.faq-class .ant-table-tbody>tr.ant-table-row:nth-child(4):hover>td {
+  background: #D3D3D3 !important;
+  color: #000;
+}
+
+.faq-class .ant-table-tbody>tr.ant-table-row:nth-child(5):hover>td {
+  background: #428bca !important;
+  color: #fff;
+}
+
+.faq-class .ant-table-tbody>tr.ant-table-row:nth-child(6):hover>td {
+  background: #64d336 !important;
+  color: #fff;
+}

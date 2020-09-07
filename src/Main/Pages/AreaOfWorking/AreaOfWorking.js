@@ -22,6 +22,7 @@ const AreaOfWorking = (props) => {
                                 <div className="center-class">
                                     <div className="spacing-class" />
                                     <h2 className="content-head">Area Of Working</h2>
+                                    <p className="content-para">Social work itself is a diversified field that aims to aid individuals, groups and communities in all domains of life. Following are the Areas of Working that Socio-Linkage provides services for.</p>
                                 </div>
                                 <div className="aof-two-column-grid">
                                     <Card bordered={true} className="first-page-card-class" onClick={()=> history.push("/AreaOfWorking/General-Health")}>

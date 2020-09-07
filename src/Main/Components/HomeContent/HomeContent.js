@@ -11,8 +11,8 @@ const { Meta } = Card;
 const HomeContent = (props) => {
     let history = useHistory()
     useEffect(() => {
-            AOS.init();
-            AOS.refresh();
+        AOS.init();
+        AOS.refresh();
     })
     return (
         <>
@@ -120,7 +120,7 @@ const HomeContent = (props) => {
                                                 </p>
                                 </Card>
                                 <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/TheGraphicGuru")} >
-                                    <Meta avatar={<Avatar src="https://res.cloudinary.com/tanzeelah/image/upload/v1596538345/Flashcards/Icons/The_Graphic_Guru_iy95pc.png" data-aos-duration="1500" data-aos={"fade-up-left"} />} />
+                                    <Meta avatar={<Avatar src="https://res.cloudinary.com/tanzeelah/image/upload/v1599410512/The%20Graphic%20Guru/The_Graphic_Guru_yeclqn.png" data-aos-duration="1500" data-aos={"fade-up-left"} />} />
                                     <h2 className="content-sub-head">The Graphic Guru</h2>
                                     <p data-aos-duration="1500" data-aos="zoom-up" data-aos-delay="400">
                                         Let our Graphic Guru guide you through our site and our services! The Graphic Guru solves your problems like joy ride
@@ -195,13 +195,12 @@ const HomeContent = (props) => {
                             <blockquote>
 
                                 <Avatar
-                                    src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
-                                    alt="Han Solo"
+                                    src={require("../../Assets/Sir-Hammal.png")}
+                                    alt="Hammal Sir"
                                 />
                                 <p className="comment-class-para">
-                                    "We supply a series of design principles, practical patterns and high quality design
-                                    resources (Sketch and Axure), to help people create their product prototypes beautifully
-                                    and efficiently."
+                                    "It’s very first time that such a remarkable platform has been started to facilitate the common people and give exposure to the organizations which are working with zest but are still not known by many in the social sector.
+                                    The team of Socio-Linkage is really praiseworthy for their creative effort and for unfolding something completely unique. I wish them all the best for their future plans!"
                                                         </p>
                             </blockquote>
                             <blockquote>

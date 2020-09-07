@@ -1,10 +1,10 @@
 import React from 'react';
-import { Drawer, Button, Collapse } from 'antd';
+import { Drawer, Button, Collapse, Modal } from 'antd';
 import "./hamburgerNav.css"
-import { MenuFoldOutlined } from '@ant-design/icons';
 import { useHistory } from "react-router-dom";
 import { ThemeContext } from "../../GlobalEnvironment/contextInit";
-import firebase from "../../GlobalEnvironment/firebaseConfig"
+import GoogleTranslate from "../GoogleTranslate/GoogleTranslate"
+import firebase from "../../GlobalEnvironment/firebaseConfig";
 
 
 
@@ -37,7 +37,10 @@ const HamBurgerNav = (props) => {
           `
           }
         </style>
-        <Button onClick={props.showDrawer} style={{ backgroundColor: "none" }} icon={<MenuFoldOutlined />}>
+        <Button onClick={props.showDrawer} style={{ backgroundColor: "none" }} icon={
+          <img src={require("../../Assets/menu.png")} style={{ width: "50px", height: "65px" }} />
+          // <MenuFoldOutlined />
+        }>
         </Button>
         <Drawer
           title={
@@ -124,6 +127,26 @@ const HamBurgerNav = (props) => {
             }}>
               FAQ's
           </p>
+          </div>
+          <div className="cursorClass">
+            <GoogleTranslate />
+          </div>
+          <div className="register-mob-class cursorClass">
+            {
+              !firebase.currentUsers() ? <p onClick={() => {
+                props.onClose()
+                props.showModal()
+              }}>
+                Register
+            </p> :
+                <p onClick={() => {
+                  props.onClose()
+                  props.handleCancel()
+                }}>
+                  Log Out
+          </p>
+            }
+
           </div>
         </Drawer>
       </>

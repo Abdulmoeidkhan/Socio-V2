@@ -36,6 +36,9 @@
         letter-spacing: 2px;
         line-height: 45px;
     }
+    .spacing-class {
+        height: 12vh;
+    }
 }
 
 
@@ -65,9 +68,7 @@
     background-color: #fff;
 }
 
-.spacing-class {
-    height: 10vh;
-}
+
 
 /* section-1 css */
 
@@ -229,6 +230,9 @@
         letter-spacing: 2px;
         line-height: 45px;
     }
+    .spacing-class {
+        height: 2vh;
+    }
 }
 
 @media only screen and (min-width: 401px)and (max-width: 700px) {
@@ -265,6 +269,9 @@
         letter-spacing: 2px;
         line-height: 45px;
     }
+    .spacing-class {
+        height: 6vh;
+    }
 }
 @media only screen and (min-width: 701px)and (max-width: 1000px) {
     .section-parent {
@@ -299,6 +306,9 @@
         font-weight: bolder;
         letter-spacing: 2px;
         line-height: 45px;
+    }
+    .spacing-class {
+        height: 10vh;
     }
 }
 

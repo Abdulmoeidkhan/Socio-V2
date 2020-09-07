@@ -48,17 +48,29 @@
         display: none;
     }
 }
+@media only screen and (min-width: 635px) {
+    .register-mob-class{
+        display: none;
+    }
+}
+@media only screen and (max-width: 634px) {
+    .register-mob-class{
+        display: block;
+    }
+}
 
 @media only screen and (min-width: 580px)and (max-width: 700px) {
     .headerPanelClassForSideNav{
         display: inline;
     }
+
 }
 
 @media only screen and (min-width: 380px)and (max-width: 579px) {
     .headerPanelClassForSideNav{
         display: inline;
     }
+
 }
 .headerWorldIcon2{
  width:250px;
