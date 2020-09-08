@@ -1,7 +1,3 @@
-/* @media only screen and (min-width: 701px) {
-   
-} */
-
 @media only screen and (min-width: 1001px) {
     .five-column-seperation {
         display: grid;
@@ -39,16 +35,136 @@
     .spacing-class {
         height: 12vh;
     }
+    .equal-columns-grid-2 {
+        height: 80vh;
+        background-Image: url("../../Assets/Wave.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top:120px ;
+    }
+}
+
+@media only screen and (min-width: 701px)and (max-width: 1000px) {
+    .section-parent {
+        display: grid;
+        grid-template-rows: .2fr .4fr .2fr 1.5fr 1.8fr;
+    }
+    .equal-columns-grid-2 {
+        height: 68vh;
+        padding-top: 9em;
+    }
+    .card-background-class {
+        height: 80%;
+        width: 90vw;
+        background-Image: url('../../Assets/Card-background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section-parent .anime-class-img-spec{
+        width: 90vw;
+        height: 60vh;
+        margin: 0 auto;
+    }
+    .section-parent .anime-class-img {
+        width: 85vw;
+        height: 40vh;
+        margin-left: 4vw;
+    }
+    .content-head {
+        /* font-family: Nunito Sans; */
+        margin-top: 4%;
+        font-size: 4vw;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        line-height: 45px;
+    }
+    .spacing-class {
+        height: 10vh;
+    }
+    .equal-columns-grid-2 .content-content-2 {
+        background-Image: url("../../Assets/Wave.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top:60px ;
+        padding-left: 10px;
+    }
 }
 
 
-.equal-columns-grid-2 {
-    height: 80vh;
-    background-Image: url("../../Assets/Wave.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top:120px ;
+@media only screen and (min-width: 401px)and (max-width: 700px) {
+    .section-parent {
+        display: grid;
+        grid-template-rows: .2fr .4fr .2fr 2fr 2fr;
+    }
+    .equal-columns-grid-2 {
+        height: 78vh;
+        padding-top: 10em;
+    }
+    .card-background-class {
+        height: 80%;
+        width: 100vw;
+        background-Image: url('../../Assets/Card-background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section-parent .anime-class-img-spec{
+        width: 90vw;
+        height: 60vh;
+        margin: 0 auto;
+    }
+    .section-parent .anime-class-img {
+        width: 85vw;
+        height: 40vh;
+        margin-left: 4vw;
+    }
+    .content-head {
+        /* font-family: Nunito Sans; */
+        margin-top: 4%;
+        font-size: 8vw;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        line-height: 45px;
+    }
+    .spacing-class {
+        height: 6vh;
+    }
+    .equal-columns-grid-2 {
+        height: 80vh;   
+        padding-top:120px ;
+    }
+    .equal-columns-grid-2 .content-content-2 {
+        background-Image: url("../../Assets/Wave.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top:60px ;
+        padding-left: 10px;
+    }
 }
+
+@media only screen and (max-width: 400px) {
+    .equal-columns-grid-2,.equal-columns-grid-3,.equal-columns-grid-1 {
+        height: 78vh;
+        padding-top: 4em;
+    }
+    .section-parent .anime-class-img-spec{
+        width: 99vw;
+        height: 60vh;
+        margin: 0 auto;
+    }
+    .section-parent .anime-class-img {
+        width: 99vw;
+        height: 35vh;
+        margin: 0 auto;
+    }
+    .equal-columns-grid-2 .content-content-2 {
+        background-Image: url("../../Assets/Wave.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top:100px ;
+        padding-left: 10px;
+    }
+}
+
 .equal-columns-grid-2 .content-content-2,.equal-columns-grid-2 .content-content-2 h2{
     color:#fff ;
 }
@@ -235,99 +351,9 @@
     }
 }
 
-@media only screen and (min-width: 401px)and (max-width: 700px) {
-    .section-parent {
-        display: grid;
-        grid-template-rows: .2fr .4fr .2fr 2fr 2fr;
-    }
-    .equal-columns-grid-2 {
-        height: 78vh;
-        padding-top: 10em;
-    }
-    .card-background-class {
-        height: 80%;
-        width: 100vw;
-        background-Image: url('../../Assets/Card-background.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .section-parent .anime-class-img-spec{
-        width: 90vw;
-        height: 60vh;
-        margin: 0 auto;
-    }
-    .section-parent .anime-class-img {
-        width: 85vw;
-        height: 40vh;
-        margin-left: 4vw;
-    }
-    .content-head {
-        /* font-family: Nunito Sans; */
-        margin-top: 4%;
-        font-size: 8vw;
-        font-weight: bolder;
-        letter-spacing: 2px;
-        line-height: 45px;
-    }
-    .spacing-class {
-        height: 6vh;
-    }
-}
-@media only screen and (min-width: 701px)and (max-width: 1000px) {
-    .section-parent {
-        display: grid;
-        grid-template-rows: .2fr .4fr .2fr 1.5fr 1.8fr;
-    }
-    .equal-columns-grid-2 {
-        height: 68vh;
-        padding-top: 9em;
-    }
-    .card-background-class {
-        height: 80%;
-        width: 90vw;
-        background-Image: url('../../Assets/Card-background.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .section-parent .anime-class-img-spec{
-        width: 90vw;
-        height: 60vh;
-        margin: 0 auto;
-    }
-    .section-parent .anime-class-img {
-        width: 85vw;
-        height: 40vh;
-        margin-left: 4vw;
-    }
-    .content-head {
-        /* font-family: Nunito Sans; */
-        margin-top: 4%;
-        font-size: 4vw;
-        font-weight: bolder;
-        letter-spacing: 2px;
-        line-height: 45px;
-    }
-    .spacing-class {
-        height: 10vh;
-    }
-}
 
-@media only screen and (max-width: 400px) {
-    .equal-columns-grid-2,.equal-columns-grid-3,.equal-columns-grid-1 {
-        height: 78vh;
-        padding-top: 4em;
-    }
-    .section-parent .anime-class-img-spec{
-        width: 99vw;
-        height: 60vh;
-        margin: 0 auto;
-    }
-    .section-parent .anime-class-img {
-        width: 99vw;
-        height: 35vh;
-        margin: 0 auto;
-    }
-}
+
+
 
 @media only screen and (min-width: 270px)and (max-width: 1000px) {
     .equal-columns-grid {

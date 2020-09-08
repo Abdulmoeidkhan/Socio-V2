@@ -1,10 +1,10 @@
 import React from 'react';
-import { Layout} from 'antd';
+import { Layout } from 'antd';
 import { ThemeContext } from "../../GlobalEnvironment/contextInit";
 import NavBar from "../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../Components/Footer/Footer";
 import Banner from "../../Components/Banner/Banner.js";
-import HomeContent from "../../Components/HomeContent/HomeContent"
+import HomeContent from "../../Components/HomeContent/HomeContent";
 import "./Home.css"
 
 
@@ -33,7 +33,7 @@ const Home = (props) => {
                         <NavBar />
                         <Content className="content-container-class">
                             <Banner />
-                            <HomeContent/>
+                            <HomeContent />
                         </Content>
                         <MyFooter />
                     </Layout>

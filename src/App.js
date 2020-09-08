@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MainComponent from "./Main/GlobalEnvironment/mainWrapper"
 import firebase from "./Main/GlobalEnvironment/firebaseConfig"
+import MobileFooter from "./Main/Components/MobileFooter/MobileFooter"
 import 'antd/dist/antd.css'
 import "./App.css"
 
@@ -15,7 +16,7 @@ function App() {
         setfirebaseInitializes(true)
       }, 3000)
     })
-  },[])
+  }, [])
 
   return (
     <div className="App">
@@ -81,8 +82,11 @@ function App() {
       <div className="shutter-comp-class">
         <MainComponent />
       </div>
+      <MobileFooter />
+      <span className="desktop-class-icons">
       <div className="arrowUpKey" onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) }}><i className="fa fa-x fa-arrow-up" style={{ color: "#fff" }} aria-hidden="true"></i></div>
       <div className="arrowDownKey" onClick={() => { window.scrollTo({ top: 100000, left: 0, behavior: "smooth" }) }}><i className="fa fa-x fa-arrow-down" style={{ color: "#fff" }} aria-hidden="true"></i></div>
+      </span>
     </div>
   )
 }
