@@ -68,8 +68,8 @@ const Women = (props) => {
                                         still fails to provide equal rights to women. Therefore, to pull off a better and gender free
                                         environment for women there are some renowned organizations operating in Karachi such as:
                                         </p>
-                                    <div className="pakistanBoldPara Org-detailed-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
-                                        <div>
+                                    <div className="pakistanBoldPara women-org-detailed-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
+                                        <div className="sub-org-detailed-class">
                                             <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Women/AAHUNG-FOUNDATION")}>
                                                 <PictureTiles name="Aahung Foundation" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606161/Organization%20LOGOS/PNG/Aahung_atcxdw.png" />
                                             </div>
@@ -80,7 +80,7 @@ const Women = (props) => {
                                                 <PictureTiles name="Depilex Smile again" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606385/Organization%20LOGOS/PNG/Depilex_Smile_Again_du5r6i.png" />
                                             </div>
                                         </div>
-                                        <div>
+                                        <div className="sub-org-detailed-class">
                                             <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Women/RA’ANA-LIAQUAT-CRAFSTSMEN-COLONY-(RLCC-WOMEN)")}>
                                                 <PictureTiles name="RLCC-Women" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606470/Organization%20LOGOS/PNG/RLCC_ncxufh.png" />
                                             </div>
@@ -88,17 +88,18 @@ const Women = (props) => {
                                                 <PictureTiles name="Shirkat Gah Women Resource Centre" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606385/Organization%20LOGOS/PNG/Shirkat_Gah_Women_Resource_Centre_kiynof.png" />
                                             </div>
                                             <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250">
+                                            <PictureTiles name="Pakistan Federation of Business and Professional Women Organization." pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606385/Organization%20LOGOS/PNG/Pakistan_Federation_of_Business_and_Professional_Women_Organization_qgy0ln.png" />
                                             </div>
                                         </div>
-                                        <div>
+                                        <div className="sub-org-detailed-class">
                                             <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Women/PAKISTAN-FEDERATION-OF-BUSINESS-AND-PROFESSIONAL-WOMEN-ORGANIZATION")}>
                                                 <PictureTiles name="Tehreek e Niswa" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606386/Organization%20LOGOS/PNG/Tehrik-e-Niswa_xhrgm9.png" />
                                             </div>
-                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Women/TEHRIK-E-NISWA")}>
-                                                <PictureTiles name="Pakistan Federation of Business and Professional Women Organization." pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606385/Organization%20LOGOS/PNG/Pakistan_Federation_of_Business_and_Professional_Women_Organization_qgy0ln.png" />
+                                            {/* <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Women/TEHRIK-E-NISWA")}>
+                                                
                                             </div>
                                             <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350">
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </section>
