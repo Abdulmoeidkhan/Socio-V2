@@ -5,7 +5,7 @@ import Routes from "./router"
 function MainComponent(props) {
     return (
             <ThemeWrapper>
-                <Routes />
+                <Routes setPagePath={props.setPagePath}/>
             </ThemeWrapper>
     );
 }

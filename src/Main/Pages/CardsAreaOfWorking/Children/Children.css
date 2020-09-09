@@ -1,9 +1,0 @@
-.pakistanBoldPara ul li div {
-    cursor: pointer;
-    transition: all 1s ease;
-}
-.pakistanBoldPara ul li div:hover {
-    cursor: pointer;
-    transition: all 1s ease;
-    padding-left:10px;
-}

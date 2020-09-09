@@ -2,13 +2,15 @@ import React, { useEffect } from 'react';
 import { Layout, Breadcrumb } from 'antd';
 import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
-import MyFooter from "../../../Components/Footer/Footer";
+import  MyFooter from "../../../Components/Footer/Footer" ;
+import PictureTiles from "../../../Components/PictureTiles/PictureTiles";
 import {
     Link,
     useHistory
 } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./Women.css"
 
 
 
@@ -66,16 +68,38 @@ const Women = (props) => {
                                         still fails to provide equal rights to women. Therefore, to pull off a better and gender free
                                         environment for women there are some renowned organizations operating in Karachi such as:
                                         </p>
-                                    <div className="pakistanBoldPara" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
-                                        <ul>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Women/AAHUNG-FOUNDATION")}><div>Aahung Foundation.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Women/AURAT-FOUNDATION")}><div>Aurat Foundation.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Women/DEPILEX-SMILE-AGAIN-FOUNDATION")}><div>Depilex Smile again.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="450" onClick={() => history.push("/AreaOfWorking/Women/RA’ANA-LIAQUAT-CRAFSTSMEN-COLONY-(RLCC-WOMEN)")}><div>RLCC-Women.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="550" onClick={() => history.push("/AreaOfWorking/Women/SHIRKAT-GAH-WOMEN-RESOURCE-CENTRE")}><div>Shirkat Gah Women Resource Centre.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="650" onClick={() => history.push("/AreaOfWorking/Women/TEHRIK-E-NISWA")}><div>Tehreek e Niswa.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="750" onClick={() => history.push("/AreaOfWorking/Women/PAKISTAN-FEDERATION-OF-BUSINESS-AND-PROFESSIONAL-WOMEN-ORGANIZATION")}><div>Pakistan Federation of Business and Professional Women Organization.</div></li>
-                                        </ul>
+                                    <div className="pakistanBoldPara Org-detailed-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
+                                        <div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Women/AAHUNG-FOUNDATION")}>
+                                                <PictureTiles name="Aahung Foundation" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606161/Organization%20LOGOS/PNG/Aahung_atcxdw.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100" onClick={() => history.push("/AreaOfWorking/Women/AURAT-FOUNDATION")}>
+                                                <PictureTiles name="Aurat Foundation" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606385/Organization%20LOGOS/PNG/Aurat_Foundation_oodrqd.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Women/DEPILEX-SMILE-AGAIN-FOUNDATION")}>
+                                                <PictureTiles name="Depilex Smile again" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606385/Organization%20LOGOS/PNG/Depilex_Smile_Again_du5r6i.png" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Women/RA’ANA-LIAQUAT-CRAFSTSMEN-COLONY-(RLCC-WOMEN)")}>
+                                                <PictureTiles name="RLCC-Women" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606470/Organization%20LOGOS/PNG/RLCC_ncxufh.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Women/SHIRKAT-GAH-WOMEN-RESOURCE-CENTRE")}>
+                                                <PictureTiles name="Shirkat Gah Women Resource Centre" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606385/Organization%20LOGOS/PNG/Shirkat_Gah_Women_Resource_Centre_kiynof.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Women/PAKISTAN-FEDERATION-OF-BUSINESS-AND-PROFESSIONAL-WOMEN-ORGANIZATION")}>
+                                                <PictureTiles name="Tehreek e Niswa" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606386/Organization%20LOGOS/PNG/Tehrik-e-Niswa_xhrgm9.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Women/TEHRIK-E-NISWA")}>
+                                                <PictureTiles name="Pakistan Federation of Business and Professional Women Organization." pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606385/Organization%20LOGOS/PNG/Pakistan_Federation_of_Business_and_Professional_Women_Organization_qgy0ln.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350">
+                                            </div>
+                                        </div>
                                     </div>
                                 </section>
                             </div>

@@ -6,6 +6,7 @@ import './MobileFooter.css'
 const { Footer } = Layout;
 
 function MobileFooter(props) {
+    console.log(props)
     return (
         <Footer className="mobile-Footer">
             <div>

@@ -3,6 +3,7 @@ import { Layout, Breadcrumb } from 'antd';
 import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
+import PictureTiles from "../../../Components/PictureTiles/PictureTiles";
 import {
     Link,
     useHistory
@@ -67,13 +68,38 @@ const Vocation = (props) => {
                                         and yet has a severe shortage of skilled manpower.
                                         </p>
                                     <h2 className="terr-second-heading-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="100">Some institutes and organizations for vocational training and education in Karachi are:</h2>
-                                    <div className="pakistanBoldPara" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
-                                        <ul>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Vocation/THE-HUNAR-FOUNDATION")}><div>Hunar Foundation.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Vocation/PAKISTAN-INSTITUTE-OF-LEARNING-AND-LIVING")}><div>Pakistan Institute of Learning and Living.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Vocation/PAKISTAN-SOCIETY-OF-TRAINING-AND-DEVELOPMENT")}><div>Pakistan Society for Training and Dev.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="450" onClick={() => history.push("/AreaOfWorking/Vocation/ZVMG-RANGOONWALA-TRUST")}><div>ZVMG Rangoonwala Trust.</div></li>
-                                        </ul>
+                                    <div className="pakistanBoldPara Org-detailed-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
+                                        <div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Vocation/THE-HUNAR-FOUNDATION")}>
+                                                <PictureTiles name="Hunar Foundation" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606371/Organization%20LOGOS/PNG/The_Hunar_Foundation_wyb3ts.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Vocation/PAKISTAN-INSTITUTE-OF-LEARNING-AND-LIVING")}>
+                                                <PictureTiles name="Pakistan Institute of Learning and Living" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606371/Organization%20LOGOS/PNG/The_Hunar_Foundation_wyb3ts.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150">
+
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Vocation/PAKISTAN-SOCIETY-OF-TRAINING-AND-DEVELOPMENT")}>
+                                                <PictureTiles name="Pakistan Society for Training and Dev" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606372/Organization%20LOGOS/PNG/Pakistan_Society_for_Training_and_Development_mier4z.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" >
+
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" >
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Vocation/ZVMG-RANGOONWALA-TRUST")}>
+                                                <PictureTiles name="ZVMG Rangoonwala Trust" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606370/Organization%20LOGOS/PNG/ZVMG_Rangoonwala_iwdmfm.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" >
+
+                                            </div>
+                                            <div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </section>
                             </div>

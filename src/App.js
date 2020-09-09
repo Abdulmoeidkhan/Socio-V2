@@ -8,6 +8,7 @@ import "./App.css"
 function App() {
 
   const [firebaseInitializes, setfirebaseInitializes] = useState(false)
+  const [pagePath,setPagePath]= useState("Home")
 
   useEffect(() => {
     firebase.isInitialized().then(val => {
@@ -80,9 +81,9 @@ function App() {
       }
       <img className="shutter-Img-Class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596628432/Landing%20Page/Shutter_iaczgg.gif" />
       <div className="shutter-comp-class">
-        <MainComponent />
+        <MainComponent setPagePath={setPagePath}/>
       </div>
-      <MobileFooter />
+      <MobileFooter pagePath={pagePath}/>
       <span className="desktop-class-icons">
       <div className="arrowUpKey" onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) }}><i className="fa fa-x fa-arrow-up" style={{ color: "#fff" }} aria-hidden="true"></i></div>
       <div className="arrowDownKey" onClick={() => { window.scrollTo({ top: 100000, left: 0, behavior: "smooth" }) }}><i className="fa fa-x fa-arrow-down" style={{ color: "#fff" }} aria-hidden="true"></i></div>

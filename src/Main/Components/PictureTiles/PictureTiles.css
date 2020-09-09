@@ -1,0 +1,70 @@
+
+
+.column {
+    display: inline-block;
+    text-align: center;
+    border-radius: 16px !important;
+    border-color: transparent;
+    -webkit-box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+    transition: all .5s ease;
+    transform: scale(.9);
+    z-index: 1;
+    cursor: pointer;
+}
+.column:hover {
+    transform: scale(1);
+    z-index: 1;
+    transition: all .5s ease;
+}
+
+
+figure {
+    overflow: hidden;
+}
+
+a p {
+    color: black;
+    margin-top: 8px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.column img {
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
+/*With Simple Caption*/
+
+.column#caption {
+    position: relative;
+}
+.column#caption:hover {
+    position: relative;
+}
+
+.column#caption .text {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.8s ease;
+    width: 98%;
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+
+.column#caption .text h1 {
+    margin: 0;
+    color: #f9d000;
+}
+
+.column#caption:hover .text {
+    opacity: 1;
+}

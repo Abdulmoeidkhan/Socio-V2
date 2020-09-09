@@ -50,51 +50,51 @@ import {
 
 
 
-function Routes(props) {
+function Routes(myProps) {
     return (
         <Router>
             <Switch>
-                <Route path={`/`} component={props => <Home {...props} />} page="`}" key="0" exact />
-                <Route path={`/About`} component={props => <AboutUs {...props} />} page="About" key="1" />
-                <Route path={`/Services`} component={props => <Services {...props} />} page="Services" key="2" />
-                <Route path={`/Blogs`} component={props => <Blogs {...props} />} page="Blogs" key="3" />
-                <Route path={`/Contact`} component={props => <ContactUs {...props} />} page="Contact" key="4" />
-                <Route path={`/TAndC`} component={props => <TandC {...props} />} page="TAndC" key="5" />
-                <Route path={`/AreaOfWorking`} component={props => <AreaOfWorking {...props} />} page="AreaOfWorking" key="6" exact />
-                <Route path={`/AreaOfWorking/Children`} component={props => <Children {...props} />} page="Children" key="7" exact/>
-                <Route path={`/PrivacyPolicies`} component={props => <PrivacyPolicies {...props} />} page="PrivacyPolicies" key="8" />
-                <Route path={`/Comparison`} component={props => <Comparison {...props} />} page="Comparison" key="9" />
-                <Route path={`/NewsAndEvents`} component={props => <NewsAndEvents {...props} />} page="NewsAndEvents" key="10" />
-                <Route path={`/ConsultationAndEvaluation`} component={props => <ConsultationAndEvaluation {...props} />} page="ConsultationAndEvaluation" key="11" />
-                <Route path={`/ArticlesAndBlogs`} component={props => <ArticlesAndBlogs {...props} />} page="ArticlesAndBlogs" key="12" />
-                <Route path={`/ReferralsAndLinks`} component={props => <ReferralsAndLinks {...props} />} page="ReferralsAndLinks" key="13" />
-                <Route path={`/EducatingAboutSocialWork`} component={props => <EducatingAboutSocialWork {...props} />} page="EducatingAboutSocialWork" key="14" />
-                <Route path={`/PWAAndChromeLessBrowsing`} component={props => <PWAAndChromeLessBrowsing {...props} />} page="PWAAndChromeLessBrowsing" key="15" />
-                <Route path={`/SMM`} component={props => <SMM {...props} />} page="SMM" key="16" />
-                <Route path={`/TheGraphicGuru`} component={props => <TheGraphicGuru {...props} />} page="TheGraphicGuru" key="17" />
-                <Route path={`/Admin/SignIn`} component={props => <AdminSignIn {...props} />} page="AdSignIn" key="18" exact />
-                <Route path={`/Admin/DashBoard`} component={props => <AdminDashBoard {...props} />} page="AdDashBoard" key="19" exact />
-                <Route path={`/Territories`} component={props => <Territories {...props} />} page="Territories" key="20" exact />
-                <Route path={`/Territories/Pakistan`} component={props => <Pakistan {...props} />} page="Pakistan" key="21" />
-                <Route path={`/Territories/Sindh`} component={props => <Sindh {...props} />} page="Sindh" key="22" />
-                <Route path={`/Territories/Punjab`} component={props => <Punjab {...props} />} page="Punjab" key="23" />
-                <Route path={`/Territories/Balochistan`} component={props => <Balochistan {...props} />} page="Balochistan" key="24" />
-                <Route path={`/Territories/KPK`} component={props => <KPK {...props} />} page="KPK" key="25" />
-                <Route path={`/Territories/Gilgit`} component={props => <Gilgit {...props} />} page="Gilgit" key="26" />
-                <Route path={`/Territories/Kashmir`} component={props => <Kashmir {...props} />} page="Kashmir" key="27" />
-                <Route path={`/AboutSocioLinkage`} component={props => <AboutUs {...props} />} page="AboutSocioLinkage" key="28" />
-                <Route path={`/AreaOfWorking/Community`} component={props => <Community {...props} />} page="Community" key="29" exact/>
-                <Route path={`/AreaOfWorking/Drug-Rehabilitation`} component={props => <DrugRehabilitation {...props} />} page="Drug-Rehabilitation" key="31" exact/>
-                <Route path={`/AreaOfWorking/Education`} component={props => <Education {...props} />} page="Education" key="31" exact/>
-                <Route path={`/AreaOfWorking/General-Health`} component={props => <GeneralHealth {...props} />} page="General-Health" key="32" exact/>
-                <Route path={`/AreaOfWorking/Mental-Health`} component={props => <MentalHealth {...props} />} page="Mental-Health" key="33" exact/>
-                <Route path={`/AreaOfWorking/Special-Needs`} component={props => <SpecialNeeds {...props} />} page="Special-Needs" key="34" exact/>
-                <Route path={`/AreaOfWorking/Senior-Citizens`} component={props => <SeniorCitizens {...props} />} page="Senior-Citizens" key="35" exact/>
-                <Route path={`/AreaOfWorking/Vocation`} component={props => <Vocation {...props} />} page="Vocation" key="36" exact/>
-                <Route path={`/AreaOfWorking/Women`} component={props => <Women {...props} />} page="Women" key="37" exact/>
-                <Route path={`/AreaOfWorking/Others`} component={props => <Others {...props} />} page="Others" key="38" exact/>
-                <Route path={`/FAQ`} component={props => <FAQ {...props} />} page="FAQ" key="39" exact/>
-                <Route path={`/PricingPlans`} component={props => <PricingPlans {...props} />} page="PricingPlans" key="40" exact/>
+                <Route path={`/`} component={props => <Home {...props} setPagePath={myProps.setPagePath("Home")}/>}  key="0" exact />
+                <Route path={`/About`} component={props => <AboutUs {...props} setPagePath={myProps.setPagePath("About")}/>}  key="1" />
+                <Route path={`/Services`} component={props => <Services {...props} setPagePath={myProps.setPagePath("Services")}/>}  key="2" />
+                <Route path={`/Blogs`} component={props => <Blogs {...props} setPagePath={myProps.setPagePath("Blogs")}/>}  key="3" />
+                <Route path={`/Contact`} component={props => <ContactUs {...props} setPagePath={myProps.setPagePath("Contact")}/>}  key="4" />
+                <Route path={`/TAndC`} component={props => <TandC {...props} setPagePath={myProps.setPagePath("TAndC")}/>}  key="5" />
+                <Route path={`/AreaOfWorking`} component={props => <AreaOfWorking {...props} setPagePath={myProps.setPagePath("AreaOfWorking")}/>}  key="6" exact />
+                <Route path={`/AreaOfWorking/Children`} component={props => <Children {...props} setPagePath={myProps.setPagePath("Children")}/>}  key="7" exact/>
+                <Route path={`/PrivacyPolicies`} component={props => <PrivacyPolicies {...props} setPagePath={myProps.setPagePath("PrivacyPolicies")}/>}  key="8" />
+                <Route path={`/Comparison`} component={props => <Comparison {...props} setPagePath={myProps.setPagePath("Comparison")}/>}  key="9" />
+                <Route path={`/NewsAndEvents`} component={props => <NewsAndEvents {...props} setPagePath={myProps.setPagePath("NewsAndEvents")}/>}  key="10" />
+                <Route path={`/ConsultationAndEvaluation`} component={props => <ConsultationAndEvaluation {...props} setPagePath={myProps.setPagePath("ConsultationAndEvaluation")}/>}  key="11" />
+                <Route path={`/ArticlesAndBlogs`} component={props => <ArticlesAndBlogs {...props} setPagePath={myProps.setPagePath("ArticlesAndBlogs")}/>}  key="12" />
+                <Route path={`/ReferralsAndLinks`} component={props => <ReferralsAndLinks {...props} setPagePath={myProps.setPagePath("ReferralsAndLinks")}/>}  key="13" />
+                <Route path={`/EducatingAboutSocialWork`} component={props => <EducatingAboutSocialWork {...props} setPagePath={myProps.setPagePath("EducatingAboutSocialWork")}/>}  key="14" />
+                <Route path={`/PWAAndChromeLessBrowsing`} component={props => <PWAAndChromeLessBrowsing {...props} setPagePath={myProps.setPagePath("PWAAndChromeLessBrowsing")}/>}  key="15" />
+                <Route path={`/SMM`} component={props => <SMM {...props} setPagePath={myProps.setPagePath("SMM")}/>}  key="16" />
+                <Route path={`/TheGraphicGuru`} component={props => <TheGraphicGuru {...props} setPagePath={myProps.setPagePath("TheGraphicGuru")}/>}  key="17" />
+                <Route path={`/Admin/SignIn`} component={props => <AdminSignIn {...props} setPagePath={myProps.setPagePath("SignIn")}/>}  key="18" exact />
+                <Route path={`/Admin/DashBoard`} component={props => <AdminDashBoard {...props} setPagePath={myProps.setPagePath("DashBoard")}/>}  key="19" exact />
+                <Route path={`/Territories`} component={props => <Territories {...props} setPagePath={myProps.setPagePath("Territories")}/>}  key="20" exact />
+                <Route path={`/Territories/Pakistan`} component={props => <Pakistan {...props} setPagePath={myProps.setPagePath("Pakistan")}/>}  key="21" />
+                <Route path={`/Territories/Sindh`} component={props => <Sindh {...props} setPagePath={myProps.setPagePath("Sindh")}/>}  key="22" />
+                <Route path={`/Territories/Punjab`} component={props => <Punjab {...props} setPagePath={myProps.setPagePath("Punjab")}/>}  key="23" />
+                <Route path={`/Territories/Balochistan`} component={props => <Balochistan {...props} setPagePath={myProps.setPagePath("Balochistan")}/>}  key="24" />
+                <Route path={`/Territories/KPK`} component={props => <KPK {...props} setPagePath={myProps.setPagePath("KPK")}/>}  key="25" />
+                <Route path={`/Territories/Gilgit`} component={props => <Gilgit {...props} setPagePath={myProps.setPagePath("Gilgit")}/>}  key="26" />
+                <Route path={`/Territories/Kashmir`} component={props => <Kashmir {...props} setPagePath={myProps.setPagePath("Kashmir")}/>}  key="27" />
+                <Route path={`/AboutSocioLinkage`} component={props => <AboutUs {...props} setPagePath={myProps.setPagePath("AboutSocioLinkage")}/>}  key="28" />
+                <Route path={`/AreaOfWorking/Community`} component={props => <Community {...props} setPagePath={myProps.setPagePath("Community")}/>}  key="29" exact/>
+                <Route path={`/AreaOfWorking/Drug-Rehabilitation`} component={props => <DrugRehabilitation {...props} setPagePath={myProps.setPagePath("Rehabilitation")}/>}  key="31" exact/>
+                <Route path={`/AreaOfWorking/Education`} component={props => <Education {...props} setPagePath={myProps.setPagePath("Education")}/>}  key="31" exact/>
+                <Route path={`/AreaOfWorking/General-Health`} component={props => <GeneralHealth {...props} setPagePath={myProps.setPagePath("Health")}/>}  key="32" exact/>
+                <Route path={`/AreaOfWorking/Mental-Health`} component={props => <MentalHealth {...props} setPagePath={myProps.setPagePath("Health")}/>}  key="33" exact/>
+                <Route path={`/AreaOfWorking/Special-Needs`} component={props => <SpecialNeeds {...props} setPagePath={myProps.setPagePath("Needs")}/>}  key="34" exact/>
+                <Route path={`/AreaOfWorking/Senior-Citizens`} component={props => <SeniorCitizens {...props} setPagePath={myProps.setPagePath("Citizens")}/>}  key="35" exact/>
+                <Route path={`/AreaOfWorking/Vocation`} component={props => <Vocation {...props} setPagePath={myProps.setPagePath("Vocation")}/>}  key="36" exact/>
+                <Route path={`/AreaOfWorking/Women`} component={props => <Women {...props} setPagePath={myProps.setPagePath("Women")}/>}  key="37" exact/>
+                <Route path={`/AreaOfWorking/Others`} component={props => <Others {...props} setPagePath={myProps.setPagePath("Others")}/>}  key="38" exact/>
+                <Route path={`/FAQ`} component={props => <FAQ {...props} setPagePath={myProps.setPagePath("FAQ")}/>}  key="39" exact/>
+                <Route path={`/PricingPlans`} component={props => <PricingPlans {...props} setPagePath={myProps.setPagePath("PricingPlans")}/>}  key="40" exact/>
                 {
                     NGOsRoute.map((item, i) =>
                         <Route key={i + 40} path={`/${item.link}`} exact >
