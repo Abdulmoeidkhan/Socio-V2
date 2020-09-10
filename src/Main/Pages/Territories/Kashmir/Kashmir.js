@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Layout, Breadcrumb } from 'antd';
-import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
+import { GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
 import {
@@ -19,12 +19,15 @@ const Kashmir = (props) => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0)
     })
     return (
         <>
-            <ThemeContext.Consumer>
-                {colorsState => <>
+            <GuruContextChanger.Consumer>
+                {guruState => <>
+                    {
+                       ()=> guruState.guruDispatch({ type: "change", payload: "Kashmir" })
+                    }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
@@ -175,7 +178,7 @@ const Kashmir = (props) => {
                         <MyFooter />
                     </Layout>
                 </>}
-            </ThemeContext.Consumer>
+            </GuruContextChanger.Consumer>
         </>
     )
 }

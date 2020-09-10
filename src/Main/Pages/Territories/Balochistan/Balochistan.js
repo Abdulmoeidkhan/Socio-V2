@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Layout, Breadcrumb } from 'antd';
-import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
+import { GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
 import {
@@ -19,12 +19,15 @@ const Balochistan = (props) => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0)
     })
     return (
         <>
-            <ThemeContext.Consumer>
-                {colorsState => <>
+            <GuruContextChanger.Consumer>
+                {guruState => <>
+                    {
+                      ()=>  guruState.guruDispatch({ type: "change", payload: "Balochistan" })
+                    }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
@@ -49,7 +52,7 @@ const Balochistan = (props) => {
                                 </Breadcrumb>
                                 <section className="detail-territory" id="balochistan">
                                     <h2 className="pakistanPageHeading">
-                                    <span data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="1300">B</span>
+                                        <span data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="1300">B</span>
                                         <span data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="1400">A</span>
                                         <span data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="1500">L</span>
                                         <span data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="1600">O</span>
@@ -96,7 +99,7 @@ const Balochistan = (props) => {
                                         134,051 square miles (347,190 square km). Pop. (2003 est.) 7,450,000.
                                     </p>
                                     <h2 className="terr-second-heading-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="100"> Area :-</h2>
-                                    <p className="pakistanBoldPara" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100"> 
+                                    <p className="pakistanBoldPara" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
                                         347,190 km².
                                     </p>
                                     <h2 className="terr-second-heading-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="100"> Provincial Capital :-</h2>
@@ -113,7 +116,7 @@ const Balochistan = (props) => {
                         <MyFooter />
                     </Layout>
                 </>}
-            </ThemeContext.Consumer>
+            </GuruContextChanger.Consumer>
         </>
     )
 }

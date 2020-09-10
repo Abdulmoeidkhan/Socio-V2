@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
 import { Layout, Breadcrumb } from 'antd';
-import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
+import { GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
 import {
@@ -16,15 +16,20 @@ const { Content } = Layout;
 
 
 const Sindh = (props) => {
+    let [isRender,setIsRender]=useState(false)
     useEffect(() => {
         AOS.init();
         AOS.refresh();
         window.scrollTo(0, 0)
-    })
+        setIsRender(true)
+    },[])
     return (
         <>
-            <ThemeContext.Consumer>
-                {colorsState => <>
+            <GuruContextChanger.Consumer>
+                {guruState => <>
+                    {/* {
+                        isRender ? guruState.guruDispatch({ type: "change", payload: "Sindh" }):null
+                    } */}
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
@@ -181,7 +186,7 @@ const Sindh = (props) => {
                         <MyFooter />
                     </Layout>
                 </>}
-            </ThemeContext.Consumer>
+            </GuruContextChanger.Consumer>
         </>
     )
 }

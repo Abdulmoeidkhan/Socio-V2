@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Layout, Breadcrumb } from 'antd';
-import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
+import { GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
 import PictureTiles from "../../../Components/PictureTiles/PictureTiles";
@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./SeniorCitizens.css"
 
 
 
@@ -26,8 +27,11 @@ const SeniorCitizens = (props) => {
     })
     return (
         <>
-            <ThemeContext.Consumer>
-                {colorsState => <>
+            <GuruContextChanger.Consumer>
+                {guruState => <>
+                    {
+                      ()=>  guruState.guruDispatch({ type: "change", payload: "SeniorCitizens" })
+                    }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
@@ -77,19 +81,19 @@ const SeniorCitizens = (props) => {
                                         in our society and providing them the best of what they deserve.
                                         </p>
                                     <h2 className="terr-second-heading-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="100">Some of them located in Karachi are listed below:</h2>
-                                    <div className="pakistanBoldPara Org-detailed-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
-                                        <div>
+                                    <div className="pakistanBoldPara seniorCitizens-org-detailed-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
+                                        <div className="sub-org-detailed-class">
                                             <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Senior-Citizens/ANSAR-BURNEY-TRUST")}>
                                                 <PictureTiles name="Ansar Burney Trust" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606339/Organization%20LOGOS/PNG/Ansar_Burney_a9yepm.png" />
                                             </div>
                                             <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Senior-Citizens/DAR-UL-SUKOON-(OLD AGE)")}>
                                                 <PictureTiles name="Dar ul Sukoon (Senior Citizen)" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606340/Organization%20LOGOS/PNG/Dar_Ul_Sukun_mw3vig.png" />
                                             </div>
-                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150">
-
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Senior-Citizens/SENIOR-CITIZEN-WELFARE-PROGRAM")}>
+                                                <PictureTiles name="Senior Citizens Welfare Program" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606339/Organization%20LOGOS/PNG/Senior_Citizens_Welfare_Program_qi9cd3.png" />
                                             </div>
                                         </div>
-                                        <div>
+                                        <div className="sub-org-detailed-class">
                                             <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Senior-Citizens/EDHI-OLD-HOME")}>
                                                 <PictureTiles name="Edhi Old home" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606339/Organization%20LOGOS/PNG/Edhi_qonusi.png" />
                                             </div>
@@ -98,15 +102,7 @@ const SeniorCitizens = (props) => {
                                             <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250">
                                             </div>
                                         </div>
-                                        <div>
-                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Senior-Citizens/SENIOR-CITIZEN-WELFARE-PROGRAM")}>
-                                                <PictureTiles name="Senior Citizens Welfare Program" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606339/Organization%20LOGOS/PNG/Senior_Citizens_Welfare_Program_qi9cd3.png" />
-                                            </div>
-                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" >
-                                            </div>
-                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350">
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </section>
                             </div>
@@ -114,7 +110,7 @@ const SeniorCitizens = (props) => {
                         <MyFooter />
                     </Layout>
                 </>}
-            </ThemeContext.Consumer>
+            </GuruContextChanger.Consumer>
         </>
     )
 }

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Layout, Card } from 'antd';
-import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
+import { ThemeContext, GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
 import {
@@ -21,10 +21,15 @@ const PWAAndChromeLessBrowsing = (props) => {
         <>
             <ThemeContext.Consumer>
                 {colorsState => <>
-                    <Layout>
-                        <style>
+                    <GuruContextChanger.Consumer>
+                        {guruState => <>
                             {
-                                `
+                              ()=>  guruState.guruDispatch({ type: "change", payload: "PWAAndChromeLessBrowsing" })
+                            }
+                            <Layout>
+                                <style>
+                                    {
+                                        `
                                 .ant-menu{
                                     color:${colorsState.colors.color2} !important
                                 }
@@ -34,51 +39,53 @@ const PWAAndChromeLessBrowsing = (props) => {
                                     color:${colorsState.colors.color2} !important;
                                 }
                                 `
-                            }
-                        </style>
-                        <NavBar />
-                        <Content className="content-container-class">
-                            <div className="spacing-class" />
-                            <div className="card-section-parent">
-                                <section className="card-equal-columns-grid-1">
-                                    <div className="content-content-1">
-                                        <div className="spacing-class" />
-                                        <h2 className="content-head">PWA AND CHROME-LESS BROWSING </h2>
-                                        <p className="content-para"> Sick of having to run from one place to another? Join our Site and through a single plug-in and stay with us on your mobile and your Laptop/Computer</p>
-                                    </div>
-                                    <div className="news-card-content-content-2">
-                                        <div className="cards-page-img-center">
-                                            <img src={"https://lorempixel.com/300/300"} alt={"https://lorempixel.com/300/300"} />
-                                        </div>
-                                        <div className="cards-page-img-center">
-                                            <img src={"https://lorempixel.com/300/300"} alt={"https://lorempixel.com/300/300"} />
-                                        </div>
-                                    </div>
-                                </section>
-                                <section className="one-columns-grid">
-                                    <div className="card-background-class">
-                                        <div className="card-card-container-class">
-                                            <div className="card-two-column-seperation">
-                                                <Card bordered={true} className="first-page-card-class">
-                                                    <h2 className="content-sub-head">Access without Browser </h2>
-                                                    <p>
-                                                    View Socio-linkage without a browser anywhere anytime through our plug in!
-                                                </p>
-                                                </Card>
-                                                <Card bordered={true} className="first-page-card-class">
-                                                    <h2 className="content-sub-head">Dual-view option</h2>
-                                                    <p>
-                                                    Dual-view option
-                                                </p>
-                                                </Card>
+                                    }
+                                </style>
+                                <NavBar />
+                                <Content className="content-container-class">
+                                    <div className="spacing-class" />
+                                    <div className="card-section-parent">
+                                        <section className="card-equal-columns-grid-1">
+                                            <div className="content-content-1">
+                                                <div className="spacing-class" />
+                                                <h2 className="content-head">PWA AND CHROME-LESS BROWSING </h2>
+                                                <p className="content-para"> Sick of having to run from one place to another? Join our Site and through a single plug-in and stay with us on your mobile and your Laptop/Computer</p>
                                             </div>
-                                        </div>
+                                            <div className="news-card-content-content-2">
+                                                <div className="cards-page-img-center">
+                                                    <img src={"https://lorempixel.com/300/300"} alt={"https://lorempixel.com/300/300"} />
+                                                </div>
+                                                <div className="cards-page-img-center">
+                                                    <img src={"https://lorempixel.com/300/300"} alt={"https://lorempixel.com/300/300"} />
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section className="one-columns-grid">
+                                            <div className="card-background-class">
+                                                <div className="card-card-container-class">
+                                                    <div className="card-two-column-seperation">
+                                                        <Card bordered={true} className="first-page-card-class">
+                                                            <h2 className="content-sub-head">Access without Browser </h2>
+                                                            <p>
+                                                                View Socio-linkage without a browser anywhere anytime through our plug in!
+                                                </p>
+                                                        </Card>
+                                                        <Card bordered={true} className="first-page-card-class">
+                                                            <h2 className="content-sub-head">Dual-view option</h2>
+                                                            <p>
+                                                                Dual-view option
+                                                </p>
+                                                        </Card>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
                                     </div>
-                                </section>
-                            </div>
-                        </Content>
-                        <MyFooter />
-                    </Layout>
+                                </Content>
+                                <MyFooter />
+                            </Layout>
+                        </>}
+                    </GuruContextChanger.Consumer>
                 </>}
             </ThemeContext.Consumer>
         </>

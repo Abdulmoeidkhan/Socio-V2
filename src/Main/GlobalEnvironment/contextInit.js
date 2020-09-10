@@ -7,10 +7,8 @@ import { useImmerReducer } from "use-immer"
 export const ThemeContext = createContext(null);
 export const ThemeContextChanger = createContext(null);
 
-
-
-
-
+export const GuruContext = createContext("");
+export const GuruContextChanger = createContext("");
 
 let themeChanger = (draft, action) => {
     switch (action.type) {
@@ -20,13 +18,27 @@ let themeChanger = (draft, action) => {
                 color2: "#fff",
                 color3: "#00474f",
                 color4: "#f9d000",
-                color5:"#0F2027",
+                color5: "#0F2027",
                 type: "light"
             }
             sessionStorage.setItem("colors", JSON.stringify(draft))
             return;
         default:
             draft.colors = initialState.colors
+            return;
+    }
+}
+
+let guruChanger = (draft, action) => {
+    switch (action.type) {
+        case "change":
+            console.log(action)
+            draft.guruPage = {
+                activePage: action.payload
+            }
+            return;
+        default:
+            draft.guruPage = initialStateGuru.guruPage
             return;
     }
 }
@@ -38,8 +50,14 @@ let initialState = JSON.parse(sessionStorage.getItem("colors")) || {
         color2: "#fff",
         color3: "#00474f",
         color4: "#f9d000",
-        color5:"#0F2027",
+        color5: "#0F2027",
         type: "light",
+    }
+}
+
+let initialStateGuru = {
+    guruPage: {
+        activePage: "Home"
     }
 }
 
@@ -55,3 +73,14 @@ export let ThemeWrapper = (props) => {
 }
 
 
+
+export let GuruWrapper = (props) => {
+    let [guruPage, guruDispatch] = useImmerReducer(guruChanger, initialStateGuru)
+    return (
+        <GuruContextChanger.Provider value={{ guruDispatch }}>
+            <GuruContext.Provider value={guruPage}>
+                {props.children}
+            </GuruContext.Provider>
+        </GuruContextChanger.Provider>
+    )
+}

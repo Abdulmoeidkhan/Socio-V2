@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { Layout, Breadcrumb } from 'antd';
-import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
+import { GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
+import PictureTiles from "../../../Components/PictureTiles/PictureTiles";
 import MyFooter from "../../../Components/Footer/Footer";
 import {
     Link,
@@ -9,6 +10,7 @@ import {
 } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./DrugRehabilitation.css"
 
 
 
@@ -25,8 +27,11 @@ const DrugRehabilitation = (props) => {
     })
     return (
         <>
-            <ThemeContext.Consumer>
-                {colorsState => <>
+            <GuruContextChanger.Consumer>
+                {guruState => <>
+                    {
+                       ()=> guruState.guruDispatch({ type: "change", payload: "Rehabilitation" })
+                    }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
@@ -76,13 +81,27 @@ const DrugRehabilitation = (props) => {
                                         organizations listed in this category operate with the objective of eradicating drug abuse and
                                         ensuring rehabilitation of those formerly affected by this parasitic addiction.
                                         </p>
-                                    <div className="pakistanBoldPara" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
-                                        <ul>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Drug-Rehabilitation/AGHA-KHAN-SPORTS-AND-REHABILITATION-CENTRE")}><div>Agha Khan Sports and Rehab Centre</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Drug-Rehabilitation/DOW-INSTITUTE-OF-BEHAVIORAL-SCIENCES")}><div>Dow Institute of Behavioral Sciences (IBS)</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Drug-Rehabilitation/IBTIDA-DRUG-REHABILITATION-CENTER")}><div>Ibtida Drug Rehabilitation Centre</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="450" onClick={() => history.push("/AreaOfWorking/Drug-Rehabilitation/WILLING-WAYS")}><div>Willing Ways.</div></li>
-                                        </ul>
+                                    <div className="pakistanBoldPara drugRehabilitation-org-detailed-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
+                                        <div className="sub-org-detailed-class ">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Drug-Rehabilitation/AGHA-KHAN-SPORTS-AND-REHABILITATION-CENTRE")}>
+                                                <PictureTiles name="Agha Khan Sports and Rehab Centre" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606221/Organization%20LOGOS/PNG/Agha_Khan_Sports_and_Rehab_Centre_fcardv.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Drug-Rehabilitation/DOW-INSTITUTE-OF-BEHAVIORAL-SCIENCES")}>
+                                                <PictureTiles name="Dow Institute of Behavioral Sciences (IBS)" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606220/Organization%20LOGOS/PNG/Dow_Institute_of_Behavioral_Sciences_IBS_sbpcmi.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Drug-Rehabilitation/IBTIDA-DRUG-REHABILITATION-CENTER")}>
+                                                <PictureTiles name="Ibtida Drug Rehabilitation Centre" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606218/Organization%20LOGOS/PNG/Ibtida_Drug_Rehabilitation_Centre_pgeix6.png" />
+                                            </div>
+                                        </div>
+                                        <div className="sub-org-detailed-class">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="450" onClick={() => history.push("/AreaOfWorking/Drug-Rehabilitation/WILLING-WAYS")}>
+                                                <PictureTiles name="Willing Ways" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606217/Organization%20LOGOS/PNG/Willing_ways_czsaey.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="550" onClick={() => history.push("/AreaOfWorking/Education/THE-CITIZENS-FOUNDATION")}>
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="650" onClick={() => history.push("/AreaOfWorking/Education/YOUTH-EXPRESS-PAKISTAN")}>
+                                            </div>
+                                        </div>
                                     </div>
                                 </section>
                             </div>
@@ -90,7 +109,7 @@ const DrugRehabilitation = (props) => {
                         <MyFooter />
                     </Layout>
                 </>}
-            </ThemeContext.Consumer>
+            </GuruContextChanger.Consumer>
         </>
     )
 }

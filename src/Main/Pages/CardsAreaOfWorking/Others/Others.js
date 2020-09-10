@@ -1,14 +1,16 @@
 import React, { useEffect } from 'react';
 import { Layout, Breadcrumb } from 'antd';
-import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
+import { GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
+import PictureTiles from "../../../Components/PictureTiles/PictureTiles";
 import {
     Link,
     useHistory
 } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./Others.css"
 
 
 
@@ -25,8 +27,11 @@ const Others = (props) => {
     })
     return (
         <>
-            <ThemeContext.Consumer>
-                {colorsState => <>
+            <GuruContextChanger.Consumer>
+                {guruState => <>
+                    {
+                        guruState.guruDispatch({ type: "change", payload: "Others" })
+                    }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
@@ -65,18 +70,40 @@ const Others = (props) => {
                                         accommodates all those organizations (profit/non-profit) which are working to help the
                                         individuals in more than one aspect of their life as well as the environment.
                                         </p>
-                                        <h2 className="terr-second-heading-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="100">Such organizations located in Karachi are:</h2>
-                                    <div className="pakistanBoldPara" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
-                                        <ul>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Others/ADOPT-A-PET")}><div>Adopt a Pet.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Others/ALAMGIR-WELFARE-TRUST")}><div>Alamgir Welfare Trust.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Others/HELPING-HANDS-TRUST")}><div>Helping Hands Foundation.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="450" onClick={() => history.push("/AreaOfWorking/Others/LAWYERS-FOR-HUMAN-RIGHTS-AND-LEGAL-AID")}><div>Lawyers for human Rights and Legal Aid.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="550" onClick={() => history.push("/AreaOfWorking/Others/LEGAL-RIGHTS-FORUM")}><div>Legal Rights Forum.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="650" onClick={() => history.push("/AreaOfWorking/Others/PAKISTAN-LAWYERS-FOUNDATION")}><div>Pakistan Lawyers Foundations.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="750" onClick={() => history.push("/AreaOfWorking/Others/SARIM-BURNEY-WELFARE-TRUST")}><div>Sarim Burney Welfare Trust.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="750" onClick={() => history.push("/AreaOfWorking/Others/WORLDWIDE-FUND-OF-NATURE")}><div>WWF.</div></li>
-                                        </ul>
+                                    <h2 className="terr-second-heading-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="100">Such organizations located in Karachi are:</h2>
+                                    <div className="pakistanBoldPara others-org-detailed-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
+                                        <div className="sub-org-detailed-class ">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Others/ADOPT-A-PET")}>
+                                                <PictureTiles name="Adopt a Pet" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606316/Organization%20LOGOS/PNG/Adopt_A_Pet_zstpkd.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Others/ALAMGIR-WELFARE-TRUST")}>
+                                                <PictureTiles name="Alamgir Welfare Trust" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606316/Organization%20LOGOS/PNG/Alamgir_Welfare_Trust_gs6mmo.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Others/HELPING-HANDS-TRUST")}>
+                                                <PictureTiles name="Helping Hands Foundation" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606315/Organization%20LOGOS/PNG/Helping_Hands_Trust_r4pde7.png" />
+                                            </div>
+                                        </div>
+                                        <div className="sub-org-detailed-class">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Others/LAWYERS-FOR-HUMAN-RIGHTS-AND-LEGAL-AID")}>
+                                                <PictureTiles name="Lawyers for human Rights and Legal Aid" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606317/Organization%20LOGOS/PNG/Lawyers_for_human_Rights_and_Legal_Aid_yjrega.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Others/LEGAL-RIGHTS-FORUM")}>
+                                                <PictureTiles name="Legal Rights Forum" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606317/Organization%20LOGOS/PNG/Legal_Rights_Forum_zgvxdq.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Others/PAKISTAN-LAWYERS-FOUNDATION")}>
+                                                <PictureTiles name="Pakistan Lawyers Foundations" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606317/Organization%20LOGOS/PNG/Pakistani_Lawyers_Foundation_dpmtk5.png" />
+                                            </div>
+                                        </div>
+                                        <div className="sub-org-detailed-class">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Others/SARIM-BURNEY-WELFARE-TRUST")}>
+                                                <PictureTiles name="Sarim Burney Welfare Trust" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606316/Organization%20LOGOS/PNG/Sarim_Burney_vv1ks3.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Others/WORLDWIDE-FUND-OF-NATURE")}>
+                                                <PictureTiles name="WWF" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606317/Organization%20LOGOS/PNG/WWF_o3vpxa.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350">
+                                            </div>
+                                        </div>
                                     </div>
                                 </section>
                             </div>
@@ -84,7 +111,7 @@ const Others = (props) => {
                         <MyFooter />
                     </Layout>
                 </>}
-            </ThemeContext.Consumer>
+            </GuruContextChanger.Consumer>
         </>
     )
 }

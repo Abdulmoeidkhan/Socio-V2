@@ -105,13 +105,11 @@
     }
 } */
 
-@media (max-width:767px) {
+@media (max-width:700px) {
     .site-footer {
-        padding-bottom: 0
+        margin-bottom: 65px  
     }
-    .site-footer .copyright-text, .site-footer .social-icons {
-        text-align: center
-    }
+
 }
 
 .social-icons {
@@ -186,6 +184,9 @@
         display: block;
         margin-right: 0;
         font-weight: 600
+    }
+    .site-footer .copyright-text, .site-footer .social-icons {
+        text-align: center
     }
 }
 

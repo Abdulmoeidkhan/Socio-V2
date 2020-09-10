@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import { Layout, Breadcrumb } from 'antd';
-import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
+import { GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
+import PictureTiles from "../../../Components/PictureTiles/PictureTiles";
+import "./Community.css"
 import {
     Link,
     useHistory
@@ -25,8 +27,11 @@ const Community = (props) => {
     })
     return (
         <>
-            <ThemeContext.Consumer>
-                {colorsState => <>
+            <GuruContextChanger.Consumer>
+                {guruState => <>
+                    {
+                       ()=> guruState.guruDispatch({ type: "change", payload: "Community" })
+                    }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
@@ -67,19 +72,50 @@ const Community = (props) => {
                                         category are trying to aid the society on a community level. Each of these organizations help
                                         a different fragment of society which completes the bigger picture.
                                         </p>
-                                    <div className="pakistanBoldPara" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
-                                        <ul>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Community/RLCC")}><div>RLCC</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Community/AMAN-FOUNDATION")}><div>Aman Foundation.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Community/CHHIPA-FOUNDATION")}><div>Chhipa Foundation.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="450" onClick={() => history.push("/AreaOfWorking/Community/FIX-IT")}><div>Fix It.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="550" onClick={() => history.push("/AreaOfWorking/Community/JDC")}><div>JDC.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="650" onClick={() => history.push("/AreaOfWorking/Community/LYARIANZ-YOUTH-DEVELOPMENT-PROGRAM")}><div>Lyarianz Youth Development Program.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="750" onClick={() => history.push("/AreaOfWorking/Community/ROBIN-HOOD-ARMY")}><div>Robin Hood Army.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="850" onClick={() => history.push("/AreaOfWorking/Community/SAYLANI-WELFARE-TRUST")}><div>Saylani Welfare Trust.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="950" onClick={() => history.push("/AreaOfWorking/Community/SHAHID-AFRIDI-FOUNDATIO")}><div>Shahid Afridi Foundation.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="1050" onClick={() => history.push("/AreaOfWorking/Community/SOFIA-KHANA-GHAR")}><div>Sofia Khana Ghar.</div></li>
-                                        </ul>
+                                    <div className="pakistanBoldPara community-org-detailed-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
+                                        <div className="sub-org-detailed-class ">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Community/RLCC")}>
+                                                <PictureTiles name="RLCC" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606189/Organization%20LOGOS/PNG/RLCC_yf35pg.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Community/AMAN-FOUNDATION")}>
+                                                <PictureTiles name="Aman Foundation" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606188/Organization%20LOGOS/PNG/Aman_umuoig.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Community/CHHIPA-FOUNDATION")}>
+                                                <PictureTiles name="Chhipa Foundation" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606188/Organization%20LOGOS/PNG/Chhipa_hnyalo.png" />
+                                            </div>
+                                        </div>
+                                        <div className="sub-org-detailed-class">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="450" onClick={() => history.push("/AreaOfWorking/Community/FIX-IT")}>
+                                                <PictureTiles name="Fix It" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606188/Organization%20LOGOS/PNG/Fixit_dvk5ae.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="550" onClick={() => history.push("/AreaOfWorking/Community/JDC")}>
+                                                <PictureTiles name="JDC" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606194/Organization%20LOGOS/PNG/JDC_rp5snu.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="650" onClick={() => history.push("/AreaOfWorking/Community/LYARIANZ-YOUTH-DEVELOPMENT-PROGRAM")}>
+                                                <PictureTiles name="Lyarianz Youth Development Program" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606194/Organization%20LOGOS/PNG/Layarianz_Youth_Dev_Association_znb7ep.png" />
+                                            </div>
+                                        </div>
+                                        <div className="sub-org-detailed-class">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="750" onClick={() => history.push("/AreaOfWorking/Community/ROBIN-HOOD-ARMY")}>
+                                                <PictureTiles name="Robin Hood Army" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606188/Organization%20LOGOS/PNG/Robin_Hood_Army_ymukjo.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="850" onClick={() => history.push("/AreaOfWorking/Community/SAYLANI-WELFARE-TRUST")}>
+                                                <PictureTiles name="Saylani Welfare Trust" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606191/Organization%20LOGOS/PNG/Saylani_mxpqtt.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="950" onClick={() => history.push("/AreaOfWorking/Community/ORANGI-PILOT-PROJECT")}>
+                                                <PictureTiles name="ORANGI PILOT PROJECT (OPP)" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606189/Organization%20LOGOS/PNG/OPP_wsd50j.png" />
+                                            </div>
+                                        </div>
+                                        <div className="sub-org-detailed-class">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="1050" onClick={() => history.push("/AreaOfWorking/Community/SHAHID-AFRIDI-FOUNDATIO")}>
+                                                <PictureTiles name="Shahid Afridi Foundation" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606189/Organization%20LOGOS/PNG/Shahid_Afridi_xdtzs1.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="1150" onClick={() => history.push("/AreaOfWorking/Community/SOFIA-KHANA-GHAR")}>
+                                                <PictureTiles name="Sofia Khana Ghar" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606190/Organization%20LOGOS/PNG/Sofia_Khana_Ghar_s2isb9.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350">
+                                            </div>
+                                        </div>
                                     </div>
                                 </section>
                             </div>
@@ -87,7 +123,7 @@ const Community = (props) => {
                         <MyFooter />
                     </Layout>
                 </>}
-            </ThemeContext.Consumer>
+            </GuruContextChanger.Consumer>
         </>
     )
 }

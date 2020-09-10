@@ -1,12 +1,14 @@
 import React from 'react';
-import { ThemeWrapper } from "./contextInit"
+import { ThemeWrapper, GuruWrapper } from "./contextInit"
 import Routes from "./router"
 
 function MainComponent(props) {
     return (
-            <ThemeWrapper>
-                <Routes setPagePath={props.setPagePath}/>
-            </ThemeWrapper>
+        <ThemeWrapper>
+            <GuruWrapper>
+                <Routes />
+            </GuruWrapper>
+        </ThemeWrapper>
     );
 }
 

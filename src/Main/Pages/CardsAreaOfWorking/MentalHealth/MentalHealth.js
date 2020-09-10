@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import { Layout, Breadcrumb } from 'antd';
-import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
+import { GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
+import PictureTiles from "../../../Components/PictureTiles/PictureTiles";
+import "./MentalHealth.css"
 import {
     Link,
     useHistory
@@ -25,8 +27,11 @@ const MentalHealth = (props) => {
     })
     return (
         <>
-            <ThemeContext.Consumer>
-                {colorsState => <>
+            <GuruContextChanger.Consumer>
+                {guruState => <>
+                    {
+                       ()=> guruState.guruDispatch({ type: "change", payload: "MentalHealth" })
+                    }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
@@ -71,12 +76,18 @@ const MentalHealth = (props) => {
                                         normalized just as much as Physical Health. Some organizations working in for this domain
                                         in Karachi are listed below.
                                         </p>
-                                    <div className="pakistanBoldPara" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
-                                        <ul>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Mental-Health/DOW-INSTITUTE-OF-BEHAVIORAL-SCIENCES")}><div>Dow Institute of Behavioral Sciences (IBS).</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Mental-Health/KARACHI-PSYCHIATRIC-HOSPITAL")}><div>Karachi Psychiatric Hospital.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Mental-Health/KARWAN-E-HAYAT")}><div>Karwan-e-Hayat.</div></li>
-                                        </ul>
+                                    <div className="pakistanBoldPara mentalHealth-org-detailed-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
+                                        <div className="sub-org-detailed-class ">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Mental-Health/DOW-INSTITUTE-OF-BEHAVIORAL-SCIENCES")}>
+                                                <PictureTiles name="Dow Institute of Behavioral Sciences (IBS)" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606295/Organization%20LOGOS/PNG/Dow_Institute_of_Behavioral_Sciences_IBS_wlo3mv.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Mental-Health/KARACHI-PSYCHIATRIC-HOSPITAL")}>
+                                                <PictureTiles name="Karachi Psychiatric Hospital" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606296/Organization%20LOGOS/PNG/Karachi_Psychiatric_Hospital_brsgfr.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Mental-Health/KARWAN-E-HAYAT")}>
+                                                <PictureTiles name="Karwan-e-Hayat" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606294/Organization%20LOGOS/PNG/Karwan-E-Hayat_m1wrqz.png" />
+                                            </div>
+                                        </div>
                                     </div>
                                 </section>
                             </div>
@@ -84,7 +95,7 @@ const MentalHealth = (props) => {
                         <MyFooter />
                     </Layout>
                 </>}
-            </ThemeContext.Consumer>
+            </GuruContextChanger.Consumer>
         </>
     )
 }

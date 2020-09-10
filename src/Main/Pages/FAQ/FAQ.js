@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Layout, Collapse, Skeleton, message } from 'antd';
-import { ThemeContext } from "../../GlobalEnvironment/contextInit";
+import { GuruContextChanger } from "../../GlobalEnvironment/contextInit";
 import NavBar from "../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../Components/Footer/Footer";
 import firebase from "../../GlobalEnvironment/firebaseConfig";
@@ -106,8 +106,11 @@ const FAQ = (props) => {
     }, [])
     return (
         <>
-            <ThemeContext.Consumer>
-                {colorsState => <>
+            <GuruContextChanger.Consumer>
+            {guruState => <>
+                {
+                   ()=> guruState.guruDispatch({ type: "change", payload: "FAQ" })
+                }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class area-of-working-class">
@@ -146,8 +149,8 @@ const FAQ = (props) => {
                         </Content>
                         <MyFooter />
                     </Layout>
-                </>}
-            </ThemeContext.Consumer>
+                    </>}
+        </GuruContextChanger.Consumer>
         </>
     )
 }

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Breadcrumb, Layout, Descriptions } from 'antd';
-import { ThemeContext } from "../../GlobalEnvironment/contextInit";
+import { GuruContextChanger } from "../../GlobalEnvironment/contextInit";
 import NavBar from "../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../Components/Footer/Footer";
 import 'antd/dist/antd.css';
@@ -8,7 +8,6 @@ import "./NGOsPages.css"
 import { detailedData } from "../../GlobalEnvironment/contentRawData"
 import {
     Link,
-    useHistory
 } from "react-router-dom";
 
 
@@ -17,14 +16,16 @@ const { Content } = Layout
 
 const NGOsPage = (props) => {
     let ngoItem = props.item
-    let history = useHistory()
-    useEffect(()=>{
+    useEffect(() => {
         window.scrollTo(0, 0)
-    },[])
+    }, [])
     return (
         <>
-            <ThemeContext.Consumer>
-                {colorsState => <>
+            <GuruContextChanger.Consumer>
+                {guruState => <>
+                    {
+                      ()=>  guruState.guruDispatch({ type: "change", payload: "NGO'sPage" })
+                    }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
@@ -42,7 +43,7 @@ const NGOsPage = (props) => {
                                     </Breadcrumb.Item>
                                     <Breadcrumb.Item>
                                         <Link to={`/AreaOfWorking/${ngoItem.parent}`}>
-                                        {ngoItem.parent}
+                                            {ngoItem.parent}
                                         </Link>
                                     </Breadcrumb.Item>
                                     <Breadcrumb.Item>
@@ -68,7 +69,7 @@ const NGOsPage = (props) => {
                         <MyFooter />
                     </Layout>
                 </>}
-            </ThemeContext.Consumer>
+            </GuruContextChanger.Consumer>
         </>
     )
 }

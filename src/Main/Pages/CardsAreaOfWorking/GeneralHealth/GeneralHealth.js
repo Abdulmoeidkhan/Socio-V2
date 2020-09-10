@@ -1,14 +1,16 @@
 import React, { useEffect } from 'react';
 import { Layout, Breadcrumb } from 'antd';
-import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
+import { GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
+import PictureTiles from "../../../Components/PictureTiles/PictureTiles";
 import {
     Link,
     useHistory
 } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./GeneralHealth.css"
 
 
 
@@ -25,8 +27,11 @@ const GeneralHealth = (props) => {
     })
     return (
         <>
-            <ThemeContext.Consumer>
-                {colorsState => <>
+            <GuruContextChanger.Consumer>
+                {guruState => <>
+                    {
+                       ()=> guruState.guruDispatch({ type: "change", payload: "GeneralHealth" })
+                    }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
@@ -71,15 +76,29 @@ const GeneralHealth = (props) => {
                                         serve the medical patients with different complications, the aim is to improve the health
                                         facilities available to the commoners as health and life protection is a right of the people.
                                         </p>
-                                    <div className="pakistanBoldPara" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
-                                        <ul>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/General-Health/DOW-OJHA-INSTITUTE-OF-CHEST-DISEASES")}><div>Dow Ojha.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/General-Health/LIAQUAT-NATIONAL-HOSPITAL")}><div>Liaquat National Hospital.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/General-Health/NICVD-NATIONAL-INSTITUTE-OF-CARDIO-VESCULAR-DISEASES")}><div>NICVD.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="450" onClick={() => history.push("/AreaOfWorking/General-Health/PAKISTAN-RED-CRESCENT")}><div>Pakistan Red crescent.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="650" onClick={() => history.push("/AreaOfWorking/General-Health/RA-ANA-LIAQUAT-CRAFSTSMEN-COLONY-HEALTH-CARE-CENTRE")}><div>RLCC Health Care Centre.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="750" onClick={() => history.push("/AreaOfWorking/General-Health/SINDH-INSTITUTE-OF-UROLOGY-AND-TRANSPLANTATION")}><div>SIUT.</div></li>
-                                        </ul>
+                                    <div className="pakistanBoldPara generalHealth-org-detailed-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
+                                        <div className="sub-org-detailed-class ">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/General-Health/DOW-OJHA-INSTITUTE-OF-CHEST-DISEASES")}>
+                                                <PictureTiles name="Dow Ojha" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606273/Organization%20LOGOS/PNG/DOW_Ojha_z4wfre.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/General-Health/LIAQUAT-NATIONAL-HOSPITAL")}>
+                                                <PictureTiles name="Liaquat National Hospital" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606270/Organization%20LOGOS/PNG/Liaquat_National_Hospital_phhpko.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/General-Health/NICVD-NATIONAL-INSTITUTE-OF-CARDIO-VESCULAR-DISEASES")}>
+                                                <PictureTiles name="NICVD" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606270/Organization%20LOGOS/PNG/NICVD_mkcqyc.png" />
+                                            </div>
+                                        </div>
+                                        <div className="sub-org-detailed-class">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="450" onClick={() => history.push("/AreaOfWorking/General-Health/PAKISTAN-RED-CRESCENT")}>
+                                                <PictureTiles name="Pakistan Red Crescent" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606270/Organization%20LOGOS/PNG/Pakistan_Red_Cresent_otrcri.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="550" onClick={() => history.push("/AreaOfWorking/General-Health/RA-ANA-LIAQUAT-CRAFSTSMEN-COLONY-HEALTH-CARE-CENTRE")}>
+                                                <PictureTiles name="RLCC Health Care Centre" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606270/Organization%20LOGOS/PNG/RLCC_rzgecc.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="650" onClick={() => history.push("/AreaOfWorking/General-Health/SINDH-INSTITUTE-OF-UROLOGY-AND-TRANSPLANTATION")}>
+                                                <PictureTiles name="SIUT" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606271/Organization%20LOGOS/PNG/SIUT_q94kuo.png" />
+                                            </div>
+                                        </div>
                                     </div>
                                 </section>
                             </div>
@@ -87,7 +106,7 @@ const GeneralHealth = (props) => {
                         <MyFooter />
                     </Layout>
                 </>}
-            </ThemeContext.Consumer>
+            </GuruContextChanger.Consumer>
         </>
     )
 }

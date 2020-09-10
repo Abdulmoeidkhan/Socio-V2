@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Layout, Breadcrumb } from 'antd';
-import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
+import { GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
 import {
@@ -23,8 +23,11 @@ const KPK = (props) => {
     })
     return (
         <>
-            <ThemeContext.Consumer>
-                {colorsState => <>
+            <GuruContextChanger.Consumer>
+            {guruState => <>
+                {
+                   ()=> guruState.guruDispatch({ type: "change", payload: "KPK" })
+                }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
@@ -151,8 +154,8 @@ const KPK = (props) => {
                         </Content>
                         <MyFooter />
                     </Layout>
-                </>}
-            </ThemeContext.Consumer>
+                    </>}
+        </GuruContextChanger.Consumer>
         </>
     )
 }

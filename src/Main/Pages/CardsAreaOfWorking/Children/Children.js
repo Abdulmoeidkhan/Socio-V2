@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import { Layout, Breadcrumb } from 'antd';
-import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
+import { GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
+import PictureTiles from "../../../Components/PictureTiles/PictureTiles";
 import "./Children.css"
 import {
     Link,
@@ -18,7 +19,7 @@ const { Content } = Layout;
 
 
 const Children = (props) => {
-    let history=useHistory()
+    let history = useHistory()
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -26,8 +27,11 @@ const Children = (props) => {
     })
     return (
         <>
-            <ThemeContext.Consumer>
-                {colorsState => <>
+            <GuruContextChanger.Consumer>
+                {guruState => <>
+                    {
+                      ()=>  guruState.guruDispatch({ type: "change", payload: "Children" })
+                    }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
@@ -68,15 +72,29 @@ const Children = (props) => {
                                         of society tomorrow. Investments done for children today will be reaped in the future.
                                         </p>
                                     <h2 className="terr-second-heading-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="100"> Following organizations are working for the welfare of children in Karachi:</h2>
-                                    <div className="pakistanBoldPara" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
-                                        <ul>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={()=> history.push("/AreaOfWorking/Children/AAHUNG-FOUNDATION")}><div>Aahung Foundation.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={()=> history.push("/AreaOfWorking/Children/AZAD-FOUNDATION")}><div>Azad Foundation.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={()=> history.push("/AreaOfWorking/Children/EDHI-FOUNDATION")}><div>Edhi Foundation.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="450" onClick={()=> history.push("/AreaOfWorking/Children/KONPAL-CHILD-ABUSE-PREVENTION-SOCIETY")}><div>Konpal Child Abuse Prevention.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="550" onClick={()=> history.push("/AreaOfWorking/Children/MAKE-A-WISH")}><div>Make a Wish.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="650" onClick={()=> history.push("/AreaOfWorking/Children/SOS-VILLAGE")}><div>SOS Village.</div></li>
-                                        </ul>
+                                    <div className="pakistanBoldPara children-org-detailed-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
+                                        <div className="sub-org-detailed-class ">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Children/AAHUNG-FOUNDATION")}>
+                                                <PictureTiles name="Aahung Foundation" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606161/Organization%20LOGOS/PNG/Aahung_atcxdw.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Children/AZAD-FOUNDATION")}>
+                                                <PictureTiles name=">Azad Foundation" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606161/Organization%20LOGOS/PNG/Azad_Foundation_wax6o2.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Children/EDHI-FOUNDATION")}>
+                                                <PictureTiles name="Edhi Foundation" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606161/Organization%20LOGOS/PNG/Edhi_dpdqw4.png" />
+                                            </div>
+                                        </div>
+                                        <div className="sub-org-detailed-class">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="450" onClick={() => history.push("/AreaOfWorking/Children/KONPAL-CHILD-ABUSE-PREVENTION-SOCIETY")}>
+                                                <PictureTiles name="Konpal Child Abuse Prevention" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606161/Organization%20LOGOS/PNG/Konpal_Child_Abuse_Prevention_x9pinz.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="550" onClick={() => history.push("/AreaOfWorking/Community/JDC")}>
+                                                <PictureTiles name="Make a WishC" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606161/Organization%20LOGOS/PNG/Make_A_Wish_kcjsjd.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="650" onClick={() => history.push("/AreaOfWorking/Children/SOS-VILLAGE")}>
+                                                <PictureTiles name="SOS Village" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606161/Organization%20LOGOS/PNG/SOS_hfqf2l.png" />
+                                            </div>
+                                        </div>
                                     </div>
                                 </section>
                             </div>
@@ -84,7 +102,7 @@ const Children = (props) => {
                         <MyFooter />
                     </Layout>
                 </>}
-            </ThemeContext.Consumer>
+            </GuruContextChanger.Consumer>
         </>
     )
 }

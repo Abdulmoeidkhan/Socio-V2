@@ -1,18 +1,21 @@
 import React from 'react';
-import { ThemeContext } from "../../GlobalEnvironment/contextInit"
+import { GuruContextChanger } from "../../GlobalEnvironment/contextInit"
 import { Layout } from 'antd';
 
 // const { Content, } = Layout;
 
 const ContactUs = (props) => {
     return (
-        <ThemeContext.Consumer>
-            {colorsState =>
+        <GuruContextChanger.Consumer>
+            {guruState => <>
+                {
+                   ()=> guruState.guruDispatch({ type: "change", payload: "Contact"})
+                }
                 <Layout>
-                    
+
                 </Layout>
-            }
-        </ThemeContext.Consumer>
+            </>}
+        </GuruContextChanger.Consumer>
     )
 }
 

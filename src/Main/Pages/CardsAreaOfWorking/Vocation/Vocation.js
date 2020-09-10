@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Layout, Breadcrumb } from 'antd';
-import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
+import { GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
 import PictureTiles from "../../../Components/PictureTiles/PictureTiles";
@@ -27,8 +27,11 @@ const Vocation = (props) => {
     })
     return (
         <>
-            <ThemeContext.Consumer>
-                {colorsState => <>
+            <GuruContextChanger.Consumer>
+                {guruState => <>
+                    {
+                       ()=> guruState.guruDispatch({ type: "change", payload: "Vocation" })
+                    }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
@@ -75,10 +78,10 @@ const Vocation = (props) => {
                                                 <PictureTiles name="Hunar Foundation" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606371/Organization%20LOGOS/PNG/The_Hunar_Foundation_wyb3ts.png" />
                                             </div>
                                             <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Vocation/PAKISTAN-INSTITUTE-OF-LEARNING-AND-LIVING")}>
-                                                <PictureTiles name="Pakistan Institute of Learning and Living" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606371/Organization%20LOGOS/PNG/The_Hunar_Foundation_wyb3ts.png" />
+                                                <PictureTiles name="Pakistan Institute of Learning and Living" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606371/Organization%20LOGOS/PNG/Pakistan_Institute_of_Learning_and_Living_qmubss.png" />
                                             </div>
                                             <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150">
-                                            <PictureTiles name="ZVMG Rangoonwala Trust" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606370/Organization%20LOGOS/PNG/ZVMG_Rangoonwala_iwdmfm.png" />
+                                                <PictureTiles name="ZVMG Rangoonwala Trust" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606370/Organization%20LOGOS/PNG/ZVMG_Rangoonwala_iwdmfm.png" />
                                             </div>
                                         </div>
                                         <div className="sub-org-detailed-class">
@@ -91,16 +94,6 @@ const Vocation = (props) => {
                                             <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" >
                                             </div>
                                         </div>
-                                        <div className="sub-org-detailed-class">
-                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Vocation/ZVMG-RANGOONWALA-TRUST")}>
-                                                
-                                            </div>
-                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" >
-
-                                            </div>
-                                            <div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </section>
                             </div>
@@ -108,7 +101,7 @@ const Vocation = (props) => {
                         <MyFooter />
                     </Layout>
                 </>}
-            </ThemeContext.Consumer>
+            </GuruContextChanger.Consumer>
         </>
     )
 }

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { ThemeContext } from "../../GlobalEnvironment/contextInit"
-import { Layout, Card, Tabs } from 'antd';
+import { GuruContextChanger } from "../../GlobalEnvironment/contextInit"
+import { Layout, Tabs } from 'antd';
 import NavBar from "../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../Components/Footer/Footer";
 import "./About.css"
@@ -22,8 +22,11 @@ const AboutUs = (props) => {
         AOS.refresh();
     })
     return (
-        <ThemeContext.Consumer>
-            {colorsState =>
+        <GuruContextChanger.Consumer>
+                {guruState => <>
+                    {
+                     ()=>   guruState.guruDispatch({ type: "change", payload: "AboutSocioLinkage"})
+                    }
                 <Layout>
                     <NavBar />
                     <Content className="content-container-class">
@@ -130,8 +133,8 @@ const AboutUs = (props) => {
                     </Content>
                     <MyFooter />
                 </Layout>
-            }
-        </ThemeContext.Consumer>
+                </>}
+            </GuruContextChanger.Consumer>
     )
 }
 

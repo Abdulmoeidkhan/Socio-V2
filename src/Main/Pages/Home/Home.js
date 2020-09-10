@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Layout } from 'antd';
-import { ThemeContext } from "../../GlobalEnvironment/contextInit";
+import { ThemeContext, GuruContextChanger } from "../../GlobalEnvironment/contextInit";
 import NavBar from "../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../Components/Footer/Footer";
 import Banner from "../../Components/Banner/Banner.js";
@@ -11,14 +11,19 @@ import "./Home.css"
 const { Content } = Layout;
 
 const Home = (props) => {
+
     return (
-        <>
-            <ThemeContext.Consumer>
-                {colorsState => <>
-                    <Layout>
-                        <style>
-                            {
-                                `
+
+        <ThemeContext.Consumer>
+            {colorsState =>
+                <GuruContextChanger.Consumer>
+                    {guruState =>
+                                // guruState.guruDispatch({ type: "change", payload: "Home" })
+                        <>      
+                            <Layout>
+                                <style>
+                                    {
+                                        `
                                 .ant-menu{
                                     color:${colorsState.colors.color2} !important
                                 }
@@ -28,18 +33,20 @@ const Home = (props) => {
                                     color:${colorsState.colors.color2} !important;
                                 }
                                 `
-                            }
-                        </style>
-                        <NavBar />
-                        <Content className="content-container-class">
-                            <Banner />
-                            <HomeContent />
-                        </Content>
-                        <MyFooter />
-                    </Layout>
-                </>}
-            </ThemeContext.Consumer>
-        </>
+                                    }
+                                </style>
+                                <NavBar />
+                                <Content className="content-container-class">
+                                    <Banner />
+                                    <HomeContent />
+                                </Content>
+                                <MyFooter />
+                            </Layout>
+                        </>
+                    }
+                </GuruContextChanger.Consumer>
+            }
+        </ThemeContext.Consumer>
     )
 }
 

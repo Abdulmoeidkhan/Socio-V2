@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { Layout, Breadcrumb } from 'antd';
-import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
+import { GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
+import PictureTiles from "../../../Components/PictureTiles/PictureTiles";
 import MyFooter from "../../../Components/Footer/Footer";
 import {
     Link,
@@ -9,6 +10,7 @@ import {
 } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./Education.css"
 
 
 
@@ -25,8 +27,11 @@ const Education = (props) => {
     })
     return (
         <>
-            <ThemeContext.Consumer>
-                {colorsState => <>
+            <GuruContextChanger.Consumer>
+                {guruState => <>
+                    {
+                      ()=>  guruState.guruDispatch({ type: "change", payload: "Education" })
+                    }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
@@ -66,16 +71,40 @@ const Education = (props) => {
                                         statistics and standards in Pakistan are not very promising but these organizations have come
                                         forward to play their parts in the educational development of generations to come!
                                         </p>
-                                    <div className="pakistanBoldPara" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
-                                        <ul>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Education/APEX-EDUCATION-FORUM")}><div>Apex Education Forum.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Education/EDUCATION-TRUST-NASRA-SCHOOL")}><div>Education Trust-Nasra School.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Education/PAKISTAN-YOUTH-ORGANIZATION")}><div>Pakistani Youth Org.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="450" onClick={() => history.push("/AreaOfWorking/Education/RA’ANA-LIAQUAT-PUBLIC-SCHOOL")}><div>Ra’ana Liaquat Public School.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="550" onClick={() => history.push("/AreaOfWorking/Education/THE-CITIZENS-FOUNDATION")}><div>The Citizens Foundation.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="650" onClick={() => history.push("/AreaOfWorking/Education/YOUTH-EXPRESS-PAKISTAN")}><div>Youth Express Pakistan.</div></li>
-                                            <li data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="750" onClick={() => history.push("/AreaOfWorking/Education/ZINDAGI-TRUST")}><div>Zindagi Trust.</div></li>
-                                        </ul>
+
+                                    <div className="pakistanBoldPara education-org-detailed-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="100">
+                                        <div className="sub-org-detailed-class ">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Education/APEX-EDUCATION-FORUM")}>
+                                                <PictureTiles name="Apex Education Forum" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606239/Organization%20LOGOS/PNG/Apex_Education_sy8t5i.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Education/EDUCATION-TRUST-NASRA-SCHOOL")}>
+                                                <PictureTiles name="Education Trust-Nasra School" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606240/Organization%20LOGOS/PNG/Nasra_vzxewe.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Education/PAKISTAN-YOUTH-ORGANIZATION")}>
+                                                <PictureTiles name="Pakistani Youth Org" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606241/Organization%20LOGOS/PNG/Pakistani_Youth_Org_lw1orp.png" />
+                                            </div>
+                                        </div>
+                                        <div className="sub-org-detailed-class">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="450" onClick={() => history.push("/AreaOfWorking/Education/RA’ANA-LIAQUAT-PUBLIC-SCHOOL")}>
+                                                <PictureTiles name="Ra’ana Liaquat Public School" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606245/Organization%20LOGOS/PNG/RLCC_i2elj7.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="550" onClick={() => history.push("/AreaOfWorking/Education/THE-CITIZENS-FOUNDATION")}>
+                                                <PictureTiles name="The Citizens Foundation" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606241/Organization%20LOGOS/PNG/TCF_pph0hv.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="650" onClick={() => history.push("/AreaOfWorking/Education/YOUTH-EXPRESS-PAKISTAN")}>
+                                                <PictureTiles name="Youth Express Pakistan" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606241/Organization%20LOGOS/PNG/Youth_Express_Pakistan_iqerva.png" />
+                                            </div>
+                                        </div>
+                                        <div className="sub-org-detailed-class">
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="750" onClick={() => history.push("/AreaOfWorking/Education/ZINDAGI-TRUST")}>
+                                                <PictureTiles name="Zindagi Trust" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606241/Organization%20LOGOS/PNG/Zindagi_Trust_j8y5k9.png" />
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350">
+
+                                            </div>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350">
+                                            </div>
+                                        </div>
                                     </div>
                                 </section>
                             </div>
@@ -83,7 +112,7 @@ const Education = (props) => {
                         <MyFooter />
                     </Layout>
                 </>}
-            </ThemeContext.Consumer>
+            </GuruContextChanger.Consumer>
         </>
     )
 }

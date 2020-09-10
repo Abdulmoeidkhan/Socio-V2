@@ -1,0 +1,26 @@
+@media only screen and (min-width: 791px) {
+    .mentalHealth-org-detailed-class {
+        display: grid;
+        grid-template-rows: 3fr;
+    }
+    .mentalHealth-org-detailed-class .sub-org-detailed-class:nth-child(1) {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .mentalHealth-org-detailed-class {
+        display: grid;
+        grid-template-rows: 3fr;
+    }
+    .mentalHealth-org-detailed-class .sub-org-detailed-class:nth-child(1) {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+.mentalHealth-org-detailed-class {
+    width: 85vw;
+    margin: 0 auto;
+}
+

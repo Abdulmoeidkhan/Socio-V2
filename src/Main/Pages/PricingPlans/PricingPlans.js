@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Table } from 'antd';
-import { ThemeContext } from "../../GlobalEnvironment/contextInit";
+import { ThemeContext, GuruContextChanger } from "../../GlobalEnvironment/contextInit";
 import NavBar from "../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../Components/Footer/Footer";
 import "./PricingPlans.css"
@@ -11,7 +11,7 @@ const { Content } = Layout;
 let data = [
     {
         Cost: "800-1000",
-        Plans:"Platinum",
+        Plans: "Platinum",
         RegistrationFees: "100 (No registrationfees in case of another intake) ",
         Session: "Home-based",
         Timing: "Self-paced",
@@ -21,7 +21,7 @@ let data = [
     },
     {
         Cost: "400-500",
-        Plans:"Gold",
+        Plans: "Gold",
         RegistrationFees: "100",
         Session: "Online Sessions (Over Video Call)",
         Timing: "Weekdays (10am-7pm)",
@@ -31,7 +31,7 @@ let data = [
     },
     {
         Cost: "150-300",
-        Plans:"Silver",
+        Plans: "Silver",
         RegistrationFees: "100",
         Session: "Online sessions (Over call)",
         Timing: "Weekdays (12pm-5pm)",
@@ -41,7 +41,7 @@ let data = [
     },
     {
         Cost: "150",
-        Plans:"Referrals",
+        Plans: "Referrals",
         RegistrationFees: "-",
         Session: "Online sessions (Over call)",
         Timing: "Weekdays (12pm-5pm)",
@@ -51,7 +51,7 @@ let data = [
     },
     {
         Cost: "200",
-        Plans:"Special Days (International Social Days)",
+        Plans: "Special Days (International Social Days)",
         RegistrationFees: "-",
         Session: "Online sessions (Over call)",
         Timing: "Weekdays (12pm-5pm)",
@@ -123,8 +123,13 @@ const PricingPlans = (props) => {
         <>
             <ThemeContext.Consumer>
                 {colorsState => <>
-                    <style>{
-                        `
+                    <GuruContextChanger.Consumer>
+                        {guruState => <>
+                            {
+                               ()=> guruState.guruDispatch({ type: "change", payload: "PricingPlans" })
+                            }
+                            <style>{
+                                `
                             .ant-table-header table{
                                 visibility: visible !important;
                             }
@@ -132,28 +137,30 @@ const PricingPlans = (props) => {
                                  width:175px !important;
                             }
                         `
-                    }</style>
-                    <Layout>
-                        <NavBar />
-                        <Content className="content-container-class area-of-working-class">
-                            <section className="one-columns-grid">
-                                <div className="faq-class">
-                                    <div className="spacing-class" />
-                                    <h2 className="content-head content-head-faq">Pricing & Plans</h2>
-                                    <div className="faq-class">
-                                        <Table
-                                            columns={columns}
-                                            dataSource={data}
-                                            bordered
-                                            size="middle"
-                                            scroll={{ x: "20%", y: 680 }}
-                                        />
-                                    </div>
-                                </div>
-                            </section>
-                        </Content>
-                        <MyFooter />
-                    </Layout>
+                            }</style>
+                            <Layout>
+                                <NavBar />
+                                <Content className="content-container-class area-of-working-class">
+                                    <section className="one-columns-grid">
+                                        <div className="faq-class">
+                                            <div className="spacing-class" />
+                                            <h2 className="content-head content-head-faq">Pricing & Plans</h2>
+                                            <div className="faq-class">
+                                                <Table
+                                                    columns={columns}
+                                                    dataSource={data}
+                                                    bordered
+                                                    size="middle"
+                                                    scroll={{ x: "20%", y: 680 }}
+                                                />
+                                            </div>
+                                        </div>
+                                    </section>
+                                </Content>
+                                <MyFooter />
+                            </Layout>
+                        </>}
+                    </GuruContextChanger.Consumer>
                 </>}
             </ThemeContext.Consumer>
         </>

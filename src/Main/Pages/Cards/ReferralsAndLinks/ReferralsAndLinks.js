@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Layout, Card } from 'antd';
-import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
+import { ThemeContext,GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
 import {
@@ -21,6 +21,11 @@ const ReferralsAndLinks = (props) => {
         <>
             <ThemeContext.Consumer>
                 {colorsState => <>
+                    <GuruContextChanger.Consumer>
+            {guruState => <>
+                {
+                   ()=> guruState.guruDispatch({ type: "change", payload: "ReferralsAndLinks" })
+                }
                     <Layout>
                         <style>
                             {
@@ -71,6 +76,8 @@ const ReferralsAndLinks = (props) => {
                         </Content>
                         <MyFooter />
                     </Layout>
+                    </>}
+        </GuruContextChanger.Consumer>
                 </>}
             </ThemeContext.Consumer>
         </>

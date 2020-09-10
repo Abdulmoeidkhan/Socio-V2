@@ -1,6 +1,6 @@
 import React from 'react';
 import { Breadcrumb, Layout, Descriptions, Table } from 'antd';
-import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
+import { GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
 import {
@@ -296,8 +296,11 @@ const Pakistan = (props) => {
    }
     `
             }</style>
-            <ThemeContext.Consumer>
-                {colorsState => <>
+            <GuruContextChanger.Consumer>
+                {guruState => <>
+                    {
+                       ()=> guruState.guruDispatch({ type: "change", payload: "Pakistan"})
+                    }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
@@ -322,7 +325,7 @@ const Pakistan = (props) => {
                                 <section id="pakistan">
                                     <h2 className="pakistanPageHeading">Pakistan Overview</h2>
                                     <p className="pageParagraphClass">The total population in Pakistan was estimated at 219.0 million people in 2019, according to the latest census figures and projections from Trading Economics.</p>
-                                    <img className="pakistanPageImgClass" src={require("../../../Assets/Chart1.png")}/>
+                                    <img className="pakistanPageImgClass" src={require("../../../Assets/Chart1.png")} />
                                     <span className="table-1">
                                         <Table dataSource={dataSource}
                                             size="middle"
@@ -693,7 +696,7 @@ const Pakistan = (props) => {
                         <MyFooter />
                     </Layout>
                 </>}
-            </ThemeContext.Consumer>
+            </GuruContextChanger.Consumer>
         </>
     )
 }
