@@ -1,13 +1,11 @@
 import React from 'react';
-import { ThemeWrapper, GuruWrapper } from "./contextInit"
+import { ThemeWrapper } from "./contextInit"
 import Routes from "./router"
 
 function MainComponent(props) {
     return (
         <ThemeWrapper>
-            <GuruWrapper>
-                <Routes />
-            </GuruWrapper>
+            <Routes />
         </ThemeWrapper>
     );
 }

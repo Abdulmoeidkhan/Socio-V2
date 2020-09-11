@@ -30,7 +30,7 @@ const DateAndEventCards = () => {
         for (let i = 0; calenderData.length > i; i++) {
             if (calenderData[i].Date == c) {
                 setimgLink(calenderData[i].Image)
-                setImgData(calenderData[i].Desc)
+                setImgData(calenderData[i])
             }
         }
     }
@@ -70,18 +70,21 @@ const DateAndEventCards = () => {
                     <Card title="Events" bordered={true}>
                         <DatePicker size="large" bordered={false} showToday={true} defaultValue={moment()} className="widthClass" onChange={(a, b) => { dateChanged(a, b) }} />
                         <div style={{ minWidth: "300px" }}>
-                            <Modal
-                                title="Description"
+                            {imgData && <Modal
+                                title={imgData.Event}
                                 centered
                                 visible={visible}
                                 onOk={() => setVisible(false)}
                                 onCancel={() => setVisible(false)}
                                 width="90vw"
-                                
                             >
-                                <p>{imgData}</p>
-                            </Modal>
-                            {imgLink ? <img className="cardImgClass" src={imgLink} style={{ cursor: "pointer" }} onClick={()=>setVisible(!visible)} /> : <img className="cardImgClass" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1595017293/ezgif.com-video-to-gif_hbdqah.gif"} />}
+                                <p>{imgData.Para1}</p>
+                                <p><strong>"{imgData.Qoute}"</strong></p>
+                                <p>{imgData.Para2}</p>
+                                <p>{imgData.Para3}</p>
+                                <p>{imgData.Para4}</p>
+                            </Modal>}
+                            {imgLink ? <img className="cardImgClass" src={imgLink} style={{ cursor: "pointer" }} onClick={() => setVisible(!visible)} /> : <img className="cardImgClass" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1595017293/ezgif.com-video-to-gif_hbdqah.gif"} />}
                         </div>
                     </Card>
                 </div>

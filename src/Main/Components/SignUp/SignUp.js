@@ -23,7 +23,10 @@ const SignUp = (props) => {
     const [passReset, setPassReset] = useState(false)
     const [processing, setProcessing] = useState(false)
     const onFinishFailed = errorInfo => {
-        message.error(errorInfo);
+        errorInfo = errorInfo.errorFields
+        errorInfo.map((val, i) => {
+            message.error(val.errors[0]);
+        })
     };
     return (<>
         {signUp == true &&
@@ -112,7 +115,7 @@ const SignUp = (props) => {
                 </Link>
             </Form.Item>
             <Form.Item {...tailLayout}>
-                <Button type="primary" htmlType="submit" Disabled={processing ? true : false}>
+                <Button type="primary" htmlType="submit" disabled={processing ? true : false}>
                     Submit
                 </Button>
             </Form.Item>
@@ -144,7 +147,7 @@ const SignUp = (props) => {
                     </Link>
                 </Form.Item>
                 <Form.Item {...tailLayout}>
-                    <Button type="primary" htmlType="submit" Disabled={processing ? true : false}>
+                    <Button type="primary" htmlType="submit" disabled={processing ? true : false}>
                         Submit
                 </Button>
                 </Form.Item>

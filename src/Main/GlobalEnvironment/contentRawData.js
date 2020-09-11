@@ -559,7 +559,7 @@ export const detailedData = {
         "Reference link/ Website": "https://www.facebook.com/sofiaorganization/",
         "key": "43"
     },
-    "SAYLANI WELFARE TRUST":{
+    "SAYLANI WELFARE TRUST": {
         "Organization": "Saylani Welfare Trust",
         "OperatingArea": "All over Karachi.",
         "History": "Established in 1999 by Maulana Bashir Ahmed Farooqui to eradicate poverty and financial uplift of destitute.",
@@ -572,7 +572,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "https://www.saylaniwelfare.com/home",
         "key": "44"
     },
-    "SHAHID AFRIDI FOUNDATION":{
+    "SHAHID AFRIDI FOUNDATION": {
         "Organization": "Shahid Afridi Foundation",
         "OperatingArea": "E.I Lines, Dr. Daud Pota Rd Karachi.",
         "History": "Established by famous Pakistani Cricketer Shahid Afridi in 2014, aiming to improve the conditions of underprivileged communities.",
@@ -585,7 +585,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "https://shahidafridifoundation.org/",
         "key": "45"
     },
-    "AGHA KHAN SPORTS AND REHABILITATION CENTRE":{
+    "AGHA KHAN SPORTS AND REHABILITATION CENTRE": {
         "Organization": "Agha Khan Sports and Rehabilitation Centre",
         "OperatingArea": "Stadium Rd Karachi",
         "History": "This Centre was built to help children, adults and elderly in overcoming physical, social and mental problems caused by illness, injury or after a surgery.",
@@ -598,7 +598,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "https://hospitals.aku.edu/pakistan/Health-Services/physiotherapy-rehabilitation-nutrition/Pages/rehabilitation.aspx",
         "key": "46"
     },
-    "WILLING WAYS":{
+    "WILLING WAYS": {
         "Organization": "Willing Ways",
         "OperatingArea": "DHA Karachi",
         "History": "Established 37 years ago during the Heroin-pandemic in Pakistan with the facility for Change Counselling and took the responsibility to aware publics about the odds of alcoholism.",
@@ -611,7 +611,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "https://willingwayskarachi.org/",
         "key": "47"
     },
-    "EDUCATION TRUST NASRA SCHOOL":{
+    "EDUCATION TRUST NASRA SCHOOL": {
         "Organization": "Education Trust Nasra School",
         "OperatingArea": "Gulzar-e-Hijri, Karachi",
         "History": "Established in 1949 by Nasra Wazir Ali to provide low-cost and high-quality education to the underprivileged communities.",
@@ -624,7 +624,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "https://www.nasraschool.edu.pk/",
         "key": "48"
     },
-    "RA’ANA LIAQUAT PUBLIC SCHOOL":{
+    "RA’ANA LIAQUAT PUBLIC SCHOOL": {
         "Organization": "Ra’ana Liaquat Public School (RLCC)",
         "OperatingArea": "Shah Faisal Colony, Karachi, Pakistan",
         "History": "A profound organization started by Begum Ra’ana Liaquat to reconcile the people of Pakistan just after partition, and the organization is successfully operational since 1954.",
@@ -637,7 +637,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "http://rlcc.com.pk/",
         "key": "49"
     },
-    "ZINDAGI TRUST":{
+    "ZINDAGI TRUST": {
         "Organization": "Zindagi Trust",
         "OperatingArea": "CP and Berar CHS, Karachi",
         "History": "Established by famous celebrity of Pakistan Shehzad Roy to bring reforms in the education through infrastructure updates, administration and proper curriculum.",
@@ -650,7 +650,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "https://www.zindagitrust.org/",
         "key": "50"
     },
-    "DOW OJHA INSTITUTE OF CHEST DISEASES":{
+    "DOW OJHA INSTITUTE OF CHEST DISEASES": {
         "Organization": "DOW OJHA Institute Of Chest Diseases (OICD).",
         "OperatingArea": "Suparco Rd, Gulzar-e-Hijri Scheme 33, Karachi.",
         "History": "It was established as a TB sanatorium, now recognized as a center of excellence for Tuberculosis by the World Health Organization (WHO).",
@@ -663,7 +663,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "https://www.duhs.edu.pk/institutes/oicd/#over",
         "key": "51"
     },
-    "LIAQUAT NATIONAL HOSPITAL":{
+    "LIAQUAT NATIONAL HOSPITAL": {
         "Organization": "Liaqut National Hospital",
         "OperatingArea": "Stadium Road , Karachi",
         "History": "LNH was conceived 60 years ago as a not-for-profit organization with a vision to provide quality healthcare at an affordable cost to all socioeconomic classes. Over the years, the hospital has evolved to become the largest tertiary care hospital.",
@@ -676,7 +676,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "https://www.lnh.edu.pk/",
         "key": "52"
     },
-    "PAKISTAN RED CRESCENT":{
+    "PAKISTAN RED CRESCENT": {
         "Organization": "Pakistan Red Crescent",
         "OperatingArea": "Stadium Road , Karachi",
         "History": "The International Committee of the Red Cross (ICRC) was founded in 1863 in Geneva, Switzerland, by Henry Dunant and Gustave Moynier. Its 25-member committee has a unique authority under international humanitarian law to protect the life and dignity of the victims of international and internal armed conflicts. The ICRC was awarded the Nobel Peace Prizeon three occasions (in 1917, 1944 and 1963). The Pakistan Red Crescent was founded in Pakistan on December 20, 1947 by an Order called The Pakistan Red Cross Order issued by Quaid-e-Azam, through these branches, and 92 district level branches the PRC coordinates its field operations.",
@@ -689,7 +689,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "http://sindh.prcs.org.pk/",
         "key": "53"
     },
-    "RA’ANA LIAQUAT CRAFSTSMEN COLONY (RLCC) HEALTH CARE CENTRE":{
+    "RA’ANA LIAQUAT CRAFSTSMEN COLONY (RLCC) HEALTH CARE CENTRE": {
         "Organization": "Ra’ana Liaquat Crafstsmen Colony (RLCC) Health Care Centre",
         "OperatingArea": "Shah Faisal Colony, Karachi, Pakistan",
         "History": "A profound organization started by Begum Ra’ana Liaquat to reconcile the people of Pakistan just after partition, and the organization is successfully operational since 1954.",
@@ -702,7 +702,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "http://rlcc.com.pk/.",
         "key": "54"
     },
-    "KARACHI PSYCHIATRIC HOSPITAL":{
+    "KARACHI PSYCHIATRIC HOSPITAL": {
         "Organization": "Karachi Psychiatric Hospital",
         "OperatingArea": "Nazimabad No.3 , Karachi",
         "History": "Dr. Syed Mubin Akhtar, an American returned Diplomat in Psychiatry and Neurology founded KPH in 1970 to provide access to mental health irrespective of financial standing. And since then KPH has been successfully providing world class treatment to cure mental illness.",
@@ -715,7 +715,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "http://www.kph.org.pk/",
         "key": "55"
     },
-    "KARWAN-E-HAYAT":{
+    "KARWAN-E-HAYAT": {
         "Organization": "Karwan-e- Hayat",
         "OperatingArea": "Kemari , Karachi",
         "History": "Established in 1983 as a not-for-profit welfare organization, Karwan-e-Hayat was an initiative conceptualized by a handful of notable, conscientious citizens of Karachi. Dr Zafar Qureshi, Begum Rana Liaquat Ali Khan, Begum Tazeen Faridi, Professor Zaki Hassan, Ms Anita Ghulam Ali, Dr Abdul Husaini, Begum Shaista Ikramullah, Begum Abdul Kader and Cardinal Joseph Cordeiro, the Archbishop of Karachi, were the earliest patrons and visionaries of Karwan-e-Hayat.",
@@ -728,7 +728,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "http://www.kph.org.pk/",
         "key": "56"
     },
-    "QUAID-E-AZAM RANGERS SPECIAL CHILDREN SCHOOL":{
+    "QUAID-E-AZAM RANGERS SPECIAL CHILDREN SCHOOL": {
         "Organization": "Quaid-e-Azam Rangers Special Children School (QRSCS)",
         "OperatingArea": "Toll Plaza, Karachi",
         "History": "Established in November 2010 and became operational in January 1 st , 2012 since then the institution is working for the rehabilitation and training of special children which was inaugurated by Major General Muhammad Ijaz Chaudhary.",
@@ -741,7 +741,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "Self-visit/observations",
         "key": "57"
     },
-    "SHAHEED-E-MILLAT SPECIAL EDUCATION CENTRE":{
+    "SHAHEED-E-MILLAT SPECIAL EDUCATION CENTRE": {
         "Organization": "Shaheed-e-Millat Special Education Centre (GOP)",
         "OperatingArea": "Block 15 Gulistan e Jauhar, Karachi",
         "History": "Established by GOP to provide possible resources for the education of special children and their co-curricular activities.",
@@ -754,7 +754,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "Self-visit/observations",
         "key": "58"
     },
-    "ANSAR BURNEY TRUST":{
+    "ANSAR BURNEY TRUST": {
         "Organization": "Ansar Burney Trust",
         "OperatingArea": "Aram Bagh, Karachi",
         "History": "Established in 1980 by Ansar Burney, Advocate in the Pakistani port city of Karachi; the Ansar Burney Trust was the first organization to introduce true human rights in Pakistan.",
@@ -767,7 +767,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "https://ansarburney.org/",
         "key": "59"
     },
-    "DAR-UL-SUKOON (OLD AGE)":{
+    "DAR-UL-SUKOON (OLD AGE)": {
         "Organization": "Dar-ul-Sukoon (Old Age)",
         "OperatingArea": "M.A Jinnah Rd, Opp Mazar-e-Quaid, Karachi",
         "History": "A Dutch nun, Sr. Gertrude Lemmens in February 17, 1969 established the organization for the children with disabilities and to provide shelter for misplaced which is successfully operating to date.",
@@ -780,7 +780,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "http://www.seniorcitizensdus.com/",
         "key": "60"
     },
-    "EDHI OLD HOME.":{
+    "EDHI OLD HOME.": {
         "Organization": "Edhi Old home (Old Age).",
         "OperatingArea": "Plot A-15, New Karachi Town, Karachi",
         "History": "Initiated by A. Sattar Edhi a free dispensary and later with the support of other members turned to Edhi Welfare Trust and have been working to date for providing basic needs to the destitute.",
@@ -793,7 +793,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "https://edhi.org/",
         "key": "61"
     },
-    "SENIOR CITIZEN WELFARE PROGRAM":{
+    "SENIOR CITIZEN WELFARE PROGRAM": {
         "Organization": "Senior Citizen Welfare Program",
         "OperatingArea": "North Naziabad, Karachi",
         "History": "Solely run by students who are working for the betterment of the lonely and destitute elderlies of our nation, under the banner of Nixor College.",
@@ -806,7 +806,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "https://web.facebook.com/SeniorCitizensWelfareProgram/?_rdc=1&amp;_rdr",
         "key": "62"
     },
-    "AAHUNG FOUNDATION (WOMEN)":{
+    "AAHUNG FOUNDATION (WOMEN)": {
         "Organization": "Aahung Foundation (Women)",
         "OperatingArea": "Clifton, Karachi",
         "History": "Operating since 1995, for the elimination if resentment against women and children through rights-based approach.",
@@ -819,7 +819,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "https://www.aahung.org/",
         "key": "63"
     },
-    "RA’ANA LIAQUAT CRAFSTSMEN COLONY (RLCC-WOMEN)":{
+    "RA’ANA LIAQUAT CRAFSTSMEN COLONY (RLCC-WOMEN)": {
         "Organization": "Ra’ana Liaquat Crafstsmen Colony (RLCC)",
         "OperatingArea": "Shah Faisal Colony, Karachi, Pakistan",
         "History": "A profound organization started by Begum Ra’ana Liaquat to reconcile the people of Pakistan just after partition, and the organization is successfully operational since 1954.",
@@ -832,7 +832,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "http://rlcc.com.pk/.",
         "key": "64"
     },
-    "PAKISTAN FEDERATION OF BUSINESS AND PROFESSIONAL WOMEN ORGANIZATION":{
+    "PAKISTAN FEDERATION OF BUSINESS AND PROFESSIONAL WOMEN ORGANIZATION": {
         "Organization": "Pakistan Federation of Business and Professional Women Organization",
         "OperatingArea": "Clifton, Karachi",
         "History": "Established to work on the educational and intellectual skills of women and enable them to take part in the collective efforts.",
@@ -950,14 +950,14 @@ export const NGOsRoute = [
         parent: "Drug-Rehabilitation"
     },
     {
-        name:"AGHA KHAN SPORTS AND REHABILITATION CENTRE",
-        link:"AreaOfWorking/Drug-Rehabilitation/AGHA-KHAN-SPORTS-AND-REHABILITATION-CENTRE",
-        parent:"Drug-Rehabilitation"
+        name: "AGHA KHAN SPORTS AND REHABILITATION CENTRE",
+        link: "AreaOfWorking/Drug-Rehabilitation/AGHA-KHAN-SPORTS-AND-REHABILITATION-CENTRE",
+        parent: "Drug-Rehabilitation"
     },
     {
-        name:"WILLING WAYS",
-        link:"AreaOfWorking/Drug-Rehabilitation/WILLING-WAYS",
-        parent:"Drug-Rehabilitation"
+        name: "WILLING WAYS",
+        link: "AreaOfWorking/Drug-Rehabilitation/WILLING-WAYS",
+        parent: "Drug-Rehabilitation"
     },
     {
         name: "APEX EDUCATION FORUM",
@@ -1183,8 +1183,175 @@ export const NGOsRoute = [
         name: "WORLDWIDE FUND OF NATURE (WWF)",
         link: "AreaOfWorking/Others/WORLDWIDE-FUND-OF-NATURE",
         parent: "Others"
-    },  
+    },
 ]
+
+export const tips = {
+    Home: [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id illo molestiae at aliquam facere nihil expedita distinctio maiores tempore officiis harum doloribus temporibus nam asperiores consequatur, cupiditate repellat voluptate. Officia!"
+    ]
+    // ,
+    // AboutUs: [
+    //     "AboutUs",
+    // ]
+    ,
+    Services: [
+        "Services",
+    ]
+    ,
+    Blogs: [
+        "Blogs",
+    ]
+    ,
+    ContactUs: [
+        "ContactUs",
+    ]
+    ,
+    TandC: [
+        "TandC",
+    ]
+    ,
+    AreaOfWorking: [
+        "AreaOfWorking",
+    ]
+    ,
+    Children: [
+        "Children",
+    ]
+    ,
+    PrivacyPolicies: [
+        "PrivacyPolicies",
+    ]
+    ,
+    Comparison: [
+        "Comparison",
+    ]
+    ,
+    NewsAndEvents: [
+        "NewsAndEvents",
+    ]
+    ,
+    ConsultationAndEvaluation: [
+        "ConsultationAndEvaluation",
+    ]
+    ,
+    ArticlesAndBlogs: [
+        "ArticlesAndBlogs",
+    ]
+    ,
+    ReferralsAndLinks: [
+        "ReferralsAndLinks",
+    ]
+    ,
+    EducatingAboutSocialWork: [
+        "EducatingAboutSocialWork",
+    ]
+    ,
+    PWAAndChromeLessBrowsing: [
+        "PWAAndChromeLessBrowsing",
+    ]
+    ,
+    SMM: [
+        "SMM",
+    ]
+    ,
+    TheGraphicGuru: [
+        "TheGraphicGuru",
+    ]
+    ,
+    AdminSignIn: [
+        "AdminSignIn",
+    ]
+    ,
+    AdminDashBoard: [
+        "AdminDashBoard",
+    ]
+    ,
+    Territories: [
+        "Territories",
+    ]
+    ,
+    Pakistan: [
+        "Pakistan",
+    ]
+    ,
+    Sindh: [
+        "Sindh",
+    ]
+    ,
+    Punjab: [
+        "Punjab",
+    ]
+    ,
+    Balochistan: [
+        "Balochistan",
+    ]
+    ,
+    KPK: [
+        "KPK",
+    ]
+    ,
+    Gilgit: [
+        "Gilgit",
+    ]
+    ,
+    Kashmir: [
+        "Kashmir",
+    ]
+    ,
+    AboutSocioLinkage: [
+        "AboutSocioLinkage",
+    ]
+    ,
+    Community: [
+        "Community",
+    ]
+    ,
+    DrugRehabilitation: [
+        "DrugRehabilitation",
+    ]
+    ,
+    Education: [
+        "Education",
+    ]
+    ,
+    GeneralHealth: [
+        "GeneralHealth",
+    ]
+    ,
+    MentalHealth: [
+        "MentalHealth",
+    ]
+    ,
+    SpecialNeeds: [
+        "SpecialNeeds",
+    ]
+    ,
+    SeniorCitizens: [
+        "SeniorCitizens",
+    ]
+    ,
+    Vocation: [
+        "Vocation",
+    ]
+    ,
+    Women: [
+        "Women",
+    ]
+    ,
+    Others: [
+        "Others",
+    ]
+    ,
+    FAQ: [
+        "FAQ",
+    ]
+    ,
+    PricingPlans: [
+        "PricingPlans",
+    ]
+    ,
+}
 
 export const calenderData = [
 
@@ -1195,7 +1362,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:"", 
     },
     {
         Date: "01-24",
@@ -1204,7 +1372,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "02-11",
@@ -1213,7 +1382,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "02-20",
@@ -1222,7 +1392,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "03-01",
@@ -1231,7 +1402,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "03-08",
@@ -1240,7 +1412,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "03-20",
@@ -1249,7 +1422,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     // {
     //     Date: "03-21",
@@ -1263,7 +1437,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "03-24",
@@ -1272,7 +1447,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "04-02",
@@ -1281,7 +1457,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "04-07",
@@ -1290,7 +1467,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "04-12",
@@ -1299,7 +1477,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "05-22",
@@ -1308,7 +1487,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "05-31",
@@ -1317,7 +1497,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "06-04",
@@ -1326,7 +1507,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
 
     {
@@ -1336,7 +1518,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "06-12",
@@ -1345,7 +1528,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "06-26",
@@ -1354,7 +1538,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "07-11",
@@ -1363,7 +1548,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "07-15",
@@ -1372,7 +1558,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "07-28",
@@ -1381,7 +1568,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "08-12",
@@ -1390,7 +1578,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "08-19",
@@ -1399,7 +1588,8 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "09-05",
@@ -1408,141 +1598,157 @@ export const calenderData = [
         Para1:"",
         Qoute:"",
         Para2:"",
-        Para:"",
+        Para3:"",
+        Para4:""
     },
     {
         Date: "09-08",
         Event: "International Literacy Day",
         Image: "https://res.cloudinary.com/tanzeelah/image/upload/v1592705876/Social%20Days%20Calendar/International_Literacy_Day_8_Sep_ocvqfz.jpg",
-        Para1:"",
-        Qoute:"",
-        Para2:"",
-        Para:"",
+        Para1:"Literacy is usually defined as being able to read and write. However, there are different aspects of reading and writing which varies culture to culture and country to country. Because of these differences we see varieties of literature over the regions.",
+        Qoute:"Literacy is the ability to identify, understand, interpret, create, communicate and compute, using printed and written materials associated with varying contexts.",
+        Para2:"Therefore, since 1967 UN has started to celebrate International Literacy day (ILD) every year on September 8th to promote awareness about the importance of literacy and appreciating those organizations and programs which are working to eliminate illiteracy. Every year on this day UNESCO holds an awards ceremony in Paris in which prizes are given to individuals and organisations who work hard to increase literacy around the world.",
+        Para3:"In Pakistan, the National commission of Human Development has a prior motive of ‘Education for All’ and is primarily working for universal primary education and adult literacy along with assisting the Government of Pakistan to achieve MDGs (Millennium Development Goals) and EFA (Education for All) goals. The Literacy rate of Pakistan is currently Pakistan literacy rate for 2017 was 59.13%, a 2.15% increase from 2014.",
+        Para4:"There are many organizations working to prevent illiteracy especially in rural areas where people are unaware of education and do not consider it significant and viable. This international day aims to confront as many problems related to literacy and ensure education for everyone.",
     },
     {
         Date: "09-21",
         Event: "International Day of Peace",
         Image: "https://res.cloudinary.com/tanzeelah/image/upload/v1592705859/Social%20Days%20Calendar/International_Day_of_Peace_21_Sep_d4nluh.jpg",
-        Para1:"",
-        Qoute:"",
-        Para2:"",
-        Para:"",
+        Para1:"Peace is not when there is no war, conflicts and injustice. It is basically virtue that reflects solidarity, integrity, cohesion and righteousness. According to Lin, Taiwan:",
+        Qoute:"Peace is to pay respect to human right and to every human being, even thought there are plenty of differences and points you dislike. Peace is the greatest style of love of the world, which includes tolerance, forgiveness, and wisdom all in a society and people deal with all the situations.",
+        Para2:"In order to sustain peace throughout the globe and help people become united by embracing each other United Nations since 1982 started to celebrate International Peace day every year on September 21st to inflict a ‘Culture of Peace’ among humanity. The United Nations invites all nations and people to terminate the conflicts during the Day, otherwise honor the Day through education and public awareness on issues related to peace and recognize the efforts of those who have worked hard to end conflict and promote peace.",
+        Para3:"In Pakistan people are far away from experiencing peace because of the social and political instability however, The Organization for Peace and Development (OPD) is working to create awareness and spread innovative approaches to promote peace and development in Pakistan. OPD achieves this by providing information and resources to marginalised and indigenous groups across the country. OPD's vision is to promote a culture of peace, harmony, social justice and development.",
+        Para4:"To conclude, there are many other initiatives and programs that adhere peace building and development by making people understand the true course of wholeness and purity which eventually fulfills peace in the society.",
     },
     {
         Date: "09-23",
         Event: "International Day of Sign Languages",
         Image: "https://res.cloudinary.com/tanzeelah/image/upload/v1592705866/Social%20Days%20Calendar/International_Day_Of_Sign_Languages_23_Sep_jakerj.jpg",
-        Para1:"",
-        Qoute:"",
-        Para2:"",
-        Para:"",
+        Para1:"Like any other spoken language sign language is no different in terms of communication. People who are deaf and have lost their hearing at some level use sign language to communicate. This language involves different gestures of hands, upper body and facial expressions. According to the World Federation of the Deaf, there are approximately 72 million deaf people worldwide. More than 80% of them live in developing countries. Collectively, they use more than 300 different sign languages. There is an International sign language which is used by the people with hearing impairment for official meetings, travelling and socializing.",
+        Qoute:"Sign language is the noblest gift God has given to deaf people.” ~ George Veditz.",
+        Para2:"After of the proposal given by World Federation of Deaf (WFD) the International Week of the Deaf was first celebrated in September 1958 and has since evolved into a global movement of deaf unity and concerted advocacy to raise awareness of the issues deaf people face in their everyday lives.",
+        Para3:"In Pakistan there is lack of resources for deaf however, there are some organizations which are working to fill this void. Pakistan Sign Language (PSL) is one of the sign languages of the world used by the Pakistani deaf community. Unfortunately, PSL has developed over the years without any greater attention from the state institutions. Most of the efforts for the development of PSL are done at the individual or group level, which is mostly impressed by regional or traditional norms.",
+        Para4:"The United Nation’s International Sign Language Day is celebrated to help special people become a contributing member of the society by proving them a tool of Sign Language to deliver their creative ideas and developmental strategies for sustainability of society.",
     },
     {
         Date: "10-02",
         Event: "International Day of Non-Violence ",
         Image: "https://res.cloudinary.com/tanzeelah/image/upload/v1592705867/Social%20Days%20Calendar/International_Day_Of_NonVoilence_2_Oct_faeksa.jpg",
-        Para1:"",
-        Qoute:"",
-        Para2:"",
-        Para:"",
+        Para1:"Violence is identified as the extreme form of anger, assault and rage. It can appear in both intended and unintended situations. Violence is a social evil that bites a society internally and results in not only physical but also psychological harm. Violence in any form is destructive and leaves terrible consequences.",
+        Qoute:"We may never be strong enough to be entirely nonviolent in thought, word and deed. But we must keep nonviolence as our goal and make strong progress towards it. ~ Mahatma Gandhi.",
+        Para2:"Therefore, to ensure non-violence all over the globe United Nations on June 15th, 2007 voted to make the anniversary of Mahatma Gandhi’s birth the International Day of Non-Violence. And to honour the birthday of Mahatma Gandhi, one of the most influential political activists of all time. Gandhi used nonviolent civil disobedience to eventually overthrow the British, who ruled India at the time.",
+        Para3:"Pakistan has also played a major role in stepping forward to also create awareness of following non-violence deeds throughout the country. It is very important for our nation to spread such awareness when it comes to incidents like the Peshawar attack in which the public came out for vigils or how the social media has gone haywire for the brutal act of a father and son towards their daughter and many other invulnerable attacks were witnessed.",
+        Para4:"Many people, governments, and non-government organizations around the world observe the International Day of Non-Violence through various events and activities such as news articles and broadcast announcements promoting the day.",
     },
     {
         Date: "10-10",
         Event: "World Mental Health Day",
         Image: "https://res.cloudinary.com/tanzeelah/image/upload/v1592705873/Social%20Days%20Calendar/World_Mental_Health_Day_10_Oct_dbmtin.jpg",
-        Para1:"",
-        Qoute:"",
-        Para2:"",
-        Para:"",
+        Para1:"Mental health is commonly characterized by the fulfillment of three characteristics i.e. emotional well-being (happiness and satisfaction), psychological well-being (managing responsibilities, good relationships and satisfaction from one’s own self) and social well-being (positive functioning and social contribution). All these elements combine to make a person mentally stable and help in proper functioning. On the contrary, if anyone falling each one of these elements will be considered mentally ill.",
+        Qoute:"You don’t have to be positive all the time. It’s perfectly okay to feel sad, angry, annoyed, frustrated, scared and anxious. Having feelings doesn’t make you a negative person. It makes you human. ~ Lori Deschene.",
+        Para2:"According to a study in 2007 estimates that 792 million people lived with a mental health disorder. This is slightly more than one in ten people globally (10.7%). Therefore, World Mental Health Day is observed on 10 October every year since 1992 with the overall objective of raising awareness of mental health issues around the world and mobilizing efforts in support of mental health.",
+        Para3:"Psychological problems in Pakistan are widespread. According to one estimate, around 50 million people in Pakistan suffer from mental disorders. A range of psychiatric disorders have been reported, such as depression, substance and alcohol misuse, schizophrenia, bipolar disorder, and post-traumatic stress disorder.",
+        Para4:"World mental health day is celebrated every year to raise awareness about mental health and its causes. Efforts are made by Governmental and Non-Governmental organizations to educate people and help those who are dealing with mental illness.",
     },
     {
         Date: "10-15",
         Event: "International Day of Rural Women",
         Image: "https://res.cloudinary.com/tanzeelah/image/upload/v1592705869/Social%20Days%20Calendar/International_Day_of_Rural_Women_15_Oct_bcbvit.jpg",
-        Para1:"",
-        Qoute:"",
-        Para2:"",
-        Para:"",
+        Para1:"Rural Women are the positive agents of economic stability and persistent development towards sustainability of every society. But the lack of basic knowledge and urban skills such as education and training for evolution.",
+        Qoute:"As early adopters of new agricultural techniques, first responders in crises and entrepreneurs of green energy, rural women are a powerful force that can drive global progress. ~ UN Secretary-General António Guterres.",
+        Para2:"Rural women engage in farm and off-farm activities to ensure their families' food security and to diversify income sources. They contribute to family farming with their labour and knowledge of agricultural practices and biodiversity. Their off-farm work is often low-skilled and poorly paid but is critical to mitigate the shocks that affect agriculture, such as droughts, floods or economic fluctuations.",
+        Para3:"United Nations celebrates International day of Rural Women every year on October 15th since 2008 and call for action to support rural women and girls and grow their capacities to respond to climate change through agricultural production, food security, and natural resources management.",
+        Para4:"In Pakistan most women belong to underdeveloped region where they severely compromise the complexities of their role. The situation of rural women is laborious, they contribute a lot in agriculture from planting to harvesting of many crops e.g. cotton, rice, wheat, maize and sugar cane. There are many rural development programs in Pakistan that empower rural women such as Benazir Income Support Program (BISP), Rural Support Programs (RSPs), microfinancing and training women about the economic development. Numerous organizations are also working to compensate the lack of exposure of rural women to help them contribute effectively.",
     },
     {
         Date: "10-16",
         Event: "World Food Day",
         Image: "https://res.cloudinary.com/tanzeelah/image/upload/v1592705861/Social%20Days%20Calendar/World_Food_Day_16_Oct_mqd9sz.jpg",
-        Para1:"",
-        Qoute:"",
-        Para2:"",
-        Para:"",
+        Para1:"Food is nutrient which helps in proper functioning and efficiency. It keeps the energy levels of the body intact that further aggravate our performance. Food has a complex relation with body e.g. the kind of food intake relate to the frequency of energy applied on the fulfillment of tasks. Food is directly related to our body and mental and social health because each food or liquid contains nutrition such as carbohydrates, protein, vitamins, minerals, fats, etc, which are very necessary for our physical and mental growth.",
+        Qoute:"The secret of success in life is to eat what you like and let the food fight it out inside. ~ Mark Twain.",
+        Para2:"Since 1945 on October 16 millions of people around the world gather at marathons, exhibitions, concerts and marches to observe World Food Day. Initiated by the Food and Agriculture Organisation of the United Nations (FAO) it is one of the most celebrated days of the UN calendar. The objective to celebrate this day isto bring awareness to how our changing planet affects food production and distribution.",
+        Para3:"Pakistan is an agricultural economy where more than seventy percent of the population is directly or indirectly depending on agriculture. This vital sector has been contributing more than 24% to our GDP. Despite its vital significance the economy is facing challenges of food deficiency ever since its establishment in 1947.",
+        Para4:"Food is a basic need and there are still many regions where scarcity of food is the most pointing concern, although organizations are working to eradicate hunger however, much more is needed to be done.",
     },
     {
         Date: "10-17",
         Event: "International Day for the Eradication of Poverty",
         Image: "https://res.cloudinary.com/tanzeelah/image/upload/v1592705855/Social%20Days%20Calendar/International_Day_For_The_Eradication_Of_Poverty_17_Oct_crouxp.jpg",
-        Para1:"",
-        Qoute:"",
-        Para2:"",
-        Para:"",
+        Para1:"Poverty is a state where financial instability hinders basic needs which includes, proper food, shelter and health. Essentially, poverty refers to lacking enough resources to provide the necessities of life food, clean water, shelter and clothing. But in today’s world, that can be extended to include access to health care, education and even transportation.",
+        Qoute:"Wars of nations are fought to change maps. But wars of poverty are fought to map change. ~ Muhammad Ali.",
+        Para2:"Since 1987, this day has been marked by United Nation for the eradication of poverty by mobilizing efforts to overcome poverty throughout the world. Various non-government organizations and community charities support the Day for the Eradication of Poverty by actively calling for country leaders and governments to make the fight against poverty a central part of foreign policy. Other activities may include signing “Call to action” petitions, organizing concerts and cultural events, and holding interfaith gatherings that may include a moment of silence.",
+        Para3:"Poverty is one of the concerns for the governments of almost all countries including Pakistan. There is a continuous research on the policy measurements by national and international organizations in Pakistan, which demonstrated the decline in poverty. The government has launched many social policies in the past three decades to help the nation in reducing the poverty. Apart from government, many national and international organizations have also contributed a lot in the effort of reducing the poverty.",
+        Para4:"Many other organizations and programs are also working relentlessly to eradicate poverty to the most possible extent.",
     },
     {
         Date: "11-14",
         Event: "World Diabetes Day",
         Image: "https://res.cloudinary.com/tanzeelah/image/upload/v1592705858/Social%20Days%20Calendar/World_Diabetes_Day_14_Nov_tb2jfl.jpg",
-        Para1:"",
-        Qoute:"",
-        Para2:"",
-        Para:"",
+        Para1:"Diabetes mellitus commonly known as diabetes is a chronic disease that causes high blood sugar when the functioning of pancreas is compromised and unable to make insulin. Insulin is a catalyst that takes out the glucose from our food which enters from the blood stream and creates cells that energizes body. Not being able to produce substantial glucose causes damage in the body. According to the World Health Organisation:",
+        Qoute:"Diabetes is a chronic, metabolic disease. It indicates a high level of glucose in your blood stream. If left untreated, it can cause serious damage to the heart, blood vessels, eyes, kidneys and nerves.",
+        Para2:"Since 1991, World Diabetes day on November 14th has become a globally celebrated day where people engage in campaigns, activities, meetings and much more to create awareness about intervention and treatment of this disease.",
+        Para3:"According to International Federation of Diabetes, Pakistan is one of the 21 countries and territories of the IDF MENA (Middle Eastern and North Africa) region. 463 million people have diabetes in the world and 55 million people in the MENA Region; by 2045 this will rise to 108 million. The programs such as Pakistan Diabetes Prevention Program (PDPP), National Diabetes Survey of Pakistan (NDSP), Risk Assessment of Pakistani Individuals for Diabetes (RAPID) and Diabetes Registry of Pakistan (DROP) have been working persistently to identify the rate of diabetes in Pakistani community while developing strategies to get over this disease.",
+        Para4:"Nonetheless, diabetes is a preventable disease, which can easily be treated through proper lifestyle and health maintenance. A person with diabetes can easily develop normal functioning by keeping track of the risks involved with diabetes.",
     },
     {
         Date: "11-20",
         Event: "World Children's Day",
         Image: "https://res.cloudinary.com/tanzeelah/image/upload/v1592705854/Social%20Days%20Calendar/World_Children_s_Day_20_Nov_gxun70.jpg",
-        Para1:"",
-        Qoute:"",
-        Para2:"",
-        Para:"",
+        Para1:"In legal terms any human being below 18 years is considered a child. They are the primary section of a society and effective right holders. Being the pre-dominant category there are some children go through many emotional, social and psychological problems. Children are the main component of the society who decide the future of the world. Providing them essential elements for development is necessary. Education, vocational training and proper facilities ought to be provided for better outcome.",
+        Qoute:"There can be no keener revelation of a society’s soul than the way in which it treats its children. ~ Nelson Mandela.",
+        Para2:"World Children’s Day was first established in 1954 as Universal Children's Day and is celebrated on 20 November each year to promote international togetherness, awareness among children worldwide, and improving children's welfare.",
+        Para3:"In Pakistan since November 1989 the Convention on the Rights of children has been passed but it did not happen to be the savior of children in Pakistan. They still lack in getting proper facilities of education, health care and social security. Moreover, there are many “invisible” children, children who are not recognized by the Pakistani law because their births are not recorded. Around 70% of deliveries are not officially reported to the Pakistani public authorities. The deficiency of regulations on births and a scarcity of information about the need to register children are the biggest obstacles in front of the realization of a complete birth registry.",
+        Para4:"Many International and National organizations are providing services to help under-privileged children reach their true potential.",
     },
     {
         Date: "11-25",
         Event: "International Day for the Elimination of Violence against Women",
         Image: "https://res.cloudinary.com/tanzeelah/image/upload/v1592705849/Social%20Days%20Calendar/International_Day_For_The_Elimination_Of_Violence_Against_Women_25_Nov_ez4gz2.jpg",
-        Para1:"",
-        Qoute:"",
-        Para2:"",
-        Para:"",
+        Para1:"Violence against women has always been a pressing matter. Through ages women have suffered different kinds of violence that created obstacles in their personal as well as social development. Women have encountered suppression physically, psychological and emotionally in terms of their rights and status in the society. The United Nations defines violence against women as:",
+        Qoute:"Any act of gender-based violence that results in, or is likely to result in, physical, sexual, or mental harm or suffering to women, including threats of such acts, coercion or arbitrary deprivation of liberty, whether occurring in public or in private life.",
+        Para2:"Since 1981, Women Rights Activists have been observing International day for the Elimination of Violence against women on November 25th to end violence and educate women about their roles and gender equality.",
+        Para3:"In Pakistan, female domestic violence is an endemic social issue in the cities and rural areas, which is increasing at an alarming rate. Women bear violence and discrimination daily due to the misuse of social and cultural values and religious norms in the Pakistani society. Pakistan’s constitution has many laws regarding women rights and International treaties that attempt to eliminate violence against women and consider their growth and development essential for the well-bring of society. International and National organizations also provide services and awareness to empower women for socio-economic stability.",
+        Para4:"Women are also an important part of the society and they ought to be given full access to engage themselves in social development without gender-based violence.",
     },
     {
         Date: "12-01",
         Event: "World HIV/AIDS Day ",
         Image: "https://res.cloudinary.com/tanzeelah/image/upload/v1592705865/Social%20Days%20Calendar/World_HIVAIDS_Day_1_Dec_rjvbjw.jpg",
-        Para1:"",
-        Qoute:"",
-        Para2:"",
-        Para:"",
+        Para1:"Acquired Immune Deficiency Syndrome (AIDS) is chronic disease characterized by Human Immune Deficiency Virus (HIV) that weakens the immune system and resist the body’s ability to fight back virus. It can be transmitted from infected blood. HIV if not treated can cause AIDS which is a life-threatening disease. HIV infection in humans came from a type of chimpanzee in Central Africa. Over decades, HIV slowly spread across Africa and later into other parts of the world. There is currently no effective cure. Once people get HIV, they have it for life.",
+        Qoute:"Treating HIV/AIDS is a lifelong commitment that demands strict adherence to drug protocols, consistent care, and a trusting relationship with health care providers. ~ David Mixner.",
+        Para2:"World AIDS Day was first observed on December 1st, 1988 to bring greater awareness to HIV, as well as to honor those affected by the disease. This day has become a widely known day to encourage the progress made for HIV/AIDS and to spread awareness in public about this disease.",
+        Para3:"According to WHO risk assessment, Pakistan is one of the countries in the WHO Eastern Mediterranean Region where new HIV infections are increasing at an alarming level. According to a study the reasons for the rising number of HIV/AIDS in our country include unlicensed medical quackery, and large-scale medical malpractice via the re-use of syringes and unsterilized medical tools, unsafe blood transfusions and use of contaminated multiple use of blades by the community.",
+        Para4:"The UNAIDS, WHO, National Aids Control Programs (NACP) and many other organizations have been working to intervene the alarming rate of HIV which is increasing in Pakistan.",
     },
     {
         Date: "12-03",
         Event: "International Day of Persons with Disabilities",
         Image: "https://res.cloudinary.com/tanzeelah/image/upload/v1592705880/Social%20Days%20Calendar/International_Person_With_Disability_Day_3_Dec_dczfdx.jpg",
-        Para1:"",
-        Qoute:"",
-        Para2:"",
-        Para:"",
+        Para1:"Disability is the state where a human being is compromised to perform normal functioning in day to day life. People with disabilities often lack in characterizing significance in their social life. On the contrary when provided proper care and support these people can be the most influential in any domain.",
+        Qoute:"My advice to other disabled people would be, concentrate on things your disability doesn’t prevent you doing well, and don’t regret the things it interferes with. Don’t be disabled in spirit as well as physically. ~ Stephen Hawking.",
+        Para2:"The International Day of Persons with Disabilities is observed since 1992 on December 3rd to create awareness about disabilities and empowering people with disabilities. This day aims to promote the rights and well-being of persons with disabilities in all spheres of society and development, and to increase awareness of the situation of persons with disabilities in every aspect of political, social, economic and cultural life.",
+        Para3:"Pakistan is struggling to mainstream its persons with disabilities (PWDs) that constitute 15 percent of its population, according to the World Health Organisation estimates. The country’s first legislation in this regard, the Disabled Persons (Employment and Rehabilitation) Ordinance, 1981, defines a “disabled person” as a person who on account of injury, disease or congenital deformity, is handicapped for undertaking any gainful profession or employment in order to earn his livelihood, and includes a person who is blind, deaf, physically handicapped or mentally retarded.",
+        Para4:"International and national programs in Pakistan provide special services and support for persons with disabilities and help them achieve the standards and contributing to achieve a sustainable society.",
     },
     {
         Date: "12-10",
         Event: "Human Rights Day",
         Image: "https://res.cloudinary.com/tanzeelah/image/upload/v1592705877/Social%20Days%20Calendar/International_Human_Rights_Day_10_Dec_alt8ma.jpg",
-        Para1:"",
-        Qoute:"",
-        Para2:"",
-        Para:"",
+        Para1:"Human rights are the basic rights of freedom that belong to every person in the world, from birth till death. Human rights are rights inherent to all human beings, irrespective of nationality, place of residence, sex, national or ethnic origin, colour, religion, language, or any other status. Everyone is equally entitled for human rights without discrimination. These rights are all interrelated, interdependent and indivisible. According to United Nations:",
+        Qoute:"Human rights are rights inherent to all human beings, regardless of race, sex, nationality, ethnicity, language, religion, or any other status. Human rights include the right to life and liberty, freedom from slavery and torture, freedom of opinion and expression, the right to work and education, and many more.  Everyone is entitled to these rights, without discrimination.",
+        Para2:"Since 1948 Human Rights Day has been observed globally on December 10th to embrace the basic human rights and create awareness among all human beings irrespective of caste, color, religion, culture and ethnicity. It aimed to form a basis for human rights all over the world and represented a significant change of direction from events during World War II and the continuing colonialism that was rife in the world at the time.",
+        Para3:"According to the Express Tribune, Since Pakistan is one of the signatories of this historic declaration, the country is expected to ensure the human rights granted by the UN are available to its citizens. However, the deteriorating human rights condition in the country has been a point of concern.",
+        Para4:"Numerous human rights organizations both national and International are working persistently to achieve basic human rights for the people in Pakistan.",
     },
     {
         Date: "12-20",
         Event: "International Human Solidarity Day",
         Image: "https://res.cloudinary.com/tanzeelah/image/upload/v1592705876/Social%20Days%20Calendar/International_Human_Solidarity_Day_20_Dec_pyxclo.jpg",
-        Para1:"",
-        Qoute:"",
-        Para2:"",
-        Para:"",
+        Para1:"Solidarity is a value that combines society. Living above the cultural, social, religious, ethical differences, helping the one in need, proving support and accepting everyone as an individual is solidarity. Human solidarity is having equality, acceptance and understanding beyond oneself. In human rights solidarity is considered a significant virtue to amalgamate individuals under a single united unit. Human solidarity is important for society, being social animals, humans cannot live alone. Therefore, they need to accept and understand the viewpoints of one another in order to live a peace and harmonious life.",
+        Qoute:"As the years progress one increasingly realizes the importance of human solidarity. Please place human solidarity, the concern of the other, at the centre of the values by which you live. ~ Nelson Mandela.",
+        Para2:"Since 2005, on December 20th International Human Solidarity day has been observed with the aim to raise people's awareness of the importance of advancing the international development agenda and promoting global understanding of the value of human solidarity.",
+        Para3:"Like all other countries International Human Solidarity Day is also celebrated in Pakistan. Activities such as promotion campaigns on issues such as banning land mines and making healthcare accessible to those in need are also carried out in addition to relief efforts for helping the affecters of natural or human-made disasters, poverty, corruption and terrorism.",
+        Para4:"Pakistan Peace and Solidarity Council (PPSC) and many other organizations are aiming to bring Pakistan in the highlights for achieving peace and solidarity by providing strategies and effective planning to improve conditions for the citizens of Pakistan.",
     }
 ]

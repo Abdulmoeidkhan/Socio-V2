@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Layout } from 'antd';
-import { GuruContextChanger } from "../../GlobalEnvironment/contextInit";
 import NavBar from "../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../Components/Footer/Footer";
 import {
@@ -23,12 +22,6 @@ const Territories = (props) => {
         AOS.refresh();
     })
     return (
-        <>
-            <GuruContextChanger.Consumer>
-            {guruState => <>
-                {
-                   ()=> guruState.guruDispatch({ type: "change", payload: "Territories" })
-                }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
@@ -129,9 +122,6 @@ const Territories = (props) => {
                         </Content>
                         <MyFooter />
                     </Layout>
-                    </>}
-        </GuruContextChanger.Consumer>
-        </>
     )
 }
 

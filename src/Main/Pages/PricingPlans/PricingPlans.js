@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Table } from 'antd';
-import { ThemeContext, GuruContextChanger } from "../../GlobalEnvironment/contextInit";
+import { ThemeContext } from "../../GlobalEnvironment/contextInit";
 import NavBar from "../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../Components/Footer/Footer";
 import "./PricingPlans.css"
@@ -123,13 +123,8 @@ const PricingPlans = (props) => {
         <>
             <ThemeContext.Consumer>
                 {colorsState => <>
-                    <GuruContextChanger.Consumer>
-                        {guruState => <>
-                            {
-                               ()=> guruState.guruDispatch({ type: "change", payload: "PricingPlans" })
-                            }
-                            <style>{
-                                `
+                    <style>{
+                        `
                             .ant-table-header table{
                                 visibility: visible !important;
                             }
@@ -137,30 +132,28 @@ const PricingPlans = (props) => {
                                  width:175px !important;
                             }
                         `
-                            }</style>
-                            <Layout>
-                                <NavBar />
-                                <Content className="content-container-class area-of-working-class">
-                                    <section className="one-columns-grid">
-                                        <div className="faq-class">
-                                            <div className="spacing-class" />
-                                            <h2 className="content-head content-head-faq">Pricing & Plans</h2>
-                                            <div className="faq-class">
-                                                <Table
-                                                    columns={columns}
-                                                    dataSource={data}
-                                                    bordered
-                                                    size="middle"
-                                                    scroll={{ x: "20%", y: 680 }}
-                                                />
-                                            </div>
-                                        </div>
-                                    </section>
-                                </Content>
-                                <MyFooter />
-                            </Layout>
-                        </>}
-                    </GuruContextChanger.Consumer>
+                    }</style>
+                    <Layout>
+                        <NavBar />
+                        <Content className="content-container-class area-of-working-class">
+                            <section className="one-columns-grid">
+                                <div className="faq-class">
+                                    <div className="spacing-class" />
+                                    <h2 className="content-head content-head-faq">Pricing & Plans</h2>
+                                    <div className="faq-class">
+                                        <Table
+                                            columns={columns}
+                                            dataSource={data}
+                                            bordered
+                                            size="middle"
+                                            scroll={{ x: "20%", y: 680 }}
+                                        />
+                                    </div>
+                                </div>
+                            </section>
+                        </Content>
+                        <MyFooter />
+                    </Layout>
                 </>}
             </ThemeContext.Consumer>
         </>

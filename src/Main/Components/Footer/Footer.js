@@ -20,7 +20,7 @@ function MyFooter(props) {
 
             <div className="col-sm-12 col-md-6 division-class">
 
-              <h2 onClick={() => history.push("/")}>
+              <h2 onClick={() => history.push("/Home")}>
                 <img className="logo-img-footer" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" />
               </h2>
 
@@ -31,7 +31,7 @@ function MyFooter(props) {
               >Quick Links</h6>
               <ul className="footer-links"
               >
-                <li><a onClick={() => history.push("/")}>Home</a></li>
+                <li><a onClick={() => history.push("/Home")}>Home</a></li>
                 <li><a onClick={() => history.push("/About")}>About Us</a></li>
                 <li><a onClick={() => history.push("/Services")}>Our Services</a></li>
                 <li><a onClick={() => history.push("/Blogs")}>Blogs</a></li>

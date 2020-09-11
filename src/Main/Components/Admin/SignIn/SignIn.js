@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Form, Input, Button, Checkbox, message } from 'antd';
 import firebase from "../../../GlobalEnvironment/firebaseConfig";
-import {GuruContextChanger} from "../../../GlobalEnvironment/contextInit"
 import { useHistory } from "react-router-dom";
 import "./SignIn.css"
 
@@ -31,7 +30,10 @@ const AdminSignIn = () => {
 
 
     const onFinishFailed = errorInfo => {
-        message.warning('Failed:', errorInfo);
+        errorInfo = errorInfo.errorFields
+        errorInfo.map((val, i) => {
+            message.error(val.errors[0]);
+        })
     };
 
     async function adminLogin(values) {
@@ -46,52 +48,45 @@ const AdminSignIn = () => {
 
 
     return (
-        <GuruContextChanger.Consumer>
-            {guruState => <>
-                {
-                  ()=>  guruState.guruDispatch({ type: "change", payload: "SignIn" })
-                }
-                <span className="admin-signin">
-                    <h2 className="content-head">Admin SignIn</h2>
-                    {isAdminSignIn
-                        ?
-                        history.push("/Admin/DashBoard")
-                        :
-                        <Form
-                            {...layout}
-                            name="basic"
-                            initialValues={{ remember: true }}
-                            onFinish={adminLogin}
-                            onFinishFailed={onFinishFailed}
-                            className="logInForm"
-                        >
-                            <Form.Item
-                                label="Email"
-                                name="email"
-                                rules={[{ required: true, message: 'Please input your Email !' }]}
-                            >
-                                <Input />
-                            </Form.Item>
-                            <Form.Item
-                                label="Password"
-                                name="password"
-                                rules={[{ required: true, message: 'Please input your password!' }]}
-                            >
-                                <Input.Password />
-                            </Form.Item>
-                            <Form.Item {...tailLayout} name="remember" valuePropName="checked">
-                                <Checkbox>Remember me</Checkbox>
-                            </Form.Item>
-                            <Form.Item {...tailLayout}>
-                                <Button type="primary" htmlType="submit" >
-                                    Submit
+        <span className="admin-signin">
+            <h2 className="content-head">Admin SignIn</h2>
+            {isAdminSignIn
+                ?
+                history.push("/Admin/DashBoard")
+                :
+                <Form
+                    {...layout}
+                    name="basic"
+                    initialValues={{ remember: true }}
+                    onFinish={adminLogin}
+                    onFinishFailed={onFinishFailed}
+                    className="logInForm"
+                >
+                    <Form.Item
+                        label="Email"
+                        name="email"
+                        rules={[{ required: true, message: 'Please input your Email !' }]}
+                    >
+                        <Input />
+                    </Form.Item>
+                    <Form.Item
+                        label="Password"
+                        name="password"
+                        rules={[{ required: true, message: 'Please input your password!' }]}
+                    >
+                        <Input.Password />
+                    </Form.Item>
+                    <Form.Item {...tailLayout} name="remember" valuePropName="checked">
+                        <Checkbox>Remember me</Checkbox>
+                    </Form.Item>
+                    <Form.Item {...tailLayout}>
+                        <Button type="primary" htmlType="submit" >
+                            Submit
                 </Button>
-                            </Form.Item>
-                        </Form>
-                    }
-                </span>
-            </>}
-        </GuruContextChanger.Consumer>
+                    </Form.Item>
+                </Form>
+            }
+        </span>
     );
 };
 

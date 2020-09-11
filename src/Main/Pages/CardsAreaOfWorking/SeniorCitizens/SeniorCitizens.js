@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Layout, Breadcrumb } from 'antd';
-import { GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
 import PictureTiles from "../../../Components/PictureTiles/PictureTiles";
@@ -26,19 +25,13 @@ const SeniorCitizens = (props) => {
         window.scrollTo(0, 0)
     })
     return (
-        <>
-            <GuruContextChanger.Consumer>
-                {guruState => <>
-                    {
-                      ()=>  guruState.guruDispatch({ type: "change", payload: "SeniorCitizens" })
-                    }
                     <Layout>
                         <NavBar />
                         <Content className="content-container-class">
                             <div className="margin-class">
                                 <Breadcrumb style={{ margin: '16px 0px' }}>
                                     <Breadcrumb.Item>
-                                        <Link to="/">
+                                    <Link to="/Home">
                                             Home
                                         </Link>
                                     </Breadcrumb.Item>
@@ -109,9 +102,6 @@ const SeniorCitizens = (props) => {
                         </Content>
                         <MyFooter />
                     </Layout>
-                </>}
-            </GuruContextChanger.Consumer>
-        </>
     )
 }
 

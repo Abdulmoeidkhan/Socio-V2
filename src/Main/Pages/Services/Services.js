@@ -1,5 +1,4 @@
 import React from 'react';
-import { GuruContextChanger } from "../../GlobalEnvironment/contextInit"
 import { Layout } from 'antd';
 
 
@@ -7,16 +6,10 @@ import { Layout } from 'antd';
 
 const Services = (props) => {
     return (
-        <GuruContextChanger.Consumer>
-            {guruState => <>
-                {
-                  ()=>  guruState.guruDispatch({ type: "change", payload: "Services"})
-                }
-                <Layout>
 
-                </Layout>
-            </>}
-        </GuruContextChanger.Consumer>
+        <Layout>
+
+        </Layout>
     )
 }
 

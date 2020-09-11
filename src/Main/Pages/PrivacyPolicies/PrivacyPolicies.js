@@ -1,5 +1,4 @@
 import React from 'react';
-import { GuruContextChanger } from "../../GlobalEnvironment/contextInit"
 import { Layout } from 'antd';
 import NavBar from "../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../Components/Footer/Footer";
@@ -10,11 +9,6 @@ const { Content } = Layout;
 
 const PrivacyPolicies = (props) => {
     return (
-        <GuruContextChanger.Consumer>
-            {guruState => <>
-                {
-                   ()=> guruState.guruDispatch({ type: "change", payload: "PrivacyPolicies" })
-                }
                 <Layout>
                     <NavBar />
                     <Content>
@@ -568,8 +562,6 @@ const PrivacyPolicies = (props) => {
                     </Content>
                     <MyFooter />
                 </Layout>
-            </>}
-        </GuruContextChanger.Consumer>
     )
 }
 

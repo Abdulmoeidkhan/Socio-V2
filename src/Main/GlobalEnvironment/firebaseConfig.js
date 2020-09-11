@@ -1,17 +1,18 @@
 import app from "firebase/app";
 import "firebase/auth";
 import "firebase/firebase-database"
+import "firebase/firebase-analytics"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyB6SOnFgOBBjSmxHdrHVcvpOlsIKom4Lds",
-    authDomain: "socio-linkage.firebaseapp.com",
-    databaseURL: "https://socio-linkage.firebaseio.com",
-    projectId: "socio-linkage",
-    storageBucket: "socio-linkage.appspot.com",
-    messagingSenderId: "972614172693",
-    appId: "1:972614172693:web:a23a85b73e0b29e7708e1c",
-    measurementId: "G-6S00VR2GM5"
-};
+    apiKey: "AIzaSyDdQ0pEKN5z3BoL7LJabgghmXuRa47NjfY",
+    authDomain: "socio-linkage-digital.firebaseapp.com",
+    databaseURL: "https://socio-linkage-digital.firebaseio.com",
+    projectId: "socio-linkage-digital",
+    storageBucket: "socio-linkage-digital.appspot.com",
+    messagingSenderId: "69147817239",
+    appId: "1:69147817239:web:9482857db5f8a89ea03352",
+    measurementId: "G-3FR0WT47LB"
+  };
 
 class Firebase {
     constructor() {

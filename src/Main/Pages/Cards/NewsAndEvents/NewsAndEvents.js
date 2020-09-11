@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Layout, Card } from 'antd';
-import { ThemeContext, GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
+import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import DateAndEventCards from "../../../Components/DateAndEventCards/DateAndEventCards";
 import MyFooter from "../../../Components/Footer/Footer";
@@ -22,11 +22,6 @@ const NewsAndEvents = (props) => {
         <>
             <ThemeContext.Consumer>
                 {colorsState => <>
-                    <GuruContextChanger.Consumer>
-                        {guruState => <>
-                            {
-                               ()=> guruState.guruDispatch({ type: "change", payload: "NewsAndEvents" })
-                            }
                             <Layout>
                                 <style>
                                     {
@@ -93,8 +88,6 @@ const NewsAndEvents = (props) => {
                                 <MyFooter />
                             </Layout>
                         </>}
-                    </GuruContextChanger.Consumer>
-                </>}
             </ThemeContext.Consumer>
         </>
     )

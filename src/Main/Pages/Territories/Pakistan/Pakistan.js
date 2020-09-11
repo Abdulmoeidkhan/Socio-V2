@@ -1,6 +1,5 @@
 import React from 'react';
 import { Breadcrumb, Layout, Descriptions, Table } from 'antd';
-import { GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
 import {
@@ -296,58 +295,53 @@ const Pakistan = (props) => {
    }
     `
             }</style>
-            <GuruContextChanger.Consumer>
-                {guruState => <>
-                    {
-                       ()=> guruState.guruDispatch({ type: "change", payload: "Pakistan"})
-                    }
-                    <Layout>
-                        <NavBar />
-                        <Content className="content-container-class">
-                            <div className="margin-class">
-                                <Breadcrumb style={{ margin: '16px 0px' }}>
-                                    <Breadcrumb.Item>
-                                        <Link to="/">
-                                            Home
+            <Layout>
+                <NavBar />
+                <Content className="content-container-class">
+                    <div className="margin-class">
+                        <Breadcrumb style={{ margin: '16px 0px' }}>
+                            <Breadcrumb.Item>
+                            <Link to="/Home">
+                                    Home
                                         </Link>
-                                    </Breadcrumb.Item>
-                                    <Breadcrumb.Item>
-                                        <Link to={`/Territories`}>
-                                            Territories
+                            </Breadcrumb.Item>
+                            <Breadcrumb.Item>
+                                <Link to={`/Territories`}>
+                                    Territories
                                         </Link>
-                                    </Breadcrumb.Item>
-                                    <Breadcrumb.Item>
-                                        <Link to={`/Territories/Pakistan`}>
-                                            Pakistan
+                            </Breadcrumb.Item>
+                            <Breadcrumb.Item>
+                                <Link to={`/Territories/Pakistan`}>
+                                    Pakistan
                                         </Link>
-                                    </Breadcrumb.Item>
-                                </Breadcrumb>
-                                <section id="pakistan">
-                                    <h2 className="pakistanPageHeading">Pakistan Overview</h2>
-                                    <p className="pageParagraphClass">The total population in Pakistan was estimated at 219.0 million people in 2019, according to the latest census figures and projections from Trading Economics.</p>
-                                    <img className="pakistanPageImgClass" src={require("../../../Assets/Chart1.png")} />
-                                    <span className="table-1">
-                                        <Table dataSource={dataSource}
-                                            size="middle"
-                                            className="pakistanTableClass"
-                                            scroll={{ x: "20%", y: 100 }}
-                                            columns={columns} />
-                                    </span>
-                                    <span className="table-2">
-                                        <Table dataSource={dataSource2}
-                                            className="pakistanTableClass"
-                                            scroll={{ x: "20%", y: 440 }}
-                                            columns={columns2} />
-                                    </span>
-                                    <p className="pakistanBoldPara">The population of Pakistan represents 2.56 percent of the world´s total population which arguably means that one person in every 39 people on the planet is a resident of Pakistan.</p>
-                                    <Descriptions bordered>
-                                        <Descriptions.Item label="Population" span={3}>
-                                            207,862,518 (July 2017 est.) (July 2018 est.)
+                            </Breadcrumb.Item>
+                        </Breadcrumb>
+                        <section id="pakistan">
+                            <h2 className="pakistanPageHeading">Pakistan Overview</h2>
+                            <p className="pageParagraphClass">The total population in Pakistan was estimated at 219.0 million people in 2019, according to the latest census figures and projections from Trading Economics.</p>
+                            <img className="pakistanPageImgClass" src={require("../../../Assets/Chart1.png")} />
+                            <span className="table-1">
+                                <Table dataSource={dataSource}
+                                    size="middle"
+                                    className="pakistanTableClass"
+                                    scroll={{ x: "20%", y: 100 }}
+                                    columns={columns} />
+                            </span>
+                            <span className="table-2">
+                                <Table dataSource={dataSource2}
+                                    className="pakistanTableClass"
+                                    scroll={{ x: "20%", y: 440 }}
+                                    columns={columns2} />
+                            </span>
+                            <p className="pakistanBoldPara">The population of Pakistan represents 2.56 percent of the world´s total population which arguably means that one person in every 39 people on the planet is a resident of Pakistan.</p>
+                            <Descriptions bordered>
+                                <Descriptions.Item label="Population" span={3}>
+                                    207,862,518 (July 2017 est.) (July 2018 est.)
                                             <br />
-                                            <strong>Note</strong>: provisional results of Pakistan's 2017 national census estimate the country's total population to be 207,774,000
+                                    <strong>Note</strong>: provisional results of Pakistan's 2017 national census estimate the country's total population to be 207,774,000
                                                 </Descriptions.Item>
-                                        <Descriptions.Item label="Age structure " span={3}>
-                                            0-14 years: 30.76% (male 32,828,078 /female 31,118,626)
+                                <Descriptions.Item label="Age structure " span={3}>
+                                    0-14 years: 30.76% (male 32,828,078 /female 31,118,626)
                                             <br />
                                             15-24 years: 20.94% (male 22,446,320 /female 21,076,265)
                                             <br />
@@ -357,8 +351,8 @@ const Pakistan = (props) => {
                                             <br />
                                             65 years and over: 4.56% (male 4,399,926 /female 5,080,448) (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Dependency ratios" span={3}>
-                                            total dependency ratio: 65.3 (2015 est.)
+                                <Descriptions.Item label="Dependency ratios" span={3}>
+                                    total dependency ratio: 65.3 (2015 est.)
                                             <br />
                                             youth dependency ratio: 57.9 (2015 est.)
                                             <br />
@@ -366,36 +360,36 @@ const Pakistan = (props) => {
                                             <br />
                                             potential support ratio: 13.5 (2015 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Median age" span={3}>
-                                            total: 24.1 years (2018 est.)
+                                <Descriptions.Item label="Median age" span={3}>
+                                    total: 24.1 years (2018 est.)
                                             <br />
                                             male: 24.1 years
                                             <br />
                                             female: 24.2 years
                                             <br />
+                                </Descriptions.Item>
+                                <Descriptions.Item label="Population growth rate" span={3}>
+                                    1.41% (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Population growth rate" span={3}>
-                                            1.41% (2018 est.)
+                                <Descriptions.Item label="Birth rate" span={3}>
+                                    21.6 births/1,000 population (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Birth rate" span={3}>
-                                            21.6 births/1,000 population (2018 est.)
+                                <Descriptions.Item label="Death rate" span={3}>
+                                    6.3 deaths/1,000 population (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Death rate" span={3}>
-                                            6.3 deaths/1,000 population (2018 est.)
+                                <Descriptions.Item label="Net migration rate" span={3}>
+                                    -1.2 migrant(s)/1,000 population (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Net migration rate" span={3}>
-                                            -1.2 migrant(s)/1,000 population (2018 est.)
-                                        </Descriptions.Item>
-                                        <Descriptions.Item label="Urbanization" span={3}>
-                                            urban population: 36.9% of total population (2019)
+                                <Descriptions.Item label="Urbanization" span={3}>
+                                    urban population: 36.9% of total population (2019)
                                             <br />
                                             rate of urbanization: 2.53% annual rate of change (2015-20 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Major cities - population " span={3}>
-                                            15.741 million Karachi, 12.188 million Lahore, 3.385 million Faisalabad, 2.196 million Rawalpindi, 2.169 million Gujranwala, 1.095 million ISLAMABAD (capital) (2019)
+                                <Descriptions.Item label="Major cities - population " span={3}>
+                                    15.741 million Karachi, 12.188 million Lahore, 3.385 million Faisalabad, 2.196 million Rawalpindi, 2.169 million Gujranwala, 1.095 million ISLAMABAD (capital) (2019)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Sex ratio" span={3}>
-                                            at birth: 1.05 male(s)/female
+                                <Descriptions.Item label="Sex ratio" span={3}>
+                                    at birth: 1.05 male(s)/female
                                             <br />
                                             0-14 years: 1.05 male(s)/female
                                             <br />
@@ -409,49 +403,49 @@ const Pakistan = (props) => {
                                             <br />
                                             total population: 1.05 male(s)/female (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Mother's mean age at first birth" span={3}>
-                                            23.6 years (2017/18 est.)
+                                <Descriptions.Item label="Mother's mean age at first birth" span={3}>
+                                    23.6 years (2017/18 est.)
                                             <br />
-                                            <strong>Note</strong>: median age at first birth among women 25-29
+                                    <strong>Note</strong>: median age at first birth among women 25-29
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Infant mortality rate " span={3}>
-                                            total: 50.4 deaths/1,000 live births (2018 est.)
+                                <Descriptions.Item label="Infant mortality rate " span={3}>
+                                    total: 50.4 deaths/1,000 live births (2018 est.)
                                             <br />
                                             male: 53.5 deaths/1,000 live births
                                             <br />
                                             female: 47.1 deaths/1,000 live births
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Infant mortality rate " span={3}>
-                                            total population: 68.4 years (2018 est.)
+                                <Descriptions.Item label="Infant mortality rate " span={3}>
+                                    total population: 68.4 years (2018 est.)
                                             <br />
                                             male: 66.4 years
                                             <br />
                                             female: 70.5 years
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Life expectancy at birth " span={3}>
-                                            total population: 68.4 years (2018 est.)
+                                <Descriptions.Item label="Life expectancy at birth " span={3}>
+                                    total population: 68.4 years (2018 est.)
                                             <br />
                                             male: 66.4 years
                                             <br />
                                             female: 70.5 years
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Total fertility rate " span={3}>
-                                            2.55 children born/woman (2018 est.)
+                                <Descriptions.Item label="Total fertility rate " span={3}>
+                                    2.55 children born/woman (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Contraceptive prevalence rate" span={3}>
-                                            34.2% (2017/18)
+                                <Descriptions.Item label="Contraceptive prevalence rate" span={3}>
+                                    34.2% (2017/18)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="HIV/AIDS - adult prevalence rate" span={3}>
-                                            0.1% (2018 est.)
+                                <Descriptions.Item label="HIV/AIDS - adult prevalence rate" span={3}>
+                                    0.1% (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="HIV/AIDS - people living with HIV/AIDS " span={3}>
-                                            160,000 (2018 est.)
+                                <Descriptions.Item label="HIV/AIDS - people living with HIV/AIDS " span={3}>
+                                    160,000 (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="HIV/AIDS - deaths " span={3}>
-                                            6,400 (2018 est.)
+                                <Descriptions.Item label="HIV/AIDS - deaths " span={3}>
+                                    6,400 (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Drinking water source" span={3}>
-                                            improved: urban: 93.9% of population
+                                <Descriptions.Item label="Drinking water source" span={3}>
+                                    improved: urban: 93.9% of population
                                             <br />
                                             rural: 89.9% of population
                                             <br />
@@ -463,8 +457,8 @@ const Pakistan = (props) => {
                                             <br />
                                             total: 8.6% of population (2015 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Sanitation facility access" span={3}>
-                                            improved: urban: 83.1% of population (2015 est.)
+                                <Descriptions.Item label="Sanitation facility access" span={3}>
+                                    improved: urban: 83.1% of population (2015 est.)
                                             <br />
                                             rural: 51.1% of population (2015 est.)
                                             <br />
@@ -476,8 +470,8 @@ const Pakistan = (props) => {
                                             <br />
                                             total: 36.5% of population (2015 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Major infectious diseases " span={3}>
-                                            degree of risk: high (2016)
+                                <Descriptions.Item label="Major infectious diseases " span={3}>
+                                    degree of risk: high (2016)
                                             <br />
                                             food or waterborne diseases: bacterial diarrhea, hepatitis A and E, and typhoid fever (2016)
                                             <br />
@@ -485,13 +479,13 @@ const Pakistan = (props) => {
                                             <br />
                                             animal contact diseases: rabies (2016)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Nationality " span={3}>
-                                            noun: Pakistani(s)
+                                <Descriptions.Item label="Nationality " span={3}>
+                                    noun: Pakistani(s)
                                             <br />
                                             adjective: Pakistani
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Ethnic groups" span={3}>
-                                            Punjabi 44.7%,
+                                <Descriptions.Item label="Ethnic groups" span={3}>
+                                    Punjabi 44.7%,
                                             <br />
                                             Pashtun (Pathan) 15.4%,
                                             <br />
@@ -505,13 +499,13 @@ const Pakistan = (props) => {
                                             <br />
                                             Other 6.3%
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Religions" span={3}>
-                                            Muslim (official) 96.4% (Sunni 85-90%, Shia 10-15%),
+                                <Descriptions.Item label="Religions" span={3}>
+                                    Muslim (official) 96.4% (Sunni 85-90%, Shia 10-15%),
                                             <br />
                                             other (includes Christian and Hindu) 3.6% (2010 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Languages " span={3}>
-                                            Punjabi 48%,
+                                <Descriptions.Item label="Languages " span={3}>
+                                    Punjabi 48%,
                                             <br />
                                             Sindhi 12%,
                                             <br />
@@ -533,8 +527,8 @@ const Pakistan = (props) => {
                                             <br />
                                             and other 8%
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Literacy" span={3}>
-                                            definition: age 15 and over can read and write
+                                <Descriptions.Item label="Literacy" span={3}>
+                                    definition: age 15 and over can read and write
                                             <br />
                                             total population: 57.9%
                                             <br />
@@ -542,41 +536,41 @@ const Pakistan = (props) => {
                                             <br />
                                             female: 45.8% (2015 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="School life expectancy (primary to tertiary education)" span={3}>
-                                            total: 8 years
+                                <Descriptions.Item label="School life expectancy (primary to tertiary education)" span={3}>
+                                    total: 8 years
                                             <br />
                                             male: 9 years
                                             <br />
                                             female: 8 years (2017)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Education expenditures" span={3}>
-                                            2.8% of GDP (2017)
+                                <Descriptions.Item label="Education expenditures" span={3}>
+                                    2.8% of GDP (2017)
                                        </Descriptions.Item>
-                                        <Descriptions.Item label="Maternal mortality rate " span={3}>
-                                            140 deaths/100,000 live births (2017 est.)
+                                <Descriptions.Item label="Maternal mortality rate " span={3}>
+                                    140 deaths/100,000 live births (2017 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Children under the age of 5 years underweight " span={3}>
-                                            23.1% (2018)
+                                <Descriptions.Item label="Children under the age of 5 years underweight " span={3}>
+                                    23.1% (2018)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Health expenditures " span={3}>
-                                            2.7% (2015)
+                                <Descriptions.Item label="Health expenditures " span={3}>
+                                    2.7% (2015)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Physicians density " span={3}>
-                                            0.98 physicians/1,000 population (2015)
+                                <Descriptions.Item label="Physicians density " span={3}>
+                                    0.98 physicians/1,000 population (2015)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Hospital bed density " span={3}>
-                                            0.6 beds/1,000 population (2014)
+                                <Descriptions.Item label="Hospital bed density " span={3}>
+                                    0.6 beds/1,000 population (2014)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Obesity - adult prevalence rate " span={3}>
-                                            Obesity - adult prevalence rate
+                                <Descriptions.Item label="Obesity - adult prevalence rate " span={3}>
+                                    Obesity - adult prevalence rate
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Population " span={3}>
-                                            207,862,518 (July 2017 est.) (July 2018 est.)
+                                <Descriptions.Item label="Population " span={3}>
+                                    207,862,518 (July 2017 est.) (July 2018 est.)
                                             <br />
-                                            <strong>Note</strong>: provisional results of Pakistan's 2017 national census estimate the country's total population to be 207,774,000
+                                    <strong>Note</strong>: provisional results of Pakistan's 2017 national census estimate the country's total population to be 207,774,000
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Age structure " span={3}>
-                                            0-14 years: 30.76% (male 32,828,078 /female 31,118,626)
+                                <Descriptions.Item label="Age structure " span={3}>
+                                    0-14 years: 30.76% (male 32,828,078 /female 31,118,626)
                                             <br />
                                             15-24 years: 20.94% (male 22,446,320 /female 21,076,265)
                                             <br />
@@ -586,8 +580,8 @@ const Pakistan = (props) => {
                                             <br />
                                             65 years and over: 4.56% (male 4,399,926 /female 5,080,448) (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Dependency ratios " span={3}>
-                                            total dependency ratio: 65.3 (2015 est.)
+                                <Descriptions.Item label="Dependency ratios " span={3}>
+                                    total dependency ratio: 65.3 (2015 est.)
                                             <br />
                                             youth dependency ratio: 57.9 (2015 est.)
                                             <br />
@@ -595,32 +589,32 @@ const Pakistan = (props) => {
                                             <br />
                                             potential support ratio: 13.5 (2015 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Median age" span={3}>
-                                            total: 24.1 years (2018 est.)
+                                <Descriptions.Item label="Median age" span={3}>
+                                    total: 24.1 years (2018 est.)
                                             <br />
                                             male: 24.1 years
                                             <br />
                                             female: 24.2 years
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Population growth rate" span={3}>
-                                            1.41% (2018 est.)
+                                <Descriptions.Item label="Population growth rate" span={3}>
+                                    1.41% (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Birth rate " span={3}>
-                                            21.6 births/1,000 population (2018 est.)
+                                <Descriptions.Item label="Birth rate " span={3}>
+                                    21.6 births/1,000 population (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Death rate " span={3}>
-                                            6.3 deaths/1,000 population (2018 est.)
+                                <Descriptions.Item label="Death rate " span={3}>
+                                    6.3 deaths/1,000 population (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Net migration rate " span={3}>
-                                            -1.2 migrant(s)/1,000 population (2018 est.)
+                                <Descriptions.Item label="Net migration rate " span={3}>
+                                    -1.2 migrant(s)/1,000 population (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Urbanization " span={3}>
-                                            urban population: 36.9% of total population (2019)
+                                <Descriptions.Item label="Urbanization " span={3}>
+                                    urban population: 36.9% of total population (2019)
                                             <br />
                                             rate of urbanization: 2.53% annual rate of change (2015-20 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Major cities - population" span={3}>
-                                            15.741 million Karachi,
+                                <Descriptions.Item label="Major cities - population" span={3}>
+                                    15.741 million Karachi,
                                             <br />
                                             12.188 million Lahore,
                                             <br />
@@ -632,8 +626,8 @@ const Pakistan = (props) => {
                                            <br />
                                             1.095 million ISLAMABAD (capital) (2019)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Sex ratio " span={3}>
-                                            at birth: 1.05 male(s)/female
+                                <Descriptions.Item label="Sex ratio " span={3}>
+                                    at birth: 1.05 male(s)/female
                                             <br />
                                             0-14 years: 1.05 male(s)/female
                                             <br />
@@ -647,56 +641,54 @@ const Pakistan = (props) => {
                                             <br />
                                             total population: 1.05 male(s)/female (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Mother's mean age at first birth " span={3}>
-                                            23.6 years (2017/18 est.)
+                                <Descriptions.Item label="Mother's mean age at first birth " span={3}>
+                                    23.6 years (2017/18 est.)
                                              <br />
-                                            <strong>Note</strong>: median age at first birth among women   25-29
+                                    <strong>Note</strong>: median age at first birth among women   25-29
                                          </Descriptions.Item>
-                                        <Descriptions.Item label="Infant mortality rate " span={3}>
-                                            total: 50.4 deaths/1,000 live births (2018 est.)
+                                <Descriptions.Item label="Infant mortality rate " span={3}>
+                                    total: 50.4 deaths/1,000 live births (2018 est.)
                                             <br />
                                             male: 53.5 deaths/1,000 live births
                                             <br />
                                             female: 47.1 deaths/1,000 live births
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Life expectancy at birth " span={3}>
-                                            total population: 68.4 years (2018 est.)
+                                <Descriptions.Item label="Life expectancy at birth " span={3}>
+                                    total population: 68.4 years (2018 est.)
                                             <br />
                                             male: 66.4 years
                                             <br />
                                             female: 70.5 years
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Total fertility rate " span={3}>
-                                            2.55 children born/woman (2018 est.)
+                                <Descriptions.Item label="Total fertility rate " span={3}>
+                                    2.55 children born/woman (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="Contraceptive prevalence rate " span={3}>
-                                            Contraceptive prevalence rate
+                                <Descriptions.Item label="Contraceptive prevalence rate " span={3}>
+                                    Contraceptive prevalence rate
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="HIV/AIDS - adult prevalence rate " span={3}>
-                                            0.1% (2018 est.)
+                                <Descriptions.Item label="HIV/AIDS - adult prevalence rate " span={3}>
+                                    0.1% (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="HIV/AIDS - people living with HIV/AIDS " span={3}>
-                                            160,000 (2018 est.)
+                                <Descriptions.Item label="HIV/AIDS - people living with HIV/AIDS " span={3}>
+                                    160,000 (2018 est.)
                                         </Descriptions.Item>
-                                        <Descriptions.Item label="HIV/AIDS - deaths " span={3}>
-                                            6,400 (2018 est.)
+                                <Descriptions.Item label="HIV/AIDS - deaths " span={3}>
+                                    6,400 (2018 est.)
                                         </Descriptions.Item>
-                                    </Descriptions>
-                                    <h2 className="pakistanPageHeading">Health Evaluation Province wise</h2>
-                                    <Table dataSource={dataSource3}
-                                        size="middle"
-                                        className="pakistanTableClass"
-                                        scroll={{ x: "20%", y: 340 }}
-                                        columns={columns3}
-                                        bordered
-                                    />
-                                </section>
-                            </div>
-                        </Content>
-                        <MyFooter />
-                    </Layout>
-                </>}
-            </GuruContextChanger.Consumer>
+                            </Descriptions>
+                            <h2 className="pakistanPageHeading">Health Evaluation Province wise</h2>
+                            <Table dataSource={dataSource3}
+                                size="middle"
+                                className="pakistanTableClass"
+                                scroll={{ x: "20%", y: 340 }}
+                                columns={columns3}
+                                bordered
+                            />
+                        </section>
+                    </div>
+                </Content>
+                <MyFooter />
+            </Layout>
         </>
     )
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Home from "../Pages/Home/Home.js";
 import AboutUs from "../Pages/About/About.js";
 import Services from "../Pages/Services/Services.js";
@@ -44,7 +44,8 @@ import NGOsPage from "../Pages/NGOsPages/NGOsPages";
 import {
     BrowserRouter as Router,
     Switch,
-    Route
+    Route,
+    Redirect
 } from "react-router-dom";
 
 
@@ -54,8 +55,9 @@ function Routes(myProps) {
     return (
         <Router>
             <Switch>
-                <Route path={`/`} component={props => <Home {...props} />} key="0" exact />
-                <Route path={`/About`} component={props => <AboutUs {...props} />} key="1" />
+                <Route path={`/Home`} component={props => <Home {...props} />} key="0" exact />
+                <Redirect from="/" to="/Home" exact/>
+                <Route path={`/AboutSocioLinkage`} component={props => <AboutUs {...props} />} key="1" />
                 <Route path={`/Services`} component={props => <Services {...props} />} key="2" />
                 <Route path={`/Blogs`} component={props => <Blogs {...props} />} key="3" />
                 <Route path={`/Contact`} component={props => <ContactUs {...props} />} key="4" />
@@ -82,7 +84,7 @@ function Routes(myProps) {
                 <Route path={`/Territories/KPK`} component={props => <KPK {...props} />} key="25" />
                 <Route path={`/Territories/Gilgit`} component={props => <Gilgit {...props} />} key="26" />
                 <Route path={`/Territories/Kashmir`} component={props => <Kashmir {...props} />} key="27" />
-                <Route path={`/AboutSocioLinkage`} component={props => <AboutUs {...props} />} key="28" />
+                {/* <Route path={`/AboutSocioLinkage`} component={props => <AboutUs {...props} />} key="28" /> */}
                 <Route path={`/AreaOfWorking/Community`} component={props => <Community {...props} />} key="29" exact />
                 <Route path={`/AreaOfWorking/Drug-Rehabilitation`} component={props => <DrugRehabilitation {...props} />} key="31" exact />
                 <Route path={`/AreaOfWorking/Education`} component={props => <Education {...props} />} key="31" exact />

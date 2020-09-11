@@ -179,7 +179,7 @@ const NavBar = (props) => {
                     }
                 </style>
                 <Header className="header-class" >
-                    <h2 className="logo" onClick={() => history.push("/")} id="head">
+                    <h2 className="logo" onClick={() => history.push("/Home")} id="head">
                         <img className="logo-img" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" />
                     </h2>
                     <div className="logo1 navigation-menu-class">

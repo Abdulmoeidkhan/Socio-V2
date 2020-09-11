@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Tabs, Layout } from 'antd';
 import { AdminDashBoardFormList } from "../DashBoardFormList/DashBoardFormList.js";
-import { ThemeContext,GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
+import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
 import firebase from "../../../GlobalEnvironment/firebaseConfig";
 import { AdminContent } from "../Content/Content";
 import FAQContent from "../FAQContent/FAQContent";
@@ -41,15 +41,10 @@ const AdminDashBoard = () => {
                     ?
                     <ThemeContext.Consumer >
                         {colorsState =>
-                            <GuruContextChanger.Consumer>
-                                {guruState => <>
+                            <>
+                                <style jsx="true">
                                     {
-                                      ()=>  guruState.guruDispatch({ type: "change", payload: "DashBoard" })
-                                    }
-                                    <>
-                                        <style jsx="true">
-                                            {
-                                                `
+                                        `
                                         .ant-layout-header,.ant-menu{
                                             background:${colorsState.colors.color1};
                                             background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
@@ -89,35 +84,33 @@ const AdminDashBoard = () => {
                                             color:#000 ;
                                         }
                                         `
-                                            }
-                                        </style>
-                                        <Header className="header-class">
-                                            <h2 className="logo" onClick={() => history.push("/")}>
-                                                <img className="logo-img" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" />
-                                            </h2>
-                                            <div>
-                                                <div className="logo1">
-                                                    <button className="register-button-class" onClick={logOut}>
-                                                        Log Out
+                                    }
+                                </style>
+                                <Header className="header-class">
+                                    <h2 className="logo" onClick={() => history.push("/Home")}>
+                                        <img className="logo-img" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" />
+                                    </h2>
+                                    <div>
+                                        <div className="logo1">
+                                            <button className="register-button-class" onClick={logOut}>
+                                                Log Out
                                     </button>
-                                                </div>
-                                            </div>
-                                        </Header>
-                                        <Tabs defaultActiveKey="1" className="adminTabs">
-                                            <TabPane tab="Applications" key="1">
-                                                <AdminDashBoardFormList />
-                                            </TabPane>
-                                            <TabPane tab="Content" key="2">
-                                                <AdminContent />
-                                            </TabPane>
-                                            <TabPane tab="FAQ" key="3">
-                                                <FAQContent />
-                                            </TabPane>
-                                        </Tabs>
-                                        <MyFooter />
-                                    </>
-                                </>}
-                            </GuruContextChanger.Consumer>
+                                        </div>
+                                    </div>
+                                </Header>
+                                <Tabs defaultActiveKey="1" className="adminTabs">
+                                    <TabPane tab="Applications" key="1">
+                                        <AdminDashBoardFormList />
+                                    </TabPane>
+                                    <TabPane tab="Content" key="2">
+                                        <AdminContent />
+                                    </TabPane>
+                                    <TabPane tab="FAQ" key="3">
+                                        <FAQContent />
+                                    </TabPane>
+                                </Tabs>
+                                <MyFooter />
+                            </>
                         }
                     </ThemeContext.Consumer >
                     :

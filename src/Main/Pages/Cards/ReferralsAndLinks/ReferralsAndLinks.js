@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Layout, Card } from 'antd';
-import { ThemeContext,GuruContextChanger } from "../../../GlobalEnvironment/contextInit";
+import { ThemeContext } from "../../../GlobalEnvironment/contextInit";
 import NavBar from "../../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../../Components/Footer/Footer";
 import {
@@ -21,11 +21,6 @@ const ReferralsAndLinks = (props) => {
         <>
             <ThemeContext.Consumer>
                 {colorsState => <>
-                    <GuruContextChanger.Consumer>
-            {guruState => <>
-                {
-                   ()=> guruState.guruDispatch({ type: "change", payload: "ReferralsAndLinks" })
-                }
                     <Layout>
                         <style>
                             {
@@ -59,13 +54,13 @@ const ReferralsAndLinks = (props) => {
                                                 <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Reach out to someone</h2>
                                                     <p>
-                                                    Some problems need all hands-on deck, Socio-Linkage ensures your bridging to the right person! Contact us 
+                                                        Some problems need all hands-on deck, Socio-Linkage ensures your bridging to the right person! Contact us
                                                 </p>
                                                 </Card>
                                                 <Card bordered={true} className="first-page-card-class">
                                                     <h2 className="content-sub-head">Let’s Work together </h2>
                                                     <p>
-                                                    Think you know someone who’d like to be a part of the Socio-Linkage Family? Connect to our social media and spread the word!
+                                                        Think you know someone who’d like to be a part of the Socio-Linkage Family? Connect to our social media and spread the word!
                                                 </p>
                                                 </Card>
                                             </div>
@@ -76,10 +71,9 @@ const ReferralsAndLinks = (props) => {
                         </Content>
                         <MyFooter />
                     </Layout>
-                    </>}
-        </GuruContextChanger.Consumer>
-                </>}
-            </ThemeContext.Consumer>
+                </>
+                }
+            </ThemeContext.Consumer >
         </>
     )
 }

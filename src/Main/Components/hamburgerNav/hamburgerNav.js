@@ -55,35 +55,10 @@ const HamBurgerNav = (props) => {
           onClose={props.onClose}
           visible={props.visible}
         >
-          {/* <div className="cursorClass"><Collapse accordion className="headerPanelClassForSideNav">
-            <Panel style={{ border: "none" }} header={
-              <div style={{ color: "#fff" }}>
-             Regions</div>} key="1">
-              <div onClick={() => { history.push("/Pakistan") }} key="2">
-                Pakistan
-            </div>
-              <div onClick={() => { history.push("/Balochistan") }} key="3">
-                Balochistan
-            </div>
-              <div onClick={() => { history.push("/GilgitBaltistan") }} key="4">
-                Gilgit Baltistan
-            </div>
-              <div onClick={() => { history.push("/KPK") }} key="5">
-                Khyber Pakhtun khuwa
-            </div>
-              <div onClick={() => { history.push("/Punjab") }} key="6">
-                Punjab
-            </div>
-              <div onClick={() => { history.push("/Sindh") }} key="7">
-                Sindh
-            </div>
-            </Panel>
-          </Collapse>
-          </div> */}
           <div className="cursorClass">
             <p onClick={() => {
               props.onClose()
-              history.push("/")
+              history.push("/Home")
             }}>
               Home
           </p>

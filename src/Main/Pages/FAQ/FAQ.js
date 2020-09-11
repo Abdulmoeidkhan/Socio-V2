@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Layout, Collapse, Skeleton, message } from 'antd';
-import { GuruContextChanger } from "../../GlobalEnvironment/contextInit";
 import NavBar from "../../Components/Nav-Menu/Nav-Menu";
 import MyFooter from "../../Components/Footer/Footer";
 import firebase from "../../GlobalEnvironment/firebaseConfig";
@@ -106,51 +105,44 @@ const FAQ = (props) => {
     }, [])
     return (
         <>
-            <GuruContextChanger.Consumer>
-            {guruState => <>
-                {
-                   ()=> guruState.guruDispatch({ type: "change", payload: "FAQ" })
-                }
-                    <Layout>
-                        <NavBar />
-                        <Content className="content-container-class area-of-working-class">
-                            <section className="one-columns-grid">
-                                <div className="faq-class">
-                                    <div className="spacing-class" />
-                                    <h2 className="content-head content-head-faq">Frequently Asked Questions (FAQ's)</h2>
-                                    <div className="faq-class">
-                                        {faqData ?
-                                            <Collapse defaultActiveKey={['1']}>
-                                                {faqData && myArr.map((data, i) =>
-                                                    faqData[data].length > 0 && <Panel header={data} key={i + 1}>
-                                                        <Collapse defaultActiveKey={['i1']}>
-                                                            {
-                                                                faqData[data].map((data2, i) =>
-                                                                    <Panel header={data2.values.FAQues} key={`i${i + 1}`}>
-                                                                        <p>{data2.values.FAQAnswer}</p>
-                                                                    </Panel>
-                                                                )
-                                                            }
-                                                        </Collapse>
-                                                    </Panel>
-                                                )
-                                                }
-                                            </Collapse>
-                                            :
-                                            <>
-                                                <Skeleton active paragraph={{ rows: 4 }} />
-                                                <Skeleton active paragraph={{ rows: 4 }} />
-                                                <Skeleton active paragraph={{ rows: 4 }} />
-                                                <Skeleton active paragraph={{ rows: 4 }} />
-                                            </>}
-                                    </div>
-                                </div>
-                            </section>
-                        </Content>
-                        <MyFooter />
-                    </Layout>
-                    </>}
-        </GuruContextChanger.Consumer>
+            <Layout>
+                <NavBar />
+                <Content className="content-container-class area-of-working-class">
+                    <section className="one-columns-grid">
+                        <div className="faq-class">
+                            <div className="spacing-class" />
+                            <h2 className="content-head content-head-faq">Frequently Asked Questions (FAQ's)</h2>
+                            <div className="faq-class">
+                                {faqData ?
+                                    <Collapse defaultActiveKey={['1']}>
+                                        {faqData && myArr.map((data, i) =>
+                                            faqData[data].length > 0 && <Panel header={data} key={i + 1}>
+                                                <Collapse defaultActiveKey={['i1']}>
+                                                    {
+                                                        faqData[data].map((data2, i) =>
+                                                            <Panel header={data2.values.FAQues} key={`i${i + 1}`}>
+                                                                <p>{data2.values.FAQAnswer}</p>
+                                                            </Panel>
+                                                        )
+                                                    }
+                                                </Collapse>
+                                            </Panel>
+                                        )
+                                        }
+                                    </Collapse>
+                                    :
+                                    <>
+                                        <Skeleton active paragraph={{ rows: 4 }} />
+                                        <Skeleton active paragraph={{ rows: 4 }} />
+                                        <Skeleton active paragraph={{ rows: 4 }} />
+                                        <Skeleton active paragraph={{ rows: 4 }} />
+                                    </>}
+                            </div>
+                        </div>
+                    </section>
+                </Content>
+                <MyFooter />
+            </Layout>
         </>
     )
 }
