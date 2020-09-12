@@ -101,3 +101,6 @@
 .ant-drawer-content-wrapper{
     width:320px !important;
 }
+.ant-drawer-open{
+    z-index: 9999999999;
+}

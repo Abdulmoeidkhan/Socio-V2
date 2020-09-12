@@ -88,7 +88,7 @@ const AdminDashBoard = () => {
                                 </style>
                                 <Header className="header-class">
                                     <h2 className="logo" onClick={() => history.push("/Home")}>
-                                        <img className="logo-img" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" />
+                                        <img className="logo-img" src={require("../../../Assets/Logo.png")} alt={require("../../../Assets/Logo.png")} />
                                     </h2>
                                     <div>
                                         <div className="logo1">

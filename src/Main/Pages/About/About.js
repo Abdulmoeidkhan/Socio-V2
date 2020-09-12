@@ -28,7 +28,7 @@ const AboutUs = (props) => {
                 <div className="about-section-parent">
                     <section className="equal-columns-grid equal-columns-grid-1" >
                         <div>
-                            <img className="about-anime-class-img" data-aos-duration="1500" data-aos="fade-right" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1597936945/Flashcards/Icons/Mission_agdvs2.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1597936945/Flashcards/Icons/Mission_agdvs2.png"} />
+                            <img className="about-anime-class-img" data-aos-duration="1500" data-aos="fade-right" src={require("../../Assets/Mission.png")} alt={require("../../Assets/Mission.png")} />
                         </div>
                         <div className="content-content-1" data-aos-duration="1500" data-aos="fade-left" >
                             <div className="spacing-class" />
@@ -45,7 +45,7 @@ const AboutUs = (props) => {
                             <div className="content-para">Since reaching out for social help in our society is a stigma therefore S.L aims to connect people with organizations that satisfies their needs. Hence to provide a digital platform for people who are willing to get help.</div>
                         </div>
                         <div>
-                            <img className="about-anime-class-img" data-aos-duration="1500" data-aos={"fade-left"} src={"https://res.cloudinary.com/tanzeelah/image/upload/v1597936945/Flashcards/Icons/Vision_wr79jo.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1597936945/Flashcards/Icons/Vision_wr79jo.png"} />
+                            <img className="about-anime-class-img" data-aos-duration="1500" data-aos={"fade-left"} src={require("../../Assets/Vision.png")} alt={require("../../Assets/Vision.png")} />
                         </div>
                     </section>
                     <section className="one-columns-grid">
@@ -62,7 +62,7 @@ const AboutUs = (props) => {
                         <TabPane tab="Co-Founders" className="team-blue" key="1">
                             <section className="equal-columns-grid equal-columns-grid-1" >
                                 <div>
-                                    <img className="about-anime-class-img-sub" data-aos-duration="1500" data-aos="fade-right" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1597936945/Flashcards/Icons/Mission_agdvs2.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1597936945/Flashcards/Icons/Mission_agdvs2.png"} />
+                                    <img className="about-anime-class-img-sub" data-aos-duration="1500" data-aos="fade-right" src={require("../../Assets/Mission.png")} alt={require("../../Assets/Mission.png")} />
                                 </div>
                                 <div className="content-content-1" data-aos-duration="1500" data-aos="fade-left" >
                                     <div className="spacing-class" />
@@ -83,12 +83,12 @@ const AboutUs = (props) => {
                                     <div className="content-para"><blockquote>I always wanted to express feelings through my work even in practical life, so I decided to jump into the digital world to spread it through all social platforms by creating the most powerful pictures and videos.</blockquote></div>
                                 </div>
                                 <div>
-                                    <img className="about-anime-class-img-sub" data-aos-duration="1500" data-aos={"fade-left"} src={"https://res.cloudinary.com/tanzeelah/image/upload/v1597936945/Flashcards/Icons/Vision_wr79jo.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1597936945/Flashcards/Icons/Vision_wr79jo.png"} />
+                                    <img className="about-anime-class-img-sub" data-aos-duration="1500" data-aos={"fade-left"} src={require("../../Assets/Vision.png")} alt={require("../../Assets/Vision.png")} />
                                 </div>
                             </section>
                             <section className="equal-columns-grid equal-columns-grid-1" >
                                 <div>
-                                    <img className="about-anime-class-img-sub" data-aos-duration="1500" data-aos="fade-right" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1597936945/Flashcards/Icons/Mission_agdvs2.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1597936945/Flashcards/Icons/Mission_agdvs2.png"} />
+                                    <img className="about-anime-class-img-sub" data-aos-duration="1500" data-aos="fade-right" src={require("../../Assets/Mission.png")} alt={require("../../Assets/Mission.png")} />
                                 </div>
                                 <div className="content-content-1" data-aos-duration="1500" data-aos="fade-left" >
                                     <div className="spacing-class" />
@@ -106,7 +106,7 @@ const AboutUs = (props) => {
                                     <div className="content-para"><blockquote>I wanted to make this a challenge for myself as this project was one of a kind in Pakistan. The idea behind Socio-Linkage seemed promising to me so I took a dive in and hope to work them for the years to come as Technology is the new Tomorrow!</blockquote></div>
                                 </div>
                                 <div>
-                                    <img className="about-anime-class-img-sub" data-aos-duration="1500" data-aos={"fade-left"} src={"https://res.cloudinary.com/tanzeelah/image/upload/v1597936945/Flashcards/Icons/Vision_wr79jo.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1597936945/Flashcards/Icons/Vision_wr79jo.png"} />
+                                    <img className="about-anime-class-img-sub" data-aos-duration="1500" data-aos={"fade-left"} src={require("../../Assets/Vision.png")} alt={require("../../Assets/Vision.png")} />
                                 </div>
                             </section>
                         </TabPane>

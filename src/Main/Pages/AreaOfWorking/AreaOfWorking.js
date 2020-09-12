@@ -22,43 +22,43 @@ const AreaOfWorking = (props) => {
                     </div>
                     <div className="aof-two-column-grid">
                         <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/AreaOfWorking/General-Health")}>
-                            <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476857/Area%20Of%20Working/Version%202/General_Health_nmmcpl.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476857/Area%20Of%20Working/Version%202/General_Health_nmmcpl.jpg" />
+                            <img className="card-img-class" src={require("../../Assets/GeneralHealth.jpg")} alt={require("../../Assets/GeneralHealth.jpg")} />
                         </Card>
                         <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/AreaOfWorking/Education")}>
-                            <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476855/Area%20Of%20Working/Version%202/Education_izti5z.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476855/Area%20Of%20Working/Version%202/Education_izti5z.jpg" />
+                            <img className="card-img-class" src={require("../../Assets/Education.jpg")} alt={require("../../Assets/Education.jpg")} />
                         </Card>
                     </div>
                     <div className="three-column-seperation">
                         <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/AreaOfWorking/Mental-Health")}>
-                            <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476857/Area%20Of%20Working/Version%202/Mental_Health_xy6upa.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476857/Area%20Of%20Working/Version%202/Mental_Health_xy6upa.jpg" />
+                            <img className="card-img-class" src={require("../../Assets/MentalHealth.jpg")} alt={require("../../Assets/MentalHealth.jpg")} />
                         </Card>
                         <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/AreaOfWorking/Community")}>
-                            <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476855/Area%20Of%20Working/Version%202/Community_wiuaof.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476855/Area%20Of%20Working/Version%202/Community_wiuaof.jpg" />
+                            <img className="card-img-class" src={require("../../Assets/Community.jpg")} alt={require("../../Assets/Community.jpg")} />
                         </Card>
                         <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/AreaOfWorking/Drug-Rehabilitation")}>
-                            <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476856/Area%20Of%20Working/Version%202/Drug_Rehabilitation_pxmre5.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476856/Area%20Of%20Working/Version%202/Drug_Rehabilitation_pxmre5.jpg" />
+                            <img className="card-img-class" src={require("../../Assets/DrugRehabilitation.jpg")} alt={require("../../Assets/DrugRehabilitation.jpg")} />
                         </Card>
                     </div>
                     <div className="three-column-seperation">
                         <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/AreaOfWorking/Vocation")}>
-                            <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476859/Area%20Of%20Working/Version%202/Vocation_yflqrc.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476859/Area%20Of%20Working/Version%202/Vocation_yflqrc.jpg" />
+                            <img className="card-img-class" src={require("../../Assets/Vocation.jpg")} alt={require("../../Assets/Vocation.jpg")} />
                         </Card>
                         <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/AreaOfWorking/Women")}>
-                            <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476859/Area%20Of%20Working/Version%202/Women_wsqvvk.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476859/Area%20Of%20Working/Version%202/Women_wsqvvk.jpg" />
+                            <img className="card-img-class" src={require("../../Assets/Women.jpg")} alt={require("../../Assets/Women.jpg")} />
                         </Card>
                         <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/AreaOfWorking/Special-Needs")}>
-                            <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476858/Area%20Of%20Working/Version%202/Special_Needs_wufhau.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476858/Area%20Of%20Working/Version%202/Special_Needs_wufhau.jpg" />
+                            <img className="card-img-class" src={require("../../Assets/SpecialNeeds.jpg")} alt={require("../../Assets/SpecialNeeds.jpg")} />
                         </Card>
                     </div>
                     <div className="three-column-seperation">
                         <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/AreaOfWorking/Senior-Citizens")}>
-                            <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476858/Area%20Of%20Working/Version%202/Senior_Citizens_smunoe.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476858/Area%20Of%20Working/Version%202/Senior_Citizens_smunoe.jpg" />
+                            <img className="card-img-class" src={require("../../Assets/SeniorCitizens.jpg")} alt={require("../../Assets/SeniorCitizens.jpg")} />
                         </Card>
                         <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/AreaOfWorking/Children")}>
-                            <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476856/Area%20Of%20Working/Version%202/Children_ucspml.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476856/Area%20Of%20Working/Version%202/Children_ucspml.jpg" />
+                            <img className="card-img-class" src={require("../../Assets/Children.jpg")} alt={require("../../Assets/Children.jpg")} />
                         </Card>
                         <Card bordered={true} className="first-page-card-class" onClick={() => history.push("/AreaOfWorking/Others")}>
-                            <img className="card-img-class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1598476859/Area%20Of%20Working/Version%202/Others_lmhfep.jpg" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1598476859/Area%20Of%20Working/Version%202/Others_lmhfep.jpg" />
+                            <img className="card-img-class" src={require("../../Assets/Others.jpg")} alt={require("../../Assets/Others.jpg")} />
                         </Card>
                     </div>
                 </section>

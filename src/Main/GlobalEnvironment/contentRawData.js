@@ -1188,7 +1188,10 @@ export const NGOsRoute = [
 
 export const tips = {
     Home: [
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id illo molestiae at aliquam facere nihil expedita distinctio maiores tempore officiis harum doloribus temporibus nam asperiores consequatur, cupiditate repellat voluptate. Officia!"
+        "All The Components that are highlight on mouse hover are clickable",
+        "You Can Use Below Icons For Chat And Scroll Up/Down",
+        "For Contact Details You Can Go The Footer Way bottom to this website",
+        "Try to Scroll Down Smooth And Slowly For Better Experience"
     ]
     // ,
     // AboutUs: [

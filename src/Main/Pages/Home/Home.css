@@ -14,7 +14,7 @@
         grid-template-columns: repeat(2, 1fr);
         padding: 10px 20px;
     }
-    .section-parent .anime-class-img,.section-parent .anime-class-img-spec {
+    .section-parent .anime-class-img, .section-parent .anime-class-img-spec {
         width: 42vw;
         height: 47vh;
     }
@@ -40,14 +40,21 @@
         background-Image: url("../../Assets/Wave.png");
         background-repeat: no-repeat;
         background-size: cover;
-        padding-top:120px ;
+        padding-top: 120px;
+    }
+    .ant-carousel .slick-initialized .slick-slide {
+        height: 300px !important;
+    }
+    .ant-carousel .slick-list .slick-slide>div>div {
+        padding-top: 40px;
+        height: 400px !important;
     }
 }
 
 @media only screen and (min-width: 701px)and (max-width: 1000px) {
     .section-parent {
         display: grid;
-        grid-template-rows: .2fr .4fr .2fr 1.5fr 1.8fr;
+        grid-template-rows: .2fr .3fr .2fr 1fr 1.8fr;
     }
     .equal-columns-grid-2 {
         height: 68vh;
@@ -60,7 +67,7 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .section-parent .anime-class-img-spec{
+    .section-parent .anime-class-img-spec {
         width: 90vw;
         height: 60vh;
         margin: 0 auto;
@@ -85,20 +92,22 @@
         background-Image: url("../../Assets/Wave.png");
         background-repeat: no-repeat;
         background-size: cover;
-        padding-top:60px ;
+        /* padding-top:60px ; */
         padding-left: 10px;
     }
+    .ant-carousel .slick-initialized .slick-slide {
+        height: 300px !important;
+    }
+    .ant-carousel .slick-list .slick-slide>div>div {
+        padding-top: 40px;
+        height: 400px !important;
+    }
 }
-
 
 @media only screen and (min-width: 401px)and (max-width: 700px) {
     .section-parent {
         display: grid;
         grid-template-rows: .2fr .4fr .2fr 2fr 2fr;
-    }
-    .equal-columns-grid-2 {
-        height: 78vh;
-        padding-top: 10em;
     }
     .card-background-class {
         height: 80%;
@@ -107,7 +116,7 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .section-parent .anime-class-img-spec{
+    .section-parent .anime-class-img-spec {
         width: 90vw;
         height: 60vh;
         margin: 0 auto;
@@ -129,24 +138,31 @@
         height: 6vh;
     }
     .equal-columns-grid-2 {
-        height: 80vh;   
-        padding-top:120px ;
+        height: 80vh;
+        padding-top: 30px;
     }
     .equal-columns-grid-2 .content-content-2 {
         background-Image: url("../../Assets/Wave.png");
         background-repeat: no-repeat;
         background-size: cover;
-        padding-top:60px ;
+        padding-top: 60px;
         padding-left: 10px;
+    }
+    .ant-carousel .slick-initialized .slick-slide {
+        height: 400px !important;
+    }
+    .ant-carousel .slick-list .slick-slide>div>div {
+        padding-top: 40px;
+        height: 500px !important;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .equal-columns-grid-2,.equal-columns-grid-3,.equal-columns-grid-1 {
+    .equal-columns-grid-2, .equal-columns-grid-3, .equal-columns-grid-1 {
         height: 78vh;
         padding-top: 4em;
     }
-    .section-parent .anime-class-img-spec{
+    .section-parent .anime-class-img-spec {
         width: 99vw;
         height: 60vh;
         margin: 0 auto;
@@ -160,13 +176,20 @@
         background-Image: url("../../Assets/Wave.png");
         background-repeat: no-repeat;
         background-size: cover;
-        padding-top:100px ;
+        padding-top: 100px;
         padding-left: 10px;
+    }
+    .ant-carousel .slick-initialized .slick-slide {
+        height: 400px !important;
+    }
+    .ant-carousel .slick-list .slick-slide>div>div {
+        padding-top: 40px;
+        height: 500px !important;
     }
 }
 
-.equal-columns-grid-2 .content-content-2,.equal-columns-grid-2 .content-content-2 h2{
-    color:#fff ;
+.equal-columns-grid-2 .content-content-2, .equal-columns-grid-2 .content-content-2 h2 {
+    color: #fff;
 }
 
 .card-container-class {
@@ -184,15 +207,11 @@
     background-color: #fff;
 }
 
-
-
 /* section-1 css */
 
 .content-super {
     font-size: 22px;
 }
-
-
 
 .content-para {
     font-size: 18px;
@@ -277,6 +296,7 @@
 .comment-class {
     width: 100%;
     margin: 0 auto;
+    height: 70vh;
 }
 
 .comment-class-para {
@@ -287,12 +307,14 @@
     font-size: 2vw;
     font-weight: bolder;
     letter-spacing: 2px;
+    height: 200px;
 }
 
 .testimonial-sec .center-class {
     height: 30vh;
 }
-.center-class .content-para{
+
+.center-class .content-para {
     margin: 0 auto !important;
     width: 80% !important;
     padding-right: 0px;
@@ -303,20 +325,17 @@
     height: 70px;
 }
 
-
-
 .picture-background-class {
     height: 100%;
     width: 100%;
-    background-Image: url('https://res.cloudinary.com/tanzeelah/image/upload/v1597417927/Landing%20Page/Untitled-2_pdlp7e.png');
-    background-Image: url('https://res.cloudinary.com/tanzeelah/image/upload/v1597414281/Landing%20Page/What_we_offer_background_yagihw.png');
+    background-Image: url('../../Assets/BackGround-6.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .comments-background-class {
     width: 100%;
-    background-Image: url('https://res.cloudinary.com/tanzeelah/image/upload/v1597418339/Landing%20Page/Untitled-5_gvf3rg.png');
+    background-Image: url('../../Assets/BackGround-5.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -350,10 +369,6 @@
         height: 2vh;
     }
 }
-
-
-
-
 
 @media only screen and (min-width: 270px)and (max-width: 1000px) {
     .equal-columns-grid {

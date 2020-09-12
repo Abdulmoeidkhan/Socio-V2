@@ -25,6 +25,7 @@
     }
     .ant-notification-hook-holder, .ant-notification-notice{
         width: 50vw;
+        min-height: 16vh;
     }
     /* .side-guru-parent-class h6 {
         float: left;

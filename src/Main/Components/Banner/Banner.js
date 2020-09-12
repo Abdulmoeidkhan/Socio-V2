@@ -46,7 +46,7 @@ const Banner = (props) => {
                                 </h2>
                             <p className="super-below"data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="800"> WITH OUR EXPERTS</p>
                             <ul className="social-icons">
-                            <li><a href="https://www.facebook.com/socio.linkage.3" target="_blank" className="facebook" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="2600"><i className="fa fa-facebook" ></i></a></li>
+                            <li><a href="https://www.facebook.com/Sociolinkage20" target="_blank" className="facebook" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="2600"><i className="fa fa-facebook" ></i></a></li>
                             <li><a href="https://twitter.com/LinkageSocio" target="_blank" className="twitter" data-aos-duration="1500" data-aos={"fade-up-right"} data-aos-delay="2700"><i className="fa fa-twitter"></i></a></li>
                             <li><a className="whatsapp" href="https://wa.me/923333466728" target="_blank" data-aos-duration="1500" data-aos={"fade-down-right"} data-aos-delay="2800"><i className="fa fa-whatsapp"></i></a></li>
                             <li><a className="linkedin" href="https://www.linkedin.com/in/socio-linkage-5720bb1b0/" target="_blank" data-aos-duration="1500" data-aos={"fade-up-left"} data-aos-delay="2900"><i className="fa fa-linkedin"></i></a></li>

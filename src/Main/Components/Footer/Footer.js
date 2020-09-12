@@ -21,7 +21,7 @@ function MyFooter(props) {
             <div className="col-sm-12 col-md-6 division-class">
 
               <h2 onClick={() => history.push("/Home")}>
-                <img className="logo-img-footer" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" />
+                <img className="logo-img-footer" src={require("../../Assets/Logo.png")} alt={require("../../Assets/Logo.png")} />
               </h2>
 
             </div>
@@ -87,7 +87,7 @@ function MyFooter(props) {
             </div>
             <div className="col-md-4 col-sm-6 col-xs-12">
               <ul className="social-icons">
-                <li><a href="https://www.facebook.com/socio.linkage.3" target="_blank" className="facebook"><i className="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.facebook.com/Sociolinkage20" target="_blank" className="facebook"><i className="fa fa-facebook"></i></a></li>
                 <li><a href="https://twitter.com/LinkageSocio" target="_blank" className="twitter"><i className="fa fa-twitter"></i></a></li>
                 <li><a className="whatsapp" href="https://wa.me/923333466728" target="_blank"><i className="fa fa-whatsapp"></i></a></li>
                 <li><a className="linkedin" href="https://www.linkedin.com/in/socio-linkage-5720bb1b0/" target="_blank"><i className="fa fa-linkedin"></i></a></li>

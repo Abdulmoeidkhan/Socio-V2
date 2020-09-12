@@ -79,7 +79,7 @@ function App() {
           `}
           </style>
       }
-      <img className="shutter-Img-Class" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596628432/Landing%20Page/Shutter_iaczgg.gif" />
+      <img className="shutter-Img-Class" src={require("./Main/Assets/Shutter.gif")} />
       <div className="shutter-comp-class">
         <MainComponent />
       </div>

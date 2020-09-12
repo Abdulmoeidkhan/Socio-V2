@@ -84,7 +84,7 @@ const DateAndEventCards = () => {
                                 <p>{imgData.Para3}</p>
                                 <p>{imgData.Para4}</p>
                             </Modal>}
-                            {imgLink ? <img className="cardImgClass" src={imgLink} style={{ cursor: "pointer" }} onClick={() => setVisible(!visible)} /> : <img className="cardImgClass" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1595017293/ezgif.com-video-to-gif_hbdqah.gif"} />}
+                            {imgLink ? <img className="cardImgClass" src={imgLink} style={{ cursor: "pointer" }} onClick={() => setVisible(!visible)} /> : <img className="cardImgClass" src={require("../../Assets/generalCalender.gif")} />}
                         </div>
                     </Card>
                 </div>

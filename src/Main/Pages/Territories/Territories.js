@@ -30,7 +30,7 @@ const Territories = (props) => {
                                 <section className="equal-columns-grid">
                                     <div>
                                         <div onClick={() => history.push("/Territories/Pakistan")} className="link-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="1000">
-                                            <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Pakistan_Maps_oklowt.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Pakistan_Maps_oklowt.png"} />
+                                            <img className="anime-class-img" src={require("../../Assets/PakistanMaps.png")} alt={require("../../Assets/PakistanMaps.png")} />
                                         </div>
                                     </div>
                                     <div className="content-content-1">
@@ -49,14 +49,14 @@ const Territories = (props) => {
                                     </div>
                                     <div>
                                         <div onClick={() => history.push("/Territories/Sindh")} className="link-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="200">
-                                            <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538802/Territories/Sindh_tj4hij.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538802/Territories/Sindh_tj4hij.png"} />
+                                            <img className="anime-class-img" src={require("../../Assets/Sindh.png")} alt={require("../../Assets/Sindh.png")} />
                                         </div>
                                     </div>
                                 </section>
                                 <section className="equal-columns-grid">
                                     <div>
                                         <div onClick={() => history.push("/Territories/Punjab")} className="link-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="200">
-                                            <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Punjab_uhrvc5.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Punjab_uhrvc5.png"} />
+                                            <img className="anime-class-img" src={require("../../Assets/Punjab.png")} alt={require("../../Assets/Punjab.png")} />
                                         </div>
                                     </div>
                                     <div className="content-content-1">
@@ -75,14 +75,14 @@ const Territories = (props) => {
                                     </div>
                                     <div>
                                         <div onClick={() => history.push("/Territories/Balochistan")} className="link-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="200">
-                                            <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Balochistan_rysd9s.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Balochistan_rysd9s.png"} />
+                                            <img className="anime-class-img" src={require("../../Assets/Balochistan.png")} alt={require("../../Assets/Balochistan.png")} />
                                         </div>
                                     </div>
                                 </section>
                                 <section className="equal-columns-grid">
                                     <div>
                                     <div onClick={() => history.push("/Territories/KPK")}  className="link-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="200">
-                                            <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Khyber_Pakhtunkwa_y0xn03.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Khyber_Pakhtunkwa_y0xn03.png"} />
+                                            <img className="anime-class-img" src={require("../../Assets/KhyberPakhtunkwa.png")} alt={require("../../Assets/KhyberPakhtunkwa.png")} />
                                         </div>
                                     </div>
                                     <div className="content-content-1">
@@ -101,14 +101,14 @@ const Territories = (props) => {
                                     </div>
                                     <div>
                                     <div onClick={() => history.push("/Territories/Gilgit")}  className="link-class" data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="200">
-                                            <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Gilgit_Balistan_e326mw.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Gilgit_Balistan_e326mw.png"} />
+                                            <img className="anime-class-img" src={require("../../Assets/GilgitBalistan.png")} alt={require("../../Assets/GilgitBalistan.png")} />
                                         </div>
                                     </div>
                                 </section>
                                 <section className="equal-columns-grid">
                                     <div>
                                     <div onClick={() => history.push("/Territories/Kashmir")}  className="link-class" data-aos-duration="1500" data-aos={"fade-right"} data-aos-delay="200">
-                                            <img className="anime-class-img" src={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Azad_Kashmir_s3orvd.png"} alt={"https://res.cloudinary.com/tanzeelah/image/upload/v1596538801/Territories/Azad_Kashmir_s3orvd.png"} />
+                                            <img className="anime-class-img" src={require("../../Assets/AzadKashmir.png")} alt={require("../../Assets/AzadKashmir.png")} />
                                         </div>
                                     </div>
                                     <div className="content-content-1">

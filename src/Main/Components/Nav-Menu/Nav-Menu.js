@@ -14,7 +14,7 @@ const SignInNotify = (placement,user) => {
       message: 'Sign In Successfully ',
       description:
         `You have Sign In Successfully As ${user}`,
-      icon: <img src="https://res.cloudinary.com/tanzeelah/image/upload/v1599409729/The%20Graphic%20Guru/Success_ph4dht.gif" style={{ width: "100px",marginTop: "-15px",marginLeft: "-60px"}}/>,
+      icon: <img src={require("../../Assets/SuccessGuru.gif")} style={{ width: "100px",marginTop: "-15px",marginLeft: "-60px"}}/>,
     placement,
     });
   };
@@ -23,7 +23,7 @@ const SignInNotify = (placement,user) => {
       message: 'Sign Up Successfully ',
       description:
         `You have Sign Up Successfully As ${user}`,
-      icon: <img src="https://res.cloudinary.com/tanzeelah/image/upload/v1599409729/The%20Graphic%20Guru/Success_ph4dht.gif" style={{ width: "100px",marginTop: "-15px",marginLeft: "-60px"}}/>,
+      icon: <img src={require("../../Assets/SuccessGuru.gif")} style={{ width: "100px",marginTop: "-15px",marginLeft: "-60px"}}/>,
     placement,
     });
   };
@@ -33,7 +33,7 @@ const SignInNotify = (placement,user) => {
       message: 'Imporatant Notification',
       description:
         `${message}`,
-      icon: <img src="https://res.cloudinary.com/tanzeelah/image/upload/v1599409729/The%20Graphic%20Guru/Error_yjedjk.gif" style={{ width: "100px",marginTop: "-15px",marginLeft: "-60px"}}/>,
+      icon: <img src={require("../../Assets/ErrorGuru.gif")}style={{ width: "100px",marginTop: "-15px",marginLeft: "-60px"}}/>,
     placement,
     });
   };
@@ -43,7 +43,7 @@ const SignInNotify = (placement,user) => {
       message: 'Imporatant Notification',
       description:
         `${message}`,
-      icon: <img src="https://res.cloudinary.com/tanzeelah/image/upload/v1599409729/The%20Graphic%20Guru/Error_yjedjk.gif" style={{ width: "100px",marginTop: "-15px",marginLeft: "-60px"}}/>,
+      icon: <img src={require("../../Assets/ErrorGuru.gif")}style={{ width: "100px",marginTop: "-15px",marginLeft: "-60px"}}/>,
     placement,
     });
   };
@@ -180,7 +180,7 @@ const NavBar = (props) => {
                 </style>
                 <Header className="header-class" >
                     <h2 className="logo" onClick={() => history.push("/Home")} id="head">
-                        <img className="logo-img" src="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" alt="https://res.cloudinary.com/tanzeelah/image/upload/v1596468604/Landing%20Page/Logo_ieqnvp.png" />
+                        <img className="logo-img" src={require("../../Assets/Logo.png")} alt={require("../../Assets/Logo.png")} />
                     </h2>
                     <div className="logo1 navigation-menu-class">
                         <HamBurgerNav setIsSignIn={setIsSignIn} visible={visible} currentUsersData={currentUsersData} onClose={onClose} showDrawer={showDrawer} showModal={showModal} handleCancel={handleCancel}/>
