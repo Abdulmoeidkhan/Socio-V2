@@ -2,28 +2,30 @@
     .side-guru-parent-class {
         display: none;
     }
-    .ant-notification-hook-holder, .ant-notification-notice{
+    .ant-notification-hook-holder, .ant-notification-notice {
         width: 80vw;
     }
 }
 
 @media only screen and (min-width: 791px) {
     .side-guru-parent-class {
-        /* -webkit-box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.1);
-        box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.1); */
         cursor: pointer;
         position: fixed;
-        width: 80px;
-        top: 25vh;
+        width: 60px;
+        height: 60px;
+        top: 54vh;
         display: grid;
         grid-template-columns: 1fr;
-        background-color: transparent;
-        right: -10px;
+        background-color: #01989d;
+        border-radius: 60px;
+        right: 20px;
     }
-    .side-guru-class{
-        width:100%;
+    .side-guru-class {
+        width: 90%;
+        padding-left: 6px;
+        padding-top: 3px;
     }
-    .ant-notification-hook-holder, .ant-notification-notice{
+    .ant-notification-hook-holder, .ant-notification-notice {
         width: 50vw;
         min-height: 16vh;
     }
@@ -41,11 +43,13 @@
     margin-left: 85px;
     font-size: 14px;
 }
+
 .ant-notification-notice-with-icon .ant-notification-notice-message {
     margin-bottom: 4px;
     margin-left: 85px;
     font-size: 16px;
 }
+
 .ant-notification-notice-closable .anticon-close, .cursorClass {
     color: #000;
     transition: all .5s ease;

@@ -86,8 +86,8 @@ function App() {
         <SideGuru />
       <MobileFooter />
       <span className="desktop-class-icons">
-        <div className="arrowUpKey" onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) }}><i className="fa fa-x fa-arrow-up" style={{ color: "#fff" }} aria-hidden="true"></i></div>
-        <div className="arrowDownKey" onClick={() => { window.scrollTo({ top: 100000, left: 0, behavior: "smooth" }) }}><i className="fa fa-x fa-arrow-down" style={{ color: "#fff" }} aria-hidden="true"></i></div>
+        <div className="arrowUpKey" onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) }}><i className="fa fa-x fa-arrow-up" style={{ color: "#fff",fontSize: "25px",paddingLeft:"11px",paddingTop:"11px"}} aria-hidden="true"></i></div>
+        <div className="arrowDownKey" onClick={() => { window.scrollTo({ top: 100000, left: 0, behavior: "smooth" }) }}><i className="fa fa-x fa-arrow-down" style={{ color: "#fff",fontSize: "25px",paddingLeft:"11px",paddingTop:"11px" }} aria-hidden="true"></i></div>
       </span>
     </div>
   )
