@@ -32,10 +32,9 @@ function MyFooter(props) {
               <ul className="footer-links"
               >
                 <li><a onClick={() => history.push("/Home")}>Home</a></li>
-                <li><a onClick={() => history.push("/About")}>About Us</a></li>
-                <li><a onClick={() => history.push("/Services")}>Our Services</a></li>
-                <li><a onClick={() => history.push("/Blogs")}>Blogs</a></li>
-                <li><a onClick={() => history.push("/Contact")}>Contact Us</a></li>
+                <li><a onClick={() => history.push("/AboutSocioLinkage")}>About Socio-Linkage</a></li>
+                <li><a onClick={() => history.push("/AreaOfWorking")}>Area Of Working</a></li>
+                <li><a onClick={() => history.push("/ArticlesAndBlogs")}>Articles And Blogs</a></li>
               </ul>
             </div>
 

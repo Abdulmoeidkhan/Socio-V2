@@ -92,7 +92,7 @@ const Others = (props) => {
                                     <PictureTiles name="Sarim Burney Welfare Trust" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606316/Organization%20LOGOS/PNG/Sarim_Burney_vv1ks3.png" />
                                 </div>
                                 <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Others/WORLDWIDE-FUND-OF-NATURE")}>
-                                    <PictureTiles name="WWF" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606317/Organization%20LOGOS/PNG/WWF_o3vpxa.png" />
+                                    <PictureTiles name="WORLDWIDE FUND OF NATURE" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606317/Organization%20LOGOS/PNG/WWF_o3vpxa.png" />
                                 </div>
                                 <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350">
                                 </div>

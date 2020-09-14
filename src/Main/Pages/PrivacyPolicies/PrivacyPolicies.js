@@ -91,16 +91,11 @@ const PrivacyPolicies = (props) => {
                                     </li>
                                     <li>
                                         <a href="#PP12">
-                                            DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
-                    </a>
-                                    </li>
-                                    <li>
-                                        <a href="#PP13">
                                             DO WE MAKE UPDATES TO THIS NOTICE?
                     </a>
                                     </li>
                                     <li>
-                                        <a href="#PP14">
+                                        <a href="#PP13">
                                             HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
                     </a>
                                     </li>
@@ -495,7 +490,7 @@ const PrivacyPolicies = (props) => {
                                     <br />
                 If you are resident in Switzerland, the contact details for the data protection authorities are available here:<a href="https://www.edoeb.admin.ch/edoeb/en/home.html"> https://www.edoeb.admin.ch/edoeb/en/home.html</a>.
                 <br />
-                If you have questions or comments about your privacy rights, you may email us at hussainzainabahmed@gmail.com.
+                If you have questions or comments about your privacy rights, you may email us at sociolinkage@gmail.com.
                 <strong>
                                         Account Information
                 </strong>
@@ -524,24 +519,14 @@ const PrivacyPolicies = (props) => {
                                 <div>
                                     Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track (“DNT”) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage, no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice.
                 </div>
-                                <h4 className="content-sub-head" id="PP12">12. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</h4>
-                                <div>
-                                    <strong>In Short:</strong>
-                Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information.
-                <br />
-                California Civil Code Section 1798.83, also known as the “Shine The Light” law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.
-                <br />
-                If you are under 18 years of age, reside in California, and have a registered account with a Service, you have the right to request removal of unwanted data that you publicly post on
-                the Services. To request removal of such data, please contact us using the contact information provided below, and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the Services, but please be aware that the data may not be completely or comprehensively removed from all our systems (e.g. backups, etc.).
-                </div>
-                                <h4 className="content-sub-head" id="PP13">13. DO WE MAKE UPDATES TO THIS NOTICE?</h4>
+                                <h4 className="content-sub-head" id="PP12">12. DO WE MAKE UPDATES TO THIS NOTICE?</h4>
                                 <div>
                                     <strong>In Short:</strong>
                 Yes, we will update this notice as necessary to stay compliant with relevant laws.
                 <br />
                 We may update this privacy notice from time to time. The updated version will be indicated by an updated “Revised” date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.
                 </div>
-                                <h4 className="content-sub-head" id="PP14">14. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h4>
+                                <h4 className="content-sub-head" id="PP13">13. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h4>
                                 <div>
                                     If you have questions or comments about this notice, you may email us at sociolinkage@gmail.com or by post to:
                 <br />

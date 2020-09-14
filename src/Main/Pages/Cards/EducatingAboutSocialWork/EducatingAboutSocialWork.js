@@ -68,7 +68,7 @@ const EducatingAboutSocialWork = (props) => {
                                                     It includes another three parts such as
                                                     <ul data-aos-duration="1500" data-aos="flip-in" data-aos-delay="600">
                                                         <li>Social case work</li>
-                                                        <li>Socialgroup work</li>
+                                                        <li>Social group work</li>
                                                         <li>Community organization</li>
                                                     </ul>
                                                     <div className="card-three-column-seperation" data-aos-duration="1500" data-aos="zoom-down" data-aos-delay="700">
@@ -79,7 +79,7 @@ const EducatingAboutSocialWork = (props) => {
                                                             </div>
                                                         </Card>
                                                         <Card bordered={true} className="first-page-card-class">
-                                                            <h2 className="content-sub-head">Socialgroup work</h2>
+                                                            <h2 className="content-sub-head">Social group work</h2>
                                                             <div>
                                                                 Social group work is a method of social work that helps persons to enhance their social functioning through purposeful group experiences and to cope more effectively with their personal, group or community problems (Marjorie Murphy, 1959).
                                                             </div>
@@ -141,12 +141,12 @@ const EducatingAboutSocialWork = (props) => {
                                                     A child, family, or school social worker assists children and youth, along with their parents and guardians. School social worker duties may include offering support in instances where abuse has taken place, or where mental illness, physical illness, or trauma is affecting a child’s wellbeing. They may also help parents access resources so they can better care for their children or find placement for children whose needs are not being met.
                                                 </div>
                                             </Card>
-                                            <Card bordered={true} className="first-page-edu-card-class" data-aos-duration="1500" data-aos="fade-right" data-aos-delay="850">
+                                            {/* <Card bordered={true} className="first-page-edu-card-class" data-aos-duration="1500" data-aos="fade-right" data-aos-delay="850">
                                                 <h2 className="content-sub-head">Kinds of Social Work</h2>
                                                 <div>
                                                     Let us tell you people a secret… there’s a huge difference between voluntary and involuntary social work, to read more about it visit our page NOW!
                                                 </div>
-                                            </Card>
+                                            </Card> */}
                                             <Card bordered={true} className="first-page-edu-card-class" data-aos-duration="1500" data-aos="fade-right" data-aos-delay="900">
                                                 <h2 className="content-sub-head">Medical Social Worker Jobs</h2>
                                                 <div>

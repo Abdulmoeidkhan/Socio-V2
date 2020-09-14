@@ -44,7 +44,7 @@ const ConsultationAndEvaluation = (props) => {
                                 <section className="card-equal-columns-grid-1">
                                     <div className="content-content-1">
                                         <div className="spacing-class" />
-                                        <h2 className="content-head">CONSALTATION AND EVALUAION </h2>
+                                        <h2 className="content-head">CONSULTATION AND EVALUATION </h2>
                                         <p className="content-para">
                                             Think you need professional help with your problems? Leave it to our Experts Panel, connect with our experts today and let all your problems float away!
                                         <br />

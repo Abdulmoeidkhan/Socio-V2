@@ -13,7 +13,7 @@
         position: fixed;
         width: 60px;
         height: 60px;
-        top: 54vh;
+        top: 50vh;
         display: grid;
         grid-template-columns: 1fr;
         background-color: #01989d;

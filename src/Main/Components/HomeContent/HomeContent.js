@@ -196,6 +196,7 @@ const HomeContent = (props) => {
                                 <Avatar
                                     src={require("../../Assets/Sir-Hammal.png")}
                                     alt="Hammal Sir"
+                                    size="large"
                                 />
                                 <br />
                                     "It’s very first time that such a remarkable platform has been started to facilitate the common people and give exposure to the organizations which are working with zest but are still not known by many in the social sector.
@@ -207,6 +208,7 @@ const HomeContent = (props) => {
                                 <Avatar
                                     src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
                                     alt="Han Solo"
+                                    size="large"
                                 />
                                 <br />
                                     "We supply a series of design principles, practical patterns and high quality design
@@ -217,6 +219,7 @@ const HomeContent = (props) => {
                                 <Avatar
                                     src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
                                     alt="Han Solo"
+                                    size="large"
                                 />
                                 <br />
                                     "We supply a series of design principles, practical patterns and high quality design
@@ -227,6 +230,7 @@ const HomeContent = (props) => {
                                 <Avatar
                                     src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
                                     alt="Han Solo"
+                                    size="large"
                                 />
                                 <br />
                                     "We supply a series of design principles, practical patterns and high quality design
