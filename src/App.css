@@ -78,5 +78,5 @@ body::-webkit-scrollbar-thumb, .ant-menu-inline::-webkit-scrollbar-thumb, .scrol
 
 
 .ant-drawer-right{
-  z-index: 999999999;
+  z-index: 9999999999 !important;
 }
