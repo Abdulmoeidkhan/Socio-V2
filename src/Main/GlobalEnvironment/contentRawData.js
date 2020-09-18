@@ -507,7 +507,7 @@ export const detailedData = {
         "ReferencelinkWebsite": " https://www.plfpk.org/",
         "key": "39"
     },
-    "SARIM BURNEY WELFARE TRUST (WWF)": {
+    "SARIM BURNEY WELFARE TRUST": {
         "Organization": "Sarim Burney welfare Trust",
         "OperatingArea": "Hyderi Market, Karachi",
         "History": "Founded by Sarim Burney who started working for mankind from his early years, soon decided to establish his own organization for solving the issues of human trafficking and child marriages to ensure a happy and healthy society.",
@@ -535,18 +535,18 @@ export const detailedData = {
     },
     "ORANGI PILOT PROJECT (OPP)": {
         "Organization": "Orangi Pilot Project (OPP)",
-        "Operating Area": "ST-4, Sector No. 5-A, 75800, Manghopir Rd, Qasba Colony.",
+        "OperatingArea": "ST-4, Sector No. 5-A, 75800, Manghopir Rd, Qasba Colony.",
         "History": "OPP as an NGO began work in Orangi Town in 1980. Akhtar Hameed was mastermind behind this project.",
-        "Core Functions": "OPP is a non-profit Association that has been operating in the domains of low-cost sanitation, housing, health, education, and credit for micro enterprise.",
+        "CoreFunctions": "OPP is a non-profit Association that has been operating in the domains of low-cost sanitation, housing, health, education, and credit for micro enterprise.",
         "Credibility": "Registered from Social Welfare Department..",
         "Programs": "1. OPP-Research and Training Institute (OPP-RTI) manages the low-cost sanitation, housing/secure housing support program, education program, the now evolving water supply and the women’s savings programs as well as the related research and training programs. Earthquake and the flood rehabilitation works are also undertaken. 2. OPP-Orangi Charitable Trust (OPP-OCT) manages the micro enterprise credit program. 3. OPP-Karachi Health and Social Development Association (OPP-KHASDA) manages the health program.",
         "Sustainability": "Self-Sufficient Organization That Operates Based on Alms, Charities, and Donations.",
-        "Cost of Services": " None.",
+        "CostofServices": " None.",
         "Analysis": "On the success of its five basic programs of low-cost sanitation, housing, health, education, and credit for micro enterprise, in 1988 OPP was upgraded into three autonomous institutions.",
-        "Reference link/ Website": "http://www.opp.org.pk/",
+        "ReferencelinkWebsite": "http://www.opp.org.pk/",
         "key": "42"
     },
-    "SOFIA KHANA GHAR ORGANIZATION": {
+    "SOFIA KHANA GHAR": {
         "Organization": "Sofia Khana Ghar",
         "Operating Area": "All over Karachi",
         "History": "Sofia Khana Ghar Organization is started by the group of friends that are enrolled in NED University.",
@@ -689,8 +689,8 @@ export const detailedData = {
         "ReferencelinkWebsite": "http://sindh.prcs.org.pk/",
         "key": "53"
     },
-    "RA’ANA LIAQUAT CRAFSTSMEN COLONY (RLCC) HEALTH CARE CENTRE": {
-        "Organization": "Ra’ana Liaquat Crafstsmen Colony (RLCC) Health Care Centre",
+    "RA’ANA LIAQUAT CRAFTSMEN COLONY (RLCC) HEALTH CARE CENTRE": {
+        "Organization": "Ra’ana Liaquat Craftsmen Colony (RLCC) Health Care Centre",
         "OperatingArea": "Shah Faisal Colony, Karachi, Pakistan",
         "History": "A profound organization started by Begum Ra’ana Liaquat to reconcile the people of Pakistan just after partition, and the organization is successfully operational since 1954.",
         "CoreFunctions": "Providing medical services i.e. maternity services, general physician, child specialist and mental health services. ",
@@ -767,8 +767,8 @@ export const detailedData = {
         "ReferencelinkWebsite": "https://ansarburney.org/",
         "key": "59"
     },
-    "DAR-UL-SUKOON (OLD AGE)": {
-        "Organization": "Dar-ul-Sukoon (Old Age)",
+    "DAR-UL-SUKUN": {
+        "Organization": "Dar-ul-Sukun (Old Age)",
         "OperatingArea": "M.A Jinnah Rd, Opp Mazar-e-Quaid, Karachi",
         "History": "A Dutch nun, Sr. Gertrude Lemmens in February 17, 1969 established the organization for the children with disabilities and to provide shelter for misplaced which is successfully operating to date.",
         "CoreFunctions": "Centre for senior citizens, their basic needs fulfilment and recreational activities.",
@@ -819,8 +819,8 @@ export const detailedData = {
         "ReferencelinkWebsite": "https://www.aahung.org/",
         "key": "63"
     },
-    "RA’ANA LIAQUAT CRAFSTSMEN COLONY (RLCC-WOMEN)": {
-        "Organization": "Ra’ana Liaquat Crafstsmen Colony (RLCC)",
+    "RA’ANA LIAQUAT CRAFTSMEN COLONY (RLCC-WOMEN)": {
+        "Organization": "Ra’ana Liaquat Craftsmen Colony (RLCC)",
         "OperatingArea": "Shah Faisal Colony, Karachi, Pakistan",
         "History": "A profound organization started by Begum Ra’ana Liaquat to reconcile the people of Pakistan just after partition, and the organization is successfully operational since 1954.",
         "CoreFunctions": "Providing medical services i.e. maternity services, general physician, child specialist and mental health services. ",
@@ -1010,8 +1010,8 @@ export const NGOsRoute = [
         parent: "General-Health"
     },
     {
-        name: "RA’ANA LIAQUAT CRAFSTSMEN COLONY (RLCC) HEALTH CARE CENTRE",
-        link: "AreaOfWorking/General-Health/RA-ANA-LIAQUAT-CRAFSTSMEN-COLONY-HEALTH-CARE-CENTRE",
+        name: "RA’ANA LIAQUAT CRAFTSMEN COLONY (RLCC) HEALTH CARE CENTRE",
+        link: "AreaOfWorking/General-Health/RA-ANA-LIAQUAT-CRAFTSMEN-COLONY-HEALTH-CARE-CENTRE",
         parent: "General-Health"
     },
     {
@@ -1075,8 +1075,8 @@ export const NGOsRoute = [
         parent: "Senior-Citizens"
     },
     {
-        name: "DAR-UL-SUKOON (OLD AGE)",
-        link: "AreaOfWorking/Senior-Citizens/DAR-UL-SUKOON-(OLD AGE)",
+        name: "DAR-UL-SUKUN",
+        link: "AreaOfWorking/Senior-Citizens/DAR-UL-SUKUN",
         parent: "Senior-Citizens"
     },
     {
@@ -1125,8 +1125,8 @@ export const NGOsRoute = [
         parent: "Women"
     },
     {
-        name: "RA’ANA LIAQUAT CRAFSTSMEN COLONY (RLCC-WOMEN)",
-        link: "AreaOfWorking/Women/RA’ANA-LIAQUAT-CRAFSTSMEN-COLONY-(RLCC-WOMEN)",
+        name: "RA’ANA LIAQUAT CRAFTSMEN COLONY (RLCC-WOMEN)",
+        link: "AreaOfWorking/Women/RA-ANA-LIAQUAT-CRAFTSMEN-COLONY-RLCC-WOMEN",
         parent: "Women"
     },
     {
@@ -1180,7 +1180,7 @@ export const NGOsRoute = [
         parent: "Others"
     },
     {
-        name: "WORLDWIDE FUND OF NATURE (WWF)",
+        name: "WORLDWIDE FUND OF NATURE",
         link: "AreaOfWorking/Others/WORLDWIDE-FUND-OF-NATURE",
         parent: "Others"
     },

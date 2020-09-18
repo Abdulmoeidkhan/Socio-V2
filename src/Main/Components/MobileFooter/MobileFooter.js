@@ -26,14 +26,14 @@ function MobileFooter(props) {
     }
     return (
         <Footer className="mobile-Footer">
+            <div className="guru-parent-class" onClick={notify}>
+                <img className="guru-class" src={require("../../Assets/TheGraphicGuruSitting.png")} />
+            </div>
             <div>
                 <div className="arrowUpKey" onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) }}><i className="fa fa-x fa-arrow-up" style={{ color: "#fff",fontSize: "25px",paddingLeft:"2px"}} aria-hidden="true"></i></div>
             </div>
             <div>
                 <div className="arrowDownKey" onClick={() => { window.scrollTo({ top: 100000, left: 0, behavior: "smooth" }) }}><i className="fa fa-x fa-arrow-down" style={{ color: "#fff",fontSize: "25px",paddingLeft:"2px",paddingTop:"2px"}} aria-hidden="true"></i></div>
-            </div>
-            <div className="guru-parent-class" onClick={notify}>
-                <img className="guru-class" src={require("../../Assets/TheGraphicGuruSitting.png")} />
             </div>
             <div>
             </div>

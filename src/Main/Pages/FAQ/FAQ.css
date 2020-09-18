@@ -16,9 +16,11 @@
   }
 .faq-class .ant-collapse-header,.faq-class .ant-collapse-content-box{
     transition: all .5s ease;
-    transform: scale(.9) !important;
+    transform: scale(1) !important;
+    font-size: 20px;
 }
 .faq-class .ant-collapse-header:hover,.faq-class .ant-collapse-content-box:hover{
     transition: all .5s ease;
-    transform: scale(1) !important;
+    transform: scale(1.02) !important;
+    font-size: 20px;
 }

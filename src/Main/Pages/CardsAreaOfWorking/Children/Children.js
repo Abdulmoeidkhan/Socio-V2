@@ -81,8 +81,8 @@ const Children = (props) => {
                                 <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="450" onClick={() => history.push("/AreaOfWorking/Children/KONPAL-CHILD-ABUSE-PREVENTION-SOCIETY")}>
                                     <PictureTiles name="Konpal Child Abuse Prevention" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606161/Organization%20LOGOS/PNG/Konpal_Child_Abuse_Prevention_x9pinz.png" />
                                 </div>
-                                <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="550" onClick={() => history.push("/AreaOfWorking/Community/JDC")}>
-                                    <PictureTiles name="Make a WishC" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606161/Organization%20LOGOS/PNG/Make_A_Wish_kcjsjd.png" />
+                                <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="550" onClick={() => history.push("/AreaOfWorking/Children/MAKE-A-WISH")}>
+                                    <PictureTiles name="Make a Wish" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606161/Organization%20LOGOS/PNG/Make_A_Wish_kcjsjd.png" />
                                 </div>
                                 <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="650" onClick={() => history.push("/AreaOfWorking/Children/SOS-VILLAGE")}>
                                     <PictureTiles name="SOS Village" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606161/Organization%20LOGOS/PNG/SOS_hfqf2l.png" />

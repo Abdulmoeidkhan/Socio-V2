@@ -77,22 +77,21 @@ const Women = (props) => {
                                 </div>
                             </div>
                             <div className="sub-org-detailed-class">
-                                <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Women/RA’ANA-LIAQUAT-CRAFSTSMEN-COLONY-(RLCC-WOMEN)")}>
+                                <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Women/RA-ANA-LIAQUAT-CRAFTSMEN-COLONY-RLCC-WOMEN")}>
                                     <PictureTiles name="RLCC-Women" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606470/Organization%20LOGOS/PNG/RLCC_ncxufh.png" />
                                 </div>
                                 <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Women/SHIRKAT-GAH-WOMEN-RESOURCE-CENTRE")}>
                                     <PictureTiles name="Shirkat Gah Women Resource Centre" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606385/Organization%20LOGOS/PNG/Shirkat_Gah_Women_Resource_Centre_kiynof.png" />
                                 </div>
-                                <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250">
+                                <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="250" onClick={() => history.push("/AreaOfWorking/Women/PAKISTAN-FEDERATION-OF-BUSINESS-AND-PROFESSIONAL-WOMEN-ORGANIZATION")}>
                                     <PictureTiles name="Pakistan Federation of Business and Professional Women Organization." pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606385/Organization%20LOGOS/PNG/Pakistan_Federation_of_Business_and_Professional_Women_Organization_qgy0ln.png" />
                                 </div>
                             </div>
                             <div className="sub-org-detailed-class">
-                                <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Women/PAKISTAN-FEDERATION-OF-BUSINESS-AND-PROFESSIONAL-WOMEN-ORGANIZATION")}>
-                                    <PictureTiles name="Tehreek e Niswa" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606386/Organization%20LOGOS/PNG/Tehrik-e-Niswa_xhrgm9.png" />
-                                </div>
                                 <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350" onClick={() => history.push("/AreaOfWorking/Women/TEHRIK-E-NISWA")}>
-
+                                    <PictureTiles name="Tehrik e Niswa" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606386/Organization%20LOGOS/PNG/Tehrik-e-Niswa_xhrgm9.png" />
+                                </div>
+                                <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350">
                                 </div>
                                 <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="350">
                                 </div>

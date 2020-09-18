@@ -79,7 +79,7 @@ const SpecialNeeds = (props) => {
                                     <PictureTiles name="A.P.H.A Organization" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606353/Organization%20LOGOS/PNG/APHA_h1jzpq.png" />
                                 </div>
                                 <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Special-Needs/DAR-UL-SUKUN")}>
-                                    <PictureTiles name="Dar-ul-Sukoon" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606353/Organization%20LOGOS/PNG/Dar_Ul_Sukun_oxx90w.png" />
+                                    <PictureTiles name="Dar-ul-Sukun" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606353/Organization%20LOGOS/PNG/Dar_Ul_Sukun_oxx90w.png" />
                                 </div>
                                 <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Special-Needs/SHAHEED-E-MILLAT-SPECIAL-EDUCATION-CENTRE")}>
                                     <PictureTiles name="Shaheed-e-Millat Special Education Centre" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606353/Organization%20LOGOS/PNG/Shaheed-e-Millat_Special_Education_Centre_f2frk8.png" />

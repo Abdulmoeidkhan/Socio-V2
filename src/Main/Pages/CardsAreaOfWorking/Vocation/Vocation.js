@@ -73,7 +73,7 @@ const Vocation = (props) => {
                                 <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Vocation/PAKISTAN-INSTITUTE-OF-LEARNING-AND-LIVING")}>
                                     <PictureTiles name="Pakistan Institute of Learning and Living" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606371/Organization%20LOGOS/PNG/Pakistan_Institute_of_Learning_and_Living_qmubss.png" />
                                 </div>
-                                <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150">
+                                <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Vocation/ZVMG-RANGOONWALA-TRUST")}>
                                     <PictureTiles name="ZVMG Rangoonwala Trust" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606370/Organization%20LOGOS/PNG/ZVMG_Rangoonwala_iwdmfm.png" />
                                 </div>
                             </div>

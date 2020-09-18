@@ -44,7 +44,7 @@ const ArticlesAndBlogs = (props) => {
                                 <div className="content-content-1">
                                     <div className="spacing-class" />
                                     <h2 className="content-head">ARTICLES AND BLOGS </h2>
-                                    <p className="content-para"> If you love reading, welcome to your mini heaven, view our Articles and Blog section that bring u the latest articles on recent social trends and our Blogs written by our very own Socio-Linkage Family! Don’t forget to share!</p>
+                                    <p className="content-para"> If you love reading, welcome to your mini heaven, view our Articles and Blog section that bring you the latest articles on recent social trends and our Blogs written by our very own Socio-Linkage Family! Don’t forget to share!</p>
                                 </div>
                                 <div className="news-card-content-content-2">
                                     <div className="cards-page-img-center">

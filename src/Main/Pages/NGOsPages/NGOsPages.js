@@ -45,7 +45,7 @@ const NGOsPage = (props) => {
                             </Link>
                         </Breadcrumb.Item>
                     </Breadcrumb>
-                    <Descriptions title={ngoItem.name} bordered>
+                    <Descriptions title={ngoItem.name} bordered className="my-description-class">
                         <Descriptions.Item label="Organisation" span={3}>{detailedData[ngoItem.name].Organization}</Descriptions.Item>
                         <Descriptions.Item label="Operating Area" span={3}>{detailedData[ngoItem.name].OperatingArea}</Descriptions.Item>
                         <Descriptions.Item label="History" span={3}>{detailedData[ngoItem.name].History}</Descriptions.Item>
