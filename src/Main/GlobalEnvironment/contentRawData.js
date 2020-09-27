@@ -716,7 +716,7 @@ export const detailedData = {
         "key": "55"
     },
     "KARWAN-E-HAYAT": {
-        "Organization": "Karwan-e- Hayat",
+        "Organization": "Karwan-e-Hayat",
         "OperatingArea": "Kemari , Karachi",
         "History": "Established in 1983 as a not-for-profit welfare organization, Karwan-e-Hayat was an initiative conceptualized by a handful of notable, conscientious citizens of Karachi. Dr Zafar Qureshi, Begum Rana Liaquat Ali Khan, Begum Tazeen Faridi, Professor Zaki Hassan, Ms Anita Ghulam Ali, Dr Abdul Husaini, Begum Shaista Ikramullah, Begum Abdul Kader and Cardinal Joseph Cordeiro, the Archbishop of Karachi, were the earliest patrons and visionaries of Karwan-e-Hayat.",
         "CoreFunctions": "Karwan-e-Hayat provides quality psychiatric treatment and rehabilitation services to the most neglected, mentally ill patients of our society.",
@@ -725,7 +725,7 @@ export const detailedData = {
         "Sustainability": "Charitable/ Funds-based Organization.",
         "CostofServices": "Minimal -cost Services.",
         "Analysis": "One of the primary organizations working on the mental health care of individuals of Karachi. ",
-        "ReferencelinkWebsite": "http://www.kph.org.pk/",
+        "ReferencelinkWebsite": "http://www.keh.org.pk/",
         "key": "56"
     },
     "QUAID-E-AZAM RANGERS SPECIAL CHILDREN SCHOOL": {

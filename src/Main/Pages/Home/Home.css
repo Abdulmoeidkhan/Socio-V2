@@ -52,6 +52,12 @@
 }
 
 @media only screen and (min-width: 701px)and (max-width: 1000px) {
+    .ant-carousel {
+        height: 75vh !important;
+    }
+    .slick-slider{
+        height: 70vh;
+    }
     .section-parent {
         display: grid;
         grid-template-rows: .2fr .3fr .2fr 1fr 1.8fr;
@@ -155,6 +161,12 @@
         padding-top: 40px;
         height: 500px !important;
     }
+    .ant-carousel {
+        height: 75vh !important;
+    }
+    .slick-slider{
+        height: 70vh;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -180,11 +192,14 @@
         padding-left: 10px;
     }
     .ant-carousel .slick-initialized .slick-slide {
-        height: 400px !important;
+        height: 570px !important;
     }
     .ant-carousel .slick-list .slick-slide>div>div {
         padding-top: 40px;
         height: 500px !important;
+    }
+    .ant-carousel {
+        height: 100vh !important;
     }
 }
 
@@ -296,7 +311,6 @@
 .comment-class {
     width: 100%;
     margin: 0 auto;
-    height: 70vh;
 }
 
 .comment-class-para {
