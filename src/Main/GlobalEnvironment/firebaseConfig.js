@@ -19,6 +19,7 @@ class Firebase {
         app.initializeApp(firebaseConfig)
         this.auth = app.auth()
         this.db = app.database()
+        this.app=app
     }
 
     async getAllData() {
@@ -175,6 +176,7 @@ class Firebase {
     isInitialized() {
         return new Promise(resolve => {
             this.auth.onAuthStateChanged(resolve)
+            this.app.analytics()
         })
     }
 
