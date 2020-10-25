@@ -79,7 +79,7 @@ const SeniorCitizens = (props) => {
                                             <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Senior-Citizens/ANSAR-BURNEY-TRUST")}>
                                                 <PictureTiles name="Ansar Burney Trust" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606339/Organization%20LOGOS/PNG/Ansar_Burney_a9yepm.png" />
                                             </div>
-                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Senior-Citizens/DAR-UL-SUKUN")}>
+                                            <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Senior-Citizens/DAR-UL-SUKUN-Old-Age")}>
                                                 <PictureTiles name="Dar ul Sukun (Senior Citizen)" pictureSrc="https://res.cloudinary.com/tanzeelah/image/upload/v1599606340/Organization%20LOGOS/PNG/Dar_Ul_Sukun_mw3vig.png" />
                                             </div>
                                             <div data-aos-duration="1500" data-aos={"fade-left"} data-aos-delay="150" onClick={() => history.push("/AreaOfWorking/Senior-Citizens/SENIOR-CITIZEN-WELFARE-PROGRAM")}>

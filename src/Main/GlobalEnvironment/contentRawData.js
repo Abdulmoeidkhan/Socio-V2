@@ -767,7 +767,7 @@ export const detailedData = {
         "ReferencelinkWebsite": "https://ansarburney.org/",
         "key": "59"
     },
-    "DAR-UL-SUKUN": {
+    "DAR-UL-SUKUN-Old-Age": {
         "Organization": "Dar-ul-Sukun (Old Age)",
         "OperatingArea": "M.A Jinnah Rd, Opp Mazar-e-Quaid, Karachi",
         "History": "A Dutch nun, Sr. Gertrude Lemmens in February 17, 1969 established the organization for the children with disabilities and to provide shelter for misplaced which is successfully operating to date.",
@@ -857,11 +857,6 @@ export const NGOsRoute = [
     {
         name: "AZAD FOUNDATION",
         link: "AreaOfWorking/Children/AZAD-FOUNDATION",
-        parent: "Children"
-    },
-    {
-        name: "DAR-UL-SUKUN",
-        link: "AreaOfWorking/Children/DAR-UL-SUKUN",
         parent: "Children"
     },
     {
@@ -1075,8 +1070,8 @@ export const NGOsRoute = [
         parent: "Senior-Citizens"
     },
     {
-        name: "DAR-UL-SUKUN",
-        link: "AreaOfWorking/Senior-Citizens/DAR-UL-SUKUN",
+        name: "DAR-UL-SUKUN-Old-Age",
+        link: "AreaOfWorking/Senior-Citizens/DAR-UL-SUKUN-Old-Age",
         parent: "Senior-Citizens"
     },
     {
