@@ -41,13 +41,13 @@ export const detailedData = {
     },
     "DAR-UL-SUKUN": {
         "Organization": "Dar-ul-Sukun (Centre for Children with Multiple Disabilities)",
-        "Location": "Kashmir Road, PECHS, Karachi",
+        "OperatingArea": "Kashmir Road, PECHS, Karachi",
         "History": "A Dutch Nun, Sr. Gertrude Lemmens in February 17, 1969 established the organization for the children with disabilities which is successfully operating to date.",
-        "Core Functions": "Centre for children multiple disabilities, socially displaced girls, children with severe disabilities i.e. Cerebral Palsy(CP), Down Syndrome.",
+        "CoreFunctions": "Centre for children multiple disabilities, socially displaced girls, children with severe disabilities i.e. Cerebral Palsy(CP), Down Syndrome.",
         "Credibility": "Registered Non-profit Organization.",
         "Programs": "Training programs, Girls Education, Disability employment program.",
         "Sustainability": "Charitable/ Funds-based Organization",
-        "Cost of Services": " ",
+        "CostofServices": " ",
         "Analysis": "A fierce organization working successfully on multiple domains i.e.. Children with disabilities, Senior Citizens, Helping Vulnerable People.",
         "Reference link/ Website": "http://darulsukun.com/centre-for-children-with-multiple-disabilities/",
         "key": "4"
